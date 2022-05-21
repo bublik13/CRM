@@ -1,0 +1,72 @@
+:root {
+  --basic-family: "Raleway", "Roboto", "Arial", "Helvetica", sans-serif;
+  --second-family: "Manrope", Arial, sans-serif;
+
+  --bg-main: linear-gradient(45deg, #0085ff 3.33%, #8f00ff 131.11%);
+  --bg-color: #000000;
+  --bg-color2: linear-gradient(180deg, #ff0000 0%, #ff005c 100%);
+  --bg-color3: rgba(0, 0, 0, 0.7);
+  --bg-color4: #1d1d1f;
+  --bg-color5: #131315;
+  --bg-color7: linear-gradient(106.92deg, #ff8008 0%, #ffc837 100%);
+  --bg-color8: linear-gradient(90deg, #00b09b 0%, #96c93d 100%);
+  --bg-color9: linear-gradient(95.66deg, #fe1989 0%, #e60045 100%);
+  --bg-color10: linear-gradient(92.16deg,#0cebeb 0%,#20e3b2 50%,#29ffc6 100%);
+  --bg-color11: linear-gradient(93.52deg, #00D1FF 0%, #0075FE 100%);
+  --bg-color12: linear-gradient(91.93deg, #FF8008 0%, #FFC837 100%);
+  --bg-color13: linear-gradient(72.28deg, #EB6300 24.22%, #FCA845 75.78%);
+  --bg-color14: linear-gradient(90deg, #DA22FF 0%, #9733EE 100%);
+  --bg-color15: linear-gradient(45deg, #FDFC47 0%, #24FE41 100%);
+  --bg-color16: linear-gradient(90deg, #00B09B 0%, #96C93D 100%);
+  --bg-color17: #2A2A30;
+  --bg-color18: #CF0A2C;
+  --bg-color19: #0082F1;
+  --bg-color20: linear-gradient(92.26deg, #00B01C 0%, #3DC964 100%);
+
+
+  --bg-line: #292929;
+
+  --color-main: #ffffff;
+  --color-second: #767676;
+
+  --box-shadow1: 0px 10px 25px rgba(0, 133, 255, 0.3);
+  --box-shadow2: 0 10px 25px rgba(0, 209, 255, 0.3);
+  --box-shadow3: 0px 5px 25px rgba(0, 0, 0, 0.15);
+  --box-shadow4: 0px 10px 25px rgba(237, 57, 86, 0.3);
+  --box-shadow5: 0px 10px 25px rgba(255, 165, 32, 0.3);
+  --box-shadow6: 0px 10px 25px rgba(75, 189, 109, 0.3);
+  --box-shadow7: 0px 10px 25px #e60045;
+  --box-shadow8: 0px 10px 25px #20e3b2;
+  --box-shadow9: 0px 10px 25px #00D1FF;
+  --box-shadow10: 0px 10px 25px #FF8008;
+  --box-shadow11: 0px 10px 25px #FD1D1D;
+  --box-shadow12: 0px 10px 25px #C300C7;
+  --box-shadow13: 0px 10px 25px #A2FD45;
+  --box-shadow14: 0px 10px 25px #4BBD6D;
+  --box-shadow15: 0px 10px 25px rgba(230, 0, 69, 0.3);
+ --box-shadow16: 0px 10px 25px rgba(255, 128, 8, 0.3);
+ --box-shadow17: 0px 10px 25px rgba(57, 200, 96, 0.3);
+ --box-shadow18: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  --text-shadow: #ff0000;
+
+  //задаем дефолтное значение для переменной --svgColor
+  --svgColor: currentColor;
+}
+//bacgrounds
+$body-bg: #ff55;
+
+//fonts
+$basic-family: var(--basic-family);
+$second-family: "Oswald", Arial, sans-serif;
+$arial-family: "Manrope", Arial, sans-serif;
+
+//container
+$container-max-width: 320px;
+$container-min-width: 1410px;
+
+//media
+// $xs: 350px;
+// $sm: 556px;
+// $md: 768px;
+$lg: 1800px;
+$lm: 1940px;

@@ -1,0 +1,14 @@
+.slider {
+  z-index: 0;
+  margin-right: -40px;
+}
+
+.slider__title {
+  margin-bottom: 25px;
+}
+
+@include media($lm) {
+  .slider {
+    margin-right: 0;
+  }
+}

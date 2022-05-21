@@ -1,0 +1,26 @@
+@mixin font ($fs, $lh, $fw: null, $ff: var(--basic-family)){
+  font: $fw #{$fs}/#{$lh} $ff;
+}
+
+@mixin media ($media-width){
+    @media (max-width: $media-width) {
+      @content;
+    }
+}
+// h1 {
+// @include font(16px, 24px, $ff: var(--second-family));
+
+// }
+
+@mixin wrap ($bg, $bh, $rd) {
+  background: $bg;
+  box-shadow: $bh;
+  border-radius: $rd;
+}
+@mixin flex ($df, $jc, $ai, $fd, $fw) {
+ display: $df;
+ justify-content: $jc;
+ align-items: $ai;
+ flex-direction: $fd;
+ flex-wrap: $fw;
+}

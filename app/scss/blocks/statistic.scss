@@ -1,0 +1,40 @@
+.statistic {
+  padding-top: 20px;
+  z-index: -1;
+  position: relative;
+  margin-bottom: 50px;
+  flex-grow: 1;
+  @include flex (flex, none, none, none, none, );
+}
+
+.statistic>.statistic__box {
+  margin-left: 30px;
+}
+
+.statistic__wrap {
+  @include flex (flex, space-between, none, column, none);
+  flex-grow: 1;
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 17px 25px 25px;
+}
+
+.statistic__wrap1 {
+  @include flex (flex, space-between, center, none, none);
+  flex-grow: 1;
+}
+
+.statistic__grid {
+  display: grid;
+  grid-template-columns: auto 330px;
+  grid-template-rows: auto;
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 17px 25px 25px;
+}
+
+.statistic__title {
+  margin-bottom: 25px;
+}
+
+.statistic__date {
+  margin-bottom: 16px;
+}

@@ -1,0 +1,155 @@
+.button {
+  --btn-bg-color: transparent;
+  --btn-box-shadow: none;
+  --btn-color: inherit;
+
+  --btn-hover-bg-color: transparent;
+  --btn-hover-box-shadow: none;
+  --btn-hover-color: inherit;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 300px;
+  text-overflow: ellipsis;
+  display: inline-block;
+  vertical-align: top;
+  border: 0;
+  text-decoration: none;
+  cursor: pointer;
+  @include font(15px, 17px, 600);
+  color: var(--color-main);
+  background: var(--btn-bg-color);
+  box-shadow: var(--btn-box-shadow);
+  &:hover {
+    background: var(--btn-hover-bg-color);
+  }
+}
+
+
+.button--sm {
+  padding: 5px 15px;
+  border-radius: 12px;
+}
+.button--ms {
+  padding: 8px 13px 8px 15px;
+  border-radius: 12px;
+}
+.button--sx {
+  padding: 13px;
+  border-radius: 12px;
+}
+.button--xm {
+  padding: 16px 15px;
+  border-radius: 15px;
+}
+.button--md {
+  padding: 18px 20px;
+  border-radius: 15px;
+}
+.button--ls {
+  padding: 20px 20px 19px 54px;
+  border-radius: 15px;
+}
+.button--width-sm {
+  width: 224px;
+}
+.button--width-ms {
+  width: 194px;
+}
+.button--width-s {
+  width: 137px;
+}
+.button--width-sl {
+  width: 171px;
+}
+.button--width {
+  width: 108px;
+}
+.button---width-md {
+  width: 280px;
+}
+.button---font::placeholder {
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+}
+.button---font-s {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+}
+.button__img {
+  display: block;
+  margin-right: 15px;
+  color: var(--color-main);
+}
+.button__down {
+  height: 12px;
+  width: 18px;
+}
+.button--bg1 {
+  --svgColor: url("#gradient1");
+}
+.button__img--width {
+  height: 21px;
+  width: 20px;
+  margin-right: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.button--flex {
+  display: flex;
+  align-items: center;
+}
+.button--flex-end {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.button--brand {
+  // background: var(--bg-main);
+  // box-shadow: var(--box-shadow);
+  color: var(--color-main);
+  --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
+  @include wrap(var(--bg-main), var(--box-shadow), 15px);
+}
+// .light .button--brand {
+//   --btn-bg-color: linear-gradient(93.52deg, #00d1ff 0%, #0075fe 100%);
+//   box-shadow: --box-shadow2;
+//   color: --color-main;
+//   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
+// }
+.button--primary {
+  // background: var(--bg-color5);
+  // box-shadow: var(--box-shadow3);
+  border: 0.5px solid var(--bg-line);
+  color: var(--color-main);
+  --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+}
+.button--success {
+  color: var(--color-main);
+  --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+}
+.button--1 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color14), var(--box-shadow4), 12px);
+}
+.button--2 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color11), var(--box-shadow2), 12px);
+}
+.button--3 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color17), var(--box-shadow3), 15px);
+}
+.button--4 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color9), var(--box-shadow15), 12px);
+}
+.button--5 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color12), var(--box-shadow16), 12px);
+}
+.button--6 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color20), var(--box-shadow17), 12px);
+}

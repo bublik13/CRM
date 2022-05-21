@@ -1,0 +1,40 @@
+.date {
+  display: flex;
+  align-items: center;
+  padding: 13px 15px;
+  background-color: var(--bg-color5);
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.date__wrap-img:first-child {
+  margin-right: 13px;
+}
+.date__wrap-img:last-child {
+  margin-left: 16px;
+}
+.date__img {
+  //Вместо fill: url("#Gradient1"); присваиваем новое значение переменной --svgColor
+  --svgColor: url("#gradient1");
+  display: block;
+  height: 24px;
+  width: 24px;
+}
+.date__img-down {
+  display: block;
+  height: 24px;
+  width: 24px;
+  color: var(--color-main);
+}
+.date__today {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+}
+.date:hover > .date__calendar {
+  display: block;
+}
+.date--color {
+  background-color: var(--bg-color4);
+  box-shadow: var(--box-shadow3);
+  border-radius: 15px;
+}

@@ -1,0 +1,15 @@
+.burger {
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+  margin-top: 16px;
+}
+.burger__img {
+  display: block;
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+}

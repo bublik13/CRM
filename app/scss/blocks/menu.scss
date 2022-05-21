@@ -1,0 +1,26 @@
+.menu {
+  padding: 17px 30px;
+  // background-color: var(--bg-box);
+  top: 0;
+  position: fixed;
+  @include wrap(var(--bg-color5), var(--box-shadow3), 0);
+  z-index: 11;
+  height: 100%;
+  overflow: auto;
+  grid-area: menu;
+}
+.menu__row {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+.menu__row::after {
+  content: " ";
+  position: absolute;
+  left: -30px;
+  bottom: 0;
+  width: calc(100% + 55px);
+  height: 1px;
+  background-color: var(--bg-line);
+  box-shadow: var(--box-shadow3);
+}
