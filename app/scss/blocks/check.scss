@@ -124,11 +124,11 @@
 
 }
 
-.swiper-slide1__check:focus~.swiper-slide1__check__pseudo {
+.swiper-slide1__check:focus~.swiper-slide1__pseudo {
     @include wrap(var(--bg-color16), 0 0 0 0, 15px);
 }
 
-.swiper-slide1__check:focus~.swiper-slide1__pseudo1>.swiper-slide1__circl1 {
+.swiper-slide1__check:focus~.swiper-slide1__pseudo>.swiper-slide1__circl {
     @include wrap(var(--color-main), var(--box-shadow3), 0);
     width: 10px;
     height: 10px;
@@ -215,11 +215,14 @@
 }
 
 .swiper-slide1__check:focus~.swiper-slide1__pseudo7>.swiper-slide1__circl7 {
-    @include wrap(var(--bg-color15), var(--box-shadow13), 0);
+    @include wrap(var(--color-main), var(--box-shadow13), 0);
     width: 10px;
     height: 10px;
     border-radius: 100px;
     margin-right: 10px;
+}
+.swiper-slide1__check:focus~.swiper-slide1__pseudo8 {
+    @include wrap(var(--bg-color16), 0 0 0 0, 15px);
 }
 .swiper-slide1__check:focus~.swiper-slide1__pseudo8>.swiper-slide1__circl8 {
     @include wrap(var(--color-main), var(--box-shadow3), 0);
@@ -227,4 +230,9 @@
     height: 10px;
     border-radius: 100px;
     margin-right: 10px;
+}
+.button__img1{
+    height: 24px;
+    width: 24px;
+    --svgColor: url("#gradient5");
 }

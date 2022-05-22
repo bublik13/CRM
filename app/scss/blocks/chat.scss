@@ -1,0 +1,10 @@
+.chat{
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+  padding: 25px;
+  @include flex(flex, center, center, column, none);
+
+}
+.chat__wrap{
+  @include flex(flex, space-between, center, none, none);
+
+}

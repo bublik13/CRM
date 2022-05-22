@@ -5,5 +5,17 @@
     // grid-gap: 95px;
     display: grid;
     grid-template-areas: 'header header' ' menu container' ;
-    grid-template-columns: 330px auto ;
+    grid-template-columns: 21% auto;
+    grid-gap:10px;
+}
+.grid--reverse{
+    grid-template-columns: auto 21%;
+}
+.flex{
+    @include flex(flex, space-between, center, none, none);
+
+}
+.flex2{
+    @include flex(flex, flex-start, none, column, none);
+
 }

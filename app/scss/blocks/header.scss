@@ -7,7 +7,7 @@
   top: 0;
 
   z-index: 10;
-  @include flex (flex, space-between, center, none, none);
+  @include flex(flex, space-between, center, none, none);
   flex-grow: 1;
 
   grid-area: header;
@@ -16,18 +16,18 @@
 }
 
 .header__wrap {
-  @include flex (flex, center, center, none, none);
-
+  @include flex(flex, center, center, none, none);
 }
 
 .header__title {
   margin-bottom: 10px;
 }
-
-// .header__wrap {
-//   flex-grow: 1;
-// }
-
+.header__subtitle {
+  @include font(15px, 18px, 500);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--color-main);
+  margin-right: 20px;
+}
 .header__title {
   margin-right: 20px;
 }
