@@ -1,88 +1,40 @@
-/* Page Wrapper/Container Style */
-// .responsive {
-//   width: 100%;
-// }
-// .responsive-table__pd {
-//   padding: 25px 45px !important;
-// }
-// /* Responsive Table Style */
-// .responsive-table {
-//   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
-//   padding: 17px 25px 25px;
-//   border-collapse: collapse;
-//   border-radius: 10px;
-//   width: 100%;
-//   margin: 2rem 0;
-//   overflow: hidden;
-//   //   display: grid;
-//   //   grid-template-columns: 130px 2fr 2fr 2fr 2fr 1fr 1.5fr;
-//   align-items: center;
-//   text-align: start;
-//   grid-gap: 5px;
-//   &__row {
-//     grid-gap: 5px;
-//     text-align: start;
-//     display: grid;
-//     padding: 0 20px;
-//     grid-template-columns: 130px 2fr 2fr 2fr 2fr 1fr 1.5fr;
-//     align-items: center;
-//   }
-// }
-// .responsive-table__body:not(:last-child) {
-//   margin-bottom: 10px;
-//   display: block;
-// }
-// .responsive-table__body:last-child {
-//   margin-bottom: 25px;
-//   display: block;
-// }
-// .responsive-table__head-title {
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-start;
-// }
-// .responsive-table__body .responsive-table__row {
-//   color: #ffffff;
-//   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
-//   border-radius: 20px;
-//   width: 97%;
-//   margin: 0 auto;
-//   padding: 15px 20px;
-// }
-// @include media($lg) {
-//   .responsive-table {
-//     &__row {
-//       grid-template-columns: 130px 1fr 1fr 1fr 200px 60px 1fr;
-//     }
-//   }
-// }
 table {
   width: 100%;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
   padding: 17px 25px 25px;
   margin-bottom: 30px;
-  border-collapse:separate;
+  border-collapse: separate;
   border-spacing: 0 10px;
-}
-.tablet__flex{
-  @include flex (flex, space-between, center, none, none);
 
+  // table-layout: sticky; /* Фиксированная ширина ячеек */
+  // width: 100%; /* Ширина таблицы */
+
+  width: 100%;
 }
-td{
-  border-collapse:separate;
+
+.tablet__flex {
+  @include flex(flex, space-between, center, none, none);
+}
+td {
+  border-collapse: separate;
   border-spacing: 0 10px;
   @include wrap(var(--bg-color4), var(--box-shadow3), 0);
 }
-td:first-child{
-border-radius:10px 0 0 10px;
+td:first-child {
+  border-radius: 10px 0 0 10px;
 }
-td:last-child{
+td:last-child {
   border-radius: 0 10px 10px 0;
-  }
-  th, td {
-    padding: 15px;
-    
 }
-td:nth-child(6){
+th,
+td {
+  padding: 15px;
+  text-align: left;
+}
+// td:nth-child(1) {
+//   white-space: nowrap;
+//   width: 10%;
+// }
+td:nth-child(6) {
   white-space: nowrap;
 }

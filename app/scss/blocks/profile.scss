@@ -19,6 +19,13 @@
   height: 50px;
   position: relative;
   z-index: 0;
+  flex-shrink: 0;
+}
+.profile__social{
+  width: 18px;
+  height: 18px;
+  --svgColor: url("#gradient6");
+  --svgColor: url("#gradient7");
 }
 .profile__wrap-img--pd {
   margin-right: 0;
@@ -77,13 +84,13 @@
 }
 .profile__title--bt {
   margin-bottom: 0;
-  max-width: 300px;
-  width: 158px;
+  // max-width: 300px;
+  // width: 158px;
 }
 .profile__title--bt {
   margin-bottom: 10;
-  max-width: 300px;
-  width: 158px;
+  // max-width: 300px;
+  // width: 158px;
 }
 .profile__subtitle {
   color: var(--color-main);
@@ -92,6 +99,5 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   text-shadow: 0px 10px 25px var(--text-shadow);
 }

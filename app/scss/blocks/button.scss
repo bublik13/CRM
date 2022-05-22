@@ -6,7 +6,7 @@
   --btn-hover-bg-color: transparent;
   --btn-hover-box-shadow: none;
   --btn-hover-color: inherit;
-  white-space: nowrap;
+  // white-space: nowrap;
   overflow: hidden;
   max-width: 300px;
   text-overflow: ellipsis;
@@ -162,4 +162,8 @@
   height: 50px;
   padding: 13px;
   
+}
+.button--8 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color20), var(--box-shadow20), 15px);
 }

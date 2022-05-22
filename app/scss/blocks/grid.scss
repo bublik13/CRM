@@ -6,7 +6,7 @@
     display: grid;
     grid-template-areas: 'header header' ' menu container' ;
     grid-template-columns: 21% auto;
-    grid-gap:10px;
+    // grid-gap: 0 20px;
 }
 .grid--reverse{
     grid-template-columns: auto 21%;

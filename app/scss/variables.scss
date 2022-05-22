@@ -21,7 +21,7 @@
   --bg-color17: #2A2A30;
   --bg-color18: #CF0A2C;
   --bg-color19: #0082F1;
-  --bg-color20: linear-gradient(92.26deg, #00B01C 0%, #3DC964 100%);
+  --bg-color20: linear-gradient(135deg, #00D322 0%, #00F38D 100%);
 
 
   --bg-line: #292929;
@@ -48,6 +48,7 @@
  --box-shadow17: 0px 10px 25px rgba(57, 200, 96, 0.3);
  --box-shadow18: 0px 0px 20px rgba(0, 0, 0, 0.1);
  --box-shadow19: 0px 10px 25px rgba(255, 0, 0, 0.3);
+ --box-shadow20:  0px 10px 25px rgba(0, 211, 34, 0.25);
   --text-shadow: #ff0000;
   //задаем дефолтное значение для переменной --svgColor
   --svgColor: currentColor;
@@ -68,5 +69,5 @@ $container-min-width: 1410px;
 // $xs: 350px;
 // $sm: 556px;
 // $md: 768px;
-$lg: 1800px;
+$lg: 1840px;
 $lm: 1940px;
