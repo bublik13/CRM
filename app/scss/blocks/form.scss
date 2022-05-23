@@ -8,22 +8,6 @@
   margin-bottom: 30px;
   padding: 25px;
 }
-.swiper-slide1__title {
-  margin-bottom: 25px;
-}
-.swiper-slide1__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
-}
-.swiper-slide1__grid > .swiper-slide1__wrap:nth-child(4),
-.swiper-slide1__wrap:nth-child(5),
-.swiper-slide1__grid > .swiper-slide1__wrap:nth-child(6),
-.swiper-slide1__grid > .swiper-slide1__wrap:nth-child(7),
-.swiper-slide1__grid > .swiper-slide1__wrap:nth-child(8) {
-  grid-row: 3/2;
-}
 .form__submit-button {
   position: absolute;
   top: 22px;
@@ -70,11 +54,12 @@
   --svgColor: url("#gradient1");
 }
 
-.form__check:focus ~ .form__pseudo{
+.form__check:focus ~ .form__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding: 8px 20px;
   height: 38px;
 }
-
-
+.form__progress {
+  margin-bottom: 22px;
+}
