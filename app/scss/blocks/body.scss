@@ -15,7 +15,9 @@
   padding: 0 130px;
 }
 .nav--active > .nav__list > .nav__item {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .nav--active > .nav__list > .nav__item > .nav__link > .nav__link-text {
   display: none;
@@ -46,9 +48,9 @@
 .logo__img-name--active {
   display: none !important;
 }
-.grid--active{
-grid-template-columns: 104px auto !important;
+.grid--active {
+  grid-template-columns: 104px auto !important;
 }
-.container--active{
+.container--active {
   max-width: 1410px !important;
 }

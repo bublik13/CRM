@@ -2,20 +2,22 @@
   // width: 210px;
   display: flex;
   position: relative;
+  align-items: center;
+  margin-bottom: 27px;
 }
 .logo__img {
   display: block;
-  width: 118px;
-  height: 100px;
+  width: 58px;
+  height: 40px;
   --svgColor: url("#gradient5");
   color: var(--color-main);
   filter: drop-shadow(0px 8px 30px rgba(0, 133, 255, 0.9));
+  margin-right: 18px;
+
 }
 .logo__img-name {
-  position: absolute;
-  width: 143px;
-  height: 80px;
+  width: 83px;
+  height: 20px;
   display: block;
   color: var(--color-main);
-  left: 76px;
 }
