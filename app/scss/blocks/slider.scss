@@ -7,6 +7,314 @@
   margin-bottom: 25px;
 }
 
+.slider__swiper{
+  // width: 69%;
+  // position: absolute !important;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+// .swiper1 {
+ 
+// }
+.slider__slide {
+  display: block;
+  cursor: pointer;
+  width: auto !important;
+}
+// .swiper-slide1__img {
+//   height: 20px;
+//   width: 20px;
+// }
+
+.slider__check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.slider__pseudo8,
+.slider__pseudo7,
+.slider__pseudo6,
+.slider__pseudo5,
+.slider__pseudo4,
+.slider__pseudo3,
+.slider__pseudo2,
+.slider__pseudo1 {
+  flex-shrink: 0;
+  @include font(15px, 17px, 600);
+  color: var(--color-main);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--bg-color4);
+  padding: 16px 15px;
+}
+
+.slider__pseudo {
+  flex-shrink: 0;
+  @include font(15px, 17px, 600);
+  color: var(--color-main);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--bg-color4);
+  padding: 13px;
+}
+
+.slider__img {
+  height: 24px;
+  width: 24px;
+  display: block;
+  color: var(--color-main);
+}
+
+.slider__circl {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.slider__circl1 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color9), var(--box-shadow7), 100px);
+  flex-shrink: 0;
+}
+.slider__circl2 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color10), var(--box-shadow8), 100px);
+  flex-shrink: 0;
+}
+.slider__circl3 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color11), var(--box-shadow9), 100px);
+  flex-shrink: 0;
+}
+.slider__circl4 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color12), var(--box-shadow10), 100px);
+  flex-shrink: 0;
+}
+.slider__circl5 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color13), var(--box-shadow11), 100px);
+  flex-shrink: 0;
+}
+.slider__circl6 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color14), var(--box-shadow12), 100px);
+  flex-shrink: 0;
+}
+.slider__circl7 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color15), var(--box-shadow13), 100px);
+  flex-shrink: 0;
+}
+.slider__circl8 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color16), var(--box-shadow14), 100px);
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo {
+  @include wrap(var(--bg-color16), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo > .slider__circl {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+
+.slider__check:focus ~ .slider__pseudo1 {
+  @include wrap(var(--bg-color9), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo1 > .slider__circl1 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo2 {
+  @include wrap(var(--bg-color10), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo2 > .slider__circl2 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo3 {
+  @include wrap(var(--bg-color11), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo3 > .slider__circl3 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo4 {
+  @include wrap(var(--bg-color12), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo4 > .slider__circl4 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo5 {
+  @include wrap(var(--bg-color13), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo5 > .slider__circl5 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo6 {
+  @include wrap(var(--bg-color14), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo6 > .slider__circl6 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.slider__check:focus ~ .slider__pseudo7 {
+  @include wrap(var(--bg-color15), 0 0 0 0, 15px);
+}
+
+.slider__check:focus ~ .slider__pseudo7 > .slider__circl7 {
+  @include wrap(var(--color-main), var(--box-shadow13), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.slider__check:focus ~ .slider__pseudo8 {
+  @include wrap(var(--bg-color16), 0 0 0 0, 15px);
+}
+.slider__check:focus ~ .slider__pseudo8 > .slider__circl8 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+.button__img1 {
+  height: 24px;
+  width: 24px;
+  --svgColor: url("#gradient5");
+}
+.slider__title {
+  margin-bottom: 25px;
+}
+.slider__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.slider__grid > .slider__wrap:nth-child(4),
+.slider__wrap:nth-child(5),
+.slider__grid > .slider__wrap:nth-child(6),
+.slider__grid > .slider__wrap:nth-child(7),
+.slider__grid > .slider__wrap:nth-child(8) {
+  grid-row: 3/2;
+}
+.slider__flex {
+  @include flex(flex, none, center, none, none);
+}
+.slider__wrap {
+  @include flex(flex, none, center, none, none);
+}
+.slider__flex > .slider__wrap:first-child {
+  margin-right: 20px;
+}
+.slider__wrap > .slider__text {
+  margin-right: 10px;
+  @include font(15px, 17px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.slider__number {
+  @include font(44px, 54px, 800, $ff: "Gilroy");
+  color: var(--color-main);
+}
+.slider__flex1 {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+  padding: 25px;
+  @include flex(flex, space-between, center, none, none);
+  margin-bottom: 25px;
+}
+
+
+
+
 @include media($lm) {
   .slider {
     margin-right: 0;

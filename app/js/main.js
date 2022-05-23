@@ -14,7 +14,7 @@ testFunction();
 //     }
 // }
 
-const swiper = new Swiper('.swiper1', {
+const swiper = new Swiper('.slider__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
