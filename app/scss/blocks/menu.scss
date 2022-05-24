@@ -1,6 +1,5 @@
 .menu {
   padding: 27px 30px 27px;
-  // background-color: var(--bg-box);
   top: 0;
   position: sticky;
   @include wrap(var(--bg-color5), var(--box-shadow3), 0);
@@ -9,19 +8,16 @@
   overflow-x: hidden;
   overflow-y: auto;
   scroll-snap-type: start;
-
   grid-area: menu;
 }
-.menu__row {
-  display: flex;
-  align-items: flex-start;
+.menu__nav {
   position: relative;
 }
-.menu__row::after {
+.menu__nav::after {
   content: " ";
   position: absolute;
-  left: -30px;
-  bottom: 0;
+  left: -27px;
+  top: 0;
   width: calc(100% + 55px);
   height: 1px;
   background-color: var(--bg-line);
@@ -33,4 +29,8 @@
 }
 .menu::-moz-scrollbar {
   display: none;
+}
+.menu--active {
+  width: 104px;
+  padding: 27px 15px !important;
 }

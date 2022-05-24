@@ -1,13 +1,14 @@
 .container {
-  // width: 100%;
   min-width: $container-max-width;
   max-width: $container-min-width;
   margin-left: auto;
   margin-right: auto;
-  // grid-column: 2 / 2;
   grid-area: container;
   @include media($lg) {
     max-width: 1200px;
     padding-left: 25px;
   }
+}
+.container--active {
+  max-width: 1410px !important;
 }

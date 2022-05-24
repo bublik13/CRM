@@ -24,13 +24,12 @@
   }
 }
 
-
 .button--sm {
   padding: 5px 15px;
   border-radius: 12px;
 }
 .button--ms {
-  padding: 8px 13px 8px 15px;
+  padding: 5px 5px 5px 10px;
   border-radius: 12px;
 }
 .button--sx {
@@ -83,8 +82,11 @@
   height: 24px;
 }
 .button__down {
-  height: 12px;
-  width: 18px;
+  height: 24px;
+  width: 24px;
+  background: var(--bg-color22);
+  border-radius: 8px;
+  transform: rotate(180deg);
 }
 .button--bg1 {
   --svgColor: url("#gradient1");
@@ -99,15 +101,12 @@
 .button--flex {
   display: flex;
   align-items: center;
+  @include flex(flex, none, center, none, none);
 }
 .button--flex-end {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
+  @include flex(flex, space-between, center, none, none);
 }
 .button--brand {
-  // background: var(--bg-main);
-  // box-shadow: var(--box-shadow);
   color: var(--color-main);
   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
   @include wrap(var(--bg-main), var(--box-shadow), 15px);
@@ -161,7 +160,6 @@
   width: 50px;
   height: 50px;
   padding: 13px;
-  
 }
 .button--8 {
   color: var(--color-main);

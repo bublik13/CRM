@@ -1,20 +1,7 @@
 import {testFunction} from './scripts/test';
 testFunction();
 
-// window.onscroll = function() {
-//     checkMarginToTop();
-// };
-
-// var header = document.getElementById(".header__top");
-
-
-// function checkMarginToTop() {
-//         if (window.pageYOffset > header) {
-//         header.classList.add(".header__top");
-//     }
-// }
-
-const swiper = new Swiper('.slider__swiper', {
+  const swiper = new Swiper('.slider__swiper', {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
@@ -23,7 +10,6 @@ const swiper = new Swiper('.slider__swiper', {
   });
   
 
-   
   const menu = document.querySelector('.js-menu');
   const nav = document.querySelector('.js-nav');
   const profile = document.querySelector('.js-profile');
@@ -42,4 +28,16 @@ const swiper = new Swiper('.slider__swiper', {
   menu.classList.toggle('menu--active');
   grid.classList.toggle('grid--active');
   container.classList.toggle('container--active');
+  });
+
+  const swiperStatistic = new Swiper('.statistic__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: "3",
+    spaceBetween: 26,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   });

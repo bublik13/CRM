@@ -1,5 +1,4 @@
 .logo {
-  // width: 210px;
   display: flex;
   position: relative;
   align-items: center;
@@ -12,12 +11,14 @@
   --svgColor: url("#gradient5");
   color: var(--color-main);
   filter: drop-shadow(0px 8px 30px rgba(0, 133, 255, 0.9));
-  margin-right: 18px;
-
 }
 .logo__img-name {
   width: 83px;
   height: 20px;
   display: block;
   color: var(--color-main);
+  margin-left: 18px;
+}
+.logo__img-name--active {
+  display: none !important;
 }

@@ -5,20 +5,16 @@
   padding-bottom: 22px;
   position: sticky;
   top: 0;
-
   z-index: 10;
   @include flex(flex, space-between, center, none, none);
   flex-grow: 1;
-
   grid-area: header;
   position: sticky;
   top: 0;
 }
-
 .header__wrap {
   @include flex(flex, center, center, none, none);
 }
-
 .header__title {
   margin-bottom: 10px;
 }
@@ -31,7 +27,6 @@
 .header__title {
   margin-right: 20px;
 }
-
 .header__form {
   margin-right: 15px;
 }

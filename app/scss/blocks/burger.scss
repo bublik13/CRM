@@ -7,10 +7,15 @@
   @include wrap(var(--bg-color17), var(--box-shadow21), 10px);
   position: fixed;
   left: 298px;
+  top: 30px;
 }
 .burger__img {
   display: block;
   width: 24px;
   height: 24px;
   color: var(--color-main);
+}
+.burger--active {
+  left: 78px !important;
+  transform: rotate(180deg);
 }

@@ -1,10 +1,123 @@
-.chat{
+.chat {
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   padding: 25px;
-  @include flex(flex, center, center, column, none);
-
+  // @include flex(flex, center, center, column, none);
 }
-.chat__wrap{
+.chat__wrap {
   @include flex(flex, space-between, center, none, none);
-
+}
+.chat__profile {
+  @include flex(flex, space-between, flex-start, none, none);
+}
+.chat > .chat__wrap:first-child {
+  margin-bottom: 25px;
+}
+.chat__button {
+  height: 50px;
+  width: 50px;
+}
+.chat__button:first-child {
+  margin-right: 10px;
+}
+.chat__wrapper {
+  padding: 20px;
+  background: var(--bg-color4);
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+.chat__title {
+  @include font(15px, 20px, 500, var(--second-family));
+  color: var(--color-second);
+  text-align: center;
+  margin-bottom: 150px;
+}
+.chat__wrap1 {
+  max-width: 176px;
+  margin-right: auto;
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
+  padding: 5px 10px;
+  margin-bottom: 15px;
+}
+.chat__wrap2 {
+  max-width: 312px;
+  margin-left: auto;
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  padding: 5px 10px;
+  margin-bottom: 19px;
+}
+.chat__wrap3 {
+  margin-right: auto;
+  max-width: 240px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
+  padding: 5px 10px;
+  margin-bottom: 17px;
+}
+.chat__wrap4 {
+  max-width: 103px;
+  margin-left: auto;
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  padding: 5px 10px;
+}
+.chat__text {
+  margin-bottom: 5px;
+}
+.chat__wrap1 > .chat__time {
+  @include font(13px, 15px, 400);
+  color: var(--color-second);
+}
+.chat__wrap3 > .chat__time {
+  @include font(13px, 15px, 400);
+  color: var(--color-second);
+}
+.chat__time {
+  @include font(13px, 15px, 400);
+  color: var(--color-main);
+}
+.chat__label {
+  cursor: pointer;
+  padding: 13px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: 0.5px solid var(--bg-line);
+  width: 100%;
+  @include flex(flex, none, center, none, none);
+  margin-right: 10px;
+}
+.chat___wrap-btn {
+  cursor: pointer;
+  padding-right: 13px;
+  border-right: 1px solid #292929;
+}
+.chat__img {
+  height: 24px;
+  width: 24px;
+  --svgColor: url("#gradient7");
+  filter: drop-shadow(0px 10px 25px #2860ff);
+}
+.chat__file {
+  width: 0.1px;
+  height: 0.1px;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  z-index: -1;
+}
+.chat__input {
+  @include wrap(var(--bg-color4), 0 0 0 0, 0);
+  border: none;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  // padding: 16px 13px;
+  margin-left: 13px;
 }

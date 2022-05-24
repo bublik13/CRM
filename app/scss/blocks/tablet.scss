@@ -5,13 +5,8 @@ table {
   margin-bottom: 30px;
   border-collapse: separate;
   border-spacing: 0 10px;
-
-  // table-layout: sticky; /* Фиксированная ширина ячеек */
-  // width: 100%; /* Ширина таблицы */
-
   width: 100%;
 }
-
 .tablet__flex {
   @include flex(flex, space-between, center, none, none);
 }
@@ -31,10 +26,32 @@ td {
   padding: 15px;
   text-align: left;
 }
-// td:nth-child(1) {
-//   white-space: nowrap;
-//   width: 10%;
-// }
 td:nth-child(6) {
   white-space: nowrap;
+}
+.tablet__flex > .button:not(:last-child) {
+  margin-right: 10px;
+}
+.tablet__button {
+  margin-bottom: 13px;
+}
+.tablet__submenu {
+  position: absolute;
+  display: none;
+}
+.tablet__up {
+  position: absolute;
+  top: -10px;
+  height: 15px;
+  width: 24px;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 2px;
+  color: var(--bg-color5);
+}
+.tablet__button:hover + .tablet__submenu{
+  display: block;
+}
+.tablet__button:hover > .button__down{
+  transform: rotate(0deg);
 }

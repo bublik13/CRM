@@ -1,16 +1,22 @@
 .box {
-  @include flex(flex,  none,  none,  none,  none,);
-  // flex-grow: 1;
+  @include flex(flex, none, none, none, none);
 }
 .box--width {
   width: 21%;
+  @include flex(flex, none, none, column, none);
 }
-.box__item {
+.box__column {
   cursor: pointer;
-  // flex-grow: 1;
   padding: 25px;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
   width: 100%;
+}
+.box__item {
+  cursor: pointer;
+  padding: 25px;
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  width: 100%;
+  @include flex(flex, none, none, none, none);
 }
 .box__item--color1 {
   @include wrap(var(--bg-color2), var(--box-shadow4), 20px);
@@ -29,14 +35,13 @@
   height: 50px;
   @include wrap(var(--bg-color5), none, 15px);
   @include flex(flex, center, center, none, none);
-  margin-bottom: 15px;
+  margin-right: 15px;
 }
 .box__wrap-img1 {
   @include wrap(var(--bg-color4), var(--box-shadow3), 15px);
   height: 60px;
-width: 60px;
-@include flex(flex, center, center, none, none);
-
+  width: 60px;
+  @include flex(flex, center, center, none, none);
 }
 .box__img {
   display: block;

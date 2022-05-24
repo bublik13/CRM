@@ -2,29 +2,18 @@
   z-index: 0;
   margin-right: -40px;
 }
-
 .slider__title {
   margin-bottom: 25px;
 }
-
 .slider__swiper {
-  // width: 69%;
-  // position: absolute !important;
   margin: 0 auto;
   margin-bottom: 25px;
 }
-// .swiper1 {
-
-// }
 .slider__slide {
   display: block;
   cursor: pointer;
   width: auto !important;
 }
-// .swiper-slide1__img {
-//   height: 20px;
-//   width: 20px;
-// }
 
 .slider__check {
   position: absolute;
@@ -33,7 +22,6 @@
   height: 1px;
   margin: -1px;
 }
-
 .slider__pseudo8,
 .slider__pseudo7,
 .slider__pseudo6,
@@ -56,7 +44,11 @@
   background-color: var(--bg-color4);
   padding: 16px 15px;
 }
-
+.slider__bg {
+  background: var(--bg-color17) !important;
+  box-shadow: var(--box-shadow21) !important;
+  border-radius: 15px !important;
+}
 .slider__pseudo {
   flex-shrink: 0;
   @include font(15px, 17px, 600);
@@ -72,14 +64,12 @@
   background-color: var(--bg-color4);
   padding: 13px;
 }
-
 .slider__img {
   height: 24px;
   width: 24px;
   display: block;
   color: var(--color-main);
 }
-
 .slider__circl {
   width: 10px;
   height: 10px;
@@ -151,11 +141,9 @@
   @include wrap(var(--bg-color16), var(--box-shadow14), 100px);
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo > .slider__circl {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -163,11 +151,9 @@
   border-radius: 100px;
   margin-right: 10px;
 }
-
 .slider__check:focus ~ .slider__pseudo1 {
   @include wrap(var(--bg-color9), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo1 > .slider__circl1 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -176,11 +162,9 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo2 {
   @include wrap(var(--bg-color10), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo2 > .slider__circl2 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -189,11 +173,9 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo3 {
   @include wrap(var(--bg-color11), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo3 > .slider__circl3 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -202,11 +184,9 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo4 {
   @include wrap(var(--bg-color12), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo4 > .slider__circl4 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -215,11 +195,9 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo5 {
   @include wrap(var(--bg-color13), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo5 > .slider__circl5 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -228,11 +206,9 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo6 {
   @include wrap(var(--bg-color14), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo6 > .slider__circl6 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
@@ -241,11 +217,9 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-
 .slider__check:focus ~ .slider__pseudo7 {
   @include wrap(var(--bg-color15), 0 0 0 0, 15px);
 }
-
 .slider__check:focus ~ .slider__pseudo7 > .slider__circl7 {
   @include wrap(var(--color-main), var(--box-shadow13), 0);
   width: 10px;
@@ -265,10 +239,10 @@
   margin-right: 10px;
   flex-shrink: 0;
 }
-.button__img1 {
-  height: 24px;
-  width: 24px;
-  --svgColor: url("#gradient5");
+.slider__inputs {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+  margin-bottom: 30px;
+  padding: 25px;
 }
 .slider__title {
   margin-bottom: 25px;
@@ -277,7 +251,7 @@
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-gap: 10px;
+  // grid-gap: 10px;
 }
 .slider__grid > .slider__wrap:nth-child(4),
 .slider__wrap:nth-child(5),
@@ -289,8 +263,15 @@
 .slider__flex {
   @include flex(flex, none, center, none, none);
 }
+.slider__wrap:nth-child(1) {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
 .slider__wrap {
   @include flex(flex, none, center, none, none);
+}
+.slider__wrap:not(:last-child) {
+  margin-right: 10px;
 }
 .slider__flex > .slider__wrap:first-child {
   margin-right: 20px;
@@ -311,7 +292,10 @@
   @include flex(flex, space-between, center, none, none);
   margin-bottom: 25px;
 }
-
+.slider__column {
+  flex-grow: 1;
+  margin-right: 39px;
+}
 @include media($lm) {
   .slider {
     margin-right: 0;

@@ -1,0 +1,61 @@
+
+.submenu__list {
+  list-style-type: none;
+  @include wrap(var(--bg-color5), var(--box-shadow21), 15px);
+  padding: 5px;
+}
+.submenu__item:not(:last-child){
+  margin-bottom: 5px;
+}
+.submenu__button {
+  padding: 8px 10px;
+  @include flex(flex, none, center, none, none);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+.submenu__circl {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color9), var(--box-shadow7), 100px);
+  margin-right: 10px;
+}
+.submenu__circl2 {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color21), var(--box-shadow8), 100px);
+  margin-right: 10px;
+}
+.submenu__circl3 {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color11), var(--box-shadow9), 100px);
+  margin-right: 10px;
+}
+.submenu__circl4 {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color7), var(--box-shadow10), 100px);
+  margin-right: 10px;
+}
+.submenu__circl5 {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color13), var(--box-shadow11), 100px);
+  margin-right: 10px;
+}
+.submenu__circl6 {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color14), var(--box-shadow12), 100px);
+  margin-right: 10px;
+}
+.submenu__circl7 {
+  width: 10px;
+  height: 10px;
+  @include wrap(var(--bg-color15), var(--box-shadow13), 100px);
+  margin-right: 10px;
+}

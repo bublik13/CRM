@@ -9,12 +9,16 @@
   left: 0;
   @include wrap(var(--bg-color5), var(--box-shadow18), 20px);
   display: none;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .calendar__months {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 8px 16px 8px;
+}
+.calendar__flex {
+  @include flex(flex, center, center, none, none);
 }
 .calendar__button {
   width: 24px;
@@ -23,10 +27,11 @@
   padding: 0;
   border: 0;
   background-color: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, none, none);
   cursor: pointer;
+}
+.calendar__button:first-child {
+  margin-right: 10%;
 }
 .calendar__icon {
   width: 24px;
@@ -34,14 +39,15 @@
   color: var(--color-main);
 }
 .calendar__icon--rotate {
-  transform: rotate(267deg);
+  transform: rotate(180deg);
 }
 .calendar__icon--rotate2 {
-  transform: rotate(90deg);
+  transform: rotate(0deg);
 }
 .calendar__month {
   @include font(18px, 21px, 700);
   color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .calendar__days {
   display: grid;
@@ -52,17 +58,15 @@
   grid-template-columns: repeat(7, 1fr);
 }
 .calendar__week {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, none, none);
+  font-feature-settings: "pnum" on, "lnum" on;
   aspect-ratio: 1/1;
   @include font(15px, 18px, 400);
   color: var(--color-main);
 }
 .calendar__day {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, none, none);
+  font-feature-settings: "pnum" on, "lnum" on;
   aspect-ratio: 1/1;
   @include font(15px, 18px, 400);
   color: var(--color-main);
