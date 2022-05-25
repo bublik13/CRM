@@ -1,6 +1,7 @@
 .slider {
   z-index: 0;
   margin-right: -40px;
+  position: relative;
 }
 .slider__title {
   margin-bottom: 25px;
@@ -295,6 +296,24 @@
 .slider__column {
   flex-grow: 1;
   margin-right: 39px;
+}
+.slider__btn {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border:none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+}
+.slider__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  margin-right: 10px;
 }
 @include media($lm) {
   .slider {

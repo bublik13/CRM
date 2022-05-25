@@ -1,8 +1,7 @@
 .progress {
   height: 28px;
   position: relative;
-  display: flex;
-  align-items: center;
+  @include flex(flex, none, center, none, none);
   padding-left: 2px;
   padding-right: 2px;
   @include wrap(var(--bg-color), var(--box-shadow3), 6px);
@@ -28,3 +27,35 @@
   margin-right: 2px;
   @include wrap(var(--bg-color8), var(--box-shadow6), 5px);
 }
+.progress__active4 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color10), var(--box-shadow23), 5px);
+
+}
+.progress__active5 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color11), var(--box-shadow22), 5px);
+
+}
+.progress__active6 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color9), var(--box-shadow15), 5px);
+}
+.progress__active7 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color13), var(--box-shadow25), 5px);
+
+}
+

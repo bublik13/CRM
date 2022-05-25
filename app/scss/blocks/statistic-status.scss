@@ -1,0 +1,65 @@
+.statistic-status{
+    @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+    padding: 25px;
+    margin-bottom: 30px;
+}
+.statistic-status__title{
+    @include font(18px, 21px, 700, var(--second-family));
+  color: var(--color-main);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.statistic-status__progress{
+    margin-bottom: 22px;
+}
+.statistic-status__flex{
+    @include flex(flex, none, center, none, none);
+
+}
+.statistic-status__wrap{
+    @include flex(flex, none, center, none, none);
+margin-right: 30px;
+}
+.statistic-status__circl1{
+    @include wrap(var(--bg-color9), var(--box-shadow15), 100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+}
+.statistic-status__circl2{
+    @include wrap(var(--bg-color10), var(--box-shadow23),100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+}
+.statistic-status__circl3{
+    @include wrap(var(--bg-color7), var(--box-shadow5), 100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+}
+.statistic-status__circl4{
+    @include wrap(var(--bg-color13), var(--box-shadow25), 100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+}
+.statistic-status__circl5{
+    @include wrap(var(--bg-color11), var(--box-shadow22), 100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+}
+.statistic-status__text{
+    @include font(15px, 17px, 600);
+    color: var(--color-main);
+    font-feature-settings: "pnum" on, "lnum" on;
+    margin-left: 10px;
+}
+.statistic-status__total{
+    @include font(15px, 18px, 600);
+    color: var(--color-main);
+    font-feature-settings: "pnum" on, "lnum" on;
+    padding-left: 30px;
+    border-left: 1px solid #292929;
+}

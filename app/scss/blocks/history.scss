@@ -1,0 +1,249 @@
+.history {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+  padding: 25px;
+  max-width: 450px;
+}
+.history__title {
+  @include font(18px, 21px, 700, var(--second-family));
+  color: var(--color-main);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.history__buttons {
+  position: relative;
+  margin-bottom: 25px;
+}
+.history__button {
+  width: 100%;
+  border: 0.5px solid var(--bg-line);
+  color: var(--color-main);
+  --btn-hover-bg-color: var(--bg-main);
+  background: var(--bg-color5);
+  box-shadow: var(--box-shadow3);
+  border-radius: 15px;
+  cursor: pointer;
+  @include font(15px, 17px, 400);
+  padding: 16px 20px 16px 54px;
+}
+.history__submit-button {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+}
+.history__submit-img {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient1");
+  display: block;
+}
+.history__date {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+
+  border-left: 1px solid var(--bg-line);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.history__item1 {
+  border-left: 1px solid 0px 10px 25px #0185FF;;
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 25px;
+}
+.history__item2 {
+  border-left: 1px solid 0px 10px 25px #FFA520;;
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 25px;
+}
+.history__item3 {
+  border-left: 1px solid 0px 10px 25px #E60045;;
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 25px;
+}
+.history__item4 {
+  border-left: 1px solid  0px 10px 25px #00D1FF;;
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 25px;
+}
+.history__item5 {
+  border-left: 1px solid 0px 10px 25px #00d1ff;
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 25px;
+}
+.history__time {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  margin-left: 15px;
+  margin-right: 15px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.history__info {
+  width: 100%;
+}
+.history__wrap {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+
+  padding: 10px;
+}
+.history__starus1 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+
+  width: 50%;
+  margin-bottom: 10px;
+}
+.history__starus2 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+
+  width: 50%;
+  margin-bottom: 10px;
+}
+.history__starus3 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+
+  border-radius: 15px;
+  width: 85%;
+  margin-bottom: 10px;
+}
+.history__starus4 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+
+  width: 39%;
+  margin-right: 10px;
+}
+.history__starus5 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+
+  width: 39%;
+  margin-right: 10px;
+}
+.history__text {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding: 10px;
+  background: var(--bg-color20);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+.history__text2 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding: 10px;
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+.history__text3 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding: 10px;
+  background: var(--bg-color7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+.history__text4 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding: 10px;
+  background: var(--bg-color9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+.history__text5 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding: 10px;
+  background:var(--bg-color11);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-align: center;
+}
+.history__btns {
+  @include flex(flex, none, center, none, none);
+  margin-bottom: 10px;
+}
+.history__btns > .history__starus {
+  margin-bottom: 0;
+}
+.history__btn {
+  display: inline-block;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  cursor: pointer;
+  @include wrap(var(--bg-color9), var(--box-shadow15), 10px);
+  max-width: 70px;
+  border: none;
+  padding: 5px 10px;
+}
+.history__btn2 {
+  display: inline-block;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  cursor: pointer;
+  @include wrap(var(--bg-color11), var(--box-shadow24), 10px);
+  border: none;
+  padding: 5px 10px;
+}
+.history__important {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 10px;
+}
+.history__comment {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 10px;
+}
+.history__link {
+  display: block;
+  @include font(15px, 18px, 600);
+  text-decoration: none;
+  font-feature-settings: "pnum" on, "lnum" on;
+  background: var(--bg-color24);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  text-shadow: var(--box-shadow4);
+}
+.history__product {
+  @include font(15px, 18px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--color-main);
+}
+.history__play {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient7");
+  @include wrap(var(--bg-color17), var(--box-shadow21), 7px);
+  margin-right: 10px;
+}
+.history__audio {
+  @include flex(flex, none, center, none, none);
+}
+.history__row {
+  display: block;
+}
+.history__audio > .history__time {
+  margin-left: 10px;
+  margin-right: 0;
+}

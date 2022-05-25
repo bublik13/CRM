@@ -17,17 +17,17 @@
 .editing__textarea {
   @include font(15px, 18px, 400);
   color: var(--color-main);
-  max-width: 300px;
+  width: 300px;
   height: 100px;
   border: none;
-  @include wrap(var(--bg-color17), var(--box-shadow22), 15px);
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
   border: 0.5px solid var(--bg-line2);
   padding: 16px 20px;
   resize: none;
   font-feature-settings: "pnum" on, "lnum" on;
   margin-bottom: 25px;
 }
-.editing__btn {
+.editing__btn-sub {
   @include flex(flex, none, center, none, none);
   background: var(--bg-color23);
   border: var(--bg-color23);
@@ -41,4 +41,61 @@
   height: 18px;
   width: 18px;
   color: var(--color-main);
+  margin-left: 9px;
+}
+.editing__button {
+  padding: 16px 21px 16px 20px;
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
+  width: 100%;
+}
+.editing__down {
+  height: 24px;
+  width: 24px;
+}
+.editing__btns {
+  @include flex(flex, none, center, none, none);
+  margin-bottom: 25px;
+}
+.editing__inputs {
+  @include flex(flex, none, center, none, none);
+  padding: 16px 20px;
+  border: 0.5px solid var(--bg-line2);
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
+}
+.editing__input-rg {
+  border: none;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  @include wrap(var(--bg-color17), 0 0 0 0, 0);
+}
+.editing__input-lf {
+  border: none;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+
+  @include wrap(var(--bg-color17), 0 0 0 0, 0);
+}
+.editing__input-rg {
+  width: 170px;
+  margin-right: 10px;
+  border-right: 0.5px solid var(--bg-line2);
+}
+.editing__input-lf {
+  width: 80px;
+  margin-left: 10px;
+}
+.editing__btn {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  border: none;
+  cursor: pointer;
+  @include flex(flex, center, center, none, none);
+}
+.editing__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  display: block;
 }
