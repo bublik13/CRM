@@ -10,8 +10,8 @@
   @include flex(flex, space-between, center, none, none);
 }
 .grid2 {
-    display: grid;
-    grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 .grid--active {
   grid-template-columns: 104px auto;

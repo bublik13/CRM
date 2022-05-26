@@ -16,6 +16,7 @@
   width: auto !important;
 }
 
+
 .slider__check {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -45,11 +46,7 @@
   background-color: var(--bg-color4);
   padding: 16px 15px;
 }
-.slider__bg {
-  background: var(--bg-color17) !important;
-  box-shadow: var(--box-shadow21) !important;
-  border-radius: 15px !important;
-}
+
 .slider__pseudo {
   flex-shrink: 0;
   @include font(15px, 17px, 600);
@@ -64,6 +61,7 @@
   border-radius: 15px;
   background-color: var(--bg-color4);
   padding: 13px;
+ 
 }
 .slider__img {
   height: 24px;
@@ -85,6 +83,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color9), var(--box-shadow7), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl2 {
   width: 10px;
@@ -93,6 +93,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color10), var(--box-shadow8), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl3 {
   width: 10px;
@@ -101,6 +103,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color11), var(--box-shadow9), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl4 {
   width: 10px;
@@ -109,6 +113,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color12), var(--box-shadow10), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl5 {
   width: 10px;
@@ -117,6 +123,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color13), var(--box-shadow11), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl6 {
   width: 10px;
@@ -125,6 +133,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color14), var(--box-shadow12), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl7 {
   width: 10px;
@@ -133,6 +143,8 @@
   margin-right: 10px;
   @include wrap(var(--bg-color15), var(--box-shadow13), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__circl8 {
   width: 10px;
@@ -141,6 +153,14 @@
   margin-right: 10px;
   @include wrap(var(--bg-color16), var(--box-shadow14), 100px);
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+.slider__bg {
+  background: var(--bg-color17) ;
+  box-shadow: var(--box-shadow21) ;
+  border-radius: 15px ;
+
 }
 .slider__check:focus ~ .slider__pseudo {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
@@ -151,6 +171,8 @@
   height: 10px;
   border-radius: 100px;
   margin-right: 10px;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo1 {
   @include wrap(var(--bg-color9), 0 0 0 0, 15px);
@@ -162,6 +184,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo2 {
   @include wrap(var(--bg-color10), 0 0 0 0, 15px);
@@ -173,6 +197,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo3 {
   @include wrap(var(--bg-color11), 0 0 0 0, 15px);
@@ -184,6 +210,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo4 {
   @include wrap(var(--bg-color12), 0 0 0 0, 15px);
@@ -195,6 +223,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo5 {
   @include wrap(var(--bg-color13), 0 0 0 0, 15px);
@@ -206,6 +236,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo6 {
   @include wrap(var(--bg-color14), 0 0 0 0, 15px);
@@ -217,6 +249,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo7 {
   @include wrap(var(--bg-color15), 0 0 0 0, 15px);
@@ -228,6 +262,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__check:focus ~ .slider__pseudo8 {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
@@ -239,6 +275,8 @@
   border-radius: 100px;
   margin-right: 10px;
   flex-shrink: 0;
+  position: relative;
+  z-index: 10;
 }
 .slider__inputs {
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
@@ -248,28 +286,19 @@
 .slider__title {
   margin-bottom: 25px;
 }
-.slider__grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  // grid-gap: 10px;
-}
-.slider__grid > .slider__wrap:nth-child(4),
-.slider__wrap:nth-child(5),
-.slider__grid > .slider__wrap:nth-child(6),
-.slider__grid > .slider__wrap:nth-child(7),
-.slider__grid > .slider__wrap:nth-child(8) {
-  grid-row: 3/2;
+.slider__wrapper-flex {
+  @include flex(flex, none, center, none, wrap);
+  width: 87%;
 }
 .slider__flex {
   @include flex(flex, none, center, none, none);
 }
-.slider__wrap:nth-child(1) {
-  grid-row: 1/2;
-  grid-column: 1/2;
+.slider__wrap:nth-child(3) {
+ margin-right: 137px !important;
 }
 .slider__wrap {
   @include flex(flex, none, center, none, none);
+  margin-bottom: 10px;
 }
 .slider__wrap:not(:last-child) {
   margin-right: 10px;

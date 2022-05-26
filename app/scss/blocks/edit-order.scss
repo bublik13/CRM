@@ -1,0 +1,242 @@
+.edit-order__wrapper {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.edit-order__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  margin-bottom: 26px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include flex(flex, none, center, none, none);
+}
+.edit-order__icon {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-left: 10px;
+}
+.edit-order__wrap {
+  // @include flex(flex, space-between, none, none, none);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.edit-order__column {
+  @include flex(flex, none, none, column, none);
+  border: none;
+  width: 100%;
+}
+.edit-order__column:last-child {
+  width: 69%;
+}
+.edit-order__name {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  margin-bottom: 10px;
+}
+.edit-order__label {
+  @include flex(flex, center, none, column, none);
+}
+.edit-order__inputs {
+  margin-bottom: 25px;
+}
+.edit-order__input {
+  padding: 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  margin-bottom: 25px;
+  width: 300px;
+}
+.edit-order__select {
+  padding: 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  margin-bottom: 25px;
+  max-width: 300px;
+}
+.edit-order__row {
+  @include flex(flex, none, none, none, wrap);
+  margin-bottom: 35px;
+}
+
+.edit-order__check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.edit-order__check-pseudo {
+  flex-shrink: 0;
+  padding: 13px 15px;
+  display: block;
+  background-color: transparent;
+  @include flex(flex, none, center, none, none);
+  cursor: pointer;
+  transition: 0.2s ease;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.edit-order__checked {
+  margin-bottom: 10px;
+}
+.edit-order__checked:not(:last-child) {
+  margin-right: 10px;
+}
+.edit-order__check-pseudo > .edit-order__icon-check {
+  display: none;
+}
+.edit-order__icon-btn {
+  --svgColor: url("#gradient1");
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.edit-order__icon-check {
+  color: var(--color-main);
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.edit-order__check:focus ~ .edit-order__check-pseudo {
+  background: var(--bg-main);
+}
+.edit-order__check:focus ~ .edit-order__check-pseudo > .edit-order__icon-check {
+  display: block;
+}
+.edit-order__check:focus ~ .edit-order__check-pseudo > .edit-order__icon-btn {
+  display: none;
+}
+.switch {
+  @include flex(flex, none, center, none, none);
+}
+.edit-order__switch:not(:last-child) {
+  margin-bottom: 25px;
+}
+.switch__name {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 60px;
+  white-space: nowrap;
+}
+.edit-order__flex {
+  @include flex(flex, none, none, none, none);
+}
+.edit-order__wrap-img {
+  position: relative;
+  margin-right: 25px;
+}
+.edit-order__img {
+  border-radius: 15px;
+  display: block;
+  object-fit: cover;
+}
+.edit-order__btn {
+  top: -16px;
+  right: -11px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color2), var(--box-shadow19), 10px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  @include flex(flex, center, center, none, none);
+  padding: 5px;
+}
+.edit-order__close {
+  width: 24px;
+  height: 24px;
+}
+.edit-order__file-btn {
+  cursor: pointer;
+  max-width: 100px;
+  height: 100px;
+  padding: 14px 24px;
+  @include wrap(var(--bg-color2), var(--box-shadow19), 10px);
+  @include flex(flex, center, center, none, none);
+}
+.edit-order__wrap-btn {
+  @include flex(flex, center, center, column, none);
+}
+.edit-order__open {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  margin-bottom: 10px;
+}
+.edit-order__text-up {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.edit-order__form {
+  @include flex(flex, none, none, none, none);
+  margin-top: 10px;
+}
+.edit-order__buttom {
+  @include flex(flex, center, center, none, none);
+  cursor: pointer;
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+.edit-order__buttom-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+}
+.edit-order__textarea {
+  font: 400 15px/18px var(--basic-family);
+  color: var(--color-main);
+  width: 300px;
+  height: 100px;
+  border: none;
+  background: var(--bg-color4);
+  box-shadow: 0 0;
+  border-radius: 15px;
+  border: 0.5px solid var(--bg-line2);
+  padding: 16px 20px;
+  resize: none;
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 25px;
+  text-align: start;
+}
+.edit-order__btn-sub {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
+  background: var(--bg-color23);
+  border: var(--bg-color23);
+  border-radius: 10px;
+  padding: 5px 5px 5px 10px;
+  font: 400 15px/18px var(--basic-family);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  max-width: 198px;
+}
+.edit-order__sub {
+  width: 24px;
+  height: 24px;
+}
+.edit-order__button {
+  padding: 16px 21px 16px 20px;
+  background: var(--bg-color4);
+  box-shadow: 0 0;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 25px;
+}

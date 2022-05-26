@@ -46,6 +46,13 @@
   height: 44px;
   flex-shrink: 0;
 }
+.form__pseudo-height {
+  padding: 16px 20px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  margin-right: 10px;
+  color: var(--color-main);
+  height: 50px;
+}
 .form__img {
   height: 20px;
   width: 20px;
@@ -57,6 +64,12 @@
   color: var(--color-main);
   padding: 8px 20px;
   height: 38px;
+}
+.form__check:focus ~ .form__pseudo-height {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding: 16px 20px;
+  height: 50px;
 }
 .form__slider {
   margin-right: 30px !important;
