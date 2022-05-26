@@ -54,3 +54,32 @@
   right: 35px !important;
   color: transparent !important;
 }
+.statistic__flex-calendar {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
+  padding: 7px 10px;
+}
+.statistic__calendar-btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @include flex(flex, center, center, none, none);
+  cursor: pointer;
+}
+.statistic__calendar-btn:first-child {
+  margin-right: 10%;
+}
+.statistic__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+}
+.statistic__icon--rotate {
+  transform: rotate(180deg);
+}
+.statistic__icon--rotate2 {
+  transform: rotate(0deg);
+}

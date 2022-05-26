@@ -52,6 +52,16 @@
   margin-right: 10px;
   color: var(--color-main);
   height: 50px;
+  @include flex(flex, none, center, none, none);
+
+}
+.form__pseudo1{
+  padding: 29px 40px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  margin-right: 25px;
+  color: var(--color-main);
+  @include flex(flex, none, center, column, none);
+cursor: pointer;
 }
 .form__img {
   height: 20px;
@@ -64,6 +74,12 @@
   color: var(--color-main);
   padding: 8px 20px;
   height: 38px;
+}
+.form__check:focus ~ .form__pseudo1 {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding: 29px 40px;
+  // height: 38px;
 }
 .form__check:focus ~ .form__pseudo-height {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
@@ -79,4 +95,19 @@
 }
 .form__progress {
   margin-bottom: 22px;
+}
+.form__pseudo1 >.form__icon{
+  margin-bottom: 10px;
+}
+.form__pseudo-height >.form__icon{
+  margin-right: 10px;
+}
+.form__icon{
+  width: 24px;
+  height: 24px;
+}
+.form__text{
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: 'pnum' on, 'lnum' on;
 }

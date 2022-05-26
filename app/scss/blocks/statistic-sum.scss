@@ -1,0 +1,46 @@
+.statistic-sum {
+    @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+    padding: 25px;
+    margin-bottom: 30px;
+    max-width: 450px;
+  }
+  .statistic-sum__title {
+    @include font(18px, 21px, 700, var(--second-family));
+    color: var(--color-main);
+    margin-bottom: 25px;
+    font-feature-settings: "pnum" on, "lnum" on;
+  }
+  .statistic-sum__progress {
+    margin-bottom: 22px;
+  }
+  .statistic-sum__flex{
+    @include flex(flex, none, center, none, none);
+    margin-bottom: 28px;
+  }
+  .statistic-sum__wrap{
+    @include flex(flex, none, center, none, none);
+    margin-right: 30px;
+  }
+  .statistic-sum__circl1 {
+    @include wrap(var(--bg-color10), var(--box-shadow23), 100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+  }
+  .statistic-sum__circl2 {
+    @include wrap(var(--bg-color25), var(--box-shadow22), 100px);
+    width: 10px;
+    height: 10px;
+    flex-shrink: 0;
+  }
+ 
+  .statistic-sum__text {
+    @include font(15px, 17px, 600);
+    color: var(--color-main);
+    font-feature-settings: "pnum" on, "lnum" on;
+    margin-left: 10px;
+  }
+.statistic-sum__number{
+    @include font(44px, 54px, 800, $ff: "Gilroy");
+    color: var(--color-main);
+}

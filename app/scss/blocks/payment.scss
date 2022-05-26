@@ -1,0 +1,71 @@
+.payment {
+  // @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  // padding: 25px;
+  margin-bottom: 30px;
+}
+.payment__wrapper {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.payment__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  margin-bottom: 26px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.payment__icon {
+  width: 24px;
+  height: 24px;
+}
+.payment__form {
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 25px;
+}
+.payment__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 0;
+}
+.payment__input {
+  padding: 16px 50px 20px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  width: 300px;
+  position: relative;
+}
+.payment__name {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  margin-bottom: 10px;
+}
+.payment__label {
+  @include flex(flex, none, none, column, none);
+}
+.payment__btn{
+    @include flex(flex, space-between, center, none, none);
+    @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+    cursor: pointer;
+    padding: 13px 20px;
+    border:none;
+    @include font(15px, 18px, 600);
+    color: var(--color-main);
+}
+.payment__btn > .payment__icon{
+    margin-right: 10px;
+}
+.payment__btn-color{
+    @include flex(flex, space-between, center, none, none);
+    @include wrap(var(--bg-color5), var(--box-shadow21), 15px);
+    cursor: pointer;
+    padding: 13px 20px;
+    border:none;
+    @include font(15px, 18px, 600);
+    color: var(--color-second);
+}
+.payment__btn-color > .payment__icon{
+    margin-right: 10px;
+}
