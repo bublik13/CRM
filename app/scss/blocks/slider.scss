@@ -48,7 +48,6 @@
   background-color: var(--bg-color4);
   padding: 16px 15px;
 }
-
 .slider__pseudo {
   flex-shrink: 0;
   @include font(15px, 17px, 600);
@@ -201,10 +200,10 @@
   box-shadow: var(--box-shadow21);
   border-radius: 15px;
 }
-.slider__check:focus ~ .slider__pseudo {
+.slider__check:checked ~ .slider__pseudo {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo > .slider__circl {
+.slider__check:checked ~ .slider__pseudo > .slider__circl {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -213,10 +212,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo1 {
+.slider__check:checked ~ .slider__pseudo1 {
   @include wrap(var(--bg-color9), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo1 > .slider__circl1 {
+.slider__check:checked ~ .slider__pseudo1 > .slider__circl1 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -226,10 +225,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo2 {
+.slider__check:checked ~ .slider__pseudo2 {
   @include wrap(var(--bg-color10), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo2 > .slider__circl2 {
+.slider__check:checked ~ .slider__pseudo2 > .slider__circl2 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -239,10 +238,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo3 {
+.slider__check:checked ~ .slider__pseudo3 {
   @include wrap(var(--bg-color11), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo3 > .slider__circl3 {
+.slider__check:checked ~ .slider__pseudo3 > .slider__circl3 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -252,10 +251,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo4 {
+.slider__check:checked ~ .slider__pseudo4 {
   @include wrap(var(--bg-color12), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo4 > .slider__circl4 {
+.slider__check:checked ~ .slider__pseudo4 > .slider__circl4 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -265,10 +264,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo5 {
+.slider__check:checked ~ .slider__pseudo5 {
   @include wrap(var(--bg-color13), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo5 > .slider__circl5 {
+.slider__check:checked ~ .slider__pseudo5 > .slider__circl5 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -278,10 +277,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo6 {
+.slider__check:checked ~ .slider__pseudo6 {
   @include wrap(var(--bg-color14), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo6 > .slider__circl6 {
+.slider__check:checked ~ .slider__pseudo6 > .slider__circl6 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
@@ -291,10 +290,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo7 {
+.slider__check:checked ~ .slider__pseudo7 {
   @include wrap(var(--bg-color15), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo7 > .slider__circl7 {
+.slider__check:checked ~ .slider__pseudo7 > .slider__circl7 {
   @include wrap(var(--color-main), var(--box-shadow13), 0);
   width: 10px;
   height: 10px;
@@ -304,10 +303,10 @@
   position: relative;
   z-index: 10;
 }
-.slider__check:focus ~ .slider__pseudo8 {
+.slider__check:checked ~ .slider__pseudo8 {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
 }
-.slider__check:focus ~ .slider__pseudo8 > .slider__circl8 {
+.slider__check:checked ~ .slider__pseudo8 > .slider__circl8 {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
