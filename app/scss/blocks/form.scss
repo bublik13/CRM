@@ -5,7 +5,24 @@
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   @include flex(flex, flex-start, center, none, none);
   max-width: 769px;
+  margin-top: 25px;
   margin-bottom: 30px;
+  
+}
+.form__wrapper .form__wrap:not(:first-child):after{
+  position: absolute;
+  content: " ";
+  top: 8px;
+  right: 0;
+  bottom: 0;
+  width: 0.5px;
+  height: 24px;
+  background: #292929;
+  left: 0;
+}
+
+.form__wrap{
+  position: relative;
 }
 .form__swiper-slide1 {
   margin-top: 30px;
@@ -41,9 +58,12 @@
   transition: 0.2s ease;
   border: none;
   border-radius: 15px;
-  padding: 11px 20px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 14px;
   color: var(--color-second);
-  height: 44px;
+  height: 40px;
   flex-shrink: 0;
 }
 .form__pseudo-height {
@@ -53,26 +73,29 @@
   color: var(--color-main);
   height: 50px;
   @include flex(flex, none, center, none, none);
-
 }
-.form__pseudo1{
+.form__pseudo1 {
   padding: 29px 40px;
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   margin-right: 25px;
   color: var(--color-main);
   @include flex(flex, none, center, column, none);
-cursor: pointer;
+  cursor: pointer;
 }
 .form__img {
-  height: 20px;
-  width: 20px;
+  height: 24px;
+  width: 24px;
   display: block;
   --svgColor: url("#gradient1");
+  margin-left: 16px;
 }
 .form__check:focus ~ .form__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
-  padding: 8px 20px;
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 24px;
+  padding-right: 14px;
   height: 38px;
 }
 .form__check:focus ~ .form__pseudo1 {
@@ -96,18 +119,18 @@ cursor: pointer;
 .form__progress {
   margin-bottom: 22px;
 }
-.form__pseudo1 >.form__icon{
+.form__pseudo1 > .form__icon {
   margin-bottom: 10px;
 }
-.form__pseudo-height >.form__icon{
+.form__pseudo-height > .form__icon {
   margin-right: 10px;
 }
-.form__icon{
+.form__icon {
   width: 24px;
   height: 24px;
 }
-.form__text{
+.form__text {
   @include font(15px, 18px, 600);
   color: var(--color-main);
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }

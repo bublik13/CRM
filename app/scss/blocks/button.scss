@@ -29,7 +29,10 @@
   border-radius: 12px;
 }
 .button--ms {
-  padding: 5px 5px 5px 10px;
+  padding-bottom: 10px;
+  padding-top: 7px;
+  padding-left: 15px;
+  padding-right: 5px;
   border-radius: 12px;
 }
 .button--sx {
@@ -41,11 +44,11 @@
   border-radius: 15px;
 }
 .button--md {
-  padding: 18px 20px;
+  padding: 14px 20px;
   border-radius: 15px;
 }
 .button--ls {
-  padding: 20px 20px 19px 54px;
+  padding: 20px 37px 14px 53px;
   border-radius: 15px;
 }
 .button--width-sm {
@@ -76,7 +79,7 @@
 }
 .button__img {
   display: block;
-  margin-right: 15px;
+  margin-right: 10px;
   color: var(--color-main);
   width: 24px;
   height: 24px;

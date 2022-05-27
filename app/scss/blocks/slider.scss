@@ -8,14 +8,16 @@
 }
 .slider__swiper {
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 11px;
 }
 .slider__slide {
   display: block;
   cursor: pointer;
   width: auto !important;
 }
-
+.swiper-slide-box {
+  height: 108px !important;
+}
 
 .slider__check {
   position: absolute;
@@ -61,13 +63,51 @@
   border-radius: 15px;
   background-color: var(--bg-color4);
   padding: 13px;
- 
 }
 .slider__img {
   height: 24px;
   width: 24px;
   display: block;
+  --svgColor: url("#gradient7");
+  filter: drop-shadow(0px 10px 25px #0085ff);
+}
+.slider__img2 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient2");
+  filter: drop-shadow(0px 10px 25px #ed3956);
+}
+.slider__img3 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient3");
+  filter: drop-shadow(0px 10px 25px #ffa520);
+}
+.slider__img5 {
+  height: 24px;
+  width: 24px;
+  display: block;
   color: var(--color-main);
+}
+.slider__img6 {
+  position: relative;
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient8");
+  filter: drop-shadow(0px 10px 25px #ff010d);
+}
+.slider__img6:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  filter: drop-shadow(0px 10px 25px #ff010d);
 }
 .slider__circl {
   width: 10px;
@@ -157,10 +197,9 @@
   z-index: 10;
 }
 .slider__bg {
-  background: var(--bg-color17) ;
-  box-shadow: var(--box-shadow21) ;
-  border-radius: 15px ;
-
+  background: var(--bg-color17);
+  box-shadow: var(--box-shadow21);
+  border-radius: 15px;
 }
 .slider__check:focus ~ .slider__pseudo {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
@@ -294,7 +333,7 @@
   @include flex(flex, none, center, none, none);
 }
 .slider__wrap:nth-child(3) {
- margin-right: 137px !important;
+  margin-right: 137px !important;
 }
 .slider__wrap {
   @include flex(flex, none, center, none, none);
@@ -331,7 +370,7 @@
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   cursor: pointer;
   padding: 13px 20px;
-  border:none;
+  border: none;
   @include font(15px, 18px, 600);
   color: var(--color-main);
   position: absolute;
@@ -343,6 +382,22 @@
   height: 24px;
   color: var(--color-main);
   margin-right: 10px;
+}
+.slider__padding--lf {
+  padding-left: 10px;
+  position: relative;
+}
+.slider__padding--lf:after {
+  // border-left: 1px solid var(--bg-line);
+  position: absolute;
+  content: " ";
+  top: 14px;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 24px;
+  background: #292929;
+  left: 0;
 }
 @include media($lm) {
   .slider {

@@ -1,15 +1,15 @@
 .profile {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // align-items: center;
+  // justify-content: space-between;
 }
 .profile__wrap {
-  padding-left: 10px;
+  // padding-left: 10px;
 }
 .profile__wrap-img {
   box-shadow: var(--box-shadow);
-  margin-right: 15px;
-  padding: 8px 11px 18px 13px;
+  // margin-right: 15px;
+  padding: 0px 11px 18px 13px;
   border-radius: 15px;
 }
 .profile__wrap-icon {
@@ -102,5 +102,5 @@
 }
 .profile-img--active {
   padding: 0 !important;
-  margin-right: 0 !important;
+  margin-left: 15px !important;
 }

@@ -1,5 +1,5 @@
 .statistic {
-  padding-top: 20px;
+  padding-top: 12px;
   position: relative;
   margin-bottom: 50px;
   flex-grow: 1;
@@ -14,7 +14,7 @@
 .statistic__wrap {
   flex-grow: 1;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
-  padding: 17px 25px 25px !important;
+  padding: 25px !important;
 }
 .statistic__wrap1 {
   @include flex(flex, space-between, center, none, none);

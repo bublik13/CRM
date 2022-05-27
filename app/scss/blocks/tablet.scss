@@ -1,7 +1,7 @@
 table {
   width: 100%;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
-  padding: 17px 25px 25px;
+  padding: 0px 25px 25px;
   margin-bottom: 30px;
   border-collapse: separate;
   border-spacing: 0 10px;
@@ -12,24 +12,41 @@ table {
 }
 td {
   border-collapse: separate;
-  border-spacing: 0 10px;
+  border-spacing: 0 8px;
   @include wrap(var(--bg-color4), var(--box-shadow3), 0);
 }
 td:first-child {
-  border-radius: 10px 0 0 10px;
+  border-radius: 20px 0 0 20px;
+  width: 170px;
+  padding-left: 19px;
+  padding-top: 8px;
+}
+td:nth-child(2) {
+  width: 238px;
+  padding: 20px 0;
 }
 td:last-child {
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 20px 20px 0;
 }
-th,
-td {
+th {
   padding: 15px;
+  text-align: left;
+}
+
+td {
+  padding-top: 26px;
+  padding-bottom: 16px;
+  padding-left: 26px;
+  padding-right: 0px;
   text-align: left;
 }
 td:nth-child(6) {
   white-space: nowrap;
+  padding-right: 22px;
+  padding-left: 27px;
+  padding-top: 0px;
 }
-.tablet__flex > .button:not(:last-child) {
+.tablet__flex > .button:first-child {
   margin-right: 10px;
 }
 .tablet__button {
@@ -49,9 +66,21 @@ td:nth-child(6) {
   border-radius: 2px;
   color: var(--bg-color5);
 }
-.tablet__button:hover + .tablet__submenu{
+.tablet__button:hover + .tablet__submenu {
   display: block;
 }
-.tablet__button:hover > .button__down{
+.tablet__button:hover > .button__down {
   transform: rotate(0deg);
+}
+.tablet__title:first-child {
+  margin-bottom: 10px;
+}
+.tablet__profile > .profile__wrap-img {
+  margin-right: 10px;
+}
+.tablet__profile > .profile__wrap-icon {
+  margin-right: 10px;
+}
+.tablet__flex > .button:last-child {
+  margin-left: 20px;
 }

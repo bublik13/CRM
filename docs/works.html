@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1653576201409">
+    <link rel="stylesheet" href="css/main.css?t=1653615074604">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
 
@@ -144,7 +144,7 @@
       <symbol id="add">
         <path d="M18 13H13V18C13 18.55 12.55 19 12 19C11.45 19 11 18.55 11 18V13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H11V6C11 5.45 11.45 5 12 5C12.55 5 13 5.45 13 6V11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" fill="var(--svgColor)"/>
       </symbol>
-      <symbol id="arrow-circle-up" viewBox="0 0 20 20">
+      <symbol id="arrow-circle-up" viewBox="0 0 24 24">
         <path d="M10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18ZM10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20ZM9 10V13C9 13.55 9.45 14 10 14C10.55 14 11 13.55 11 13V10H12.79C13.24 10 13.46 9.46 13.14 9.15L10.35 6.36C10.15 6.16 9.84 6.16 9.64 6.36L6.85 9.15C6.54 9.46 6.76 10 7.21 10H9Z"  fill="var(--svgColor)"></path>
       </symbol>
       <symbol id="apple"  viewBox="0 0 24 24">
@@ -339,6 +339,18 @@
         
 
     </svg>
+<picture><source srcset="img/desktop1.avif" type="image/avif"><source srcset="img/desktop1.webp" type="image/webp"><img class="pp"    src="img/desktop1.jpg" alt=""></picture>
+    <!-- <style>
+      .pp {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 999;
+        transform: translateX(-50%);
+        opacity: .6;
+        pointer-events: none;
+      }
+    </style> -->
     <section class="grid js-grid">
       <aside class="menu js-menu">
         <div clas="menu__row">
@@ -578,8 +590,8 @@
       <main class="container js-container">
         <header class="header">
           <div class="header__wrap">
-            <h1 class="header__title title">
-              Заказы
+            <h1 class="header__title1 title">
+              Заказ
             </h1>
             <div class="header__subtitle">№384172</div>
             <button class="header__button button button--ms button--2 button--flex-end button--width ">
@@ -643,7 +655,7 @@
               </div>
             </div>
             <div class="slider__inputs">
-              <h2 class="slider__title title title--ml">
+              <h2 class="slider__title title title--s">
                 Изменить статус заказа
               </h2>
               <div class="slider__wrapper-flex">
@@ -776,74 +788,6 @@
               </svg>
               Сохранить изменения</button>
           </section>
-          <section class="chat">
-            <div class="chat__wrap">
-              <div class="chat__profile profile">
-                <div class="profile__wrap-img profile__wrap-img--pd">
-                  <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
-                </div> 
-                <div class="profile__wrap">
-                  <div class="profile__title title title--width">Алексей Иванов</div>
-                  <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                </div>
-                <svg aria-hidden="true" class="profile__social">
-                  <use xlink:href="#telegram-mini"></use>
-                </svg>
-              </div>  
-              <div class="chat__wrap">
-                <button class="chat__button button button--8  button--sx">
-                  <svg aria-hidden="true" class="button__img button__img--width">
-                    <use xlink:href="#call"></use>
-                  </svg>
-                </button>
-                <button class="chat__button button button--brand button--sx">
-                  <svg aria-hidden="true" class="button__img button__img--width">
-                    <use xlink:href="#mark-email"></use>
-                  </svg>
-                </button>
-              </div>
-            </div>
-            <div class="chat__wrapper">
-              <div class="chat__title">
-                25 июн, 2021
-              </div>
-              <div class="chat__wrap1">
-                <div class="chat__text">Перестал включаться</div>
-                <div class="chat__time">12:02</div>
-              </div>
-              <div class="chat__wrap2">
-                <div class="chat__text">Скорее всего дело в аккумуляторе. Вы
-                  можете подойти к нам в сервис в любое
-                  время. Цена вопроса - 2 000 руб</div>
-                <div class="chat__time">12:02</div>
-              </div>
-              <div class="chat__wrap3">
-                <div class="chat__text">Хорошо, подумаю еще. Может
-                  быть через пару дней зайду</div>
-                <div class="chat__time">12:02</div>
-              </div>
-              <div class="chat__wrap4">
-                <div class="chat__text">Ждем вас!))</div>
-                <div class="chat__time">12:02</div>
-              </div>
-            </div>
-            <div class="chat__wrap">
-              <label for="file" class="chat__label">
-                <i class="chat___wrap-btn">
-                  <input type="file" name="file" id="file" class="chat__file" tabindex="0">
-                  <svg aria-hidden="true" class="chat__img">
-                    <use xlink:href="#clip"></use>
-                  </svg> 
-                </i>
-                <input type="text" name="text" required="" placeholder="Введите текст" class="chat__input" tabindex="0">
-              </label>
-              <button type="submit" class="chat__button button button--brand button--sx" tabindex="0">
-                <svg aria-hidden="true" class="button__img button__img--width">
-                  <use xlink:href="#telegram"></use>
-                </svg> 
-              </button>
-            </div>
-          </section>
           <section class="history">
             <div class="history__title">История заказа</div>
             <div class="history__buttons">
@@ -895,7 +839,7 @@
                       <svg aria-hidden="true" class="history__play">
                         <use xlink:href="#play"></use>
                       </svg>
-                      <img src="img/history/row.svg" alt="row">
+                      <img class="history__row" src="img/history/row.svg" alt="row">
                       <div class="history__time">
                         00:39
                       </div>
@@ -1929,11 +1873,79 @@
             ₽ 54 000
           </div>
         </section>
+        <section class="chat">
+          <div class="chat__wrap">
+            <div class="chat__profile profile">
+              <div class="profile__wrap-img profile__wrap-img--pd">
+                <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
+              </div> 
+              <div class="profile__wrap">
+                <div class="profile__title title title--width">Алексей Иванов</div>
+                <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
+              </div>
+              <svg aria-hidden="true" class="profile__social">
+                <use xlink:href="#telegram-mini"></use>
+              </svg>
+            </div>  
+            <div class="chat__wrap">
+              <button class="chat__button button button--8  button--sx">
+                <svg aria-hidden="true" class="button__img button__img--width">
+                  <use xlink:href="#call"></use>
+                </svg>
+              </button>
+              <button class="chat__button button button--brand button--sx">
+                <svg aria-hidden="true" class="button__img button__img--width">
+                  <use xlink:href="#mark-email"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="chat__wrapper">
+            <div class="chat__title">
+              25 июн, 2021
+            </div>
+            <div class="chat__wrap1">
+              <div class="chat__text">Перестал включаться</div>
+              <div class="chat__time">12:02</div>
+            </div>
+            <div class="chat__wrap2">
+              <div class="chat__text">Скорее всего дело в аккумуляторе. Вы
+                можете подойти к нам в сервис в любое
+                время. Цена вопроса - 2 000 руб</div>
+              <div class="chat__time">12:02</div>
+            </div>
+            <div class="chat__wrap3">
+              <div class="chat__text">Хорошо, подумаю еще. Может
+                быть через пару дней зайду</div>
+              <div class="chat__time">12:02</div>
+            </div>
+            <div class="chat__wrap4">
+              <div class="chat__text">Ждем вас!))</div>
+              <div class="chat__time">12:02</div>
+            </div>
+          </div>
+          <div class="chat__wrap">
+            <label for="file" class="chat__label">
+              <i class="chat___wrap-btn">
+                <input type="file" name="file" id="file" class="chat__file" tabindex="0">
+                <svg aria-hidden="true" class="chat__img">
+                  <use xlink:href="#clip"></use>
+                </svg> 
+              </i>
+              <input type="text" name="text" required="" placeholder="Введите текст" class="chat__input" tabindex="0">
+            </label>
+            <button type="submit" class="chat__button button button--brand button--sx" tabindex="0">
+              <svg aria-hidden="true" class="button__img button__img--width">
+                <use xlink:href="#telegram"></use>
+              </svg> 
+            </button>
+          </div>
+        </section>
       </main>
     </div>
     <!-- подключаем js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1653576201409"></script>
+    <script src="js/main.js?t=1653615074604"></script>
       
   </body>
 

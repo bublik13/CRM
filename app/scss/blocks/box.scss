@@ -2,12 +2,12 @@
   @include flex(flex, none, none, none, none);
 }
 .box--width {
-  width: 21%;
+  width: 23%;
   @include flex(flex, none, none, column, none);
 }
 .box__column {
   cursor: pointer;
-  padding: 25px;
+  padding: 31px 25px 25px 20px;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
   width: 100%;
 }
@@ -87,6 +87,6 @@
   @include font(44px, 54px, 800, $ff: "Gilroy");
 }
 .box__progress {
-  margin-top: 24px;
+  margin-top: 20px;
   margin-bottom: 20px;
 }
