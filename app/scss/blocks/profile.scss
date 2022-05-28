@@ -6,6 +6,12 @@
 .profile__wrap {
   // padding-left: 10px;
 }
+.profile__flex {
+  @include flex(flex, none, none, none, none);
+}
+.profile__flex > .profile__title {
+  margin-right: 10px;
+}
 .profile__wrap-img {
   box-shadow: var(--box-shadow);
   // margin-right: 15px;
@@ -25,7 +31,29 @@
   height: 20px;
   --svgColor: url("#gradient6");
   color: var(--color-main);
-  margin-left: 10px;
+  margin-right: 10px;
+}
+.profile__social2 {
+  width: 18px;
+  height: 20px;
+  --svgColor: url("#gradient6");
+  color: var(--color-main);
+  margin-right: 10px;
+}
+.profile__social3 {
+  width: 18px;
+  height: 20px;
+  --svgColor: url("#gradient10");
+
+  color: var(--color-main);
+  margin-right: 10px;
+}
+.profile__social4 {
+  width: 18px;
+  height: 20px;
+  --svgColor: url("#gradient4");
+  color: var(--color-main);
+  margin-right: 10px;
 }
 .profile__wrap-img--pd {
   margin-right: 0;
@@ -46,6 +74,10 @@
   position: absolute;
   top: 5px;
 }
+.profile__button {
+  display: flex !important;
+  align-items: center;
+}
 .profile__icon {
   height: 24px;
   width: 20px;
@@ -55,26 +87,47 @@
   left: 15px;
   z-index: 0;
 }
+.profile__icon2 {
+  height: 24px;
+  width: 24px;
+  color: #000;
+}
+.profile__icon3 {
+  height: 24px;
+  width: 24px;
+  color: var(--color-main);
+}
+.profile__text {
+  color: #000;
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 10px;
+}
+.profile__text2 {
+  color: var(--color-main);
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 10px;
+  white-space: nowrap;
+}
 .profile__icon--color1 {
   --svgColor: url("#gradient9");
-display: block;
-filter: drop-shadow(0px 10px 25px #4BBD6D);
-
+  display: block;
+  filter: drop-shadow(0px 10px 25px #4bbd6d);
 }
 .profile__icon--color2 {
   --svgColor: url("#gradient3");
-display: block;
-
+  display: block;
 }
 .profile__icon--color3 {
   --svgColor: url("#gradient5");
-display: block;
-filter: drop-shadow(0px 10px 25px #2860FF);
+  display: block;
+  filter: drop-shadow(0px 10px 25px #2860ff);
 }
 .profile__icon--color4 {
   --svgColor: url("#gradient2");
-display: block;
-filter: drop-shadow(0px 10px 25px #ED3956);
+  display: block;
+  filter: drop-shadow(0px 10px 25px #ed3956);
 }
 .profile__icon--position {
   height: 23px;

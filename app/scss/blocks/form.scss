@@ -7,9 +7,8 @@
   max-width: 769px;
   margin-top: 25px;
   margin-bottom: 30px;
-  
 }
-.form__wrapper .form__wrap:not(:first-child):after{
+.form__wrapper .form__wrap:not(:first-child):after {
   position: absolute;
   content: " ";
   top: 8px;
@@ -21,7 +20,7 @@
   left: 0;
 }
 
-.form__wrap{
+.form__wrap {
   position: relative;
 }
 .form__swiper-slide1 {
@@ -75,12 +74,14 @@
   @include flex(flex, none, center, none, none);
 }
 .form__pseudo1 {
-  padding: 29px 40px;
+  padding: 29px 25px;
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-  margin-right: 25px;
   color: var(--color-main);
   @include flex(flex, none, center, column, none);
   cursor: pointer;
+}
+.form__wrap:not(:last-child) {
+  margin-right: 25px;
 }
 .form__img {
   height: 24px;
@@ -101,7 +102,7 @@
 .form__check:focus ~ .form__pseudo1 {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
-  padding: 29px 40px;
+  padding: 29px 25px;
   // height: 38px;
 }
 .form__check:focus ~ .form__pseudo-height {
@@ -133,4 +134,5 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
+  white-space: nowrap;
 }

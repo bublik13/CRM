@@ -52,6 +52,9 @@
   padding: 20px 37px 14px 53px;
   border-radius: 15px;
 }
+.button--width-xs {
+  width: 90px;
+}
 .button--width-sm {
   width: 224px;
 }
@@ -69,6 +72,9 @@
 }
 .button---width-md {
   width: 280px;
+}
+.button---width-lg {
+  width: 300px;
 }
 .button---font::placeholder {
   @include font(15px, 18px, 400);
