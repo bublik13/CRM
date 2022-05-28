@@ -10,6 +10,12 @@ table {
 .tablet__flex {
   @include flex(flex, space-between, center, none, none);
 }
+.tablet__flex1 {
+  @include flex(flex, space-between, center, none, none);
+}
+.tablet__flex1 > .button {
+  margin-right: 10px;
+}
 td {
   border-collapse: separate;
   border-spacing: 0 8px;
@@ -40,7 +46,7 @@ td {
   padding-right: 0px;
   text-align: left;
 }
-td:nth-child(6) {
+td:last-child {
   white-space: nowrap;
   padding-right: 22px;
   padding-left: 27px;
@@ -51,6 +57,7 @@ td:nth-child(6) {
 }
 .tablet__button {
   margin-bottom: 13px;
+  white-space: nowrap;
 }
 .tablet__submenu {
   position: absolute;
@@ -83,4 +90,13 @@ td:nth-child(6) {
 }
 .tablet__flex > .button:last-child {
   margin-left: 20px;
+}
+.tablet__first {
+  width: 250px !important;
+}
+.tablet__last {
+  width: 250px !important;
+}
+.button--sb:hover ~ .tablet__submenu {
+  display: block;
 }

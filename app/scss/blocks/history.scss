@@ -2,6 +2,7 @@
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   padding: 25px;
   max-width: 450px;
+  align-self: start;
 }
 .history__title {
   @include font(18px, 21px, 700, var(--second-family));

@@ -59,3 +59,21 @@
   @include wrap(var(--bg-color15), var(--box-shadow13), 100px);
   margin-right: 10px;
 }
+.submenu__img1{
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient1");
+
+}
+.submenu__img2{
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient1");
+
+}
+.submenu__img3{
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient1");
+
+}

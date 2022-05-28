@@ -33,7 +33,7 @@ testFunction();
   const swiperStatistic = new Swiper('.statistic__swiper', {
     // Optional parameters
     direction: 'horizontal',
-    loop: true,
+    // loop: true,
     slidesPerView: "3",
     spaceBetween: 26,
     navigation: {

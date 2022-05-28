@@ -5,6 +5,10 @@
   width: 23%;
   @include flex(flex, none, none, column, none);
 }
+.box--width1 {
+  width: 30%;
+  @include flex(flex, none, none, column, none);
+}
 .box__column {
   cursor: pointer;
   padding: 31px 25px 25px 20px;
@@ -26,6 +30,9 @@
 }
 .box__item--color3 {
   @include wrap(var(--bg-color8), var(--box-shadow6), 20px);
+}
+.box__item--color4 {
+  @include wrap(var(--bg-color20), var(--box-shadow6), 20px);
 }
 .box__item:not(:last-child) {
   margin-right: 25px;
@@ -59,6 +66,9 @@
 }
 .box__img--color4 {
   --svgColor: url("#gradient4");
+}
+.box__img--color5 {
+  --svgColor: url("#gradient9");
 }
 .box__img--width {
   width: 34px;

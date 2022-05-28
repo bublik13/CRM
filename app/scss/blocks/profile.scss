@@ -55,6 +55,27 @@
   left: 15px;
   z-index: 0;
 }
+.profile__icon--color1 {
+  --svgColor: url("#gradient9");
+display: block;
+filter: drop-shadow(0px 10px 25px #4BBD6D);
+
+}
+.profile__icon--color2 {
+  --svgColor: url("#gradient3");
+display: block;
+
+}
+.profile__icon--color3 {
+  --svgColor: url("#gradient5");
+display: block;
+filter: drop-shadow(0px 10px 25px #2860FF);
+}
+.profile__icon--color4 {
+  --svgColor: url("#gradient2");
+display: block;
+filter: drop-shadow(0px 10px 25px #ED3956);
+}
 .profile__icon--position {
   height: 23px;
   width: 44px;
