@@ -22,6 +22,9 @@
   @include flex(flex, none, none, none, none);
   margin-bottom: 25px;
 }
+.payment__form > .form__wrap {
+  margin-right: 25px;
+}
 .payment__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -45,27 +48,27 @@
 .payment__label {
   @include flex(flex, none, none, column, none);
 }
-.payment__btn{
-    @include flex(flex, space-between, center, none, none);
-    @include wrap(var(--bg-main), var(--box-shadow1), 15px);
-    cursor: pointer;
-    padding: 13px 20px;
-    border:none;
-    @include font(15px, 18px, 600);
-    color: var(--color-main);
+.payment__btn {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
 }
-.payment__btn > .payment__icon{
-    margin-right: 10px;
+.payment__btn > .payment__icon {
+  margin-right: 10px;
 }
-.payment__btn-color{
-    @include flex(flex, space-between, center, none, none);
-    @include wrap(var(--bg-color5), var(--box-shadow21), 15px);
-    cursor: pointer;
-    padding: 13px 20px;
-    border:none;
-    @include font(15px, 18px, 600);
-    color: var(--color-second);
+.payment__btn-color {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-color5), var(--box-shadow21), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-second);
 }
-.payment__btn-color > .payment__icon{
-    margin-right: 10px;
+.payment__btn-color > .payment__icon {
+  margin-right: 10px;
 }

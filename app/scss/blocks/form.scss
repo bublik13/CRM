@@ -2,11 +2,18 @@
   position: relative;
 }
 .form__wrapper {
-  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+  // @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   @include flex(flex, flex-start, center, none, none);
-  max-width: 769px;
+  // max-width: 845px;
   margin-top: 25px;
   margin-bottom: 30px;
+  // width: 50%;
+}
+
+.form__wrap {
+  position: relative;
+  background: var(--bg-color5);
+  box-shadow: var(--box-shadow3);
 }
 .form__wrapper .form__wrap:not(:first-child):after {
   position: absolute;
@@ -14,15 +21,12 @@
   top: 8px;
   right: 0;
   bottom: 0;
-  width: 0.5px;
+  width: 1px;
   height: 24px;
   background: #292929;
   left: 0;
 }
 
-.form__wrap {
-  position: relative;
-}
 .form__swiper-slide1 {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -49,18 +53,18 @@
   flex-shrink: 0;
   @include font(15px, 17px, 600);
   color: var(--color-main);
-  background-color: transparent;
+  background: transparent;
   display: flex;
   justify-content: flex-end;
   align-items: center;
   cursor: pointer;
   transition: 0.2s ease;
   border: none;
-  border-radius: 15px;
   padding-top: 13px;
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 14px;
+  border-right: 15px;
   color: var(--color-second);
   height: 40px;
   flex-shrink: 0;
@@ -69,9 +73,11 @@
   padding: 16px 20px;
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   margin-right: 10px;
+  margin-bottom: 10px;
   color: var(--color-main);
   height: 50px;
   @include flex(flex, none, center, none, none);
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .form__pseudo1 {
   padding: 29px 25px;
@@ -80,8 +86,14 @@
   @include flex(flex, none, center, column, none);
   cursor: pointer;
 }
-.form__wrap:not(:last-child) {
-  margin-right: 25px;
+// .form__wrap:not(:last-child) {
+//   padding-right: 25px;
+// }
+.form__wrap:first-child {
+  border-radius: 15px 0 0 15px;
+}
+.form__wrap:last-child {
+  border-radius: 0 15px 15px 0;
 }
 .form__img {
   height: 24px;
@@ -97,7 +109,6 @@
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 14px;
-  height: 38px;
 }
 .form__check:focus ~ .form__pseudo1 {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);

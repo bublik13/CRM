@@ -2,11 +2,12 @@
   z-index: 0;
   margin-right: -40px;
   position: relative;
+  align-self: flex-start;
 }
-.slider__swiper1{
+.slider__swiper1 {
   width: 78%;
   margin-right: auto !important;
-  margin-left: 0  !important;
+  margin-left: 0 !important;
 }
 .slider__title {
   margin-bottom: 25px;
@@ -108,9 +109,8 @@
   height: 24px;
   width: 24px;
   --svgColor: url("#gradient9");
-display: block;
-filter: drop-shadow(0px 10px 25px #4BBD6D);
-
+  display: block;
+  filter: drop-shadow(0px 10px 25px #4bbd6d);
 }
 .slider__img6:after {
   content: " ";
@@ -364,9 +364,8 @@ filter: drop-shadow(0px 10px 25px #4BBD6D);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
 }
-.slider__pseudo > .slider__text{
+.slider__pseudo > .slider__text {
   margin-left: 10px;
-
 }
 .slider__number {
   @include font(44px, 54px, 800, $ff: "Gilroy");

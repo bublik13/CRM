@@ -180,6 +180,10 @@
   color: var(--color-main);
   @include wrap(var(--bg-color20), var(--box-shadow20), 15px);
 }
+.button--9 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color2), var(--box-shadow19), 15px);
+}
 .button__text {
   font-feature-settings: "pnum" on, "lnum" on;
 }
@@ -197,7 +201,7 @@
   background: #292929;
   left: 0;
 }
-.button--ml{
+.button--ml {
   margin-left: 20px;
   color: #000000;
 }

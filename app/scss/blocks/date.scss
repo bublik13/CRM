@@ -25,12 +25,12 @@
   height: 24px;
   width: 24px;
   color: var(--color-main);
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 .date__today {
   @include font(15px, 18px, 600);
   color: var(--color-main);
-  font-feature-settings: 'pnum' on, 'lnum' on;
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .date:hover > .date__calendar {
   display: block;

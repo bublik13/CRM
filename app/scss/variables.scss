@@ -29,8 +29,8 @@
   --bg-color25:  linear-gradient(106.92deg, #4A00E0 0.01%, #8E2DE2 100%);
   --bg-color26:  linear-gradient(90.88deg, #00FF75 0%, #42FF00 100%);
   --bg-color27:  linear-gradient(100.78deg, #00C2FF 0%, #5424DD 100%);
-
-
+  --bg-color28:  linear-gradient(135deg, #00FF94 0%, #00E0FF 100%);
+  --bg-color29:  linear-gradient(135deg, #FA0DFF 0%, #FF0D81 100%);
 
 
 
@@ -68,9 +68,10 @@
  --box-shadow25:  0px 10px 25px rgba(253, 29, 29, 0.3);
  --box-shadow26:  0px 10px 25px rgba(7, 255, 106, 0.3);
  --box-shadow27:  0px 10px 25px rgba(8, 221, 252, 0.3);
-
-
-
+ --box-shadow28:  0px 10px 25px rgba(255, 199, 0, 0.25);
+ --box-shadow29:   0px 10px 25px rgba(0, 255, 148, 0.25);
+ --box-shadow30:   0px 10px 25px rgba(250, 13, 255, 0.25);
+ 
   --text-shadow: #ff0000;
   //задаем дефолтное значение для переменной --svgColor
   --svgColor: currentColor;

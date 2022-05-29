@@ -1,3 +1,6 @@
+.edit-order {
+  margin-right: 30px;
+}
 .edit-order__wrapper {
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
   padding: 25px;
@@ -16,8 +19,26 @@
   display: block;
   margin-left: 10px;
 }
+.edit-order__icon2 {
+  width: 70px;
+  height: 70px;
+  display: block;
+  margin-left: 10px;
+  --svgColor: url("#gradient2");
+  // box-shadow: inset 0px 0px 7.32115px rgba(255, 0, 0, 0.5);
+  filter: drop-shadow(0px 0px 18.9113px rgba(255, 0, 0, 0.7))
+    drop-shadow(0px 0px 73.2115px rgba(255, 0, 0, 0.5));
+}
+.edit-order__icon3 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  position: absolute;
+  top: 41px;
+  right: 15px;
+  color: var(--color-main);
+}
 .edit-order__wrap {
-  // @include flex(flex, space-between, none, none, none);
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
@@ -25,6 +46,11 @@
   @include flex(flex, none, none, column, none);
   border: none;
   width: 100%;
+}
+.edit-order__column2 {
+  @include flex(flex, none, none, column, none);
+  border: none;
+  width: 88%;
 }
 .edit-order__column:last-child {
   width: 69%;
@@ -35,6 +61,11 @@
   margin-bottom: 10px;
 }
 .edit-order__label {
+  @include flex(flex, center, none, column, none);
+}
+.edit-order__label2 {
+  max-width: 300px;
+  position: relative;
   @include flex(flex, center, none, column, none);
 }
 .edit-order__inputs {
@@ -71,6 +102,9 @@
   border: none;
   margin-bottom: 25px;
   max-width: 300px;
+}
+.edit-order__select-mb {
+  margin-bottom: 10px;
 }
 .edit-order__row {
   @include flex(flex, none, none, none, wrap);
@@ -140,11 +174,13 @@
   margin-left: 60px;
   white-space: nowrap;
   @include flex(flex, none, center, none, none);
-
 }
 .edit-order__flex {
   @include flex(flex, none, none, none, none);
   position: relative;
+}
+.edit-order__flex-mb {
+  margin-bottom: 25px;
 }
 .edit-order__wrap-img {
   position: relative;
@@ -194,8 +230,15 @@
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .edit-order__form {
-  @include flex(flex, none, none, none, none);
+  @include flex(flex, none, none, none, wrap);
   margin-top: 10px;
+}
+.edit-order__form1 {
+  @include flex(flex, none, none, none, wrap);
+}
+.edit-order__form > .form__wrap {
+  background: transparent !important;
+  box-shadow: none;
 }
 .edit-order__buttom {
   @include flex(flex, center, center, none, none);
@@ -281,10 +324,54 @@
 }
 .edit-order__form-wrap {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-width: 300px;
-margin-bottom: 25px;
+  width: 300px;
+  margin-bottom: 25px;
+  @include flex(flex, space-between, none, none, none !important);
 }
-.edit-order__bottom{
+.edit-order__bottom {
   @include flex(flex, none, none, column, none);
-margin-top: 120px;
+  margin-top: 120px;
+}
+.edit-order__bottom2 {
+  margin-top: 50px;
+}
+.edit-order__dashed {
+  @include flex(flex, space-between, center, none, none);
+  border: 1px dashed #292929;
+  border-radius: 20px;
+  padding: 30px 25px;
+}
+.edit-order__profile > .profile__wrap {
+  @include flex(flex, none, none, column, none);
+  max-width: 240px;
+}
+.edit-order__btns {
+  @include flex(flex, none, center, none, none);
+  margin-bottom: 25px;
+}
+.edit-order__btn-next {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+}
+.edit-order__btn-next > .edit-order__icon {
+  transform: rotate(180deg);
+}
+.edit-order__btn-back {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-color4), 0 0 0 0, 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-second);
+  margin-right: 10px;
+}
+.edit-order__btn-back > .edit-order__icon {
+  margin-left: 0;
+  margin-right: 10px;
 }

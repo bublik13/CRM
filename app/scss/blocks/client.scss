@@ -5,12 +5,6 @@
   margin-right: 30px;
   align-self: flex-start;
 }
-// .client__wrapper{
-//     @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
-//     padding: 25px;
-//     // @include flex(flex, space-between, center, none, none);
-//     margin-bottom: 25px;
-// }
 .client__form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -19,18 +13,17 @@
 .client__flex {
   @include flex(flex, none, none, none, none);
 }
-.client__form-column{
-    @include flex(flex, none, none, column, none);
-    width: 100%;
+.client__form-column {
+  @include flex(flex, none, none, column, none);
+  width: 100%;
 }
-.client__form-column > .form__wrap:not(:last-child){
-    margin-right: 0;
-    margin-bottom: 25px;
+.client__form-column > .form__wrap:not(:last-child) {
+  margin-right: 0 !important;
+  margin-bottom: 25px;
 }
 .client__profile {
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
   padding: 25px;
-  // @include flex(flex, space-between, center, none, none);
   margin-bottom: 25px;
 }
 .client__profile > .profile__wrap-img {
@@ -43,19 +36,19 @@
 .client__flex > .client__label {
   margin-right: 30px;
 }
-.client__label{
-    position: relative;
+.client__label {
+  position: relative;
 }
-.client__selects{
-    background: var(--bg-color4);
-    border-radius: 15px;
+.client__selects {
+  background: var(--bg-color4);
+  border-radius: 15px;
 }
 .client__button {
   padding: 16px 21px 16px 20px;
   background: var(--bg-color4);
   box-shadow: 0 0;
   border-radius: 15px;
-  max-width: 300px
+  max-width: 300px;
 }
 
 .client__legend {
@@ -71,18 +64,17 @@
   position: absolute;
   top: 39px;
   right: 15px;
-
 }
 .client__selects {
   @include flex(flex, none, center, none, none);
 }
-// .client__selects > .client__button:first-child {
-//    margin-right: 30px;
-//   }
-.client__chat{
-    padding: 0;
-    margin-right: 25px;
+.client__chat {
+  padding: 0;
+  margin-right: 25px;
 }
-.client__bottom{
-    margin-bottom: 30px;
+.client__bottom {
+  margin-bottom: 30px;
+}
+.client__form .form__wrap:not(:last-child) {
+  margin-right: 25px;
 }

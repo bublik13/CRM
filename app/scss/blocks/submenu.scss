@@ -1,10 +1,9 @@
-
 .submenu__list {
   list-style-type: none;
   @include wrap(var(--bg-color5), var(--box-shadow21), 15px);
   padding: 5px;
 }
-.submenu__item:not(:last-child){
+.submenu__item:not(:last-child) {
   margin-bottom: 5px;
 }
 .submenu__button {
@@ -59,22 +58,18 @@
   @include wrap(var(--bg-color15), var(--box-shadow13), 100px);
   margin-right: 10px;
 }
-.submenu__img1{
+.submenu__img1 {
   width: 24px;
   height: 24px;
   --svgColor: url("#gradient1");
-
 }
-.submenu__img2{
+.submenu__img2 {
   width: 24px;
   height: 24px;
   color: var(--color-main);
-
-
 }
-.submenu__img3{
+.submenu__img3 {
   width: 24px;
   height: 24px;
   --svgColor: url("#gradient1");
-
 }

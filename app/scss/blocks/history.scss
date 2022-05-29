@@ -72,6 +72,20 @@
   @include flex(flex, none, none, none, none);
   margin-bottom: 25px;
 }
+.history__item6 {
+  border-left: 1px solid 0px 10px 25px #ffc700;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+.history__item7 {
+  border-left: 1px solid 0px 10px 25px #00ff94;
+  padding-left: 15px;
+  margin-bottom: 25px;
+}
+.history__item8 {
+  border-left: 1px solid 0px 10px 25px #fa0dff;
+  padding-left: 15px;
+}
 .history__time {
   @include font(15px, 18px, 400);
   color: var(--color-second);
@@ -89,32 +103,27 @@
 }
 .history__starus1 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-
   width: 50%;
   margin-bottom: 10px;
 }
 .history__starus2 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-
   width: 50%;
   margin-bottom: 10px;
 }
 .history__starus3 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-
   border-radius: 15px;
   width: 85%;
   margin-bottom: 10px;
 }
 .history__starus4 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-
   width: 39%;
   margin-right: 10px;
 }
 .history__starus5 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-
   width: 39%;
   margin-right: 10px;
 }
@@ -248,4 +257,64 @@
 .history__audio > .history__time {
   margin-left: 10px;
   margin-right: 0;
+}
+.history__wrap-numnder {
+  @include flex(flex, none, first baseline, none, none);
+  margin-bottom: 29px;
+}
+.history__number {
+  @include font(44px, 54px, 800, $ff: "Gilroy");
+  color: var(--color-main);
+  margin-right: 10px;
+}
+.history__name {
+  @include font(15px, 17px, 400);
+  color: var(--color-main);
+}
+.history__progress {
+  margin-bottom: 25px;
+  // border-bottom: 1px solid #292929;
+}
+.history__flex {
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 15px;
+}
+.history__flex > .history__title {
+  margin-bottom: 0;
+}
+.history__quantity1 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000;
+  padding: 3px 9px;
+  @include wrap(var(--bg-color7), var(--box-shadow28), 8px);
+  @include flex(flex, center, center, none, none);
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.history__quantity2 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000;
+  padding: 3px 9px;
+  @include wrap(var(--bg-color28), var(--box-shadow29), 8px);
+  @include flex(flex, center, center, none, none);
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.history__quantity3 {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: #000;
+  padding: 3px 9px;
+  @include wrap(var(--bg-color29), var(--box-shadow30), 8px);
+  @include flex(flex, center, center, none, none);
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+.history__wrap-text:first-child {
+  margin-bottom: 20px;
 }
