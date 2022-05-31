@@ -32,6 +32,7 @@
   height: 1px;
   margin: -1px;
 }
+.slider__pseudo9,
 .slider__pseudo8,
 .slider__pseudo7,
 .slider__pseudo6,
@@ -209,6 +210,16 @@
   position: relative;
   z-index: 10;
 }
+.slider__circl9 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color21), var(--box-shadow8), 100px);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
 .slider__bg {
   background: var(--bg-color17);
   box-shadow: var(--box-shadow21);
@@ -308,7 +319,7 @@
   @include wrap(var(--bg-color15), 0 0 0 0, 15px);
 }
 .slider__check:checked ~ .slider__pseudo7 > .slider__circl7 {
-  @include wrap(var(--color-main), var(--box-shadow13), 0);
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
   border-radius: 100px;
@@ -330,6 +341,20 @@
   position: relative;
   z-index: 10;
 }
+.slider__check:checked ~ .slider__pseudo9 {
+  @include wrap(var(--bg-color21), 0 0 0 0, 15px);
+}
+.slider__check:checked ~ .slider__pseudo9 > .slider__circl9 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+
 .slider__inputs {
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
   margin-bottom: 30px;
@@ -355,8 +380,11 @@
 .slider__wrap:not(:last-child) {
   margin-right: 10px;
 }
-.slider__flex > .slider__wrap:first-child {
-  margin-right: 20px;
+// .slider__flex > .slider__wrap:first-child {
+//   margin-right: 20px !important;
+// }
+.slider__flex > .slider__wrap:nth-child(3) {
+  margin-right: 10px !important;
 }
 .slider__wrap > .slider__text {
   margin-right: 10px;

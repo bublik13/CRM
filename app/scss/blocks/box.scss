@@ -60,12 +60,15 @@
 }
 .box__img--color2 {
   --svgColor: url("#gradient2");
+  filter: drop-shadow(0px 10px 25px #ED3956);
 }
 .box__img--color3 {
   --svgColor: url("#gradient3");
+  filter: drop-shadow(0px 10px 25px #FFA520);
 }
 .box__img--color4 {
   --svgColor: url("#gradient4");
+  filter: drop-shadow(0px 10px 25px #4BBD6D);
 }
 .box__img--color5 {
   --svgColor: url("#gradient9");

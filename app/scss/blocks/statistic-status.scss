@@ -49,6 +49,12 @@
   height: 10px;
   flex-shrink: 0;
 }
+.statistic-status__circl6 {
+  @include wrap(var(--bg-color14), var(--box-shadow12), 100px);
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+}
 .statistic-status__text {
   @include font(15px, 17px, 600);
   color: var(--color-main);

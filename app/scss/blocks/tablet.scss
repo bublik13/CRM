@@ -31,6 +31,9 @@ td:nth-child(2) {
   width: 238px;
   padding: 20px 0;
 }
+td:nth-child(6) {
+ white-space: nowrap;
+}
 td:last-child {
   border-radius: 0 20px 20px 0;
 }
@@ -99,4 +102,10 @@ td:last-child {
 }
 .button--sb:hover ~ .tablet__submenu {
   display: block;
+}
+.tablet__td2{
+  width: auto !important;
+}
+.tablet__td3{
+  width: 300px;
 }

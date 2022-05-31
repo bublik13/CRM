@@ -6,6 +6,11 @@
   padding: 25px;
   margin-bottom: 30px;
 }
+.edit-order__slider {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 30px;
+}
 .edit-order__title {
   @include font(18px, 21px, 700);
   color: var(--color-main);
@@ -37,6 +42,12 @@
   top: 41px;
   right: 15px;
   color: var(--color-main);
+}
+.edit-order__icon4 {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin-right: 10px;
 }
 .edit-order__wrap {
   display: grid;
@@ -263,11 +274,25 @@
   background: var(--bg-color4);
   box-shadow: 0 0;
   border-radius: 15px;
-  border: 0.5px solid var(--bg-line2);
+  // border: 0.5px solid var(--bg-line2);
   padding: 16px 20px;
   resize: none;
   font-feature-settings: "pnum" on, "lnum" on;
   margin-bottom: 25px;
+  text-align: start;
+}
+.edit-order__textarea2{
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  width: 300px;
+  height: 100px;
+  border: none;
+  background: var(--bg-color4);
+  box-shadow: 0 0;
+  border-radius: 15px;
+  padding: 16px 20px;
+  resize: none;
+  font-feature-settings: "pnum" on, "lnum" on;
   text-align: start;
 }
 .edit-order__btn-sub {
@@ -358,7 +383,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
 }
-.edit-order__btn-next > .edit-order__icon {
+.edit-order__btns > .edit-order__btn-next > .edit-order__icon {
   transform: rotate(180deg);
 }
 .edit-order__btn-back {
@@ -373,5 +398,8 @@
 }
 .edit-order__btn-back > .edit-order__icon {
   margin-left: 0;
+  margin-right: 10px;
+}
+.edit-order__profile > .profile__button:first-child{
   margin-right: 10px;
 }
