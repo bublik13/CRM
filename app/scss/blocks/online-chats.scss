@@ -1,0 +1,54 @@
+.online-chats {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  margin-top: 22px;
+}
+
+.online-chats__title {
+  @include font(18px, 21px, 700, var(--second-family));
+  color: var(--color-main);
+  margin-bottom: 21px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.online-chats__top-form {
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 22px;
+}
+.online-chats__form > .form__wrap .form__pseudo2 {
+  margin-bottom: 10px;
+}
+.online-chats__form {
+  height: 710px;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.online-chats__form::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.online-chats__form::-moz-scrollbar {
+  display: none;
+}
+.online-chats__chat{
+  padding-top: 0;
+}
+.online-chats__history {
+  height: 821px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-left: 31px;
+  padding-right: 25px;
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+}
+.online-chats__history::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+.online-chats__history::-moz-scrollbar {
+  display: none;
+}
+.online-chats__history > .history__progress {
+  margin-bottom: 47px;
+}

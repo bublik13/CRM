@@ -335,6 +335,12 @@
       <symbol id="check" viewBox="0 0 24 24">
         <path d="M9.00063 16.17L5.53063 12.7C5.14063 12.31 4.51063 12.31 4.12062 12.7C3.73063 13.09 3.73063 13.72 4.12062 14.11L8.30063 18.29C8.69063 18.68 9.32063 18.68 9.71063 18.29L20.2906 7.71C20.6806 7.32 20.6806 6.69 20.2906 6.3C19.9006 5.91 19.2706 5.91 18.8806 6.3L9.00063 16.17Z" fill="currentColor"/>
       </symbol>
+      <symbol id="file-back" viewBox="0 0 71 70">
+        <path d="M57.2388 21.6125L43.1513 7.52501C42.0721 6.44584 40.5846 5.83334 39.0388 5.83334H18.1263C14.918 5.83334 12.3221 8.45834 12.3221 11.6667L12.293 58.3334C12.293 61.5417 14.8888 64.1667 18.0971 64.1667H53.1263C56.3346 64.1667 58.9596 61.5417 58.9596 58.3334V25.7542C58.9596 24.2083 58.3471 22.7208 57.2388 21.6125ZM43.793 43.75H38.543V52.5C38.543 54.1042 37.2305 55.4167 35.6263 55.4167C34.0221 55.4167 32.7096 54.1042 32.7096 52.5V43.75H27.4888C26.1763 43.75 25.5346 42.175 26.468 41.2708L34.6346 33.1333C35.218 32.5792 36.1221 32.5792 36.7055 33.1333L44.843 41.2708C45.718 42.175 45.0763 43.75 43.793 43.75ZM41.4596 26.25C39.8555 26.25 38.543 24.9375 38.543 23.3333V10.2083L54.5846 26.25H41.4596Z" fill="var(--svgColor)"/>
+      </symbol>
+      <symbol id="file-upload" viewBox="0 0 25 24">
+        <path d="M7.9 10H9.49V15C9.49 15.55 9.94 16 10.49 16H14.49C15.04 16 15.49 15.55 15.49 15V10H17.08C17.97 10 18.42 8.92 17.79 8.29L13.2 3.7C12.81 3.31 12.18 3.31 11.79 3.7L7.2 8.29C6.57 8.92 7.01 10 7.9 10ZM5.5 19C5.5 19.55 5.95 20 6.5 20H18.5C19.05 20 19.5 19.55 19.5 19C19.5 18.45 19.05 18 18.5 18H6.5C5.95 18 5.5 18.45 5.5 19Z" fill="currentColor"/>
+      </symbol>
 
         
         
@@ -413,7 +419,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="#" class="nav__link">
+                  <a href="messenger.html" class="nav__link messenger.html">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#forum"></use>
                       </svg>
@@ -579,7 +585,7 @@
             </li>
           </ul>
         </nav>
-        <div class="menu__profile profile">
+        <a href="account.html"class="menu__profile profile">
           <div class="profile__wrap-img js-profile-img">
             <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
           </div> 
@@ -587,7 +593,7 @@
             <div class="profile__title">Александр Македонов</div>
             <div class="profile__subtitle">Администратор</div>
           </div>
-        </div>
+        </a>
       </aside> 
       <main class="container js-container">
         <header class="header">
@@ -686,125 +692,31 @@
               Добавить этот расход
             </button>
           </section>
-          <section class="history">
-            <div class="history__title">История заказа</div>
-            <div class="history__buttons">
-              <input type="text" name="text" class="history__button" placeholder="Поиск">
-              <button type="submit" name="submit" class="history__submit-button button button--bg1" value="">
-                  <svg aria-hidden="true" class="history__submit-img">
-                      <use xlink:href="#search"></use>
-                  </svg>
+          <section class="add-file">
+            <div class="add-file__title">Добавить вложение</div>
+            <fieldset class="add-file__dashed">
+              <label class="add-file__profile profile">
+                <i class="profile__wrap-img profile__wrap-img--pd">
+                  <input class="profile__file" type="file" атрибуты>
+                  <svg aria-hidden="true" class="edit-order__icon2">
+                    <use xlink:href="#file-back"></use>
+                  </svg>                  
+                </i> 
+                <i class="profile__wrap">
+                  <i class="profile__title title title--width">Добавьте файл</i>
+                  <i class="profile__title title title--width-xs profile__title--bt">Перетащите необходимый файл
+                    в эту область</i>
+                </i>
+              </label>
+              <button class="profile__button button button--sx button--brand">
+                <svg aria-hidden="true" class="profile__icon3">
+                  <use xlink:href="#file-upload"></use>
+                </svg>
+                <span class="profile__text2">Выбрать файл</span>
               </button>
-            </div>
-            <div class="history__orders">
-              <div class="history__date">25 июн, 2021</div>
-              <div class="history__item1">
-                <div class="history__time">
-                  12:11
-                </div>
-                <div class="history__info">
-                  <div class="history__starus1">
-                    <div class="history__text">Входящий звонок</div>
-                  </div>
-                  <div class="history__wrap">
-                    <div class="history__important">Денис Игнатенков</div>
-                    <div class="history__comment">+7 (998) 483-01-45</div>
-                    <a class="history__link" href="#">teleremont.spb.ru</a>
-                    <div class="history__audio">
-                      <svg aria-hidden="true" class="history__play">
-                        <use xlink:href="#pause"></use>
-                      </svg>
-                      <img class="history__row" src="img/history/row.svg" alt="row">
-                      <div class="history__time">
-                        01:05
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="history__item2">
-                <div class="history__time">
-                  12:16
-                </div>
-                <div class="history__info">
-                  <div class="history__starus2">
-                    <div class="history__text2">Исходящий звонок</div>
-                  </div>
-                  <div class="history__wrap">
-                    <div class="history__important">Васильев Алексей</div>
-                    <div class="history__comment">Совершил звонок</div>
-                    <div class="history__audio">
-                      <svg aria-hidden="true" class="history__play">
-                        <use xlink:href="#play"></use>
-                      </svg>
-                      <img class="history__row" src="img/history/row.svg" alt="row">
-                      <div class="history__time">
-                        00:39
-                      </div>
-                    </div>
-                    <div class="history__comment">Оставил комментарий</div>
-                    <div class="history__important">iPhone 7, замена АКБ, сказал 1 500 руб</div>
-                  </div>
-                </div>
-              </div>
-              <div class="history__item3">
-                <div class="history__time">
-                  12:17
-                </div>
-                <div class="history__info"> 
-                  <div class="history__starus3">
-                    <div class="history__text3">Добавлен в “Возможные клиенты”</div>
-                  </div>
-                  <div class="history__wrap">
-                    <div class="history__important">Васильев Алексей</div>
-                    <div class="history__comment">Оставил комментарий</div>
-                    <div class="history__important">Сказал, что придет завтра после обеда</div>
-                  </div>
-                </div>
-              </div>
-              <div class="history__item4">
-                <div class="history__time">
-                  15:39
-                </div>
-                <div class="history__info">
-                  <div class="history__btns">
-                    <div class="history__starus4">
-                      <div class="history__text4">Заказ открыт</div>
-                    </div>
-                    <button class="history__btn"> Новый</button>
-                  </div>
-                  <div class="history__wrap">
-                    <div class="history__important">Васильев Алексей</div>
-                    <div class="history__comment">Принял устройство</div>
-                    <div class="history__important">Телефон</div>
-                    <div class="history__product">iPhone 12 mini</div>
-                  </div>
-                </div>
-              </div>
-              <div class="history__item5">
-                <div class="history__time">
-                  16:01
-                </div>
-                <div class="history__info">
-                  <div class="history__btns">
-                    <div class="history__starus5">
-                      <div class="history__text5">Взят в работу</div>
-                    </div>
-                    <button class="history__btn2"> В ремонте</button>
-                  </div>
-                  <div class="history__wrap">
-                    <div class="history__important">Карпин Валерий</div>
-                    <div class="history__comment">Взял в работу</div>
-                    <div class="history__important">Замена аккумулятора</div>
-                    <div class="history__product">Аккумулятор ADW471 iPhone 7</div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </fieldset>
           </section>
-          
         </div>
-
       </main>
     </div>
     <!-- подключаем js -->

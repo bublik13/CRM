@@ -57,7 +57,7 @@
   @include flex(flex, center, center, none, none);
   @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
   padding: 7px 10px;
-  margin-right: 25px;
+  margin-left: 25px;
 }
 .statistic__calendar-btn {
   width: 24px;

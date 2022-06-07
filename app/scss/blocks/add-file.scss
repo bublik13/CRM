@@ -1,0 +1,35 @@
+.add-file {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+  padding: 25px;
+  max-width: 330px;
+  align-self: start;
+}
+.add-file__title {
+  @include font(18px, 21px, 700, var(--second-family));
+  color: var(--color-main);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.add-file__dashed {
+  border: 1px dashed #292929;
+  border-radius: 20px;
+  padding: 25px 21px;
+}
+.add-file__profile {
+  @include flex(flex, center, center, column, none);
+  margin-top: 187px;
+  margin-bottom: 187px;
+}
+.add-file__profile > .profile__wrap {
+  @include flex(flex, none, center, column, none);
+  text-align: center;
+}
+.add-file__profile > .profile__wrap-img {
+  margin-bottom: 15px;
+}
+.add-file__dashed > .profile__button {
+  width: 100%;
+  text-align: center;
+  @include flex(flex, center, center, none, none);
+
+}

@@ -368,7 +368,7 @@
   width: 87%;
 }
 .slider__flex {
-  @include flex(flex, none, center, none, none);
+  @include flex(flex, none, center, none, wrap);
 }
 .slider__wrap:nth-child(3) {
   margin-right: 137px !important;

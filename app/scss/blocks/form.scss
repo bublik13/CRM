@@ -15,7 +15,36 @@
   background: var(--bg-color5);
   box-shadow: var(--box-shadow3);
 }
-.form__wrapper .form__wrap:not(:first-child):after {
+.form__wrap2 {
+  position: relative;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 0);
+  border: 5px solid transparent;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
+.form__wrap2:first-child {
+  position: relative;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px 0 0 15px);
+}
+.form__wrap2:last-child {
+  position: relative;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 0 15px 15px 0);
+}
+.form__wrap3 {
+  background: var(--bg-color5);
+  box-shadow: var(--box-shadow3);
+  border: 5px solid transparent;
+  position: relative;
+  @include wrap(var(--bg-color5), var(--box-shadow3), 0);
+}
+.form__wrap3:first-child {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px 0 0 15px);
+}
+.form__wrap3:last-child {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 0 15px 15px 0);
+}
+.form__wrapper .form__wrap3:not(:first-child):after {
   position: absolute;
   content: " ";
   top: 8px;
@@ -52,10 +81,10 @@
 .form__pseudo {
   flex-shrink: 0;
   @include font(15px, 17px, 600);
-  color: var(--color-main);
+  // color: var(--color-main);
   background: transparent;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s ease;
@@ -86,9 +115,14 @@
   @include flex(flex, none, center, column, none);
   cursor: pointer;
 }
-// .form__wrap:not(:last-child) {
-//   padding-right: 25px;
-// }
+.form__pseudo2 {
+  padding: 17px 15px 20px 15px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  color: var(--color-main);
+  @include flex(flex, none, none, none, none);
+  cursor: pointer;
+  width: 373px;
+}
 .form__wrap:first-child {
   border-radius: 15px 0 0 15px;
 }
@@ -111,10 +145,24 @@
   padding-right: 14px;
 }
 .form__check:focus ~ .form__pseudo1 {
-  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  @include wrap(var(--bg-main), var(--box-shadow1), 20px);
   color: var(--color-main);
   padding: 29px 25px;
-  // height: 38px;
+}
+.form__check:focus ~ .form__pseudo2 {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding: 17px 15px 20px 15px;
+}
+.form__check:focus
+  ~ .form__pseudo2
+  > .form__profile
+  > .profile__wrap
+  > .profile__title {
+  color: var(--color-main);
+}
+.form__check:focus ~ .form__pseudo2 > .form__time {
+  color: var(--color-main);
 }
 .form__check:focus ~ .form__pseudo-height {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
@@ -146,4 +194,16 @@
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
   white-space: nowrap;
+}
+.form__profile > .profile__wrap-img {
+  margin-right: 10px;
+}
+.form__time {
+  @include font(15px, 18px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--color-second);
+  margin-left: auto;
+}
+.form__profile > .profile__wrap {
+  max-width: 228px;
 }

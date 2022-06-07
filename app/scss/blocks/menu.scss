@@ -34,3 +34,21 @@
   width: 104px;
   padding: 27px 15px !important;
 }
+.menu__profile {
+  text-decoration: none;
+  cursor: pointer;
+  padding: 12px;
+}
+.menu__profile--active {
+ 
+  background: var(--bg-main);
+  box-shadow: var(--box-shadow1);
+  border-radius: 10px;
+  color: var(--color-main);
+}
+.menu__profile--active > .profile__wrap > .profile__subtitle {
+  -webkit-text-fill-color: #fff;
+}
+// .menu__profilr--active > .profile__wrap-img{
+//   margin-right: 0 !important;
+// }

@@ -34,6 +34,9 @@
 .box__item--color4 {
   @include wrap(var(--bg-color20), var(--box-shadow6), 20px);
 }
+.box__item--color5 {
+  @include wrap(var(--bg-color30), var(--box-shadow32), 20px);
+}
 .box__item:not(:last-child) {
   margin-right: 25px;
 }
@@ -43,6 +46,7 @@
   @include wrap(var(--bg-color5), none, 15px);
   @include flex(flex, center, center, none, none);
   margin-right: 15px;
+  flex-shrink: 0;
 }
 .box__wrap-img1 {
   @include wrap(var(--bg-color4), var(--box-shadow3), 15px);
@@ -57,18 +61,19 @@
 }
 .box__img--color1 {
   --svgColor: url("#gradient1");
+  filter: drop-shadow(0px 10px 25px #2860ff);
 }
 .box__img--color2 {
   --svgColor: url("#gradient2");
-  filter: drop-shadow(0px 10px 25px #ED3956);
+  filter: drop-shadow(0px 10px 25px #ed3956);
 }
 .box__img--color3 {
   --svgColor: url("#gradient3");
-  filter: drop-shadow(0px 10px 25px #FFA520);
+  filter: drop-shadow(0px 10px 25px #ffa520);
 }
 .box__img--color4 {
   --svgColor: url("#gradient4");
-  filter: drop-shadow(0px 10px 25px #4BBD6D);
+  filter: drop-shadow(0px 10px 25px #4bbd6d);
 }
 .box__img--color5 {
   --svgColor: url("#gradient9");
@@ -76,6 +81,9 @@
 .box__img--width {
   width: 34px;
   height: 23px;
+}
+.box__flex {
+  width: 82%;
 }
 .box__title {
   margin-bottom: 10px;
@@ -88,10 +96,14 @@
   @include font(24px, 29px, 800, $ff: "Gilroy");
   color: var(--color-main);
   margin-right: 5px;
+  white-space: nowrap;
 }
 .box__text {
   @include font(15px, 18px, 500);
   color: var(--color-main);
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .box__title--bottom {
   margin-bottom: 20px;

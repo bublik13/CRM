@@ -19,7 +19,7 @@ table {
 td {
   border-collapse: separate;
   border-spacing: 0 8px;
-  @include wrap(var(--bg-color4), var(--box-shadow3), 0);
+  @include wrap(var(--bg-color4), 0 0 0 0, 0);
 }
 td:first-child {
   border-radius: 20px 0 0 20px;
@@ -29,7 +29,7 @@ td:first-child {
 }
 td:nth-child(2) {
   width: 238px;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 td:nth-child(6) {
  white-space: nowrap;

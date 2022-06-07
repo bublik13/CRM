@@ -83,3 +83,10 @@
   margin-right: 2px;
   @include wrap(var(--bg-color14), var(--box-shadow31), 5px);
 }
+.progress__active11 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color30), var(--box-shadow32), 5px);
+}
