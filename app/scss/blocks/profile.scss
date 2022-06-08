@@ -100,6 +100,10 @@
   width: 24px;
   color: var(--color-main);
 }
+.profile__icon4 {
+  width: 68px;
+  height: 45px;
+}
 .profile__text {
   color: #000;
   @include font(15px, 18px, 600);
@@ -210,5 +214,5 @@
   width: 20px;
 }
 .profile__wrap-svg > .profile__title {
- margin-right: 10px;
+  margin-right: 10px;
 }

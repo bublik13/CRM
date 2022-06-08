@@ -24,7 +24,11 @@
     background: var(--btn-hover-bg-color);
   }
 }
-
+.button__icon{
+  width: 24px;
+  height: 24px;
+  color:#000000;
+}
 .button--sm {
   padding: 5px 15px;
   border-radius: 12px;
@@ -112,8 +116,6 @@
   text-align: center;
 }
 .button--flex {
-  display: flex;
-  align-items: center;
   @include flex(flex, none, center, none, none);
 }
 .button--flex-end {

@@ -6,7 +6,7 @@
   padding: 25px;
   z-index: 100;
   top: 47px;
-  left: 0;
+  left: -50px;
   @include wrap(var(--bg-color5), var(--box-shadow18), 20px);
   display: none;
   font-feature-settings: "pnum" on, "lnum" on;

@@ -31,6 +31,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
+  white-space: nowrap;
 }
 .date:hover > .date__calendar {
   display: block;

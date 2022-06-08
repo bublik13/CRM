@@ -1,0 +1,219 @@
+.calculate-salary {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  @include flex(flex, space-between, none, none, none);
+  margin-bottom: 50px;
+}
+.calculate-salary__title {
+  margin-bottom: 25px;
+}
+.calculate-salary__subtitle {
+  color: var(--color-second);
+  @include font(15px, 18px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 10px;
+}
+.calculate-salary__flex {
+  @include flex(flex, space-between, center, none, none);
+}
+.calculate-salary__flex > .calculate-salary__wrap:first-child {
+  margin-right: 50px;
+  flex-grow: 1;
+}
+.irs--flat.irs-with-grid {
+  margin-bottom: 25px;
+}
+.calculate-salary__number {
+  color: var(--color-main);
+  @include font(56px, 69px, 800);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.calculate-salary__flex-input {
+  @include flex(flex, none, baseline, none, none);
+}
+.calculate-salary__input {
+  border: none;
+  color: var(--color-main);
+  @include font(56px, 69px, 800);
+  font-feature-settings: "pnum" on, "lnum" on;
+  background: transparent;
+  outline: none;
+  opacity: 1;
+  max-width: 243px;
+}
+/* Современные браузеры
+   ----------------------------  */
+.calculate-salary__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+      ----------------------------  */
+.calculate-salary__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+      ----------------------------  */
+.calculate-salary__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+      ----------------------------  */
+.calculate-salary__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+      ----------------------------  */
+.calculate-salary__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+      ----------------------------  */
+.calculate-salary__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+   ----------------------------  */
+.calculate-salary__input-bonus::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+        ----------------------------  */
+.calculate-salary__input-bonus::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+        ----------------------------  */
+.calculate-salary__input-bonus::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+        ----------------------------  */
+.calculate-salary__input-bonus:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+        ----------------------------  */
+.calculate-salary__input-bonus::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+        ----------------------------  */
+.calculate-salary__input-bonus:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.calculate-salary__input:focus {
+  outline: none;
+}
+.calculate-salary__input-bonus:focus {
+    outline: none;
+  }
+.calculate-salary__flex-input > .calculate-salary__text {
+  color: var(--color-main);
+  @include font(56px, 69px, 800);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-right: 10px;
+}
+.calculate-salary__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-second);
+}
+.calculate-salary__bonus {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 25px;
+}
+.calculate-salary__title-bonus {
+  color: var(--color-main);
+  @include font(18px, 21px, 700);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 20px;
+}
+.calculate-salary__input-bonus {
+  border: none;
+  color: var(--color-main);
+  @include font(56px, 69px, 800);
+  font-feature-settings: "pnum" on, "lnum" on;
+  background: transparent;
+  outline: none;
+  opacity: 1;
+  max-width: 143px;
+}
+.calculate-salary__text-bonus {
+  color: var(--color-main);
+  @include font(15px, 18px, 400);
+margin-right: 15px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.irs--flat .irs-bar {
+  top: 27px !important;
+  height: 8px !important;
+  @include wrap(var(--bg-main), var(--box-shadow1), 3px !important);
+}
+.irs--flat .irs-line {
+  top: 25px;
+  height: 12px !important;
+  @include wrap(
+    var(--bg-color4) !important,
+    var(--box-shadow21) !important,
+    3px !important
+  );
+  border-radius: 4px;
+}
+.irs--flat .irs-handle > i:first-child {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  width: 16px !important;
+  height: 16px !important;
+  margin-left: -5px !important;
+  border: 3px solid #0085ff !important;
+  @include wrap(
+    var(--bg-color4) !important,
+    var(--box-shadow21) !important,
+    100px !important
+  );
+  filter: drop-shadow(0px 10px 25px rgba(0, 133, 255, 0.3));
+}
+.irs-single {
+  display: none !important;
+}
+.irs-min {
+  display: none !important;
+}
+.irs-max {
+  display: none !important;
+}
+.irs--flat .irs-grid-text {
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--color-second);
+}
+.irs-grid-pol {
+  display: none !important;
+}
+.irs--flat .irs-handle {
+  top: 23px !important;
+}

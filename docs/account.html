@@ -11,8 +11,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1654604934260">
+    <link rel="stylesheet" href="css/main.css?t=1654703157465">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
   </head>
 
   <body class="body js-body">
@@ -74,6 +75,10 @@
           <linearGradient id="gradient13" x1="25.6667" y1="34.3333" x2="51.2222" y2="8.77778" gradientUnits="userSpaceOnUse">
             <stop stop-color="#0085FF"/>
             <stop offset="1" stop-color="#8F00FF"/>
+          </linearGradient>
+          <linearGradient id="gradient14" x1="1" y1="4" x2="16.2216" y2="24.9297" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#00FF94"/>
+            <stop offset="1" stop-color="#00E0FF"/>
           </linearGradient>
       </defs>
     </svg>
@@ -169,8 +174,10 @@
       </symbol>
         
       <symbol id="check-circle" viewBox="0 0 24 24">
-        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM7.29 14.29L3.7 10.7C3.31 10.31 3.31 9.68 3.7 9.29C4.09 8.9 4.72 8.9 5.11 9.29L8 12.17L14.88 5.29C15.27 4.9 15.9 4.9 16.29 5.29C16.68 5.68 16.68 6.31 16.29 6.7L8.7 14.29C8.32 14.68 7.68 14.68 7.29 14.29Z" fill="var(--svgColor)"></path>
+        <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM9.29 16.29L5.7 12.7C5.31 12.31 5.31 11.68 5.7 11.29C6.09 10.9 6.72 10.9 7.11 11.29L10 14.17L16.88 7.29C17.27 6.9 17.9 6.9 18.29 7.29C18.68 7.68 18.68 8.31 18.29 8.7L10.7 16.29C10.32 16.68 9.68 16.68 9.29 16.29Z" fill="var(--svgColor)"></path>
       </symbol>
+
+        
       <symbol id="phone-link"  >
         <path d="M5.66667 4.91666C5.66667 4.13749 6.30417 3.49999 7.08333 3.49999H29.75C30.5292 3.49999 31.1667 2.86249 31.1667 2.08332C31.1667 1.30416 30.5292 0.666656 29.75 0.666656H5.66667C4.10833 0.666656 2.83333 1.94166 2.83333 3.49999V19.0833H2.125C0.949167 19.0833 0 20.0325 0 21.2083C0 22.3842 0.949167 23.3333 2.125 23.3333H17.7083C18.8842 23.3333 19.8333 22.3842 19.8333 21.2083C19.8333 20.0325 18.8842 19.0833 17.7083 19.0833H5.66667V4.91666ZM32.5833 6.33332H24.0833C23.3042 6.33332 22.6667 6.97082 22.6667 7.74999V21.9167C22.6667 22.6958 23.3042 23.3333 24.0833 23.3333H32.5833C33.3625 23.3333 34 22.6958 34 21.9167V7.74999C34 6.97082 33.3625 6.33332 32.5833 6.33332ZM31.1667 19.0833H25.5V9.16666H31.1667V19.0833Z" fill="var(--svgColor)"></path>
       </symbol>
@@ -296,22 +303,38 @@
       <symbol id="bonus" viewBox="0 0 24 24">
         <path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM19 19H5C4.45 19 4 18.55 4 18V17H20V18C20 18.55 19.55 19 19 19ZM20 14H4V9C4 8.45 4.45 8 5 8H9.08L7.6 10.02C7.27 10.47 7.37 11.1 7.82 11.42C8.26 11.74 8.89 11.64 9.21 11.2L12 7.4L14.79 11.2C15.11 11.64 15.74 11.74 16.18 11.42C16.63 11.1 16.73 10.47 16.4 10.02L14.92 8H19C19.55 8 20 8.45 20 9V14Z" fill="var(--svgColor)"/>
       </symbol>
+      <symbol id="create" viewBox="0 0 24 24">
+        <path d="M3 17.4599V20.4999C3 20.7799 3.22 20.9999 3.5 20.9999H6.54C6.67 20.9999 6.8 20.9499 6.89 20.8499L17.81 9.93994L14.06 6.18994L3.15 17.0999C3.05 17.1999 3 17.3199 3 17.4599ZM20.71 7.03994C21.1 6.64994 21.1 6.01994 20.71 5.62994L18.37 3.28994C17.98 2.89994 17.35 2.89994 16.96 3.28994L15.13 5.11994L18.88 8.86994L20.71 7.03994Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="cancel" viewBox="0 0 24 24">
+        <path d="M12 2C6.47 2 2 6.47 2 12C2 17.53 6.47 22 12 22C17.53 22 22 17.53 22 12C22 6.47 17.53 2 12 2ZM16.3 16.3C15.91 16.69 15.28 16.69 14.89 16.3L12 13.41L9.11 16.3C8.72 16.69 8.09 16.69 7.7 16.3C7.31 15.91 7.31 15.28 7.7 14.89L10.59 12L7.7 9.11C7.31 8.72 7.31 8.09 7.7 7.7C8.09 7.31 8.72 7.31 9.11 7.7L12 10.59L14.89 7.7C15.28 7.31 15.91 7.31 16.3 7.7C16.69 8.09 16.69 8.72 16.3 9.11L13.41 12L16.3 14.89C16.68 15.27 16.68 15.91 16.3 16.3Z" fill="var(--svgColor)"/>
+      </symbol>
+      <symbol id="payments" viewBox="0 0 24 24">
+        <path d="M23 8V18C23 19.1 22.1 20 21 20H5C4.45 20 4 19.55 4 19C4 18.45 4.45 18 5 18H21V8C21 7.45 21.45 7 22 7C22.55 7 23 7.45 23 8ZM4 16C2.34 16 1 14.66 1 13V7C1 5.34 2.34 4 4 4H16C17.66 4 19 5.34 19 7V14C19 15.1 18.1 16 17 16H4ZM7 10C7 11.66 8.34 13 10 13C11.66 13 13 11.66 13 10C13 8.34 11.66 7 10 7C8.34 7 7 8.34 7 10Z" fill="var(--svgColor)"/>
+      </symbol>
+      <symbol id="credit_card" viewBox="0 0 24 24">
+        <path d="M20 4H4C2.89 4 2.01 4.89 2.01 6L2 18C2 19.11 2.89 20 4 20H20C21.11 20 22 19.11 22 18V6C22 4.89 21.11 4 20 4ZM19 18H5C4.45 18 4 17.55 4 17V12H20V17C20 17.55 19.55 18 19 18ZM20 8H4V6H20V8Z" fill="var(--svgColor)"/>
+      </symbol>
+      <symbol id="card" viewBox="0 0 98 65">
+        <rect x="16" width="68" height="45" rx="10" fill="white"/>
+
+        <path d="M44.2357 15.3825L41.8047 29.6485H45.6927L48.1257 15.3825H44.2357Z" fill="#1434CB"/>
+        <path d="M38.5453 15.3985L34.7373 25.1275L34.3313 23.6585C33.5803 21.8885 31.4483 19.3465 28.9453 17.7445L32.4273 29.6415L36.5413 29.6345L42.6643 15.3955L38.5453 15.3985Z" fill="#1434CB"/>
+        <path d="M32.854 16.4195C32.628 15.5505 31.973 15.2915 31.16 15.2605H25.132L25.082 15.5445C29.773 16.6825 32.877 19.4245 34.165 22.7215L32.854 16.4195Z" fill="#1434CB"/>
+        <path d="M56.005 18.1175C57.277 18.0975 58.199 18.3755 58.915 18.6635L59.266 18.8285L59.792 15.7365C59.022 15.4475 57.815 15.1375 56.309 15.1375C52.467 15.1375 49.759 17.0725 49.738 19.8455C49.713 21.8945 51.667 23.0385 53.143 23.7215C54.658 24.4215 55.166 24.8665 55.159 25.4915C55.147 26.4465 53.951 26.8845 52.834 26.8845C51.277 26.8845 50.45 26.6695 49.173 26.1375L48.672 25.9095L48.125 29.1025C49.035 29.5015 50.714 29.8445 52.457 29.8625C56.544 29.8625 59.2 27.9505 59.228 24.9875C59.245 23.3665 58.208 22.1295 55.961 21.1145C54.601 20.4525 53.769 20.0125 53.777 19.3445C53.777 18.7515 54.483 18.1175 56.005 18.1175Z" fill="#1434CB"/>
+        <path d="M69.771 15.3985H66.767C65.834 15.3985 65.14 15.6525 64.73 16.5825L58.957 29.6565H63.04C63.04 29.6565 63.706 27.8985 63.857 27.5135C64.304 27.5135 68.271 27.5195 68.836 27.5195C68.952 28.0175 69.31 29.6565 69.31 29.6565H72.917L69.771 15.3985ZM64.976 24.5935C65.296 23.7745 66.525 20.6065 66.525 20.6065C66.504 20.6455 66.842 19.7815 67.043 19.2445L67.305 20.4745C67.305 20.4745 68.05 23.8805 68.206 24.5935H64.976Z" fill="#1434CB"/>     
+      </symbol>
+    
+
+  
         
-      <!-- <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M20 6H17.82C17.93 5.69 18 5.35 18 5C18 3.34 16.66 2 15 2C13.95 2 13.04 2.54 12.5 3.35L12 4.02L11.5 3.34C10.96 2.54 10.05 2 9 2C7.34 2 6 3.34 6 5C6 5.35 6.07 5.69 6.18 6H4C2.89 6 2.01 6.89 2.01 8L2 19C2 20.11 2.89 21 4 21H20C21.11 21 22 20.11 22 19V8C22 6.89 21.11 6 20 6ZM15 4C15.55 4 16 4.45 16 5C16 5.55 15.55 6 15 6C14.45 6 14 5.55 14 5C14 4.45 14.45 4 15 4ZM9 4C9.55 4 10 4.45 10 5C10 5.55 9.55 6 9 6C8.45 6 8 5.55 8 5C8 4.45 8.45 4 9 4ZM19 19H5C4.45 19 4 18.55 4 18V17H20V18C20 18.55 19.55 19 19 19ZM20 14H4V9C4 8.45 4.45 8 5 8H9.08L7.6 10.02C7.27 10.47 7.37 11.1 7.82 11.42C8.26 11.74 8.89 11.64 9.21 11.2L12 7.4L14.79 11.2C15.11 11.64 15.74 11.74 16.18 11.42C16.63 11.1 16.73 10.47 16.4 10.02L14.92 8H19C19.55 8 20 8.45 20 9V14Z" fill="url(#paint0_linear_626_23463)"/>
-        <defs>
-        <linearGradient id="paint0_linear_626_23463" x1="2" y1="2" x2="20.975" y2="21.9737" gradientUnits="userSpaceOnUse">
-        <stop stop-color="#0085FF"/>
-        <stop offset="1" stop-color="#0038FF"/>
-        </linearGradient>
-        </defs>
-        </svg> -->
+        
         
         
 
 
     </svg> 
-<picture><source srcset="img/desktop3.avif" type="image/avif"><source srcset="img/desktop3.webp" type="image/webp"><img class="pp"  hidden  src="img/desktop3.jpg" alt=""></picture>
+<picture><source srcset="img/desktop5.avif" type="image/avif"><source srcset="img/desktop5.webp" type="image/webp"><img class="pp"    src="img/desktop5.jpg" alt=""></picture>
     <style>
       .pp {
         position: absolute;
@@ -915,13 +938,13 @@
             <h3 class="financial-indicators__title title title--s">
               Показатели финансов
             </h3>
-            <div class="header__date date">
+            <div class="financial-indicators__date date">
               <div class="date__wrap-img">
                   <svg aria-hidden="true" class="date__img">
                       <use xlink:href="#date"></use>
                   </svg>
               </div>
-              <div class="date__today">10 декабря, 2021</div>
+              <div class="date__today">1 января - 31 декабря, 2021</div>
               <div class="date__calendar calendar">
                 <div class="calendar__months">
                     <div class="calendar__month">
@@ -1071,571 +1094,640 @@
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+          <canvas id="canvas" style="display: block; width: 1379px; height: 330px;" width="1379" height="330" class="chartjs-render-monitor"></canvas>
+          <div class="financial-indicators__slider slider slider__flex1">
+            <div class="slider__column">
+              <div class="slider__text">Итого за период</div>
+              <div class="slider__number">
+                ₽ 1 020 000
+              </div>
+            </div>
+            <div class="slider__column">
+              <div class="slider__text">Бонусы и заплата</div>
+              <div class="slider__progress progress">
+                <div style="width: 67%;" class="progress__active9"></div>
+                <div style="width: 33%;" class="progress__active11"></div>
+              </div>
+              <div class="slider__flex">
+                <div class="slider__wrap">
+                  <div class="slider__circl10"></div> 
+                  <div class="slider__text">Зарплата</div>
+                  <div class="slider__text">₽ 960 000</div>
+                </div>
+                <div class="slider__wrap">
+                  <div class="slider__circl3"></div> 
+                  <div class="slider__text">Бонусы</div>
+                  <div class="slider__text">₽ 60 000</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="calculate-salary">
+          <div class="calculate-salary__wrap">
+            <div class="calculate-salary__title title title title--s">Рассчитать зарплату</div>
+            <div class="calculate-salary__subtitle">Перетащите ползунок, чтобы рассчитать зарплату</div>
+            <input type="text" class="calculate-salary__range js-range-slider" name="my_range" value="" />
+            <div class="calculate-salary__flex">
+              <div class="calculate-salary__wrap">
+                <div class="calculate-salary__subtitle">Сумма, которую вы получите</div>
+                <div class="calculate-salary__flex-input">
+                  <div class="calculate-salary__text">₽</div>
+                  <input type="text" name="text" class="calculate-salary__input" placeholder="300 000 ">
+                  <svg aria-hidden="true" class="calculate-salary__icon">
+                    <use width="24" height="24" xlink:href="#create"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="calculate-salary__wrap">
+                <div class="calculate-salary__subtitle">Чистая прибыль компании должна составить</div>
+                <div class="calculate-salary__number">₽ 10 090 000</div>
+              </div>
+            </div>
+          </div>
+          <div class="calculate-salary__bonus">
+            <div class="calculate-salary__title-bonus">Бонус</div>
+            <div class="calculate-salary__subtitle">Введите значение бонуса</div>
+            <div class="calculate-salary__flex-input">
+              <input type="text" name="text" class="calculate-salary__input-bonus" placeholder="500">
+              <div class="calculate-salary__text-bonus">бонусов</div>
+              <svg aria-hidden="true" class="calculate-salary__icon">
+                <use width="24" height="24" xlink:href="#create"></use>
+              </svg>
+            </div>
+          </div>
+        </section>
+        <div class="grid3">
+            <section class="slider">
+              <h2 class="slider__title title title--ml">
+                История выплат
+              </h2>
+              <div class="slider__swiper swiper slider__swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper slider__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slider__slide ">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo"> 
+                        <svg aria-hidden="true" class="slider__img">
+                          <use xlink:href="#filter"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide  slider__slide--lf">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo"> 
+                        <svg aria-hidden="true" class="slider__img7">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo"> 
+                        <svg aria-hidden="true" class="slider__img2">
+                          <use xlink:href="#cancel"></use>
+                        </svg>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide  slider__slide--lf">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo"> 
+                        <svg aria-hidden="true" class="slider__img8">
+                          <use xlink:href="#payments"></use>
+                        </svg>
+                        <span class="slider__text">Наличные</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check check" tabindex="0">
+                      <span class="slider__pseudo"> 
+                        <svg aria-hidden="true" class="slider__img">
+                          <use xlink:href="#credit_card"></use>
+                        </svg>
+                        <span class="slider__text">Перевод</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <section class="date">
               <div class="date__wrap-img">
-                <svg aria-hidden="true" class="date__img-down">
-                    <use xlink:href="#down"></use>
-                </svg>
+                  <svg aria-hidden="true" class="date__img">
+                      <use xlink:href="#date"></use>
+                  </svg>
+              </div>
+              <div class="date__today">12 апреля,2019 - 10 декабря, 2021</div>
+              <div class="date__calendar calendar">
+                <div class="calendar__months">
+                  <div class="calendar__month">
+                    Декабрь, 2021
+                  </div>
+                  <div class="calendar__flex">
+                    <button type="button" class="calendar__button">
+                      <svg class="calendar__icon calendar__icon--rotate2">
+                        <use xlink:href="#arrow"/>
+                      </svg>
+                    </button>
+                    <button type="button" class="calendar__button">
+                      <svg class="calendar__icon calendar__icon--rotate">
+                        <use xlink:href="#arrow"/>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="calendar__weeks">
+                  <div class="calendar__week">
+                      Пн
+                  </div>
+                  <div class="calendar__week">
+                      Вт
+                  </div>
+                  <div class="calendar__week">
+                      Ср
+                  </div>
+                  <div class="calendar__week">
+                      Чт
+                  </div>
+                  <div class="calendar__week">
+                      Пт
+                  </div>
+                  <div class="calendar__week">
+                      Сб
+                  </div>
+                  <div class="calendar__week">
+                      Вс
+                  </div>
+                </div>
+                <div class="calendar__days">
+                  <div class="calendar__day">
+                      1
+                  </div>
+                  <div class="calendar__day">
+                      2
+                  </div>
+                  <div class="calendar__day">
+                      3
+                  </div>
+                  <div class="calendar__day">
+                      4
+                  </div>
+                  <div class="calendar__day">
+                      5
+                  </div>
+                  <div class="calendar__day">
+                      6
+                  </div>
+                  <div class="calendar__day">
+                      7
+                  </div>
+                  <div class="calendar__day">
+                      8
+                  </div>
+                  <div class="calendar__day">
+                      9
+                  </div>
+                  <div class="calendar__day">
+                      10
+                  </div>
+                  <div class="calendar__day">
+                      11
+                  </div>
+                  <div class="calendar__day">
+                      12
+                  </div>
+                  <div class="calendar__day">
+                      13
+                  </div>
+                  <div class="calendar__day">
+                      14
+                  </div>
+                  <div class="calendar__day">
+                      15
+                  </div>
+                  <div class="calendar__day">
+                      16
+                  </div>
+                  <div class="calendar__day">
+                      17
+                  </div>
+                  <div class="calendar__day">
+                      18
+                  </div>
+                  <div class="calendar__day">
+                      19
+                  </div>
+                  <div class="calendar__day">
+                      20
+                  </div>
+                  <div class="calendar__day">
+                      21
+                  </div>
+                  <div class="calendar__day">
+                      22
+                  </div>
+                  <div class="calendar__day">
+                      23
+                  </div>
+                  <div class="calendar__day">
+                      24
+                  </div>
+                  <div class="calendar__day">
+                      25
+                  </div>
+                  <div class="calendar__day">
+                      26
+                  </div>
+                  <div class="calendar__day">
+                      27
+                  </div>
+                  <div class="calendar__day">
+                      28
+                  </div>
+                  <div class="calendar__day">
+                      29
+                  </div>
+                  <div class="calendar__day">
+                      30
+                  </div>
+                  <div class="calendar__day calendar__day--opacity calendar__day--start ">
+                      1
+                  </div>
+                  <div class="calendar__day calendar__day--opacity">
+                    2
+                </div>
+                <div class="calendar__day calendar__day--opacity">
+                    3
+                </div>
+                <div class="calendar__day calendar__day--opacity">
+                    4
+                </div>
+                <div class="calendar__day calendar__day--opacity calendar__day--end">
+                    5
+                </div>
               </div>
             </div>
-          </div>
-        </section>
-        <section class="slider">
-          <h2 class="slider__title title title--ml">
-            Список заказов
-          </h2>
-          <div class="slider__swiper swiper slider__swiper1">
-            <!-- Additional required wrapper -->
-            <div class="swiper-wrapper slider__wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide slider__slide ">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
-                    <svg aria-hidden="true" class="slider__img">
-                      <use xlink:href="#filter"></use>
-                    </svg>
-                    <span class="slider__text">Фильтры</span>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide  slider__slide--lf">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
-                    <svg aria-hidden="true" class="slider__img7">
-                      <use xlink:href="#phone-callback"></use>
-                    </svg>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
-                    <svg aria-hidden="true" class="slider__img2">
-                      <use xlink:href="#phone-missed"></use>
-                    </svg>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide ">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
-                    <svg aria-hidden="true" class="slider__img">
-                      <use xlink:href="#phone-forwarded"></use>
-                    </svg>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
-                    <svg aria-hidden="true" class="slider__img3">
-                      <use xlink:href="#email"></use>
-                    </svg>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide  slider__slide--lf">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
-                    <svg aria-hidden="true" class="slider__img6">
-                      <use xlink:href="#alarm"></use>
-                    </svg>
-                    <span class="slider__text">Перезвонить</span>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide slider__slide--lf">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check check" tabindex="0">
-                  <span class="slider__pseudo3"> 
-                    <span class="slider__circl3"></span>
-                    <span class="slider__text">Новый клиент</span>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo7"> 
-                    <span class="slider__circl7"></span>
-                    <span class="slider__text">Постоянный клиент</span>
-                  </span>
-                </label>
-              </div>
-              <div class="swiper-slide slider__slide">
-                <label class="slider__wrap">
-                  <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo6"> 
-                    <span class="slider__circl6"></span>
-                    <span class="slider__text">Возможный клиент</span>
-                  </span>
-                </label>
-              </div>
+            <div class="date__wrap-img">
+              <svg aria-hidden="true" class="date__img-down">
+                  <use xlink:href="#down"></use>
+              </svg>
             </div>
-          </div>
-        </section>
-        <section class="tablet">
-          <table class="tablet__cell">
-            <!-- Responsive Table Header Section -->
-            <thead class="tablet__cell">
-              <tr class="tablet__cell">
-                <th class="tablet__title title title--color">ОБРАЩЕНИЕ</th>
-                <th class="tablet__title title title--color">КЛИЕНТ</th>
-                <th class="tablet__title title title--color">ИСТОЧНИК</th>
-                <th class="tablet__title title title--color">СТАТУС КЛИЕНТА</th>
-                <th class="tablet__title title title--color">РАБОТА С ЗАЯВКОЙ</th>
-              </tr>
-            </thead>
-            <!-- Responsive Table Body Section -->
-            <tbody class="tablet__tbody">
-              <tr class="tablet__tr">
-                <td class="tablet__first">
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color1">
-                        <use xlink:href="#phone-callback"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Входящий звонок</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td class="tablet__td">
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Геннадий Аркадьев</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td>
-                  <div class="tablet__title title title--width">tvremont.ru</div>
-                  <div class="tablet__title title title--width-xs">Поиск Яндекс</div>
-                </td>
-                <td >
-                  <a  href="regular-client.html"class="tablet__button button button--ms button--2">Постоянный клиент
-                  </a>
-                </td>
-                <td class="tablet__last">
-                  <div class="tablet__flex1">
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#alarm"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx button--sb">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                    <div class="tablet__submenu submenu">
-                      <svg aria-hidden="true" class="tablet__up">
-                        <use xlink:href="#arrow-up"></use>
-                      </svg>
-                      <ul class="submenu__list">
-                        <li class="submenu__item">
-                          <button class="submenu__button">
-                            <svg aria-hidden="true" class="submenu__img1">
-                              <use xlink:href="#how-to-reg"></use>
-                            </svg>
-                            Создать заявку
-                          </button>
-                        </li>
-                        <li class="submenu__item">
-                          <button class="submenu__button">
-                            <svg aria-hidden="true" class="submenu__img2">
-                              <use xlink:href="#add-circl"></use>
-                            </svg>
-                            Возможный клиент
-                          </button>
-                        </li>
-                        <li class="submenu__item">
-                          <button class="submenu__button">
-                            <svg aria-hidden="true" class="submenu__img3">
-                              <use xlink:href="#close"></use>
-                            </svg>                           
-                             Отказ заявки
-                          </button>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color1">
-                        <use xlink:href="#phone-callback"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Входящий звонок</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile2.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Петр Васильев</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td class="tablet__td">
-                  <div class="tablet__title title title--width">apple-remont.spb.ru</div>
-                    <div class="tablet__title title title--width-xs">Яндекс.Директ</div>
-                </td>
-                <td>
-                  <a href="regular-client.html" class="tablet__button button button--ms button--6">Постоянный клиент
-                  </a>
-                </td>
-                <td>
-                  <div class="tablet__flex1">
-                    <button class="button button--7 button--sx button--column">
-                     <span class="button__text">13</span>
-                     <span class="button__text">мин</span>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color2">
-                        <use xlink:href="#email"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Новое письмо</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile4.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Алексей Иванов</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td>
-                  <div class="tablet__title title title--width">tvremont.ru</div>
-                  <div class="tablet__title title title--width-xs">Поиск Яндекс</div>
-                </td>
-                <td>
-                  <div class="tablet__button button button--ms button--2">Новый клиент
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__flex1">
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#alarm"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color3">
-                        <use xlink:href="#phone-forwarded"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Исходящий звонок</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile3.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Валерия Викторова</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td>
-                  <div class="tablet__title title title--width">samsung-repair.ru</div>
-                  <div class="tablet__title title title--width-xs">Google Карты</div>
-                </td>
-                <td>
-                  <a href="regular-client.html" class="tablet__button button button--ms button--6">Постоянный клиент
-                  </a>
-                </td>
-                <td>
-                  <div class="tablet__flex1">
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#alarm"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color1">
-                        <use xlink:href="#phone-callback"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Входящий звонок</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile5.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Александра Меньш...</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td>
-                  <div class="tablet__title title title--width">tvremont.ru</div>
-                  <div class="tablet__title title title--width-xs">Поиск Яндекс</div>
-                </td>
-                <td>
-                  <div class="tablet__button button button--ms button--2">Новый клиент
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__flex1">
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#alarm"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color3">
-                        <use xlink:href="#phone-forwarded"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Исходящий звонок</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile2.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Петр Васильев</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td>
-                  <div class="tablet__title title title--width">apple-remont.spb.ru</div>
-                    <div class="tablet__title title title--width-xs">Поиск Google</div>
-                </td>
-                <td>
-                  <a href="regular-client.html" class="tablet__button button button--ms button--6">Постоянный клиент
-                  </a>
-                </td>
-                <td>
-                  <div class="tablet__flex1">
-                    <button class="button button--7 button--column button--sx">
-                      <span class="button__text">25</span>
-                      <span class="button__text">час</span>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-icon">
-                      <svg aria-hidden="true" class="profile__icon profile__icon--color4">
-                        <use xlink:href="#phone-missed"></use>
-                      </svg>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width">Входящий звонок</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">26 июн, 13:31</div>
-                    </div>
-                  </div>
-                </td>
-                <td>
-                  <div class="tablet__profile profile">
-                    <div class="profile__wrap-img profile__wrap-img--pd">
-                      <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
-                    </div> 
-                    <div class="profile__wrap">
-                      <div class="profile__title title title--width profile__title--hidden">Геннадий Аркадьев</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                    </div>
-                  </div>  
-                </td>
-                <td>
-                  <div class="tablet__title title title--width">apple-remont.spb.ru</div>
-                  <div class="tablet__title title title--width-xs">Яндекс.Директ</div>
-                </td>
-                <td>
-                  <a href="regular-client.html" class="tablet__button button button--ms button--6">Постоянный клиент
-                  </a>
-                </td>
-                <td>
-                  <div class="tablet__flex1">
-                    <button class="button button--7 button--sx button--rg">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#alarm"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                    </button>
-                    <button class="button button--3 button--sx button--rg">
-                      <svg aria-hidden="true" class="button__img button__img--width">
-                        <use xlink:href="#more_vert"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
+            </section>
+            <section class="tablet">
+              <table class="tablet__cell">
+                <!-- Responsive Table Header Section -->
+                <thead class="tablet__cell">
+                  <tr class="tablet__cell">
+                    <th class="tablet__title title title--color">ДАТА И ВРЕМЯ</th>
+                    <th class="tablet__title title title--color">ПОЛУЧАТЕЛЬ</th>
+                    <th class="tablet__title title title--color">СЧЕТ ПОЛУЧАТЕЛЯ</th>
+                    <th class="tablet__title title title--color">СТАТУС</th>
+                    <th class="tablet__title title title--color">СУММА</th>
+                  </tr>
+                </thead>
+                <!-- Responsive Table Body Section -->
+                <tbody class="tablet__tbody">
+                  <tr class="tablet__tr">
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                    </td>
+                    <td class="tablet__td">
+                      <div class="tablet__profile profile">
+                        <div class="profile__wrap-img profile__wrap-img--pd">
+                          <img src="img/profile/profile.svg" alt="foto" class="profile__img" width="50" height="50">
+                        </div> 
+                        <div class="profile__wrap">
+                          <div class="profile__title">Александр Македонов</div>
+                          <div class="profile__subtitle">Администратор</div>
+                        </div>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="tablet__profile profile">
+                        <svg aria-hidden="true" class="profile__icon4">
+                          <use xlink:href="#card"></use>
+                        </svg>
+
+                        <div class="profile__wrap">
+                          <div class="profile__title title title--width profile__title--hidden">**** 9481</div>
+                          <div class="profile__title title title--width-xs profile__title--bt">Сбербанк</div>
+                        </div>
+                      </div>  
+                    </td>
+                    <td>
+                      <button class="tablet__button button button--ms button--flex  button--6 button--color">
+                        <svg aria-hidden="true" class="button__icon">
+                          <use xlink:href="#check-circle"></use>
+                        </svg>
+                        Получено
+                      </button>
+                    </td>
+                    <td >
+                      <div class="profile__title title title--width">₽ 81 000</div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+
+        </div>
+
       </main>
     </div>
     <!-- подключаем js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+    <script src="https://cdn2.hubspot.net/hubfs/476360/Chart.js"></script>
+    <script src="https://cdn2.hubspot.net/hubfs/476360/utils.js"></script>
+
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1654604934260"></script>
+    <script src="js/main.js?t=1654703157465"></script>
       
   </body>
 
