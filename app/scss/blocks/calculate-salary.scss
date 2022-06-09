@@ -127,8 +127,8 @@
   outline: none;
 }
 .calculate-salary__input-bonus:focus {
-    outline: none;
-  }
+  outline: none;
+}
 .calculate-salary__flex-input > .calculate-salary__text {
   color: var(--color-main);
   @include font(56px, 69px, 800);
@@ -163,10 +163,11 @@
 .calculate-salary__text-bonus {
   color: var(--color-main);
   @include font(15px, 18px, 400);
-margin-right: 15px;
+  margin-right: 15px;
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .irs--flat .irs-bar {
+  cursor: pointer;
   top: 27px !important;
   height: 8px !important;
   @include wrap(var(--bg-main), var(--box-shadow1), 3px !important);
@@ -182,6 +183,7 @@ margin-right: 15px;
   border-radius: 4px;
 }
 .irs--flat .irs-handle > i:first-child {
+  cursor: pointer;
   position: absolute;
   display: block;
   top: 0;

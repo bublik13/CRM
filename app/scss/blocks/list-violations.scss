@@ -1,0 +1,85 @@
+.list-violations {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 50px;
+}
+.list-violations__wrap {
+  @include flex(flex, space-between, center, none, none);
+}
+.list-violations__title {
+  margin-bottom: 25px;
+}
+.list-violations__btn-prev {
+  top: 16px !important;
+  right: 6px !important;
+  left: unset !important;
+  color: transparent !important;
+}
+.list-violations__btn-next {
+  top: 14px !important;
+  right: 34px !important;
+  color: transparent !important;
+}
+.list-violations__flex {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
+  padding: 7px 10px;
+  margin-bottom: 17px;
+}
+.list-violations__btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @include flex(flex, center, center, none, none);
+  cursor: pointer;
+}
+.list-violations__btn:first-child {
+  margin-right: 10%;
+}
+.list-violations__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+}
+.list-violations__icon--rotate {
+  transform: rotate(180deg);
+}
+.list-violations__icon--rotate2 {
+  transform: rotate(0deg);
+}
+.list-violations__box {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 20px 40px;
+  @include flex(flex, center, center, column, none);
+  height: 120px;
+}
+.list-violations__box:not(:last-child) {
+  margin-bottom: 25px;
+}
+.list-violations__text {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-align: center;
+  margin-bottom: auto;
+}
+.list-violations__number {
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-top: 10px;
+}
+.list-violations__icon {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient2");
+  filter: drop-shadow(0 10px 25px #ed3956);
+}
+.list-violations__icon2 {
+  width: 24px;
+  height: 24px;
+  color: var(--color-second);
+}

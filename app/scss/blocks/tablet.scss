@@ -59,7 +59,6 @@ td:last-child {
   margin-right: 10px;
 }
 .tablet__button {
-  margin-bottom: 13px;
   white-space: nowrap;
 }
 .tablet__button > .button__icon{
@@ -110,5 +109,37 @@ td:last-child {
   width: auto !important;
 }
 .tablet__td3{
-  width: 300px;
+  width: 300px !important;
+}
+.tablet__td4{
+  width: 186px !important;
+  padding-left: 30px !important;
+}
+.tablet__td5{
+  width: 23% !important;
+}
+.tablet__td6{
+  width: 28% !important;
+}
+.tablet__td7{
+  width: 26% !important;
+}
+.tablet__td8{
+  width: 19% !important;
+
+}
+.tablet__td9{
+  width: 11% !important;
+
+}
+.tablet__td10{
+ padding-bottom: 0 !important;
+
+}
+.tablet__td11{
+ white-space: nowrap;
+
+}
+td:last-child > .profile__title{
+  margin-bottom: 0;
 }

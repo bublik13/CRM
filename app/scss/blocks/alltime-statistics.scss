@@ -1,0 +1,55 @@
+.alltime-statistics {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+}
+.alltime-statistics__title {
+  color: var(--color-main);
+  @include font(18px, 25px, 700);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 25px;
+}
+.alltime-statistics__box {
+  @include flex(flex, none, none, column, none);
+  margin-bottom: 10px;
+}
+.alltime-statistics__box > .box__wrap-img {
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+.alltime-statistics__wrap {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+  padding: 25px;
+}
+.alltime-statistics__text {
+  color: var(--color-main);
+  @include font(15px, 18px, 500);
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.alltime-statistics__wrap-text{
+    @include flex(flex, none, baseline, none, none);
+
+}
+.alltime-statistics__number{
+    color: var(--color-main);
+    @include font(24px, 29px, 800);
+    font-feature-settings: "pnum" on, "lnum" on;
+}
+.alltime-statistics__time{
+    color: var(--color-main);
+    @include font(15px, 18px, 400);
+    font-feature-settings: "pnum" on, "lnum" on;
+    margin-right: 5px;
+    margin-left: 3px;
+}
+.alltime-statistics__column{
+    @include flex(flex, none, none, column, none);
+
+}
+.alltime-statistics__column > .alltime-statistics__wrap-text:not(:last-child){
+    margin-bottom: 10px;
+}
+.alltime-statistics__wrap:not(:last-child){
+    margin-bottom: 10px;
+}

@@ -1,7 +1,6 @@
 .statistic {
-  padding-top: 12px;
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 23px;
   flex-grow: 1;
   @include flex(flex, none, none, none, none);
 }
@@ -43,14 +42,14 @@
   display: block !important;
 }
 .statistic__btn-prev {
-  top: 33px !important;
-  right: 60px !important;
+  top: 37px !important;
+  right: 32px !important;
   left: unset !important;
   color: transparent !important;
 }
 .statistic__btn-next {
-  top: 35px !important;
-  right: 35px !important;
+  top: 39px !important;
+  right: 58px !important;
   color: transparent !important;
 }
 .statistic__flex-calendar {

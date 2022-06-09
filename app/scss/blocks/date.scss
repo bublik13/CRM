@@ -1,11 +1,14 @@
 .date {
   display: flex;
-  // align-items: center;
   padding: 13px 15px;
   background-color: var(--bg-color5);
   border-radius: 15px;
   cursor: pointer;
   position: relative;
+}
+.date--mb {
+  align-self: flex-end;
+  margin-bottom: 17px;
 }
 .date__wrap-img:first-child {
   margin-right: 6px;

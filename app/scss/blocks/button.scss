@@ -40,6 +40,13 @@
   padding-right: 15px;
   border-radius: 12px;
 }
+.button--mg {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 20px !important;
+}
 .button--sx {
   padding: 13px;
   border-radius: 12px;
@@ -188,6 +195,14 @@
 .button--9 {
   color: var(--color-main);
   @include wrap(var(--bg-color2), var(--box-shadow19), 15px);
+}
+.button--10 {
+  color: #000;
+  @include wrap(var(--bg-color28), var(--box-shadow36), 15px);
+}
+.button--11 {
+  color: #000;
+  @include wrap(var(--bg-color29), var(--box-shadow34), 15px);
 }
 .button__text {
   font-feature-settings: "pnum" on, "lnum" on;

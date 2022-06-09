@@ -20,6 +20,11 @@
   color: var(--color-second);
   font-feature-settings: 'pnum' on, 'lnum' on;
 }
+.title--primary {
+  @include font(15px, 18px, 500);
+  color: #000;
+  font-feature-settings: 'pnum' on, 'lnum' on;
+}
 .title--width {
   @include font(15px, 18px, 600);
   color: var(--color-main);

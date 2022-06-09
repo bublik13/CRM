@@ -93,6 +93,7 @@
   width: 300px;
   position: relative;
 }
+
 .edit-order__input1 {
   padding: 16px 50px 20px 20px;
   @include font(15px, 18px, 400);
@@ -208,11 +209,39 @@
   position: absolute;
   cursor: pointer;
   border: none;
-  @include wrap(var(--bg-color2), var(--box-shadow19), 10px);
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   @include font(15px, 18px, 600);
   color: var(--color-main);
   @include flex(flex, center, center, none, none);
   padding: 5px;
+}
+
+.edit-order__btn2 {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  @include flex(flex, center, center, none, none);
+  padding: 13px 20px;
+  width: 278px;
+  margin-top: 17px;
+}
+// .edit-order__btn3 {
+//   top: -16px;
+//   right: -11px;
+//   position: absolute;
+//   cursor: pointer;
+//   border: none;
+//   @include wrap(var(--bg-color2), var(--box-shadow19), 10px);
+//   @include font(15px, 18px, 600);
+//   color: var(--color-main);
+//   @include flex(flex, center, center, none, none);
+//   padding: 5px;
+// }
+.edit-order__btn2 > .edit-order__icon{
+  margin-right: 10px;
+  margin-left: 0;
 }
 .edit-order__close {
   width: 24px;
@@ -226,6 +255,14 @@
   @include wrap(var(--bg-color2), var(--box-shadow19), 10px);
   @include flex(flex, center, center, none, none);
 }
+.edit-order__file-btn2 {
+  cursor: pointer;
+  max-width: 100px;
+  height: 100px;
+  padding: 14px 24px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
+  @include flex(flex, center, center, none, none);
+}
 .edit-order__wrap-btn {
   @include flex(flex, center, center, column, none);
 }
@@ -235,9 +272,20 @@
   color: var(--color-main);
   margin-bottom: 10px;
 }
+.edit-order__open2 {
+  width: 24px;
+  height: 24px;
+  color: var(--color-second);
+  margin-bottom: 10px;
+}
 .edit-order__text-up {
   @include font(15px, 18px, 600);
   color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.edit-order__text-up2 {
+  @include font(15px, 18px, 600);
+  color: var(--color-second);
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .edit-order__form {

@@ -1,0 +1,35 @@
+.personal-information {
+  background: url(../img/personal-information/theme.jpg) center center / cover
+    no-repeat;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 30px;
+  max-width: 330px;
+}
+.personal-information__wrap {
+  padding: 25px;
+  background: var(--bg-color32);
+  @include flex(flex, none, center, column, none);
+  border-radius: 20px;
+}
+.personal-information__wrap-img{
+    margin-bottom: 15px;
+}
+.personal-information__img{
+    width: 100px;
+    height: auto;
+    border-radius: 15px;
+}
+.personal-information__title{
+    @include font(18px, 21px, 700);
+    color: var(--color-main);
+    font-feature-settings: "pnum" on, "lnum" on;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.personal-information__subtitle{
+    @include font(15px, 18px, 400);
+    color: var(--color-main);
+    font-feature-settings: "pnum" on, "lnum" on;
+    text-align: center;
+}

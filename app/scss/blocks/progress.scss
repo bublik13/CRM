@@ -90,3 +90,17 @@
   margin-right: 2px;
   @include wrap(var(--bg-color30), var(--box-shadow32), 5px);
 }
+.progress__active12 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color15), var(--box-shadow33), 5px);
+}
+.progress__active13 {
+  width: 13%;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 2px;
+  @include wrap(var(--bg-color29), var(--box-shadow34), 5px);
+}

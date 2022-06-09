@@ -1,11 +1,11 @@
 .financial-indicators {
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
-  margin-bottom: 30px;
-  padding: 17px 26px 25px 25px;
+  margin-bottom: 22px;
+  padding: 11px 26px 25px 25px;
 }
 .financial-indicators__wrap {
   @include flex(flex, space-between, center, none, none);
-  margin-bottom: 17px;
+  margin-bottom: 12px;
 }
 .financial-indicators__date {
   @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
@@ -14,7 +14,7 @@
 .chartjs-render-monitor {
   padding: 25px 25px 0 0;
   @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
-  margin-bottom: 25px;
+  margin-bottom: 31px;
 }
 .financial-indicators__slider {
   margin-bottom: 0;
@@ -22,7 +22,7 @@
 }
 .financial-indicators__slider > .slider__column:first-child {
   flex-grow: 0;
-  margin-right: 75px;
+  margin-right: 59px;
 }
 .financial-indicators__slider > .slider__column {
   margin-right: 0;

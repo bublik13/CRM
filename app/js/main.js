@@ -37,8 +37,8 @@ testFunction();
     slidesPerView: "3",
     spaceBetween: 26,
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.statistic__btn-prev',
+      prevEl: '.statistic__btn-next',
     },
   });
 
@@ -105,7 +105,7 @@ testFunction();
 					
 	  			},
 				  ticks: {
-					padding: 30,
+					padding: 20,
 					fontSize: 15,
 					color: "#767676"
 				}
@@ -144,45 +144,98 @@ window.onload = function() {
 
 };
 
-// 	document.getElementById('randomizeData').addEventListener('click', function() {
-// 		config.data.datasets.forEach(function(dataset) {
-// 			dataset.data = dataset.data.map(function() {
-// 				return randomScalingFactor();
-// 			});
-
-// 		});
-
-// 		window.myLine.update();
-// 	});
 
 $(".js-range-slider").ionRangeSlider({
 	min: 0,
 	max: 180000,
-	// step: 20000,
 	grid: true,
-	// values_separator:"0 + 20 000 + 40 000 + 50 000"
-	// prettify_separator: "20 000, 40 000,"
-	
 });
 function logslider(position, reverse) { 
-	// position will be between 0 and 100
 	var minp = 0;
 	var maxp = 100;
-  
-	// The result should be between 100 an 10000000
 	var minv = Math.log(10);
 	var maxv = Math.log(10000);
-  
-	// calculate adjustment factor
 	var scale = (maxv - minv) / (maxp - minp);
-	
 	return reverse
 	  ? (Math.log(position) - minv) / scale + minp
 	  : Math.exp(minv + scale * (position - minp))
 	  ;
   }
   
-  
   $(".js-range-slider").ionRangeSlider({
 	skin: "round"
 });
+
+
+var data = [
+	{ y: '1', a: 50, b: 90, c:11},
+		{ y: '2', a: 0,  b: 0, c:0},
+		{ y: '3', a: 50,  b: 50, c:33},
+		{ y: '4', a: 75,  b: 60, c:44},
+		{ y: '5', a: 80,  b: 65, c:55},
+		{ y: '6', a: 90,  b: 70, c:66},
+		{ y: '7', a: 100, b: 75, c:77},
+		{ y: '8', a: 115, b: 75, c:88},
+		{ y: '9', a: 120, b: 85, c:99},
+		{ y: '10', a: 145, b: 85, c:11},
+		{ y: '11', a: 160, b: 95, c:45},
+		  { y: '12', a: 0,  b: 0, c:0},
+		{ y: '13', a: 50,  b: 50, c:33},
+		{ y: '14', a: 75,  b: 60, c:44},
+		{ y: '15', a: 80,  b: 65, c:55},
+		{ y: '16', a: 90,  b: 70, c:66},
+		{ y: '17', a: 100, b: 75, c:77},
+		{ y: '18', a: 115, b: 75, c:88},
+		{ y: '19', a: 120, b: 85, c:99},
+		{ y: '20', a: 145, b: 85, c:11},
+		{ y: '21', a: 160, b: 95, c:45},
+		{ y: '22', a: 50, b: 90, c:11},
+		{ y: '23', a: 0,  b: 0, c:0},
+		{ y: '24', a: 50,  b: 50, c:33},
+		{ y: '25', a: 75,  b: 60, c:44},
+		{ y: '26', a: 80,  b: 65, c:55},
+		{ y: '27', a: 90,  b: 70, c:66},
+		{ y: '28', a: 100, b: 75, c:77},
+		{ y: '29', a: 115, b: 75, c:88},
+		{ y: '30', a: 120, b: 85, c:99}
+	  ],
+	  formatY = function (y) {
+			  return '$'+y;
+		  },
+	  formatX = function (x) {
+			  return x.src.y;
+		  },
+	  
+	  configTwo = {
+		data: data,
+		xkey: 'y',
+		ykeys: ['a', 'b' , 'c'],
+		labels: ['Total Income', 'Total Outcome'],
+		fillOpacity: 0.6,
+		// hideHover: 'auto',
+		stacked: true,
+		resize: true,
+		pointFillColors:['#ffffff'],
+		pointStrokeColors: ['black'],
+		barColors:['blue','green','orange'],
+		yLabelFormat:formatY,
+		xLabelFormat: formatX,
+		hoverCallback: function (index, options, content, row) {
+		  return 'custom 1';
+		}
+	};
+	  
+	configTwo.element = 'bar-chart';
+  Morris.Bar(configTwo);
+
+  const swiperlistViolations = new Swiper('.list-violations__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+    slidesPerView: "4",
+    spaceBetween: 25,
+    navigation: {
+      nextEl: '.list-violations__btn-prev',
+      prevEl: '.list-violations__btn-next',
+    },
+  });

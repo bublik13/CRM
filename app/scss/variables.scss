@@ -25,14 +25,16 @@
   --bg-color21: linear-gradient(92.16deg, #0CEBEB 0%, #20E3B2 50%, #29FFC6 100%);
   --bg-color22:rgba(0, 0, 0, 0.15);
   --bg-color23:rgba(0, 117, 255, 0.2);
-  --bg-color24:  linear-gradient(100.78deg, #ff512f 0%, #dd2476 100%);
-  --bg-color25:  linear-gradient(106.92deg, #4A00E0 0.01%, #8E2DE2 100%);
-  --bg-color26:  linear-gradient(90.88deg, #00FF75 0%, #42FF00 100%);
-  --bg-color27:  linear-gradient(100.78deg, #00C2FF 0%, #5424DD 100%);
-  --bg-color28:  linear-gradient(135deg, #00FF94 0%, #00E0FF 100%);
-  --bg-color29:  linear-gradient(135deg, #FA0DFF 0%, #FF0D81 100%);
-  --bg-color30:   linear-gradient(135deg, #0085FF 0%, #0038FF 100%);
- 
+  --bg-color24: linear-gradient(100.78deg, #ff512f 0%, #dd2476 100%);
+  --bg-color25: linear-gradient(106.92deg, #4A00E0 0.01%, #8E2DE2 100%);
+  --bg-color26: linear-gradient(90.88deg, #00FF75 0%, #42FF00 100%);
+  --bg-color27: linear-gradient(100.78deg, #00C2FF 0%, #5424DD 100%);
+  --bg-color28: linear-gradient(135deg, #00FF94 0%, #00E0FF 100%);
+  --bg-color29: linear-gradient(135deg, #FA0DFF 0%, #FF0D81 100%);
+  --bg-color30: linear-gradient(135deg, #0085FF 0%, #0038FF 100%);
+  --bg-color31: linear-gradient(135deg, #ADFF00 0%, #00C2FF 100%);
+  --bg-color32:rgba(19, 19, 21, 0.4);
+
 
   --bg-line: #292929;
   --bg-line2: #3C3C3C;
@@ -73,9 +75,14 @@
  --box-shadow30:   0px 10px 25px rgba(250, 13, 255, 0.25);
  --box-shadow31:   0px 10px 25px rgba(195, 0, 199, 0.3);
  --box-shadow32:   0px 10px 25px rgba(40, 96, 255, 0.3);
+ --box-shadow33:   0px 10px 25px rgba(123, 254, 68, 0.3);
+ --box-shadow34:    0px 10px 25px rgba(250, 13, 255, 0.3);
+ --box-shadow35:  0px 10px 25px #FA0DFF;
+ --box-shadow36:   0px 10px 25px rgba(0, 255, 148, 0.3);
 
- 
   --text-shadow: #ff0000;
+  --text-shadow2:  0px 10px 25px #4BBD6D;
+
   //задаем дефолтное значение для переменной --svgColor
   --svgColor: currentColor;
 }

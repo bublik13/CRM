@@ -11,7 +11,7 @@
 }
 .box__column {
   cursor: pointer;
-  padding: 31px 25px 25px 20px;
+  padding: 25px 25px 25px 20px;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
   width: 100%;
 }
@@ -36,6 +36,18 @@
 }
 .box__item--color5 {
   @include wrap(var(--bg-color30), var(--box-shadow32), 20px);
+}
+.box__item--color6 {
+  @include wrap(var(--bg-color9), var(--box-shadow15), 20px);
+}
+.box__item--color7 {
+  @include wrap(var(--bg-color15), var(--box-shadow33), 20px);
+}
+.box__item--color7 > .box__flex > .box__wrap .box__number {
+  color: #000;
+}
+.box__item--color7 > .box__flex > .box__wrap .box__text {
+  color: #000;
 }
 .box__item:not(:last-child) {
   margin-right: 25px;
@@ -78,6 +90,14 @@
 .box__img--color5 {
   --svgColor: url("#gradient9");
 }
+.box__img--color6 {
+  --svgColor: url("#gradient15");
+  filter: drop-shadow(0px 10px 25px #e60045);
+}
+.box__img--color7 {
+  --svgColor: url("#gradient16");
+  filter: drop-shadow(0px 10px 25px #7bfe44);
+}
 .box__img--width {
   width: 34px;
   height: 23px;
@@ -87,6 +107,9 @@
 }
 .box__title {
   margin-bottom: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .box__wrap {
   display: flex;
@@ -95,8 +118,17 @@
 .box__number {
   @include font(24px, 29px, 800, $ff: "Gilroy");
   color: var(--color-main);
-  margin-right: 5px;
+  // margin-right: 5px;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.box__number2 {
+  @include font(18px, 22px, 800, $ff: "Gilroy");
+  color: var(--color-main);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .box__text {
   @include font(15px, 18px, 500);

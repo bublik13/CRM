@@ -2,14 +2,22 @@
   position: relative;
 }
 .form__wrapper {
-  // @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   @include flex(flex, flex-start, center, none, none);
-  // max-width: 845px;
   margin-top: 25px;
   margin-bottom: 30px;
-  // width: 50%;
 }
-
+.form__wrapper2 {
+  @include flex(flex, none, flex-start, column, none);
+}
+.form__wrapper--pd {
+  margin-top: 19px;
+  margin-bottom: 26px;
+}
+.form__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
 .form__wrap {
   position: relative;
   background: var(--bg-color5);
@@ -83,9 +91,7 @@
   @include font(15px, 17px, 600);
   // color: var(--color-main);
   background: transparent;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(flex, center, center, none, none);
   cursor: pointer;
   transition: 0.2s ease;
   border: none;
@@ -123,6 +129,24 @@
   cursor: pointer;
   width: 373px;
 }
+.form__pseudo3 {
+  flex-shrink: 0;
+  @include font(15px, 17px, 600);
+  background: transparent;
+  @include flex(flex, flex-start, center, none, none);
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 14px;
+  border-right: 15px;
+  color: var(--color-second);
+  height: 44px;
+  flex-shrink: 0;
+  width: 280px;
+}
 .form__wrap:first-child {
   border-radius: 15px 0 0 15px;
 }
@@ -135,6 +159,13 @@
   display: block;
   --svgColor: url("#gradient1");
   margin-left: 16px;
+}
+.form__img2 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient1");
+  margin-right: 16px;
 }
 .form__check:focus ~ .form__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
@@ -153,6 +184,24 @@
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding: 17px 15px 20px 15px;
+}
+.form__check:focus ~ .form__pseudo3 {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 14px;
+  width: 280px;
+  height: 44px;
+}
+.form__check:focus ~ .form__pseudo4 {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding-top: 10px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 14px;
 }
 .form__check:focus
   ~ .form__pseudo2
@@ -207,3 +256,22 @@
 .form__profile > .profile__wrap {
   max-width: 228px;
 }
+.form--bg {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  max-width: 330px;
+}
+.form--bg > .form__title {
+  margin-bottom: 25px;
+}
+.form__wrapper2 > .form__wrap3:not(:last-child) {
+  margin-bottom: 10px;
+}
+// select {
+//   -webkit-appearance: none;
+//   -moz-appearance: none;
+// }
+
+// select::-ms-expand {
+//   display: none;
+// }
