@@ -1,0 +1,53 @@
+.check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.check-pseudo-img {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: block;
+  background-color: #1d1d1f;
+  border: 1px solid #767676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border-radius: 8px;
+}
+.check-pseudo-img:after {
+  content: " ";
+  width: 24px;
+  height: 24px;
+  background: url(../img/tablet/arrow.svg) center center no-repeat;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 10;
+}
+.check-pseudo-img:before {
+  content: " ";
+  width: 24px;
+  height: 24px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+  background: var(--bg-main);
+  box-shadow: var(--box-shadow3);
+  border-radius: 8px;
+  position: absolute;
+}
+.check:checked ~ .check-pseudo-img:after {
+  opacity: 1;
+  transform: scale(1);
+}
+.check:checked ~ .check-pseudo-img:before {
+  opacity: 1;
+  transform: scale(1);
+}

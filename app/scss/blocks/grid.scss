@@ -21,8 +21,15 @@
 }
 .grid4 {
   display: grid;
+  grid-template-columns: 370px auto;
+  grid-gap: 0 30px;
+  justify-content: space-between;
+}
+.grid5 {
+  display: grid;
   grid-template-columns: 330px auto;
   grid-gap: 0 30px;
+  justify-content: space-between;
 }
 .grid--active {
   grid-template-columns: 104px auto;

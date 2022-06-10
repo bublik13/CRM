@@ -43,10 +43,31 @@
 .box__item--color7 {
   @include wrap(var(--bg-color15), var(--box-shadow33), 20px);
 }
+.box__item--color8 {
+  @include wrap(var(--bg-color34), var(--box-shadow36), 20px);
+}
+.box__item--color8 {
+  @include wrap(var(--bg-color34), var(--box-shadow36), 20px);
+}
+.box__item--color9 {
+  @include wrap(var(--bg-color20), var(--box-shadow6), 20px);
+}
 .box__item--color7 > .box__flex > .box__wrap .box__number {
   color: #000;
 }
 .box__item--color7 > .box__flex > .box__wrap .box__text {
+  color: #000;
+}
+.box__item--color8 > .box__flex > .box__wrap .box__number {
+  color: #000;
+}
+.box__item--color8 > .box__flex > .box__wrap .box__text {
+  color: #000;
+}
+.box__item--color4 > .box__flex > .box__wrap .box__number {
+  color: #000;
+}
+.box__item--color4 > .box__flex > .box__wrap .box__text {
   color: #000;
 }
 .box__item:not(:last-child) {
@@ -78,6 +99,7 @@
 .box__img--color2 {
   --svgColor: url("#gradient2");
   filter: drop-shadow(0px 10px 25px #ed3956);
+
 }
 .box__img--color3 {
   --svgColor: url("#gradient3");
@@ -118,7 +140,7 @@
 .box__number {
   @include font(24px, 29px, 800, $ff: "Gilroy");
   color: var(--color-main);
-  // margin-right: 5px;
+  margin-right: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -129,6 +151,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin-right: 5px;
 }
 .box__text {
   @include font(15px, 18px, 500);
@@ -137,6 +160,7 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
 .box__title--bottom {
   margin-bottom: 20px;
 }

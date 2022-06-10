@@ -34,8 +34,9 @@
   --bg-color30: linear-gradient(135deg, #0085FF 0%, #0038FF 100%);
   --bg-color31: linear-gradient(135deg, #ADFF00 0%, #00C2FF 100%);
   --bg-color32:rgba(19, 19, 21, 0.4);
-
-
+  --bg-color33: #FFFFFF;
+  --bg-color34: linear-gradient(90.88deg, #00FF75 0%, #42FF00 100%);
+  --bg-color35:  linear-gradient(106.5deg, #FF3D00 0%, #FF007A 100%);
   --bg-line: #292929;
   --bg-line2: #3C3C3C;
 
@@ -62,29 +63,36 @@
  --box-shadow17: 0px 10px 25px rgba(57, 200, 96, 0.3);
  --box-shadow18: 0px 0px 20px rgba(0, 0, 0, 0.1);
  --box-shadow19: 0px 10px 25px rgba(255, 0, 0, 0.3);
- --box-shadow20:  0px 10px 25px rgba(0, 211, 34, 0.25);
- --box-shadow21:  0px 0px 30px rgba(0, 0, 0, 0.05);
- --box-shadow22:  0px 10px 25px rgba(123, 97, 255, 0.3);
- --box-shadow23:  0px 10px 25px rgba(0, 255, 148, 0.3)
- --box-shadow24:  0px 10px 25px rgba(0, 209, 255, 0.3);
- --box-shadow25:  0px 10px 25px rgba(253, 29, 29, 0.3);
- --box-shadow26:  0px 10px 25px rgba(7, 255, 106, 0.3);
- --box-shadow27:  0px 10px 25px rgba(8, 221, 252, 0.3);
- --box-shadow28:  0px 10px 25px rgba(255, 199, 0, 0.25);
- --box-shadow29:   0px 10px 25px rgba(0, 255, 148, 0.25);
- --box-shadow30:   0px 10px 25px rgba(250, 13, 255, 0.25);
- --box-shadow31:   0px 10px 25px rgba(195, 0, 199, 0.3);
- --box-shadow32:   0px 10px 25px rgba(40, 96, 255, 0.3);
- --box-shadow33:   0px 10px 25px rgba(123, 254, 68, 0.3);
- --box-shadow34:    0px 10px 25px rgba(250, 13, 255, 0.3);
- --box-shadow35:  0px 10px 25px #FA0DFF;
- --box-shadow36:   0px 10px 25px rgba(0, 255, 148, 0.3);
+ --box-shadow20: 0px 10px 25px rgba(0, 211, 34, 0.25);
+ --box-shadow21: 0px 0px 30px rgba(0, 0, 0, 0.05);
+ --box-shadow22: 0px 10px 25px rgba(123, 97, 255, 0.3);
+ --box-shadow23: 0px 10px 25px rgba(0, 255, 148, 0.3)
+ --box-shadow24: 0px 10px 25px rgba(0, 209, 255, 0.3);
+ --box-shadow25: 0px 10px 25px rgba(253, 29, 29, 0.3);
+ --box-shadow26: 0px 10px 25px rgba(7, 255, 106, 0.3);
+ --box-shadow27: 0px 10px 25px rgba(8, 221, 252, 0.3);
+ --box-shadow28: 0px 10px 25px rgba(255, 199, 0, 0.25);
+ --box-shadow29: 0px 10px 25px rgba(0, 255, 148, 0.25);
+ --box-shadow30: 0px 10px 25px rgba(250, 13, 255, 0.25);
+ --box-shadow31: 0px 10px 25px rgba(195, 0, 199, 0.3);
+ --box-shadow32: 0px 10px 25px rgba(40, 96, 255, 0.3);
+ --box-shadow33: 0px 10px 25px rgba(123, 254, 68, 0.3);
+ --box-shadow34: 0px 10px 25px rgba(250, 13, 255, 0.3);
+ --box-shadow35: 0px 10px 25px #FA0DFF;
+ --box-shadow36: 0px 10px 25px rgba(0, 255, 148, 0.3);
+ --box-shadow37:  0px 10px 25px rgba(255, 26, 62, 0.3);
+
 
   --text-shadow: #ff0000;
   --text-shadow2:  0px 10px 25px #4BBD6D;
-
   //задаем дефолтное значение для переменной --svgColor
   --svgColor: currentColor;
+
+  --scrollbarBg: #BCBCBC;
+  --scrollbarThumb: rgba(0, 0, 0, 0.1);
+  --scrollbarWidth: 10px;
+  --scrollbarBorder: 100px;
+
 }
 //bacgrounds
 $body-bg: #ff55;
