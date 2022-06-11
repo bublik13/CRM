@@ -10,20 +10,27 @@ table {
 .tablet__flex {
   @include flex(flex, space-between, center, none, none);
 }
-.tablet__grid{
-  display:grid;
-  grid-template-columns: repeat(6,1fr);
+.tablet__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   justify-content: flex-end;
 }
 .tablet__flex1 {
   @include flex(flex, flex-end, center, none, none);
   position: relative;
+  @include media($lg) {
+    flex-wrap: wrap;
+  }
 }
 .tablet__flex2 {
   @include flex(flex, none, center, none, none);
 }
 .tablet__flex1 > .button {
   margin-right: 10px;
+  @include media($lg) {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
 }
 td {
   border-collapse: separate;
@@ -44,7 +51,7 @@ td:nth-child(6) {
   white-space: nowrap;
 }
 td:last-child {
-  border-radius: 0 20px 20px 0;
+  border-radius: 0 20px 20px 0 ;
 }
 th {
   padding: 15px;
@@ -60,14 +67,15 @@ td {
 }
 td:last-child {
   white-space: nowrap;
-  padding-right: 22px;
-  padding-left: 27px;
-  padding-top: 0px;
+  padding: 0 22px 0 27px !important;
 }
 .tablet__flex > .button:first-child {
   margin-right: 10px;
 }
 .tablet__wrap2 > .button:first-child {
+  margin-right: 10px;
+}
+.tablet__wrap > .button:first-child {
   margin-right: 10px;
 }
 .tablet__button {
@@ -76,10 +84,18 @@ td:last-child {
 .tablet__wrap {
   position: relative;
   padding-right: 15px;
+  @include media($lg) {
+    padding-right: 0;
+  }
 }
 .tablet__wrap2 {
   position: relative;
   padding-left: 5px;
+  @include media($lg) {
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
 .tablet__wrap:after {
   position: absolute;
@@ -89,6 +105,9 @@ td:last-child {
   height: 20px;
   background: var(--bg-line);
   width: 2px;
+  @include media($lg) {
+    display: none;
+  }
 }
 .tablet__wrap2:after {
   position: absolute;
@@ -98,6 +117,9 @@ td:last-child {
   height: 20px;
   background: var(--bg-line);
   width: 2px;
+  @include media($lg) {
+    display: none;
+  }
 }
 .tablet__button > .button__icon {
   margin-right: 5px;

@@ -1,0 +1,140 @@
+.filter {
+  padding: 25px;
+  @include wrap(var(--bg-color5), 0 0 0 0, 20px);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 31px;
+  margin-bottom: 25px;
+  @include media($lg) {
+    grid-gap: 15px;
+  }
+}
+.filter__fildset {
+  @include flex(flex, none, none, column, none);
+  border: none;
+}
+.filter__fildset > .filter__name {
+  margin-bottom: 10px;
+}
+.filter__name {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.filter__label {
+  @include flex(flex, none, center, none, none);
+}
+.filter__label:not(:last-child) {
+  margin-bottom: 25px;
+}
+.filter__label > .filter__name {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+.filter__flex-input {
+  position: relative;
+}
+.filter__input {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 15px);
+  padding: 10px 10px 10px 16px;
+  border: 0.5px solid #292929;
+  width: 50px;
+  height: 50px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.filter__input--width {
+  width: 143px;
+  padding-right: 41px;
+}
+.filter__text {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding-left: 10px;
+  border-left: 1px solid #292929;
+}
+.filter__select {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 15px);
+  padding: 16px 20px 15px;
+  border: 0.5px solid #292929;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  max-width: 300px;
+}
+.filter__select:not(:last-child) {
+  margin-bottom: 25px;
+}
+.filter__button {
+  width: 240px;
+  margin-left: auto;
+  margin-top: auto;
+}
+.filter__wrap {
+  @include wrap(var(--bg-color4), 0 0 0 0, 15px);
+  @include flex(flex, none, center, none, none);
+  padding: 13px;
+  max-width: 226px;
+}
+.filter__form {
+  @include flex(flex, none, center, none, none);
+}
+.filter__form:not(:last-child) {
+  margin-right: 20px;
+}
+.filter__form--bt{
+    margin-top: 13px;
+}
+/* Современные браузеры
+   ----------------------------  */
+.filter__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+        ----------------------------  */
+.filter__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+        ----------------------------  */
+.filter__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+        ----------------------------  */
+.filter__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+        ----------------------------  */
+.filter__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+        ----------------------------  */
+.filter__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+.filter__input:focus {
+  outline: none;
+}

@@ -126,6 +126,7 @@
   filter: drop-shadow(0px 10px 25px #00FF94);
 
 }
+
 .slider__img6:after {
   content: " ";
   position: absolute;
@@ -259,7 +260,10 @@
   border-radius: 15px;
 }
 .slider__check:checked ~ .slider__pseudo {
-  @include wrap(var(--bg-color16), 0 0 0 0, 15px);
+  @include wrap(var(--bg-main), 0 0 0 0, 15px);
+}
+.slider__check:checked ~ .slider__pseudo > .slider__img {
+  --svgColor: var(--bg-color33);
 }
 .slider__check:checked ~ .slider__pseudo > .slider__circl {
   @include wrap(var(--color-main), var(--box-shadow3), 0);

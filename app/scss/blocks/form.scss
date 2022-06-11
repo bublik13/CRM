@@ -52,6 +52,14 @@
 .form__wrap3:last-child {
   @include wrap(var(--bg-color5), var(--box-shadow3), 0 15px 15px 0);
 }
+.form__wrap4 {
+  position: relative;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 0);
+  border: 5px solid transparent;
+  width: 100%;
+  text-align: center;
+  white-space: nowrap;
+}
 .form__wrapper .form__wrap3:not(:first-child):after {
   position: absolute;
   content: " ";
@@ -167,6 +175,21 @@
   --svgColor: url("#gradient1");
   margin-right: 16px;
 }
+.form__img3 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient1");
+  margin-right: 10px;
+}
+.form__img4 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient14");
+  margin-right: 10px;
+  filter: drop-shadow(0px 10px 25px rgba(0, 133, 255, 0.3));
+}
 .form__check:focus ~ .form__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
@@ -218,6 +241,9 @@
   color: var(--color-main);
   padding: 16px 20px;
   height: 50px;
+}
+.form__check:focus ~ .form__pseudo-height > .form__img4 {
+  --svgColor: var(--color-main);
 }
 .form__slider {
   margin-right: 30px !important;

@@ -5,7 +5,10 @@
   grid-template-columns: 1fr 2fr 1fr;
   margin-top: 22px;
 }
-
+.online-chats--grid {
+  grid-template-columns: auto 330px;
+  align-items: flex-start;
+}
 .online-chats__title {
   @include font(18px, 21px, 700, var(--second-family));
   color: var(--color-main);
@@ -13,7 +16,7 @@
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .online-chats__top-form {
-  @include flex(flex, none, none, none, none);
+  @include flex(flex, none, none, none, wrap);
   margin-bottom: 22px;
 }
 .online-chats__form > .form__wrap .form__pseudo2 {
@@ -31,7 +34,7 @@
 .online-chats__form::-moz-scrollbar {
   display: none;
 }
-.online-chats__chat{
+.online-chats__chat {
   padding-top: 0;
 }
 .online-chats__history {
@@ -51,4 +54,70 @@
 }
 .online-chats__history > .history__progress {
   margin-bottom: 47px;
+}
+.online-chats__label {
+  @include flex(flex, none, none, column, none);
+}
+.online-chats__name {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  margin-bottom: 10px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.online-chats__textarea {
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  width: 300px;
+  height: 110px;
+  border: none;
+  background: var(--bg-color4);
+  box-shadow: 0 0;
+  border-radius: 15px;
+  padding: 16px 20px;
+  resize: none;
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 25px;
+  text-align: start;
+  overflow: auto;
+}
+.online-chats__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.online-chats__form-left {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+  padding: 25px;
+}
+.online-chats__form-left > .online-chats__title {
+  margin-bottom: 15px;
+}
+.online-chats__profile {
+  @include wrap(var(--bg-color17), var(--box-shadow3), 20px);
+  padding: 12px;
+}
+.online-chats__profile > .profile__wrap-img {
+  margin-right: 10px;
+}
+.online-chats__profile:not(:last-child) {
+  margin-bottom: 10px;
+}
+.online-chats__wrap-text {
+  @include flex(flex, none, last baseline, none, none);
+  margin-bottom: 10px;
+}
+.online-chats__number {
+  @include font(44px, 53px, 800, $ff: "Gilroy");
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.online-chats__text {
+  @include font(15px, 17px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 5px;
+}
+.online-chats__wrap-chat {
+  height: 180px;
+  overflow: auto;
 }
