@@ -480,7 +480,7 @@
         
 
     </svg>
-    <img class="pp"  hidden  src="img/desktop1.jpg" alt="">
+    <img class="pp"  hidden  src="img/desktop8.jpg" alt="">
     <style>
       .pp {
         position: absolute;
@@ -544,7 +544,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="customers.html" class="nav__link  nav__link--active">
+                  <a href="customers.html" class="nav__link nav__link--active">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#person"></use>
                       </svg>
@@ -731,6 +731,12 @@
       <main class="container js-container">
         <header class="header">
           <div class="header__wrap">
+            <button class="header__back">
+              <svg aria-hidden="true" class="header__icon">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              Назад
+            </button>
             <h1 class="header__title1 title">
               Геннадий Аркадьев
             </h1>
@@ -744,7 +750,7 @@
             </svg>
           </button>
         </header>
-        <div class="grid2">
+        <div class="grid6">
           <section class="client">
             <div class="client__wrapper">
               <div class="client__profile profile">
@@ -781,92 +787,109 @@
                       <div class="profile__title title title--width-xs profile__title--bt">gennadyyyy0382@gmail.com</div>
                     </div>
                   </div>
-                  <div class="profile__flex">
-                    <button class="profile__button button button--ms button--6 button--ml">
-                      <svg aria-hidden="true" class="profile__icon3">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                      <div class="profile__text2">Позвонить</div>
-                    </button>
-                    <button class="profile__button button button--ms button--brand button--ml">
-                      <svg aria-hidden="true" class="profile__icon3">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                      <div class="profile__text2">Отправить SMS</div>
-                    </button>
+                </div>
+                <div class="profile__flex">
+                  <button class="profile__button button button--ms button--6 button--ml">
+                    <svg aria-hidden="true" class="profile__icon3">
+                      <use xlink:href="#phone"></use>
+                    </svg>
+                    <div class="profile__text2">Позвонить</div>
+                  </button>
+                  <button class="profile__button button button--ms button--brand button--ml">
+                    <svg aria-hidden="true" class="profile__icon3">
+                      <use xlink:href="#mark-email"></use>
+                    </svg>
+                    <div class="profile__text2">Отправить SMS</div>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="client__wrapper">
+              <div class="client__flex2">
+                <div class="client__slider slider slider__flex">
+                  <label class="slider__wrap">
+                    <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                    <span class="slider__pseudo1"> 
+                      <div class="slider__circl1"></div> 
+                      <span class="slider__text">Скидка</span>
+                    </span>
+                  </label>
+                  <label class="slider__wrap">
+                    <input name="radio" type="radio" checked="checked" value="1" class="slider__check check" tabindex="0">
+                    <span class="slider__pseudo2"> 
+                      <div class="slider__circl2"></div>
+                      <span class="slider__text">Отзывы</span>
+                    </span>
+                  </label>
+                </div>
+                <button type="button" class="client__button-left button button--md button--brand button--flex button---width-sm">
+                  <svg aria-hidden="true" width="24" height="24" class="button__img">
+                      <use xlink:href="#add"></use>
+                  </svg>
+                  <div class="button__text">Добавить заметку</div>
+                </button>
+              </div>
+              <div class="client__grid">
+                <div class="client__box2">
+                  <button class="client__button-top button button--ms button--flex  button--11 button--color">
+                    Скидка
+                  </button>
+                  <div class="client__comment">
+                    Клиент попросил скидку на ремонт ноутбука.
+                    Сделали ему скидку 500р. Остался доволен
+                  </div>
+                  <div class="client__profile2 profile">
+                    <div class="profile__wrap-img profile__wrap-img--pd">
+                      <img src="img/profile/profile11.svg" alt="foto" class="profile__img" width="50" height="50">
+                    </div> 
+                    <div class="profile__wrap">
+                      <div class="profile__title title title--width profile__title--hidden">Денис Алексеев</div>
+                      <div class="profile__title title title--width-xs profile__title--bt">Добавлено 11 сен, 2021</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__box2">
+                  <button class="client__button-top button button--ms button--flex  button--10 button--color">
+                    Скидка
+                  </button>
+                  <div class="client__comment">
+                    Сказал отставит отзыв положительный, потому
+                    что скидку сделали и пошли ему навстречу. Надо
+                    будет проверить, написал он отзыв или нет
+                  </div>
+                  <div class="client__profile2 profile">
+                    <div class="profile__wrap-img profile__wrap-img--pd">
+                      <img src="img/profile/profile11.svg" alt="foto" class="profile__img" width="50" height="50">
+                    </div> 
+                    <div class="profile__wrap">
+                      <div class="profile__title title title--width profile__title--hidden">Денис Алексеев</div>
+                      <div class="profile__title title title--width-xs profile__title--bt">Добавлено 11 сен, 2021</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="client__box2">
+                  <button class="client__button-top button button--ms button--flex  button--10 button--color">
+                    Скидка
+                  </button>
+                  <div class="client__comment">
+                    Оставил отзыв положительный, как и обещал,
+                    можно ему будет еще  скидку предложить. Вроде
+                    норм клиент
+                  </div>
+                  <div class="client__profile2 profile">
+                    <div class="profile__wrap-img profile__wrap-img--pd">
+                      <img src="img/profile/profile11.svg" alt="foto" class="profile__img" width="50" height="50">
+                    </div> 
+                    <div class="profile__wrap">
+                      <div class="profile__title title title--width profile__title--hidden">Денис Алексеев</div>
+                      <div class="profile__title title title--width-xs profile__title--bt">Добавлено 11 сен, 2021</div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="client__title">Выберите необходимую категорию в блоке информации</div>
-              <div class="client__wrap2">
-                <a href="customers-order.html" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon2">
-                      <use xlink:href="#work2"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Заказы</div>
-                    <div class="client__text">10 заказов на ₽ 10 800</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-                <a href="notes-customers.html" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon4">
-                      <use xlink:href="#person-add"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Звонки и заявки</div>
-                    <div class="client__text">8 заявок</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon5">
-                      <use xlink:href="#card-off"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Акции и бонусы</div>
-                    <div class="client__text">4 акции отправлено</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon6">
-                      <use xlink:href="#subject"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Заметки о клиенте</div>
-                    <div class="client__text">3 заметок</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-              </div>
             </div>
           </section>
-          <section class="chat">
+          <section class="chat chat--top">
             <div class="chat__form form">
               <label class="form__wrap5">
                 <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">

@@ -16,6 +16,9 @@
 .client__flex {
   @include flex(flex, none, none, none, none);
 }
+.client__flex2 {
+  @include flex(flex, space-between, none, none, none);
+}
 
 .client__form-column {
   @include flex(flex, none, none, column, none);
@@ -28,12 +31,20 @@
 .client__profile {
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
   padding: 25px;
-  margin-bottom: 25px;
   @include flex(flex, space-between, none, none, none);
 
 }
+.client__profile:not(:last-child) {
+  margin-bottom: 25px;
+}
 .client__profile > .profile__wrap-img {
   margin-right: 13px;
+}
+.client__profile2{
+margin-top: auto;
+}
+.client__profile2 > .profile__wrap-img {
+  margin-right: 10px;
 }
 .client__info-order {
   margin-right: 30px;
@@ -139,6 +150,12 @@
 .client__box:not(:last-child) {
   margin-bottom: 15px;
 }
+.client__box2 {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+  padding: 25px;
+  @include flex(flex, none, flex-start, column, none);
+  text-decoration: none;
+}
 .client__wrap-icon {
   @include wrap(var(--bg-color17), 0 0 0 0, 15px);
   padding: 13px;
@@ -177,4 +194,25 @@
   padding: 13px 20px;
   width: 286px;
   margin-top: 25px;
+}
+.client__button-left {
+  height: 50px;
+  margin-bottom: 16px;
+}
+.client__slider {
+  margin-bottom: 16px;
+}
+.client__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap:25px;
+}
+.client__comment {
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 20px;
+}
+.client__button-top {
+  margin-bottom: 20px;
 }
