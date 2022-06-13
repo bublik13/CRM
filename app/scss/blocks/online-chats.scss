@@ -16,6 +16,10 @@
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .online-chats__top-form {
+  @include flex(flex, none, none, none, none);
+  margin-bottom: 22px;
+}
+.online-chats__btn-form {
   @include flex(flex, none, none, none, wrap);
   margin-bottom: 22px;
 }
@@ -36,6 +40,10 @@
 }
 .online-chats__chat {
   padding-top: 0;
+}
+.online-chats__chat > .chat__wrapper > .chat__title {
+  margin-top: 126px;
+  margin-bottom: 23px;
 }
 .online-chats__history {
   height: 821px;

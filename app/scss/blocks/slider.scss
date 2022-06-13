@@ -505,7 +505,10 @@
   left: 0;
 }
 .slider__progress{
-  margin-bottom: 24px;
+  margin-bottom: 16px;
+}
+.slider--top{
+  margin-top: 23px;
 }
 @include media($lm) {
   .slider--mr {

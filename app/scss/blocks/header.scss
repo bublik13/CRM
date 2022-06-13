@@ -25,10 +25,30 @@
 .header__title {
   margin-right: 16px;
 }
-.header__title1{
+.header__title1 {
   margin-right: 6px;
 }
 .header__form {
-  margin-right: 15px;
   width: 280px;
+}
+.header__form:not(:last-child) {
+  margin-right: 15px;
+}
+.header__back {
+  @include flex(flex, space-between, center, none, none);
+  background: var(--bg-main);
+  box-shadow: var(--box-shadow1);
+  border-radius: 15px;
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  margin-right: 20px;
+}
+.header__icon{
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  margin-right: 10px;
 }

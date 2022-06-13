@@ -9,6 +9,7 @@
 }
 .statistic__swiper-wrapper {
   max-width: 600px;
+  height: auto !important;
 }
 .statistic__wrap {
   flex-grow: 1;
@@ -81,4 +82,10 @@
 }
 .statistic__icon--rotate2 {
   transform: rotate(0deg);
+}
+.statistic__slider{
+  margin-top: 25px;
+}
+.statistic--top{
+  margin-top: 25px;
 }

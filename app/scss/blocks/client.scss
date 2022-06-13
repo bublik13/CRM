@@ -4,15 +4,19 @@
   margin-bottom: 30px;
   margin-right: 30px;
   align-self: flex-start;
+  margin-top: 23px;
 }
 .client__form {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+.client__form:not(:last-child) {
   margin-bottom: 25px;
 }
 .client__flex {
   @include flex(flex, none, none, none, none);
 }
+
 .client__form-column {
   @include flex(flex, none, none, column, none);
   width: 100%;
@@ -25,6 +29,8 @@
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
   padding: 25px;
   margin-bottom: 25px;
+  @include flex(flex, space-between, none, none, none);
+
 }
 .client__profile > .profile__wrap-img {
   margin-right: 13px;
@@ -65,6 +71,42 @@
   top: 39px;
   right: 15px;
 }
+.client__icon2 {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient12");
+  filter: drop-shadow(0px 10px 25px #0085ff);
+}
+.client__icon3 {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  transform: rotate(180deg);
+}
+.client__icon4 {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient13");
+  filter: drop-shadow(0px 10px 25px #00d3ba);
+}
+.client__icon5 {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient14");
+  filter: drop-shadow(0px 10px 25px #efc900);
+}
+.client__icon6 {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient15");
+  filter: drop-shadow(0px 10px 25px #ff1a3e);
+}
+.client__icon7 {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  margin-right: 10px;
+}
 .client__selects {
   @include flex(flex, none, center, none, none);
 }
@@ -72,7 +114,7 @@
   padding: 0;
   margin-right: 25px;
 }
-.client__chat > .chat__wrapper > .chat__title{
+.client__chat > .chat__wrapper > .chat__title {
   margin-top: 0;
 }
 .client__bottom {
@@ -80,4 +122,59 @@
 }
 .client__form .form__wrap:not(:last-child) {
   margin-right: 25px;
+}
+.client__title {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 15px;
+}
+.client__box {
+  @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
+  padding: 25px;
+  width: 100%;
+  @include flex(flex, none, center, none, none);
+  text-decoration: none;
+}
+.client__box:not(:last-child) {
+  margin-bottom: 15px;
+}
+.client__wrap-icon {
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
+  padding: 13px;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+}
+.client__name {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 10px;
+}
+.client__text {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.client__wrap {
+  margin-left: auto;
+}
+.client__wrap2 {
+  @include flex(flex, none, none, column, none);
+}
+.client__btn {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: none;
+  flex-wrap: none;
+  padding: 13px 20px;
+  width: 286px;
+  margin-top: 25px;
 }

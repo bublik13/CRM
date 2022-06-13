@@ -4,9 +4,19 @@
 .profile__wrap {
 }
 .profile__flex {
+  @include flex(flex, none, center, none, none);
+
+}
+.profile__flex2{
   @include flex(flex, none, none, none, none);
+  @include media($lg) {
+    flex-wrap: wrap;
+  }
 }
 .profile__flex > .profile__title {
+  margin-right: 10px;
+}
+.profile__flex2 > .profile__title:not(:last-child) {
   margin-right: 10px;
 }
 .profile__wrap-img {
@@ -80,6 +90,7 @@
 .profile__button {
   display: flex !important;
   align-items: center;
+  height: 50px;
 }
 .profile__icon {
   height: 24px;
@@ -156,6 +167,7 @@
   color: var(--color-main);
   @include font(15px, 18px, 600);
   margin-bottom: 10px;
+  text-decoration: none;
 }
 .profile__title--hidden {
   text-overflow: ellipsis;
@@ -178,7 +190,7 @@
   background-clip: text;
   text-shadow: 0px 10px 25px var(--text-shadow);
 }
-.profile__subtitle2{
+.profile__subtitle2 {
   color: var(--color-main);
   @include font(15px, 18px, 400);
   background: var(--bg-color31);
@@ -205,7 +217,7 @@
   position: absolute;
   z-index: -1;
 }
-.edit-order__file{
+.edit-order__file {
   width: 0.1px;
   height: 0.1px;
   opacity: 0;
@@ -231,5 +243,12 @@
   width: 20px;
 }
 .profile__wrap-svg > .profile__title {
+  margin-right: 10px;
+}
+.profile__row {
+  @include flex(flex, none, none, none, none);
+
+}
+.profile__row > .profile__wrap-img {
   margin-right: 10px;
 }

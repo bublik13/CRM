@@ -60,6 +60,11 @@
   text-align: center;
   white-space: nowrap;
 }
+.form__wrap5 {
+  position: relative;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
 .form__wrapper .form__wrap3:not(:first-child):after {
   position: absolute;
   content: " ";
@@ -155,6 +160,24 @@
   flex-shrink: 0;
   width: 280px;
 }
+.form__pseudo4 {
+  flex-shrink: 0;
+  @include font(15px, 17px, 600);
+  @include flex(flex, flex-start, center, none, none);
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+  padding: 10px;
+  color: var(--color-main);
+  flex-shrink: 0;
+}
+.form__pseudo5 {
+  padding: 13px 25px 20px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  color: var(--color-main);
+  @include flex(flex, none, center, column, none);
+  cursor: pointer;
+}
 .form__wrap:first-child {
   border-radius: 15px 0 0 15px;
 }
@@ -190,6 +213,12 @@
   margin-right: 10px;
   filter: drop-shadow(0px 10px 25px rgba(0, 133, 255, 0.3));
 }
+.form__img5 {
+  height: 24px;
+  width: 24px;
+  display: block;
+  --svgColor: url("#gradient1");
+}
 .form__check:focus ~ .form__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
@@ -221,10 +250,7 @@
 .form__check:focus ~ .form__pseudo4 {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
-  padding-top: 10px;
-  padding-bottom: 12px;
-  padding-left: 10px;
-  padding-right: 14px;
+  padding: 10px;
 }
 .form__check:focus
   ~ .form__pseudo2
@@ -264,6 +290,10 @@
   width: 24px;
   height: 24px;
 }
+.form__icon2 {
+  width: 30px;
+  height: 30px;
+}
 .form__text {
   @include font(15px, 18px, 600);
   color: var(--color-main);
@@ -301,3 +331,10 @@
 // select::-ms-expand {
 //   display: none;
 // }
+.form__wrap-icon {
+  width: 50px;
+  height: 50px;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  margin-bottom: 15px;
+  @include flex(flex, center, center, none, none);
+}

@@ -147,6 +147,9 @@ td:last-child {
 .tablet__title:not(:last-child) {
   margin-bottom: 10px;
 }
+.tablet__profile{
+  text-decoration: none;
+}
 .tablet__profile > .profile__wrap-img {
   margin-right: 10px;
 }
