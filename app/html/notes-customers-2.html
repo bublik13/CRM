@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1655120252211">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
 
@@ -474,13 +474,16 @@
       <symbol id="subject" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M13 17H5C4.45 17 4 17.45 4 18C4 18.55 4.45 19 5 19H13C13.55 19 14 18.55 14 18C14 17.45 13.55 17 13 17ZM19 9H5C4.45 9 4 9.45 4 10C4 10.55 4.45 11 5 11H19C19.55 11 20 10.55 20 10C20 9.45 19.55 9 19 9ZM5 15H19C19.55 15 20 14.55 20 14C20 13.45 19.55 13 19 13H5C4.45 13 4 13.45 4 14C4 14.55 4.45 15 5 15ZM4 6C4 6.55 4.45 7 5 7H19C19.55 7 20 6.55 20 6C20 5.45 19.55 5 19 5H5C4.45 5 4 5.45 4 6Z" fill="var(--svgColor)"/>
       </symbol>
-        
-        
-        
+      <symbol id="forward" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H13V18H4V8L10.94 12.34C11.59 12.75 12.41 12.75 13.06 12.34L20 8V13H22V6C22 4.9 21.1 4 20 4ZM12 11L4 6H20L12 11ZM19 16.21C19 15.76 19.54 15.54 19.85 15.86L22.64 18.65C22.84 18.85 22.84 19.16 22.64 19.36L19.85 22.15C19.54 22.46 19 22.24 19 21.79V20H16C15.45 20 15 19.55 15 19C15 18.45 15.45 18 16 18H19V16.21Z" fill="var(--svgColor)"/>
+      </symbol>
+      <symbol id="thumb-up" viewBox="0 0 24 24">
+        <path d="M13.12 2.06003L7.58 7.60003C7.21 7.97003 7 8.48003 7 9.01003V19C7 20.1 7.9 21 9 21H18C18.8 21 19.52 20.52 19.84 19.79L23.1 12.18C23.94 10.2 22.49 8.00003 20.34 8.00003H14.69L15.64 3.42003C15.74 2.92003 15.59 2.41003 15.23 2.05003C14.64 1.47003 13.7 1.47003 13.12 2.06003ZM3 21C4.1 21 5 20.1 5 19V11C5 9.90003 4.1 9.00003 3 9.00003C1.9 9.00003 1 9.90003 1 11V19C1 20.1 1.9 21 3 21Z"  fill="var(--svgColor)"/>
+      </symbol>
         
 
     </svg>
-<picture><source srcset="img/desktop1.avif" type="image/avif"><source srcset="img/desktop1.webp" type="image/webp"><img class="pp"  hidden  src="img/desktop1.jpg" alt=""></picture>
+    <img class="pp"  hidden  src="img/desktop9.jpg" alt="">
     <style>
       .pp {
         position: absolute;
@@ -536,7 +539,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="applications.html" class="nav__link  nav__link--active">
+                  <a href="applications.html" class="nav__link">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#phone-msg"></use>
                       </svg>
@@ -544,7 +547,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="customers.html" class="nav__link">
+                  <a href="customers.html" class="nav__link nav__link--active">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#person"></use>
                       </svg>
@@ -560,7 +563,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="#" class="nav__link">
+                  <a href="shop.html" class="nav__link">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#shopping-bag"></use>
                       </svg>
@@ -718,19 +721,25 @@
             </li>
           </ul>
         </nav>
-        <a href="account.html"class="menu__profile profile">
-          <div class="profile__wrap-img js-profile-img">
+        <a href="account.html" class="menu__profile profile">
+          <span class="profile__wrap-img js-profile-img">
             <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
-          </div> 
-          <div class="profile__wrap js-profile">
-            <div class="profile__title">Александр Македонов</div>
-            <div class="profile__subtitle">Администратор</div>
-          </div>
+          </span> 
+          <span class="profile__wrap js-profile">
+            <span class="profile__title">Александр Македонов</span>
+            <span class="profile__subtitle">Администратор</span>
+          </span>
         </a>
       </aside> 
       <main class="container js-container">
         <header class="header">
           <div class="header__wrap">
+            <button class="header__back">
+              <svg aria-hidden="true" class="header__icon">
+                <use xlink:href="#arrow"></use>
+              </svg>
+              Назад
+            </button>
             <h1 class="header__title1 title">
               Геннадий Аркадьев
             </h1>
@@ -744,129 +753,257 @@
             </svg>
           </button>
         </header>
-        <div class="grid2">
+        <div class="grid6">
           <section class="client">
-            <div class="client__wrapper">
-              <div class="client__profile profile">
-                <div class="profile__row">
-                  <div class="profile__wrap-img profile__wrap-img--pd">
-                    <img width="50" height="50" src="img/profile/profile8.svg" alt="foto" class="profile__img"/>
-                  </div> 
-                  <div class="profile__column">
-                    <div class="profile__flex">
-                      <a href="customer-info.html" class="profile__title title title--width">Петр Васильев</a>
-                      <a href="#">
-                        <svg aria-hidden="true" class="profile__social2">
-                          <use xlink:href="#vk"></use>
+            <section class="client__statistic statistic">
+              <div class="statistic__wrap statistic__swiper swiper">
+                <div class="statistic__wrap1">
+                  <h2 class="statistic__title title title--s">
+                    Заказы клиента
+                  </h2>
+                </div>
+                <div class="statistic__box box statistic__swiper-wrapper swiper-wrapper">
+                  <div class="swiper-slide swiper-slide-box">
+                    <div class="box__item box__item--color5">
+                      <div class="box__wrap-img">
+                        <svg aria-hidden="true" class="box__img box__img--color1">
+                          <use  width="24" height="24" xlink:href="#card-off"></use>
                         </svg>
-                      </a>
-                      <a href="#">
-                        <svg aria-hidden="true" class="profile__social3">
-                          <use xlink:href="#inst"></use>
-                        </svg>
-                      </a>
-                      <a href="#">
-                        <svg aria-hidden="true" class="profile__social4">
-                          <use xlink:href="#whatsapp"></use>
-                        </svg>
-                      </a>
-                      <a href="#">
-                        <svg aria-hidden="true" class="profile__social5">
-                          <use xlink:href="#telegram-mini"></use>
-                        </svg> 
-                      </a>
-                    </div>
-                    <div class="profile__flex2">
-                      <div class="profile__title title title--width-xs profile__title--bt">+7 (998) 483-01-45</div>
-                      <div class="profile__title title title--width-xs profile__title--bt">gennadyyyy0382@gmail.com</div>
+                      </div>
+                      <div class="box__flex">
+                        <div class="box__title title title title--xs">
+                          БОНУСЫ КЛИЕНТА
+                        </div>
+                        <div class="box__wrap">
+                          <div class="box__number">
+                            100
+                          </div>
+                          <div class="box__text">
+                            бонусов
+                          </div>
+                        </div>
+                      </div>                                 
                     </div>
                   </div>
-                  <div class="profile__flex">
-                    <button class="profile__button button button--ms button--6 button--ml">
-                      <svg aria-hidden="true" class="profile__icon2">
-                        <use xlink:href="#phone"></use>
-                      </svg>
-                      <div class="profile__text">Позвонить</div>
-                    </button>
-                    <button class="profile__button button button--ms button--brand button--ml">
-                      <svg aria-hidden="true" class="profile__icon3">
-                        <use xlink:href="#mark-email"></use>
-                      </svg>
-                      <div class="profile__text2">Отправить SMS</div>
-                    </button>
+                  <div class="swiper-slide swiper-slide-box">
+                    <div class="box__item box__item--color9">
+                      <div class="box__wrap-img">
+                        <svg aria-hidden="true" class="box__img box__img--color4">
+                          <use width="24" height="24" xlink:href="#forward"></use>
+                        </svg>
+                      </div>
+                      <div class="box__flex">
+                        <div class="box__title title title title--xs">
+                          ОПТРАВЛЕННО АКЦИЙ
+                        </div>
+                        <div class="box__wrap">
+                          <div class="box__number">
+                            10 
+                          </div>
+                          <div class="box__text">
+                            акций
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-box">
+                    <div class="box__item box__item--color1">
+                      <div class="box__wrap-img">
+                        <svg aria-hidden="true" class="box__img box__img--color2">
+                          <use width="24" height="24" xlink:href="#thumb-up"></use>
+                        </svg>
+                      </div>
+                      <div class="box__flex">
+                        <div class="box__title title title title--xs">
+                          ИСПОЛЬЗОВАЛ АКЦИЙ
+                        </div>
+                        <div class="box__wrap">
+                          <div class="box__number">
+                            2 
+                          </div>
+                          <div class="box__text">
+                            акций
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-box">
+                    <div class="box__item box__item--color1">
+                      <div class="box__wrap-img">
+                        <svg aria-hidden="true" class="box__img box__img--color2">
+                          <use  width="24" height="24" xlink:href="#whatshot"></use>
+                        </svg>
+                      </div>
+                      <div class="box__flex">
+                        <div class="box__title title title title--xs">
+                          СРОЧНО
+                        </div>
+                        <div class="box__wrap">
+                          <div class="box__number">
+                            1
+                          </div>
+                          <div class="box__text">
+                            устройств
+                          </div>
+                        </div>
+                      </div>                                 
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-box">
+                    <div class="box__item box__item--color2">
+                      <div class="box__wrap-img">
+                        <svg aria-hidden="true" class="box__img box__img--color3">
+                          <use width="24" height="24" xlink:href="#report"></use>
+                        </svg>
+                      </div>
+                      <div class="box__flex">
+                        <div class="box__title title title title--xs">
+                          ПРОСРОЧЕНО
+                        </div>
+                        <div class="box__wrap">
+                          <div class="box__number">
+                            3
+                          </div>
+                          <div class="box__text">
+                            устройств
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide swiper-slide-box">
+                    <div class="box__item box__item--color3">
+                      <div class="box__wrap-img">
+                        <svg aria-hidden="true" class="box__img box__img--color4">
+                          <use width="24" height="24" xlink:href="#check-circle"></use>
+                        </svg>
+                      </div>
+                      <div class="box__flex">
+                        <div class="box__title title title title--xs">
+                          ВЫДАНО
+                        </div>
+                        <div class="box__wrap">
+                          <div class="box__number">
+                            6
+                          </div>
+                          <div class="box__text">
+                            устройств
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="client__title">Выберите необходимую категорию в блоке информации</div>
-              <div class="client__wrap2">
-                <a href="customers-order.html" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon2">
-                      <use xlink:href="#work2"></use>
-                    </svg>
+            </section>
+            <div class="client__wrapper">
+              <div class="client__flex2">
+                <div class="client__slider slider slider__flex">
+                  <label class="slider__wrap">
+                    <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                    <span class="slider__pseudo"> 
+                      <svg aria-hidden="true" class="slider__img2">
+                        <use xlink:href="#thumb-up"></use>
+                      </svg>
+                    </span>
+                  </label>
+                  <label class="slider__wrap slider__slide--lf">
+                    <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                    <span class="slider__pseudo1"> 
+                      <div class="slider__circl1"></div> 
+                      <span class="slider__text">iPhone</span>
+                    </span>
+                  </label>
+                  <label class="slider__wrap">
+                    <input name="radio" type="radio" checked="checked" value="1" class="slider__check check" tabindex="0">
+                    <span class="slider__pseudo2"> 
+                      <div class="slider__circl2"></div>
+                      <span class="slider__text">Стекло iPhone</span>
+                    </span>
+                  </label>
+                  <label class="slider__wrap">
+                    <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                    <span class="slider__pseudo3"> 
+                      <div class="slider__circl3"></div>
+                      <span class="slider__text">15% замена матрицы</span>
+                    </span>
+                  </label>
+                </div>
+                <button type="button" class="client__button-left button button--md button--brand button--flex button---width-sm">
+                  <svg aria-hidden="true" width="24" height="24" class="button__img">
+                      <use xlink:href="#add"></use>
+                  </svg>
+                  <div class="button__text">Добавить заметку</div>
+                </button>
+              </div>
+              <div class="client__grid">
+                <div class="client__box2">
+                  <button class="client__button-top button button--ms button--4 button--flex-end button--width-sx">Скидка
+                  </button>
+                  <p class="client__comment">
+                    Здравствуйте, Сергей Иванович. С 10.09 до 17.09
+                    починим любую поломку на Вашем iPhone со
+                    скидкой в 10%. Ждем Вас! Ремонт техники -
+                    Ленинский 136. leninskiy136.ru
+                    Тел. 8(812)409-43-96
+                  </p>
+                  <div class="client__profile2 profile">
+                    <div class="profile__wrap-img profile__wrap-img--pd">
+                      <img src="img/profile/profile11.svg" alt="foto" class="profile__img" width="50" height="50">
+                    </div> 
+                    <div class="profile__wrap">
+                      <div class="profile__title title title--width profile__title--hidden">Денис Алексеев</div>
+                      <div class="profile__title title title--width-xs profile__title--bt">Добавлено 11 сен, 2021</div>
+                    </div>
                   </div>
-                  <div class="client__column">
-                    <div class="client__name">Заказы</div>
-                    <div class="client__text">10 заказов на ₽ 10 800</div>
+                </div>
+                <div class="client__box2">
+                  <button class="client__button-top button button--ms button--2 button--flex-end"> 15% замена матрицы
+                  </button>
+                  <p class="client__comment">
+                    Здравствуйте, Сергей Иванович. С 10.09 до 17.09
+                    починим любую поломку на Вашем iPhone со
+                    скидкой в 10%. Ждем Вас! Ремонт техники -
+                    Ленинский 136. leninskiy136.ru
+                    Тел. 8(812)409-43-96
+                  </p>
+                  <div class="client__profile2 profile">
+                    <div class="profile__wrap-img profile__wrap-img--pd">
+                      <img src="img/profile/profile11.svg" alt="foto" class="profile__img" width="50" height="50">
+                    </div> 
+                    <div class="profile__wrap">
+                      <div class="profile__title title title--width profile__title--hidden">Денис Алексеев</div>
+                      <div class="profile__title title title--width-xs profile__title--bt">Добавлено 11 сен, 2021</div>
+                    </div>
                   </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
+                </div>
+                <div class="client__box2">
+                  <button class="client__button-top button button--ms button--flex  button--10 button--color">
+                    Стекло iPhone
+                  </button>
+                  <p class="client__comment">
+                    Здравствуйте, Сергей Иванович. С 10.09 до 17.09
+                    починим любую поломку на Вашем iPhone со
+                    скидкой в 10%. Ждем Вас! Ремонт техники -
+                    Ленинский 136. leninskiy136.ru
+                    Тел. 8(812)409-43-96
+                  </p>
+                  <div class="client__profile2 profile">
+                    <div class="profile__wrap-img profile__wrap-img--pd">
+                      <img src="img/profile/profile11.svg" alt="foto" class="profile__img" width="50" height="50">
+                    </div> 
+                    <div class="profile__wrap">
+                      <div class="profile__title title title--width profile__title--hidden">Денис Алексеев</div>
+                      <div class="profile__title title title--width-xs profile__title--bt">Добавлено 11 сен, 2021</div>
+                    </div>
                   </div>
-                </a>
-                <a href="#" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon4">
-                      <use xlink:href="#person-add"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Звонки и заявки</div>
-                    <div class="client__text">8 заявок</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon5">
-                      <use xlink:href="#card-off"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Акции и бонусы</div>
-                    <div class="client__text">4 акции отправлено</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
-                <a href="#" class="client__box">
-                  <div class="client__wrap-icon">
-                    <svg aria-hidden="true" class="client__icon6">
-                      <use xlink:href="#subject"></use>
-                    </svg>
-                  </div>
-                  <div class="client__column">
-                    <div class="client__name">Заметки о клиенте</div>
-                    <div class="client__text">3 заметок</div>
-                  </div>
-                  <div class="client__wrap">
-                    <svg aria-hidden="true" class="client__icon3">
-                      <use xlink:href="#arrow"></use>
-                    </svg>
-                  </div>
-                </a>
+                </div>
               </div>
             </div>
           </section>
-          <section class="chat">
+          <section class="chat chat--top">
             <div class="chat__form form">
               <label class="form__wrap5">
                 <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
@@ -974,7 +1111,7 @@
     </div>
     <!-- подключаем js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1655120252211"></script>
+    <script src="js/main.js"></script>
       
   </body>
 

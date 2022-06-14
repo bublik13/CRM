@@ -12,6 +12,7 @@
 .grid2 {
   display: grid;
   grid-template-columns: auto auto;
+  grid-gap: 0 30px;
 }
 .grid3 {
   display: grid;
@@ -36,6 +37,10 @@
   display: grid;
   grid-template-columns: auto 450px;
   justify-content: space-between;
+  grid-gap: 30px;
+  @include media($lg) {
+    grid-template-columns: auto 370px;
+  }
 }
 .grid7 {
   display: grid;

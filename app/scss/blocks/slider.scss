@@ -265,6 +265,9 @@
 .slider__check:checked ~ .slider__pseudo > .slider__img {
   --svgColor: var(--bg-color33);
 }
+.slider__check:checked ~ .slider__pseudo > .slider__img2 {
+  --svgColor: var(--bg-color33);
+}
 .slider__check:checked ~ .slider__pseudo > .slider__circl {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;

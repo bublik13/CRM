@@ -272,7 +272,7 @@
   --svgColor: var(--color-main);
 }
 .form__slider {
-  margin-right: 30px !important;
+  // margin-right: 30px !important;
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   padding: 25px;
   margin-bottom: 80px;

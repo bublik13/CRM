@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1655165410099">
+    <link rel="stylesheet" href="css/main.css?t=1655165411893">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
   </head>
@@ -489,7 +489,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="shop.html" class="nav__link">
+                  <a href="shop.html" class="nav__link nav__link--active">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#shopping-bag"></use>
                       </svg>
@@ -647,7 +647,7 @@
             </li>
           </ul>
         </nav>
-        <a href="account.html" class="menu__profile profile menu__profile--active">
+        <a href="account.html" class="menu__profile profile">
           <div class="profile__wrap-img js-profile-img">
             <img width="50" height="50" src="img/profile/profile.svg" alt="foto" class="profile__img"/>
           </div> 
@@ -661,7 +661,7 @@
         <header class="header">
           <div class="header__wrap">
             <h1 class="header__title title">
-              Дорбый день, Александр
+              Заказы
             </h1>
             <div class="header__date date">
               <div class="date__wrap-img">
@@ -818,13 +818,29 @@
                     5
                 </div>
               </div>
-              </div>
-              <div class="date__wrap-img">
-                <svg aria-hidden="true" class="date__img-down">
-                    <use xlink:href="#down"></use>
-                </svg>
-              </div>
             </div>
+            <div class="date__wrap-img">
+              <svg aria-hidden="true" class="date__img-down">
+                  <use xlink:href="#down"></use>
+              </svg>
+            </div>
+            </div>
+          </div>
+          <div class="header__wrap">  
+            <form class="header__form form">  
+              <input type="text" name="text" class="form__button button button--ls  button---font button--primary button--flex button--width-md" placeholder="Поиск">
+              <button type="submit" name="submit" class="form__submit-button button button--bg1" value="">
+                  <svg aria-hidden="true" class="form__submit-img">
+                      <use xlink:href="#search"></use>
+                  </svg>
+              </button>
+            </form>
+            <a href="works.html"type="button" class="header__button button button--md button--brand button--flex button---width-sm">
+              <svg aria-hidden="true" width="24" height="24" class="button__img">
+                  <use xlink:href="#add"></use>
+              </svg>
+              <div class="button__text">Принять устройство</div>
+            </a>
           </div>
         </header>
         <section class="form">
@@ -1472,7 +1488,7 @@
                 <tbody class="tablet__tbody">
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1506,12 +1522,12 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1545,12 +1561,12 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1584,12 +1600,12 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1623,12 +1639,12 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1662,12 +1678,12 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1701,12 +1717,12 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
                   <tr class="tablet__tr">
                     <td class="tablet__td4">
-                      <div class="profile__title title title--width">10 сен, 13:31</div>
+                      <div class="tablet__title title title--width">10 сен, 13:31</div>
                     </td>
                     <td class="tablet__td">
                       <div class="tablet__profile profile">
@@ -1740,7 +1756,7 @@
                       </button>
                     </td>
                     <td >
-                      <div class="profile__title title title--width">₽ 81 000</div>
+                      <div class="tablet__title title title--width">₽ 81 000</div>
                     </td>
                   </tr>
 
@@ -2417,7 +2433,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 1 000</div>
+                    <div class="tablet__title title title--width">₽ 1 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2446,7 +2462,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 3 000</div>
+                    <div class="tablet__title title title--width">₽ 3 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2477,7 +2493,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 10 000</div>
+                    <div class="tablet__title title title--width">₽ 10 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2508,7 +2524,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 9 000</div>
+                    <div class="tablet__title title title--width">₽ 9 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2539,7 +2555,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 1 000</div>
+                    <div class="tablet__title title title--width">₽ 1 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2568,7 +2584,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 3 000</div>
+                    <div class="tablet__title title title--width">₽ 3 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2599,7 +2615,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 10 000</div>
+                    <div class="tablet__title title title--width">₽ 10 000</div>
                   </td>
                 </tr>
                 <tr class="tablet__tr">
@@ -2630,7 +2646,7 @@
                     </button>
                   </td>
                   <td >
-                    <div class="profile__title title title--width">₽ 9 000</div>
+                    <div class="tablet__title title title--width">₽ 9 000</div>
                   </td>
                 </tr>
               </tbody>
@@ -3264,7 +3280,7 @@
                   </button>
                 </td>
                 <td class="tablet__td11">
-                  <div class="profile__title title title--width">- 1 500 ₽</div>
+                  <div class="tablet__title title title--width">- 1 500 ₽</div>
                 </td>
                 <td>
                   <div class="tablet__profile profile">
@@ -3314,7 +3330,7 @@
                   </button>
                 </td>
                 <td  class="tablet__td11">
-                  <div class="profile__title title title--width">- 500 ₽</div>
+                  <div class="tablet__title title title--width">- 500 ₽</div>
                 </td>
                 <td>
                   <div class="tablet__profile profile">
@@ -3365,7 +3381,7 @@
                   </button>
                 </td>
                 <td class="tablet__td11">
-                  <div class="profile__title title title--width">- 300 ₽</div>
+                  <div class="tablet__title title title--width">- 300 ₽</div>
                 </td>
                 <td>
                   <div class="tablet__title2 title title--width-xs">Нет вложения</div>
@@ -3407,7 +3423,7 @@
                   </button>
                 </td>
                 <td  class="tablet__td11">
-                  <div class="profile__title title title--width">- 1 500 ₽</div>
+                  <div class="tablet__title title title--width">- 1 500 ₽</div>
                 </td>
                 <td>
                   <div class="tablet__title2 title title--width-xs">Нет вложения</div>
@@ -3832,7 +3848,7 @@
     
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="js/main.js?t=1655165410099"></script>
+    <script src="js/main.js?t=1655165411893"></script>
       
   </body>
 
