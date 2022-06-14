@@ -2,9 +2,10 @@
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   padding: 25px;
   align-self: start;
+  min-width: 330px;
 }
 .chat--top {
-margin-top: 23px;
+  margin-top: 23px;
 }
 .chat__wrap {
   @include flex(flex, space-between, center, none, none);
@@ -161,7 +162,7 @@ margin-top: 23px;
   margin-right: 10px;
   width: 152px;
 }
-.chat__form{
+.chat__form {
   @include flex(flex, none, center, none, wrap);
   @include wrap(var(--bg-color4), 0 0 0 0, 15px);
   backdrop-filter: blur(20px);

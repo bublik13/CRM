@@ -1,0 +1,134 @@
+.popular-categories {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.popular-categories__top {
+  @include flex(flex, space-between, center, none, none);
+}
+.popular-categories__title {
+  margin-bottom: 25px;
+}
+.popular-categories__btn-prev {
+  top: 16px !important;
+  right: 6px !important;
+  left: unset !important;
+  color: transparent !important;
+}
+.popular-categories__btn-next {
+  top: 14px !important;
+  right: 34px !important;
+  color: transparent !important;
+}
+.popular-categories__flex {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
+  padding: 7px 10px;
+  margin-bottom: 17px;
+}
+.popular-categories__btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @include flex(flex, center, center, none, none);
+  cursor: pointer;
+}
+.popular-categories__btn:first-child {
+  margin-right: 10%;
+}
+.popular-categories__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+}
+.popular-categories__icon2 {
+    width: 24px;
+    height: 24px;
+    color: var(--color-second);
+  }
+.popular-categories__icon--rotate {
+  transform: rotate(180deg);
+}
+.popular-categories__icon--rotate2 {
+  transform: rotate(0deg);
+}
+.popular-categories__card {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  //   padding: 25px;
+  @include flex(flex, flex-start, flex-start, none, none);
+}
+.popular-categories__card:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.popular-categories__wrap-img {
+  width: 50px;
+  height: 50px;
+  @include wrap(var(--bg-color33), 0 0 0 0, 15px);
+  @include flex(flex, center, center, column, none);
+}
+.popular-categories__wrap-img2 {
+    width: 50px;
+    height: 50px;
+    @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+    @include flex(flex, center, center, column, none);
+  }
+.popular-categories__wrap {
+  @include flex(flex, none, flex-start, column, none);
+}
+.popular-categories__name {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: auto;
+}
+.popular-categories__subtitle {
+  @include font(15px, 18px, 400);
+  color: var(--color-second);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-top: 10px;
+}
+
+.popular-categories__img {
+  display: block;
+  height: auto;
+}
+.popular-categories__check {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+.popular-categories__pseudo {
+  flex-shrink: 0;
+  @include font(15px, 17px, 600);
+  // color: var(--color-main);
+  background: transparent;
+  @include flex(flex, none, flex-start, none, none);
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+  border-right: 15px;
+  color: var(--color-second);
+  padding: 25px;
+  width: 100%;
+}
+.popular-categories__pseudo > .popular-categories__wrap-img {
+  margin-right: 10px;
+}
+.popular-categories__check:focus ~ .popular-categories__pseudo {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding: 25px;
+}
+.popular-categories__check:focus
+  ~ .popular-categories__pseudo
+  > .popular-categories__wrap
+  > .popular-categories__subtitle {
+  color: var(--color-main);
+}

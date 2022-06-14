@@ -8,7 +8,17 @@ testFunction();
     slidesPerView: "auto",
     spaceBetween: 10
   });
-  
+  const swiperPopularCategories = new Swiper('.popular-categories__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+    slidesPerView: "4",
+    spaceBetween: 25,
+    navigation: {
+      nextEl: '.popular-categories__btn-prev',
+      prevEl: '.popular-categories__btn-next',
+    },
+  });
 
   const menu = document.querySelector('.js-menu');
   const nav = document.querySelector('.js-nav');
@@ -239,3 +249,4 @@ var data = [
       prevEl: '.list-violations__btn-next',
     },
   });
+
