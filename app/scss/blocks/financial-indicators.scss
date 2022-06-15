@@ -4,8 +4,11 @@
   padding: 11px 26px 25px 25px;
 }
 .financial-indicators__wrap {
-  @include flex(flex, space-between, center, none, none);
+  @include flex(flex, none, center, none, none);
   margin-bottom: 12px;
+}
+.financial-indicators__title {
+  margin-right: auto;
 }
 .financial-indicators__date {
   @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
@@ -15,6 +18,9 @@
   padding: 25px 25px 0 0;
   @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
   margin-bottom: 31px;
+  @include media($lg) {
+    width: 100% !important;
+  }
 }
 .financial-indicators__slider {
   margin-bottom: 0;
@@ -29,4 +35,15 @@
 }
 .financial-indicators__slider > .slider__column > .slider__text {
   margin-bottom: 15px;
+}
+.financial-indicators__slider > .slider__swiper {
+  margin-left: 10px !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+.financial-indicators__slider
+  > .slider__swiper
+  > .swiper-wrapper
+  .slider__wrap {
+  margin-bottom: 0 !important;
 }

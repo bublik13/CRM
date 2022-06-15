@@ -3,9 +3,8 @@
   position: relative;
   align-self: flex-start;
 }
-.slider--mr{
+.slider--mr {
   margin-right: -40px;
-
 }
 .slider__swiper1 {
   // width: 78%;
@@ -123,8 +122,7 @@
   width: 24px;
   --svgColor: url("#gradient14");
   display: block;
-  filter: drop-shadow(0px 10px 25px #00FF94);
-
+  filter: drop-shadow(0px 10px 25px #00ff94);
 }
 
 .slider__img6:after {
@@ -250,6 +248,16 @@
   border-radius: 100px;
   margin-right: 10px;
   @include wrap(var(--bg-color29), var(--box-shadow35), 100px);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+.slider__circl12 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color25), var(--box-shadow38), 100px);
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -393,7 +401,7 @@
   flex-shrink: 0;
   position: relative;
   z-index: 10;
-}  
+}
 
 .slider__check:checked ~ .slider__pseudo11 {
   @include wrap(var(--bg-color29), 0 0 0 0, 15px);
@@ -440,12 +448,12 @@
 .slider__wrap > .slider__text {
   margin-right: 10px;
 }
-.slider__text{
+.slider__text {
   @include font(15px, 17px, 600);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
 }
-.slider__text2{
+.slider__text2 {
   @include font(15px, 18px, 500);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
@@ -460,15 +468,30 @@
   @include font(44px, 54px, 800, $ff: "Gilroy");
   color: var(--color-main);
 }
-.slider__number2{
+.slider__number2 {
   @include font(56px, 68px, 800, $ff: "Gilroy");
   color: var(--color-main);
+  white-space: nowrap;
 }
 .slider__flex1 {
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
   padding: 25px;
   @include flex(flex, space-between, center, none, none);
   margin-bottom: 25px;
+}
+.slider__flex2 {
+  @include wrap(var(--bg-color5), var(--box-shadow21), 20px);
+  padding: 25px;
+  @include flex(flex, none, flex-start, column, none);
+  margin-bottom: 13px;
+  margin-top: 21px;
+}
+.slider__flex2 > .slider__column {
+  margin-right: 0;
+  width: 100%;
+}
+.slider__flex2 > .slider__column > .slider__text {
+margin-bottom: 16px;
 }
 .slider__column {
   flex-grow: 1;
@@ -507,10 +530,10 @@
   background: #292929;
   left: 0;
 }
-.slider__progress{
+.slider__progress {
   margin-bottom: 16px;
 }
-.slider--top{
+.slider--top {
   margin-top: 23px;
 }
 @include media($lm) {

@@ -190,6 +190,8 @@
   display: block;
   --svgColor: url("#gradient1");
   margin-left: 16px;
+  filter: drop-shadow(0px 10px 25px #0085FF);
+
 }
 .form__img2 {
   height: 24px;
@@ -226,6 +228,9 @@
   padding-bottom: 12px;
   padding-left: 24px;
   padding-right: 14px;
+}
+.form__check:focus ~ .form__pseudo > .form__img {
+  --svgColor: var(--color-main);
 }
 .form__check:focus ~ .form__pseudo1 {
   @include wrap(var(--bg-main), var(--box-shadow1), 20px);
@@ -271,6 +276,7 @@
 .form__check:focus ~ .form__pseudo-height > .form__img4 {
   --svgColor: var(--color-main);
 }
+
 .form__slider {
   // margin-right: 30px !important;
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);

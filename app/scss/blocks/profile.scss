@@ -176,6 +176,7 @@
   @include font(15px, 18px, 600);
   margin-bottom: 10px;
   text-decoration: none;
+  display: block;
 }
 .profile__title--hidden {
   text-overflow: ellipsis;

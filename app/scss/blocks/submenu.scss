@@ -59,17 +59,25 @@
   margin-right: 10px;
 }
 .submenu__img1 {
+  margin-right: 10px;
   width: 24px;
   height: 24px;
-  --svgColor: url("#gradient1");
+  --svgColor: url("#gradient9");
+  filter: drop-shadow(0px 10px 25px #4BBD6D);
 }
 .submenu__img2 {
+  margin-right: 10px;
   width: 24px;
   height: 24px;
   color: var(--color-main);
+  --svgColor: url("#gradient1");
+  filter: drop-shadow(0px 10px 25px #0085FF);
+
 }
 .submenu__img3 {
+  margin-right: 10px;
   width: 24px;
   height: 24px;
-  --svgColor: url("#gradient1");
+  --svgColor: url("#gradient2");
+  filter: drop-shadow(0px 10px 25px #FF0106);
 }

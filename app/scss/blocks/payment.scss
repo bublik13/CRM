@@ -3,6 +3,7 @@
 }
 .payment--top {
   margin-top: 21px;
+  margin-bottom: 16px;
 }
 .payment__wrapper {
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
@@ -31,7 +32,10 @@
 .payment__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px 0;
+  grid-gap: 20px 25px;
+}
+.payment__grid > .form__wrap {
+margin-right: 0 !important;
 }
 .payment__grid2 {
   display: grid;

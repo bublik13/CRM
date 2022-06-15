@@ -26,6 +26,12 @@
   margin-top: 132px;
   margin-bottom: 160px;
 }
+.add-file__profile2 {
+  @include flex(flex, center, center, column, none);
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
 .add-file__profile > .profile__wrap {
   @include flex(flex, none, center, column, none);
   text-align: center;
@@ -33,9 +39,39 @@
 .add-file__profile > .profile__wrap-img {
   margin-bottom: 15px;
 }
+.add-file__profile2 > .profile__wrap-img {
+  margin-bottom: 15px;
+}
 .add-file__dashed > .profile__button {
   width: 100%;
   text-align: center;
   @include flex(flex, center, center, none, none);
-
+}
+.add-file__wrap-img {
+  width: 230px;
+  height: 230px;
+  @include wrap(var(--bg-color33), 0 0 0 0, 20px);
+  @include flex(flex, center, center, none, none);
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+.add-file__img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.add-file__close{
+  width: 30px;
+  height: 30px;
+  top: -16px;
+  right: -11px;
+  position: absolute;
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color2), var(--box-shadow19), 10px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  @include flex(flex, center, center, none, none);
+  padding: 5px;
 }

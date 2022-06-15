@@ -56,6 +56,16 @@
     grid-template-columns: auto 370px;
   }
 }
+.grid9 {
+  display: grid;
+  grid-template-columns: 330px auto;
+  grid-gap: 0 30px;
+}
+.grid10 {
+  display: grid;
+  grid-template-columns: 49% 50%;
+  grid-gap: 0 30px;
+}
 .grid--active {
   grid-template-columns: 104px auto;
 }

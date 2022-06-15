@@ -60,6 +60,7 @@
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
   margin-left: 10px;
+  white-space: nowrap;
 }
 .statistic-status__total {
   @include font(15px, 18px, 600);

@@ -13,6 +13,10 @@ table {
     white-space: unset !important;
   }
 }
+// .tablet__tr2{
+//   padding-top: 20px;
+//   padding-bottom: 20px;
+// }
 .tablet__flex {
   @include flex(flex, space-between, center, none, none);
 }
@@ -73,7 +77,7 @@ td {
 }
 td:last-child {
   white-space: nowrap;
-  padding: 0 22px 0 27px !important;
+  padding-right: 20px !important;
 }
 .tablet__flex > .button:first-child {
   margin-right: 10px;
@@ -133,6 +137,8 @@ td:last-child {
 .tablet__submenu {
   position: absolute;
   display: none;
+  right: 0;
+  z-index: 10;
 }
 .tablet__up {
   position: absolute;
@@ -144,7 +150,10 @@ td:last-child {
   border-radius: 2px;
   color: var(--bg-color5);
 }
-.tablet__button:hover + .tablet__submenu {
+.tablet__button:hover > .tablet__submenu {
+  display: block;
+}
+.tablet__wrap2:hover > .tablet__submenu {
   display: block;
 }
 .tablet__button:hover > .button__down {
@@ -209,12 +218,16 @@ td:last-child {
   width: 8% !important;
 }
 .tablet__td13 {
-  max-width: 28% !important;
+  width: 28% !important;
   padding-left: 20px !important;
   // @include media($lg) {
   //   width: 100px !important;
 
   // }
+}
+.tablet__td14 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
 }
 td:last-child > .profile__title {
   margin-bottom: 0;
@@ -246,4 +259,186 @@ td:last-child > .profile__title {
 .tablet__flex-btn > .tablet__button:not(:last-child) {
   margin-right: 10px;
   height: 50px;
+}
+.tablet__wrapper-counter {
+  @include flex(flex, none, none, none, none);
+}
+.tablet__wrapper-counter:not(:last-child) {
+  margin-right: 10px;
+}
+.tablet__counter {
+  width: 60px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  background: var(--bg-color17);
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  cursor: pointer;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.tablet__counter,
+.tablet__decrement,
+.tablet__increment {
+  height: 50px;
+  user-select: none;
+}
+
+.tablet__decrement,
+.tablet__increment {
+  @include flex(flex, center, center, none, none);
+  width: 30px;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  cursor: pointer;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.tablet__decrement {
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+  background: var(--bg-color17);
+}
+
+.tablet__increment {
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  background: var(--bg-color17);
+}
+.tablet__buttom-icon {
+  width: 24px;
+  height: 24px;
+}
+.tablet__title-top {
+  @include font(24px, 29px, 800, $ff: "Gilroy");
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 25px;
+}
+.tablet__filter {
+  position: relative;
+  width: 143px;
+}
+.tablet__input {
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  padding: 10px 50px 10px 16px;
+  border: 0.5px solid #292929;
+  width: 50px;
+  height: 50px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  width: 143px;
+}
+.tablet__input2 {
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  padding: 10px 10px 10px 16px;
+  border: 0.5px solid #292929;
+  width: 50px;
+  height: 50px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  width: 100%;
+}
+// .filter__input--width {
+//   width: 143px;
+//   padding-right: 41px;
+// }
+.tablet__subtitle {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding-left: 10px;
+  border-left: 1px solid #292929;
+}
+/* Современные браузеры
+   ----------------------------  */
+.tablet__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+          ----------------------------  */
+.tablet__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+          ----------------------------  */
+.tablet__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+          ----------------------------  */
+.tablet__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+          ----------------------------  */
+.tablet__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+          ----------------------------  */
+.tablet__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+   ----------------------------  */
+.tablet__input2::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+            ----------------------------  */
+.tablet__input2::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+            ----------------------------  */
+.tablet__input2::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+            ----------------------------  */
+.tablet__input2:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+            ----------------------------  */
+.tablet__input2::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+            ----------------------------  */
+.tablet__input2:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
 }
