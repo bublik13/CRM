@@ -1,0 +1,23 @@
+.price {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.price--top {
+  margin-top: 21px;
+}
+.price__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  margin-bottom: 26px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.price__wrap{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.price__img {
+  border-radius: 10px;
+  display: block;
+  height: auto;
+}

@@ -28,6 +28,13 @@
 .header__title1 {
   margin-right: 6px;
 }
+.header__title2{
+  margin-right: 6px;
+  max-width: 750px;
+  @include font(24px, 29px, 800, $ff:'Gilroy');
+  font-feature-settings: "pnum" on, "lnum" on;
+  color: var(--color-main);
+}
 .header__form {
   width: 280px;
 }

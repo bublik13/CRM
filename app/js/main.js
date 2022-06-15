@@ -40,6 +40,8 @@ testFunction();
   container.classList.toggle('container--active');
   });
 
+
+
   const swiperStatistic = new Swiper('.statistic__swiper', {
     // Optional parameters
     direction: 'horizontal',
@@ -51,6 +53,7 @@ testFunction();
       prevEl: '.statistic__btn-next',
     },
   });
+
 
   var config = {
 	type: 'line',
@@ -249,4 +252,3 @@ var data = [
       prevEl: '.list-violations__btn-next',
     },
   });
-

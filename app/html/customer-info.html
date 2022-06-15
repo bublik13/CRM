@@ -1004,3 +1004,145 @@
   </body>
 
 </html>
+<section class="price">
+  <div class="price__title">Пример ценника</div>
+  <div class="price__wrap">
+    <img class="price__img" src="img/price/example.jpg" alt="example">
+  </div>
+</section>
+<section class="info-order">
+  <div class="info-order__title">О товаре</div>
+  <div class="info-order__column">
+    <div class="info-order__wrap2">
+      <div class="info-order__column">
+        <div class="info-order__name">Артикул:</div>
+        <div class="info-order__name">Закупочная цена:</div>
+        <div class="info-order__name">Розничная цена:</div>
+        <div class="info-order__name">Добавлено товаров:</div>
+        <div class="info-order__name">Сейчас в наличии:</div>
+      </div>
+      <div class="info-order__column">
+        <div class="info-order__important">195831</div>
+        <div class="info-order__important">₽ 1 800</div>
+        <div class="info-order__important">₽ 2 400</div>
+        <div class="info-order__important">15 штук</div>
+        <div class="info-order__important">0 штук</div>
+      </div>
+    </div>
+    <div class="info-order__wrap2">
+      <div class="info-order__column">
+        <div class="info-order__name">Поставщик:</div>
+        <div class="info-order__name">Телефон:</div>
+        <div class="info-order__name">Адрес:</div>
+      </div>
+      <div class="info-order__column">
+        <div class="info-order__important">Sota</div>
+        <div class="info-order__important">+7(995)847-04-94</div>
+        <div class="info-order__important">ул. Первомайская, 19</div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="edit-order edit-order--top">
+  <div class="edit-order__wrapper">
+    <div class="edit-order__title">Формат ценника</div>
+    <fieldset class="edit-order__column3">
+      <span class="edit-order__name">Формат ценника</span>
+      <div class="edit-order__form form edit-order__form-wrap">
+        <label class="form__wrap2">
+          <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+          <span class="form__pseudo">30 x 40</span>
+        </label>
+        <label class="form__wrap2">
+          <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+          <span class="form__pseudo">35 x 15</span>
+        </label>
+        <label class="form__wrap2">
+          <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+          <span class="form__pseudo">60 x 35</span>
+        </label>
+        <label class="form__wrap2">
+          <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+          <span class="form__pseudo">60 x 65</span>
+        </label>
+      </div>
+      <label class="edit-order__label-counter">
+        <span class="edit-order__name">Количество</span>
+        <div class="edit-order__wrapper-counter">
+          <span class="edit-order__decrement">                      
+            <svg aria-hidden="true" class="edit-order__buttom-icon">
+              <use xlink:href="#remove"></use>
+            </svg>
+          </span>
+          <input class="edit-order__counter" type="text" value="1" min="1" max="10">
+          <span class="edit-order__increment">                      
+            <svg aria-hidden="true" class="edit-order__buttom-icon">
+              <use xlink:href="#add"></use>
+            </svg>
+          </span>
+        </div>
+      </label>
+    </fieldset>
+  </div>
+  <div class="edit-order__wrapper">
+    <div class="edit-order__title">Поставщик и цена</div>
+    <div class="edit-order__flex">
+      <fieldset class="edit-order__column">
+        <label class="edit-order__label">
+          <span class="edit-order__name">Закупочная цена</span>
+          <div class="edit-order__flex-input">
+            <input type="text" name="text" class="edit-order__input1" placeholder="Введите сумму">
+            <div class="edit-order__input-icon">
+              ₽
+            </div>
+          </div>
+        </label>
+        <span class="edit-order__name">Поставщик</span>
+        <select class="edit-order__select edit-order__select-mb">
+          <option>Выберите поставщика</option>
+          <option>Выберите поставщика</option>
+        </select>
+        <div class="edit-order__form1 form">
+          <label class="form__wrap">
+            <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+            <span class="form__pseudo form__pseudo-height">Sota</span>
+          </label>
+          <label class="form__wrap">
+            <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+            <span class="form__pseudo form__pseudo-height">Liberty</span>
+          </label>
+          <label class="form__wrap">
+            <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+            <span class="form__pseudo form__pseudo-height">GreenPark</span>
+          </label>
+          <label class="form__wrap">
+            <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+            <span class="form__pseudo form__pseudo-height"> 
+              <div class="form__text">PartsDirect</div>
+            </span>
+          </label>
+          <button class="edit-order__buttom">
+            <svg aria-hidden="true" class="edit-order__buttom-icon">
+              <use xlink:href="#add"></use>
+            </svg>
+          </button>
+        </div>
+        <label class="edit-order__label edit-order__label--position">
+          <span class="edit-order__name">Розничная цена</span>
+          <div class="edit-order__flex-input">
+            <input type="text" name="text" class="edit-order__input1" placeholder="Введите сумму">
+            <div class="edit-order__input-icon">
+              ₽
+            </div>
+          </div>
+        </label>
+      </fieldset>
+    </div>
+  </div>
+  <a href="product-added.html" class="edit-order__btn-next">
+    <svg aria-hidden="true" class="edit-order__icon4">
+      <use xlink:href="#check"></use>
+    </svg>
+    Завершить добавление
+  </a>
+</section>

@@ -3,6 +3,7 @@
   padding: 25px;
   margin-bottom: 30px;
   margin-top: 20px;
+  text-decoration: none;
 }
 .popular-categories__top {
   @include flex(flex, space-between, center, none, none);
@@ -46,10 +47,10 @@
   color: var(--color-main);
 }
 .popular-categories__icon2 {
-    width: 24px;
-    height: 24px;
-    color: var(--color-second);
-  }
+  width: 24px;
+  height: 24px;
+  color: var(--color-second);
+}
 .popular-categories__icon--rotate {
   transform: rotate(180deg);
 }
@@ -70,13 +71,22 @@
   height: 50px;
   @include wrap(var(--bg-color33), 0 0 0 0, 15px);
   @include flex(flex, center, center, column, none);
+  flex-shrink: 0;
 }
 .popular-categories__wrap-img2 {
-    width: 50px;
-    height: 50px;
-    @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
-    @include flex(flex, center, center, column, none);
-  }
+  width: 50px;
+  height: 50px;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  @include flex(flex, center, center, column, none);
+  flex-shrink: 0;
+}
+.popular-categories__wrap-img3 {
+  width: 70px;
+  height: 70px;
+  @include wrap(var(--bg-color33), 0 0 0 0, 15px);
+  @include flex(flex, center, center, column, none);
+  flex-shrink: 0;
+}
 .popular-categories__wrap {
   @include flex(flex, none, flex-start, column, none);
 }
@@ -85,6 +95,7 @@
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
   margin-bottom: auto;
+  text-decoration: none;
 }
 .popular-categories__subtitle {
   @include font(15px, 18px, 400);

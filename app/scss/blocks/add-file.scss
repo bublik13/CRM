@@ -3,6 +3,7 @@
   padding: 25px;
   max-width: 330px;
   align-self: start;
+  margin-top: 21px;
 }
 .add-file__title {
   @include font(18px, 21px, 700, var(--second-family));
@@ -19,6 +20,11 @@
   @include flex(flex, center, center, column, none);
   margin-top: 187px;
   margin-bottom: 187px;
+}
+.add-file__profile {
+  @include flex(flex, center, center, column, none);
+  margin-top: 132px;
+  margin-bottom: 160px;
 }
 .add-file__profile > .profile__wrap {
   @include flex(flex, none, center, column, none);

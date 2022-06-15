@@ -5,13 +5,21 @@
 }
 .profile__flex {
   @include flex(flex, none, center, none, none);
-
 }
-.profile__flex2{
+.profile__flex2 {
   @include flex(flex, none, none, none, none);
   @include media($lg) {
     flex-wrap: wrap;
   }
+}
+.profile__flex3 {
+  @include flex(flex, none, none, column, none);
+}
+.profile__flex3 > .profile__button {
+  justify-content: center;
+}
+.profile__flex3 > .profile__button:not(:last-child) {
+  margin-bottom: 10px;
 }
 .profile__flex > .profile__title {
   margin-right: 10px;
@@ -247,7 +255,6 @@
 }
 .profile__row {
   @include flex(flex, none, none, none, none);
-
 }
 .profile__row > .profile__wrap-img {
   margin-right: 10px;

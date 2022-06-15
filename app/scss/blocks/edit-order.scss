@@ -1,10 +1,14 @@
 .edit-order {
   // margin-right: 30px;
 }
+.edit-order--top {
+  margin-top: 21px;
+}
 .edit-order__wrapper {
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
   padding: 25px;
   margin-bottom: 30px;
+  position: relative;
 }
 .edit-order__slider {
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
@@ -82,8 +86,16 @@
   border: none;
   width: 88%;
 }
+.edit-order__column3 {
+  @include flex(flex, none, none, column, none);
+  border: none;
+  width: 82%;
+}
 .edit-order__column:last-child {
   width: 69%;
+}
+.edit-order__column:not(:last-child) {
+  margin-right: 10px;
 }
 .edit-order__name {
   @include font(15px, 18px, 400);
@@ -104,6 +116,20 @@
 .edit-order__label3:not(:last-child) {
   margin-bottom: 25px;
 }
+.edit-order__label-counter {
+  margin-top: 16px;
+}
+.edit-order__label-counter > .edit-order__name {
+  margin-bottom: 10px;
+  display: block;
+}
+.edit-order__label--position {
+  position: absolute;
+  right: 250px;
+  @include media($lg) {
+    right: 30px;
+  }
+}
 .edit-order__inputs {
   margin-bottom: 25px;
 }
@@ -120,7 +146,7 @@
 }
 
 .edit-order__input1 {
-  padding: 16px 50px 20px 20px;
+  padding: 16px 50px 16px 20px;
   @include font(15px, 18px, 400);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
@@ -236,7 +262,7 @@
   @include flex(flex, none, none, none, none);
   position: relative;
 }
-.edit-order__flex > .edit-order__wrap-img{
+.edit-order__flex > .edit-order__wrap-img {
   margin-right: 15px;
 }
 .edit-order__flex-mb {
@@ -379,6 +405,9 @@
 .edit-order__form1 {
   @include flex(flex, none, none, none, wrap);
 }
+// .edit-order__form1:not(:last-child) {
+// margin-bottom: 25px;
+// }
 .edit-order__form > .form__wrap {
   background: transparent !important;
   box-shadow: none;
@@ -514,6 +543,24 @@
   border: none;
   @include font(15px, 18px, 600);
   color: var(--color-main);
+  margin-bottom: 30px;
+  max-width: 248px;
+  text-decoration: none;
+}
+.edit-order__btn-next2 {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  margin-bottom: 30px;
+  max-width: 348px;
+  text-decoration: none;
+}
+.edit-order__btns > .edit-order__btn-next2 > .edit-order__icon {
+  transform: rotate(180deg);
 }
 .edit-order__btns > .edit-order__btn-next > .edit-order__icon {
   transform: rotate(180deg);
@@ -527,6 +574,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-second);
   margin-right: 10px;
+  margin-bottom: 30px;
 }
 .edit-order__btn-back > .edit-order__icon {
   margin-left: 0;
@@ -565,8 +613,134 @@
   background-color: var(--scrollbarThumb);
   border: var(--scrollbarBorder);
 }
-.edit-order__theme{
+.edit-order__theme {
   border-radius: 15px;
   display: block;
   width: 100%;
+}
+.edit-order__wrapper-counter {
+  @include flex(flex, none, none, none, none);
+}
+.edit-order__counter {
+  width: 100px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  background: var(--bg-color4);
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  cursor: pointer;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.edit-order__counter,
+.edit-order__decrement,
+.edit-order__increment {
+  height: 50px;
+  user-select: none;
+}
+
+.edit-order__decrement,
+.edit-order__increment {
+  @include flex(flex, center, center, none, none);
+  width: 40px;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  cursor: pointer;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.edit-order__decrement {
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+  background: var(--bg-color4);
+}
+
+.edit-order__increment {
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  background: var(--bg-color4);
+}
+/* Современные браузеры
+   ----------------------------  */
+.edit-order__input1::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+        ----------------------------  */
+.edit-order__input1::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+        ----------------------------  */
+.edit-order__input1::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+        ----------------------------  */
+.edit-order__input1:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+        ----------------------------  */
+.cedit-order__input1::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+        ----------------------------  */
+.edit-order__input1:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+          ----------------------------  */
+.edit-order__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+          ----------------------------  */
+.edit-order__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+          ----------------------------  */
+.edit-order__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+          ----------------------------  */
+.edit-order__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+          ----------------------------  */
+.edit-order__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
 }

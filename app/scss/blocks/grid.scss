@@ -48,6 +48,14 @@
   justify-content: space-between;
   grid-gap: 30px;
 }
+.grid8 {
+  display: grid;
+  grid-template-columns: auto 450px;
+  grid-gap: 30px;
+  @include media($lg) {
+    grid-template-columns: auto 370px;
+  }
+}
 .grid--active {
   grid-template-columns: 104px auto;
 }

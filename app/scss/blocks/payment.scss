@@ -1,7 +1,8 @@
 .payment {
-  // @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
-  // padding: 25px;
   margin-bottom: 30px;
+}
+.payment--top {
+  margin-top: 21px;
 }
 .payment__wrapper {
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
@@ -20,14 +21,21 @@
 }
 .payment__form {
   @include flex(flex, none, none, none, none);
+}
+.payment__form:not(:last-child) {
   margin-bottom: 25px;
 }
-.payment__form > .form__wrap {
+.payment__form > .form__wrap:not(:last-child) {
   margin-right: 25px;
 }
 .payment__grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px 0;
+}
+.payment__grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 20px 0;
 }
 .payment__input {

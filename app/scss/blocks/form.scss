@@ -102,7 +102,7 @@
 .form__pseudo {
   flex-shrink: 0;
   @include font(15px, 17px, 600);
-  // color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
   background: transparent;
   @include flex(flex, center, center, none, none);
   cursor: pointer;
@@ -337,4 +337,17 @@
   @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
   margin-bottom: 15px;
   @include flex(flex, center, center, none, none);
+}
+.edit-order__form-wrap .form__wrap2:not(:first-child)::after {
+
+  position: absolute;
+  content: " ";
+  top: 8px;
+  right: 0;
+  bottom: 0;
+  width: 1px;
+  height: 24px;
+  background: #292929;
+  left: 0;
+
 }

@@ -18,6 +18,16 @@
 .info-order__wrap:not(:last-child) {
   margin-bottom: 25px;
 }
+.info-order__wrap2 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 25px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.info-order__wrap2:not(:last-child) {
+  margin-bottom: 25px;
+}
 .info-order__name {
   @include font(15px, 18px, 400);
   color: var(--color-second);
@@ -47,4 +57,21 @@
 .info-order__img {
   display: block;
   border-radius: 15px;
+}
+.info-order__popular-categories {
+  @include flex(flex, none, none, none, none);
+  padding: 0 !important;
+}
+.info-order__popular-categories > .popular-categories__wrap-img3 {
+  margin-right: 20px;
+}
+.info-order__popular-categories
+  > .popular-categories__wrap
+  > .popular-categories__name {
+  margin-bottom: 5px;
+}
+.info-order__popular-categories
+  > .popular-categories__wrap
+  > .popular-categories__subtitle {
+  margin-top: 0;
 }
