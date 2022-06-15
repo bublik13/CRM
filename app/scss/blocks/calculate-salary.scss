@@ -123,10 +123,10 @@
   color: var(--color-main);
   opacity: 1;
 }
-.calculate-salary__input:focus {
+.calculate-salary__input:checked {
   outline: none;
 }
-.calculate-salary__input-bonus:focus {
+.calculate-salary__input-bonus:checked {
   outline: none;
 }
 .calculate-salary__flex-input > .calculate-salary__text {

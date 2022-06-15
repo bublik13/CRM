@@ -235,13 +235,13 @@
   height: 24px;
   margin-right: 10px;
 }
-.edit-order__check:focus ~ .edit-order__check-pseudo {
+.edit-order__check:checked ~ .edit-order__check-pseudo {
   background: var(--bg-main);
 }
-.edit-order__check:focus ~ .edit-order__check-pseudo > .edit-order__icon-check {
+.edit-order__check:checked ~ .edit-order__check-pseudo > .edit-order__icon-check {
   display: block;
 }
-.edit-order__check:focus ~ .edit-order__check-pseudo > .edit-order__icon-btn {
+.edit-order__check:checked ~ .edit-order__check-pseudo > .edit-order__icon-btn {
   display: none;
 }
 .switch {

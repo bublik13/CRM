@@ -221,7 +221,7 @@
   display: block;
   --svgColor: url("#gradient1");
 }
-.form__check:focus ~ .form__pseudo {
+.form__check:checked ~ .form__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding-top: 10px;
@@ -229,20 +229,20 @@
   padding-left: 24px;
   padding-right: 14px;
 }
-.form__check:focus ~ .form__pseudo > .form__img {
+.form__check:checked ~ .form__pseudo > .form__img {
   --svgColor: var(--color-main);
 }
-.form__check:focus ~ .form__pseudo1 {
+.form__check:checked ~ .form__pseudo1 {
   @include wrap(var(--bg-main), var(--box-shadow1), 20px);
   color: var(--color-main);
   padding: 29px 25px;
 }
-.form__check:focus ~ .form__pseudo2 {
+.form__check:checked ~ .form__pseudo2 {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding: 17px 15px 20px 15px;
 }
-.form__check:focus ~ .form__pseudo3 {
+.form__check:checked ~ .form__pseudo3 {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding-top: 10px;
@@ -252,28 +252,28 @@
   width: 280px;
   height: 44px;
 }
-.form__check:focus ~ .form__pseudo4 {
+.form__check:checked ~ .form__pseudo4 {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding: 10px;
 }
-.form__check:focus
+.form__check:checked
   ~ .form__pseudo2
   > .form__profile
   > .profile__wrap
   > .profile__title {
   color: var(--color-main);
 }
-.form__check:focus ~ .form__pseudo2 > .form__time {
+.form__check:checked ~ .form__pseudo2 > .form__time {
   color: var(--color-main);
 }
-.form__check:focus ~ .form__pseudo-height {
+.form__check:checked ~ .form__pseudo-height {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding: 16px 20px;
   height: 50px;
 }
-.form__check:focus ~ .form__pseudo-height > .form__img4 {
+.form__check:checked ~ .form__pseudo-height > .form__img4 {
   --svgColor: var(--color-main);
 }
 

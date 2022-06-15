@@ -132,12 +132,12 @@
 .popular-categories__pseudo > .popular-categories__wrap-img {
   margin-right: 10px;
 }
-.popular-categories__check:focus ~ .popular-categories__pseudo {
+.popular-categories__check:checked ~ .popular-categories__pseudo {
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
   color: var(--color-main);
   padding: 25px;
 }
-.popular-categories__check:focus
+.popular-categories__check:checked
   ~ .popular-categories__pseudo
   > .popular-categories__wrap
   > .popular-categories__subtitle {
