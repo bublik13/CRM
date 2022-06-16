@@ -7,11 +7,11 @@ table {
   border-spacing: 0 10px;
   width: 100%;
 }
-.tablet__cell > .tablet__title {
+.tablet__top > .tablet__title {
   white-space: nowrap;
-  @include media($lg) {
-    white-space: unset !important;
-  }
+  // @include media($lg) {
+  //   white-space: unset !important;
+  // }
 }
 // .tablet__tr2{
 //   padding-top: 20px;
@@ -40,6 +40,15 @@ table {
   @include media($lg) {
     margin-bottom: 5px;
     margin-top: 5px;
+  }
+}
+.tablet__flex3 {
+  @include flex(flex, none, flex-start, none, none);
+}
+.tablet__column:not(:last-child){
+  margin-right: 40px;
+  @include media($lg) {
+    margin-right: 20px;
   }
 }
 td {
@@ -195,6 +204,10 @@ td:last-child {
 }
 .tablet__td5 {
   width: 23% !important;
+    @include media($lg) {
+      max-width: 100px !important;
+
+  }
 }
 .tablet__td6 {
   width: 28% !important;
@@ -228,6 +241,10 @@ td:last-child {
 .tablet__td14 {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
+}
+.tablet__td15 {
+  border-radius: 20px !important;
+  padding: 20px  !important;
 }
 td:last-child > .profile__title {
   margin-bottom: 0;
@@ -341,7 +358,11 @@ td:last-child > .profile__title {
   @include font(15px, 18px, 400);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
-  width: 100%;
+  width: 750px;
+  @include media($lg) {
+    width: 570px;
+
+  }
 }
 // .filter__input--width {
 //   width: 143px;

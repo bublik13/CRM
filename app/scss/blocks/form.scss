@@ -126,6 +126,7 @@
   height: 50px;
   @include flex(flex, none, center, none, none);
   font-feature-settings: "pnum" on, "lnum" on;
+  white-space: nowrap;
 }
 .form__pseudo1 {
   padding: 29px 25px;

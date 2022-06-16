@@ -1,0 +1,80 @@
+.search {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 30px;
+}
+.search__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  margin-bottom: 26px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.search__icon {
+  --svgColor: url("#gradient1");
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+  filter: drop-shadow(0px 10px 25px #0085ff);
+  position: absolute;
+  top: 15px;
+  left: 17px;
+}
+.search__wrap {
+  @include flex(flex, none, center, none, none);
+  position: relative;
+}
+.search__input {
+  width: 100%;
+  margin-right: 15px;
+  border: 0.5px solid #292929;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  padding: 16px 54px 16px;
+}
+.search__submit-button{
+    padding: 17px 20px 16px;
+    width: 178px;
+}
+/* Современные браузеры
+   ----------------------------  */
+.search__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+        ----------------------------  */
+.search__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+        ----------------------------  */
+.search__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+        ----------------------------  */
+.search__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+        ----------------------------  */
+.search__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+        ----------------------------  */
+.search__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}

@@ -417,6 +417,14 @@
 .edit-order__form1 {
   @include flex(flex, none, none, none, wrap);
 }
+.edit-order__form2 {
+  @include flex(flex, none, none, none, none);
+  @include media($lg) {
+    @include flex(flex, none, none, none, wrap);
+
+  }
+
+}
 // .edit-order__form1:not(:last-child) {
 // margin-bottom: 25px;
 // }
@@ -433,6 +441,7 @@
   border: none;
   width: 50px;
   height: 50px;
+  margin-bottom: 10px;
 }
 .edit-order__buttom-icon {
   width: 24px;
@@ -474,6 +483,21 @@
   color: var(--color-main);
   width: 300px;
   height: 70px;
+  border: none;
+  background: var(--bg-color4);
+  box-shadow: 0 0;
+  border-radius: 15px;
+  padding: 16px 20px;
+  resize: none;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-align: start;
+  margin-bottom: 25px;
+}
+.edit-order__textarea4 {
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  width: 300px;
+  height: 90px;
   border: none;
   background: var(--bg-color4);
   box-shadow: 0 0;
@@ -603,7 +627,22 @@
   margin-right: 10px;
   margin-bottom: 30px;
 }
+.edit-order__btn-back2 {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-color4), 0 0 0 0, 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
 .edit-order__btn-back > .edit-order__icon {
+  margin-left: 0;
+  margin-right: 10px;
+}
+.edit-order__btn-back2 > .edit-order__icon {
   margin-left: 0;
   margin-right: 10px;
 }

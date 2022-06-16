@@ -73,6 +73,10 @@
   background-color: var(--bg-color4);
   padding: 13px;
 }
+
+.slider__pseudo--bg {
+  background-color: var(--bg-color5);
+}
 .slider__img {
   height: 24px;
   width: 24px;
@@ -491,7 +495,7 @@
   width: 100%;
 }
 .slider__flex2 > .slider__column > .slider__text {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 .slider__column {
   flex-grow: 1;
@@ -535,6 +539,12 @@ margin-bottom: 16px;
 }
 .slider--top {
   margin-top: 23px;
+}
+.slider__search {
+  margin-bottom: 25px;
+}
+.slider__search > .search__input {
+  background: var(--bg-color5);
 }
 @include media($lm) {
   .slider--mr {

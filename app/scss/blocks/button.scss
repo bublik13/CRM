@@ -120,6 +120,7 @@ padding: 7px;
   width: 24px;
   height: 24px;
 }
+
 .button__down {
   height: 24px;
   width: 24px;
@@ -143,6 +144,9 @@ padding: 7px;
 .button--flex-end {
   @include flex(flex, space-between, center, none, none);
 }
+.button--flex-center {
+  @include flex(flex, center, center, none, none);
+}
 .button--column {
   @include flex(flex, center, center, column, none);
 }
@@ -157,6 +161,16 @@ padding: 7px;
   color: var(--color-main);
   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
   @include wrap(var(--bg-main), var(--box-shadow), 15px);
+}
+.button--brand3 {
+  width: 64px;
+  height: 50px;
+  color: var(--color-main);
+  --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
+  @include wrap(var(--bg-main), var(--box-shadow), 15px);
+}
+.button--brand3 > .button__img{
+margin-right:0px;
 }
 // .light .button--brand {
 //   --btn-bg-color: linear-gradient(93.52deg, #00d1ff 0%, #0075fe 100%);
@@ -225,6 +239,10 @@ padding: 7px;
 .button--11 {
   color: #000;
   @include wrap(var(--bg-color29), var(--box-shadow34), 15px);
+}
+.button--12 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color17), var(--box-shadow3), 15px);
 }
 .button__text {
   font-feature-settings: "pnum" on, "lnum" on;

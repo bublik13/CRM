@@ -66,6 +66,13 @@
   grid-template-columns: 49% 50%;
   grid-gap: 0 30px;
 }
+.grid11 {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0 30px;
+  align-items: flex-start;
+
+}
 .grid--active {
   grid-template-columns: 104px auto;
 }

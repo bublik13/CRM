@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1655320626446">
+    <link rel="stylesheet" href="css/main.css?t=1655402635771">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
   </head>
@@ -415,6 +415,12 @@
       <symbol id="check" viewBox="0 0 24 24">
         <path d="M9.00063 16.17L5.53063 12.7C5.14063 12.31 4.51063 12.31 4.12062 12.7C3.73063 13.09 3.73063 13.72 4.12062 14.11L8.30063 18.29C8.69063 18.68 9.32063 18.68 9.71063 18.29L20.2906 7.71C20.6806 7.32 20.6806 6.69 20.2906 6.3C19.9006 5.91 19.2706 5.91 18.8806 6.3L9.00063 16.17Z" fill="currentColor"/>
       </symbol>
+      <symbol id="print-disabled" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.62047 2.32003C2.23047 1.93003 1.60047 1.93003 1.21047 2.32003C0.820469 2.71003 0.820469 3.34003 1.21047 3.73003L5.48047 8.00003C3.83047 8.01003 2.50047 9.35003 2.50047 11V15C2.50047 16.1 3.40047 17 4.50047 17H6.50047V19C6.50047 20.1 7.40047 21 8.50047 21H16.5005C17.0505 21 17.5405 20.78 17.9005 20.42L20.7305 23.25C21.1205 23.64 21.7505 23.64 22.1405 23.25C22.5305 22.86 22.5305 22.23 22.1405 21.84L2.62047 2.32003ZM15.5005 19H9.50047C8.95047 19 8.50047 18.55 8.50047 18V14H11.4805L16.2005 18.72C16.0105 18.89 15.7705 19 15.5005 19ZM19.5005 8.00003H11.1305L20.1305 17H20.5005C21.6005 17 22.5005 16.1 22.5005 15V11C22.5005 9.34003 21.1605 8.00003 19.5005 8.00003ZM19.5005 12C18.9505 12 18.5005 11.55 18.5005 11C18.5005 10.45 18.9505 10 19.5005 10C20.0505 10 20.5005 10.45 20.5005 11C20.5005 11.55 20.0505 12 19.5005 12ZM17.5005 7.00003C18.0505 7.00003 18.5005 6.55003 18.5005 6.00003V4.00003C18.5005 3.45003 18.0505 3.00003 17.5005 3.00003H7.50047C7.13047 3.00003 6.82047 3.21003 6.65047 3.51003L10.1305 7.00003H17.5005Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="add-plus" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.5 7C11.95 7 11.5 7.45 11.5 8V11H8.5C7.95 11 7.5 11.45 7.5 12C7.5 12.55 7.95 13 8.5 13H11.5V16C11.5 16.55 11.95 17 12.5 17C13.05 17 13.5 16.55 13.5 16V13H16.5C17.05 13 17.5 12.55 17.5 12C17.5 11.45 17.05 11 16.5 11H13.5V8C13.5 7.45 13.05 7 12.5 7ZM12.5 2C6.98 2 2.5 6.48 2.5 12C2.5 17.52 6.98 22 12.5 22C18.02 22 22.5 17.52 22.5 12C22.5 6.48 18.02 2 12.5 2ZM12.5 20C8.09 20 4.5 16.41 4.5 12C4.5 7.59 8.09 4 12.5 4C16.91 4 20.5 7.59 20.5 12C20.5 16.41 16.91 20 12.5 20Z"  fill="var(--svgColor)"/>
+      </symbol>
     </svg> 
 <picture><source srcset="img/desktop5.avif" type="image/avif"><source srcset="img/desktop5.webp" type="image/webp"><img class="pp"  hidden  src="img/desktop5.jpg" alt=""></picture>
     <style>
@@ -504,7 +510,7 @@
                   </a>
               </li>
               <li class="nav__item">
-                  <a href="#" class="nav__link">
+                  <a href="spare.html" class="nav__link">
                       <svg aria-hidden="true" class="nav__link-img">
                           <use xlink:href="#app-settings"></use>
                       </svg>
@@ -700,7 +706,7 @@
               <span class="form__pseudo"> 
                 <div class="form__text">Новая поставка</div>
                 <svg aria-hidden="true" class="form__img">
-                  <use xlink:href="#add-circl"></use>
+                  <use xlink:href="#add-plus"></use>
                 </svg>
               </span>
             </label>
@@ -728,7 +734,7 @@
                   </div>
                   <div class="box__flex">
                     <div class="box__title title title title--xs">
-                      ЧИТСАЯ ПРИБЫЛЬ
+                      ЧИСТАЯ ПРИБЫЛЬ
                     </div>
                     <div class="box__wrap">
                       <div class="box__number">
@@ -1349,7 +1355,7 @@
         <section class="tablet">
           <table class="tablet__cell">
             <thead class="tablet__cell">
-              <tr class="tablet__cell">
+              <tr class="tablet__top">
                 <th class="tablet__title title title--color">ЗАКАЗ И ДАТА</th>
                 <th class="tablet__title title title--color">НАИМЕНОВАНИЕ</th>
                 <th class="tablet__title title title--color">ПРОДАВЕЦ</th>
@@ -1713,7 +1719,7 @@
     
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
-    <script src="js/main.js?t=1655320626446"></script>
+    <script src="js/main.js?t=1655402635771"></script>
       
   </body>
 
