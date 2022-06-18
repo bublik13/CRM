@@ -3,6 +3,13 @@
   padding: 25px;
   max-width: 450px;
   align-self: start;
+  margin-bottom: 30px;
+}
+.history__orders {
+  @include flex(flex, none, flex-start, column, none);
+}
+.history--width {
+  max-width: 100%;
 }
 .history__title {
   @include font(18px, 21px, 700, var(--second-family));
@@ -86,6 +93,21 @@
   border-left: 1px solid 0px 10px 25px #fa0dff;
   padding-left: 15px;
 }
+.history__item9 {
+  @include flex(flex, none, center, none, none);
+  border-left: 1px solid 0px 10px 25px #4bbd6d;
+}
+.history__item10 {
+  border-left: 1px solid 0px 10px 25px #e60045;
+  @include flex(flex, none, center, none, none);
+}
+.history__item10:not(:last-child) {
+  margin-bottom: 10px;
+}
+.history__item11{
+  border-left: 1px solid 0px 10px 25px #0085FF;
+  @include flex(flex, none, center, none, none);
+}
 .history__time {
   @include font(15px, 18px, 400);
   color: var(--color-second);
@@ -98,34 +120,70 @@
 }
 .history__wrap {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
-
   padding: 10px;
+}
+.history__wrap2 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 15px;
+}
+.history__wrap2:not(:last-child) {
+  margin-bottom: 10px;
+}
+.history__wrap3 {
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  padding: 10px;
+  @include flex(flex, none, center, none, none);
+}
+.history__wrap4 {
+  @include flex(flex, none, center, none, none);
+}
+.history__wrap4:not(:last-child) {
+  margin-right: 40px;
+}
+.history__wrap3 > .history__important {
+  margin-right: 40px;
+  margin-bottom: 0;
+}
+.history__wrap4 > .history__comment {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
+.history__wrap4 > .history__important {
+  margin-bottom: 0;
+}
+.history__wrap2 > .history__date {
+  margin-bottom: 15px;
 }
 .history__starus1 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   width: 50%;
   margin-bottom: 10px;
+  flex-grow: 1;
 }
 .history__starus2 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   width: 50%;
   margin-bottom: 10px;
+  flex-grow: 1;
 }
 .history__starus3 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   border-radius: 15px;
-  width: 85%;
+  width: 89%;
   margin-bottom: 10px;
+  flex-grow: 1;
 }
 .history__starus4 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   width: 39%;
   margin-right: 10px;
+  flex-grow: 1;
 }
 .history__starus5 {
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   width: 39%;
   margin-right: 10px;
+  flex-grow: 1;
 }
 .history__text {
   @include font(15px, 18px, 600);
@@ -209,6 +267,39 @@
   @include wrap(var(--bg-color11), var(--box-shadow24), 10px);
   border: none;
   padding: 5px 10px;
+}
+.history__btn3 {
+  display: inline-block;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  cursor: pointer;
+  @include wrap(var(--bg-color8), var(--box-shadow6), 12px);
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+.history__btn4 {
+  display: inline-block;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  cursor: pointer;
+  @include wrap(var(--bg-color9), var(--box-shadow15), 12px);
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
+}
+.history__btn5 {
+  display: inline-block;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  cursor: pointer;
+  @include wrap(var(--bg-main), var(--box-shadow1), 12px);
+  border: none;
+  padding: 10px 15px;
+  margin-right: 10px;
 }
 .history__important {
   @include font(15px, 18px, 600);
@@ -317,4 +408,7 @@
 }
 .history__wrap-text:first-child {
   margin-bottom: 20px;
+}
+.history__search {
+  margin-bottom: 25px;
 }

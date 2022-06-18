@@ -24,10 +24,10 @@
     background: var(--btn-hover-bg-color);
   }
 }
-.button__icon{
+.button__icon {
   width: 24px;
   height: 24px;
-  color:#000000;
+  color: #000000;
 }
 .button--sm {
   padding: 5px 15px;
@@ -55,7 +55,7 @@
   border-radius: 20px !important;
 }
 .button--xss {
-padding: 7px;
+  padding: 7px;
   border-radius: 20px !important;
 }
 .button--sx {
@@ -77,6 +77,9 @@ padding: 7px;
 .button--ls {
   padding: 20px 37px 14px 53px;
   border-radius: 15px;
+}
+.button--width-ssx {
+  width: 86px;
 }
 .button--width-sx {
   width: 98px;
@@ -169,8 +172,8 @@ padding: 7px;
   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
   @include wrap(var(--bg-main), var(--box-shadow), 15px);
 }
-.button--brand3 > .button__img{
-margin-right:0px;
+.button--brand3 > .button__img {
+  margin-right: 0px;
 }
 // .light .button--brand {
 //   --btn-bg-color: linear-gradient(93.52deg, #00d1ff 0%, #0075fe 100%);
@@ -252,7 +255,6 @@ margin-right:0px;
   margin-left: 20px;
   color: #000000;
 }
-.button--color{
+.button--color {
   color: #000000;
-
 }
