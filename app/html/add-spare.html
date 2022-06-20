@@ -481,7 +481,7 @@
           </ul>
           <ul class="nav__list">
               <li class="nav__item">
-                  <a href="#" class="nav__link">
+                  <a href="settings-basic.html" class="nav__link">
                     <label class="switch">
                       <input type="checkbox" checked>
                       <span class="psevdo round"></span>
@@ -646,7 +646,7 @@
           </button>
         </header>
         <div class="grid2">
-          <section class="edit-order">
+          <section class="edit-order edit-order--top">
             <div class="edit-order__wrapper">
               <div class="edit-order__title">О запчасти</div>
               <div class="edit-order__wrap">
@@ -658,10 +658,12 @@
                   </label>
                   <label class="edit-order__label">
                     <span class="edit-order__name">Категория запчасти</span>
-                    <select class="edit-order__select edit-order__select-mb">
-                      <option>Выберите категорию</option>
-                      <option>Выберите категорию</option>
-                    </select>
+                    <div class="edit-order__flex-input">
+                      <input type="text" name="text" class="edit-order__input4" placeholder="Выберите категорию">
+                      <svg aria-hidden="true" class="edit-order__input-icon2">
+                        <use xlink:href="#down"></use>
+                      </svg>
+                    </div>
                   </label>
                   <div class="edit-order__form2 form">
                     <label class="form__wrap">

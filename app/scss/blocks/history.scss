@@ -11,6 +11,9 @@
 .history--width {
   max-width: 100%;
 }
+.history--top {
+ margin-top: 21px;
+}
 .history__title {
   @include font(18px, 21px, 700, var(--second-family));
   color: var(--color-main);

@@ -76,6 +76,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
+.edit-order__wrap2 {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 25px;
+  position: relative;
+}
+.edit-order__wrap2:not(:last-child) {
+  margin-bottom: 25px;
+}
 .edit-order__column {
   @include flex(flex, none, none, column, none);
   border: none;
@@ -101,6 +109,7 @@
   @include font(15px, 18px, 400);
   color: var(--color-second);
   margin-bottom: 10px;
+  display: block;
 }
 .edit-order__label {
   @include flex(flex, center, none, column, none);
@@ -115,6 +124,13 @@
 }
 .edit-order__label3:not(:last-child) {
   margin-bottom: 25px;
+}
+.edit-order__label4 {
+  @include flex(flex, none, center, none, none);
+}
+.edit-order__label4 > .edit-order__name {
+  margin-right: 15px;
+  margin-left: 15px;
 }
 .edit-order__label-counter {
   margin-top: 16px;
@@ -174,6 +190,50 @@
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   border: none;
   width: 300px;
+  position: relative;
+}
+.edit-order__input4 {
+  padding: 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  width: 300px;
+  position: relative;
+}
+.edit-order__input5 {
+  padding: 16px 50px 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  margin-bottom: 10px;
+  width: 300px;
+  position: relative;
+}
+.edit-order__input6 {
+  padding: 16px 45px 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: 0.5px solid #3c3c3c;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px 0 0 15px);
+  border: none;
+  width: 82px;
+  position: relative;
+}
+
+.edit-order__input7 {
+  padding: 16px 45px 16px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: 0.5px solid #3c3c3c;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 0 15px 15px 0);
+  border: none;
+  width: 82px;
   position: relative;
 }
 .edit-order__select {
@@ -238,7 +298,9 @@
 .edit-order__check:checked ~ .edit-order__check-pseudo {
   background: var(--bg-main);
 }
-.edit-order__check:checked ~ .edit-order__check-pseudo > .edit-order__icon-check {
+.edit-order__check:checked
+  ~ .edit-order__check-pseudo
+  > .edit-order__icon-check {
   display: block;
 }
 .edit-order__check:checked ~ .edit-order__check-pseudo > .edit-order__icon-btn {
@@ -264,6 +326,7 @@
 }
 .edit-order__flex > .edit-order__wrap-img {
   margin-right: 15px;
+  margin-top: 0;
 }
 .edit-order__flex-mb {
   margin-bottom: 25px;
@@ -271,6 +334,7 @@
 .edit-order__wrap-img {
   position: relative;
   margin-right: 25px;
+  margin-top: 10px;
 }
 .edit-order__img {
   border-radius: 15px;
@@ -345,7 +409,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   @include flex(flex, center, center, none, none);
-  padding: 5px;
+  padding: 3px;
 }
 .edit-order__btn5:not(:last-child) {
   margin-right: 10px;
@@ -400,6 +464,15 @@
   color: var(--color-second);
   margin-bottom: 10px;
 }
+.edit-order__text {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  color: var(--color-second);
+  @include font(15px, 18px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  // padding-left: 10px;
+}
 .edit-order__text-up {
   @include font(15px, 18px, 600);
   color: var(--color-main);
@@ -414,6 +487,13 @@
   @include flex(flex, none, none, none, wrap);
   margin-top: 10px;
 }
+.edit-order__form > .check__name{
+margin-left: 15px;
+}
+.edit-order__form > .edit-order__icon
+{
+  margin-left: 15px;
+  }
 .edit-order__form1 {
   @include flex(flex, none, none, none, wrap);
 }
@@ -421,9 +501,7 @@
   @include flex(flex, none, none, none, none);
   @include media($lg) {
     @include flex(flex, none, none, none, wrap);
-
   }
-
 }
 // .edit-order__form1:not(:last-child) {
 // margin-bottom: 25px;
@@ -534,12 +612,35 @@
   box-shadow: 0 0;
   border-radius: 15px;
   width: 100%;
+}
+.edit-order__button:not(:last-child) {
   margin-bottom: 25px;
 }
 .edit-order__flex-input {
   @include flex(flex, none, none, none, none);
   width: 300px;
   position: relative;
+}
+.edit-order__flex-input2 {
+  position: relative;
+}
+.edit-order__flex-input2:nth-child(1)::after {
+  position: absolute;
+  content: " ";
+  top: 12px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background: #3c3c3c;
+}
+.edit-order__flex-input2:nth-child(4)::after {
+  position: absolute;
+  content: " ";
+  top: 12px;
+  right: 0;
+  width: 1px;
+  height: 30px;
+  background: #3c3c3c;
 }
 .switch__icon {
   width: 24px;
@@ -560,9 +661,31 @@
   padding-left: 10px;
   border-left: 1px solid #292929;
 }
+.edit-order__input-icon2 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  color: var(--color-main);
+}
+.edit-order__input-icon3 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  color: var(--color-main);
+  transform: rotate(180deg);
+}
 .edit-order__form-wrap {
   margin-bottom: 25px;
   width: 300px;
+  @include flex(flex, none, none, none, nowrap);
+}
+.edit-order__form-wrap2 {
+  margin-bottom: 25px;
+  width: 437px;
   @include flex(flex, none, none, none, nowrap);
 }
 .edit-order__bottom {

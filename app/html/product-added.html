@@ -441,7 +441,7 @@
           </ul>
           <ul class="nav__list">
               <li class="nav__item">
-                  <a href="#" class="nav__link">
+                  <a href="settings-basic.html" class="nav__link">
                     <label class="switch">
                       <input type="checkbox" checked>
                       <span class="psevdo round"></span>
@@ -683,11 +683,13 @@
                       <input placeholder="SAMSUNG, USB type-C, 3A" type="text" class="edit-order__input">
                     </label>
                     <label class="edit-order__label">
-                      <span class="edit-order__name">Категория товара</span>
-                      <select class="edit-order__button button button--flex-end">
-                        <option>Зарядные устройства</option>
-                        <option>Зарядные устройства</option>
-                      </select>
+                      <span class="edit-order__name"> Категория товара</span>
+                      <div class="edit-order__flex-input">
+                        <input type="text" name="text" class="edit-order__input4" placeholder="Зарядные устройства">
+                        <svg aria-hidden="true" class="edit-order__input-icon2">
+                          <use xlink:href="#down"></use>
+                        </svg>
+                      </div>
                     </label>
                   </fieldset>
                   <fieldset class="edit-order__column">
@@ -702,7 +704,7 @@
                     </label>
                     <label class="edit-order__label">
                       <span class="edit-order__name">Страна производитель</span>
-                      <input placeholder="Китай" type="text" class="edit-order__input">
+                      <input placeholder="Китай" type="text" class="edit-order__input4">
                     </label>
                   </fieldset>
                 </div>

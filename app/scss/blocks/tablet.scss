@@ -28,24 +28,22 @@ table {
 .tablet__flex1 {
   @include flex(flex, flex-end, center, none, none);
   position: relative;
-  @include media($lg) {
-    flex-wrap: wrap;
-  }
+
 }
 .tablet__flex2 {
   @include flex(flex, none, center, none, none);
 }
-.tablet__flex1 > .button {
+.tablet__flex1 > .button:not(:last-child) {
   margin-right: 10px;
-  @include media($lg) {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }
+  // @include media($lg) {
+  //   margin-bottom: 5px;
+  //   margin-top: 5px;
+  // }
 }
 .tablet__flex3 {
   @include flex(flex, none, flex-start, none, none);
 }
-.tablet__column:not(:last-child){
+.tablet__column:not(:last-child) {
   margin-right: 40px;
   @include media($lg) {
     margin-right: 20px;
@@ -58,19 +56,21 @@ td {
 }
 td:first-child {
   border-radius: 20px 0 0 20px;
-  width: 170px;
-  padding-left: 19px;
-  padding-top: 8px;
+  padding-left: 20px;
+  // width: 170px;
+  // padding-left: 19px;
+  // padding-top: 8px;
 }
-td:nth-child(2) {
-  width: 238px;
-  padding: 20px 5px;
-}
+// td:nth-child(2) {
+//   width: 238px;
+//   padding: 20px 5px;
+// }
 td:nth-child(6) {
   white-space: nowrap;
 }
 td:last-child {
   border-radius: 0 20px 20px 0;
+  padding-right: 20px;
 }
 th {
   padding: 15px;
@@ -78,23 +78,22 @@ th {
 }
 
 td {
-  padding-top: 26px;
-  padding-bottom: 16px;
-  padding-left: 26px;
-  padding-right: 0px;
   text-align: left;
+  padding: 20px 0;
 }
 td:last-child {
   white-space: nowrap;
-  padding-right: 20px !important;
+  @include media($lg) {
+  padding-left: 20px !important;
 }
-.tablet__flex > .button:first-child {
+}
+.tablet__flex > .button:not(:last-child) {
   margin-right: 10px;
 }
-.tablet__wrap2 > .button:first-child {
+.tablet__wrap2:not(:last-child) {
   margin-right: 10px;
 }
-.tablet__wrap > .button:first-child {
+.tablet__wrap > .button:not(:last-child) {
   margin-right: 10px;
 }
 .tablet__button {
@@ -104,7 +103,7 @@ td:last-child {
   position: relative;
   padding-right: 15px;
   @include media($lg) {
-    padding-right: 0;
+    padding-right: 10px;
   }
 }
 .tablet__wrap2 {
@@ -184,7 +183,7 @@ td:last-child {
   margin-left: 20px;
 }
 .tablet__first {
-  width: 250px !important;
+  width: 300px !important;
 }
 .tablet__last {
   width: 250px !important;
@@ -204,9 +203,8 @@ td:last-child {
 }
 .tablet__td5 {
   width: 23% !important;
-    @include media($lg) {
-      max-width: 100px !important;
-
+  @include media($lg) {
+    max-width: 100px !important;
   }
 }
 .tablet__td6 {
@@ -233,10 +231,6 @@ td:last-child {
 .tablet__td13 {
   width: 28% !important;
   padding-left: 20px !important;
-  // @include media($lg) {
-  //   width: 100px !important;
-
-  // }
 }
 .tablet__td14 {
   padding-top: 20px !important;
@@ -244,7 +238,32 @@ td:last-child {
 }
 .tablet__td15 {
   border-radius: 20px !important;
-  padding: 20px  !important;
+  padding: 20px !important;
+}
+.tablet__td16 {
+  width: 170px;
+  @include media($lg) {
+    width: auto;
+  }
+}
+.tablet__td17 {
+  padding-right: 33px;
+}
+.tablet__td18 {
+  width: 269px;
+  padding-right: 30px;
+  padding-left: 26px;
+  @include media($lg) {
+    width: auto;
+  }
+  // text-overflow: ellipsis;
+  // white-space: nowrap;
+  // overflow: hidden;
+  // width: 170px;
+}
+.tablet__td19{
+  padding-left: 56px;
+  width: 360px;
 }
 td:last-child > .profile__title {
   margin-bottom: 0;
@@ -361,13 +380,8 @@ td:last-child > .profile__title {
   width: 750px;
   @include media($lg) {
     width: 570px;
-
   }
 }
-// .filter__input--width {
-//   width: 143px;
-//   padding-right: 41px;
-// }
 .tablet__subtitle {
   @include font(15px, 18px, 600);
   color: var(--color-main);
@@ -380,6 +394,11 @@ td:last-child > .profile__title {
   font-feature-settings: "pnum" on, "lnum" on;
   padding-left: 10px;
   border-left: 1px solid #292929;
+}
+.tablet__tbody-search > tr:hover {
+  outline: 1px solid var(--bg-color19);
+  border-radius: 20px;
+  cursor: pointer;
 }
 /* Современные браузеры
    ----------------------------  */

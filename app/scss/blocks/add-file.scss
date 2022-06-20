@@ -6,7 +6,13 @@
   margin-top: 21px;
 }
 .add-file__title {
-  @include font(18px, 21px, 700, var(--second-family));
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.add-file__subtitle {
+  @include font(15px, 18px, 400);
   color: var(--color-main);
   margin-bottom: 25px;
   font-feature-settings: "pnum" on, "lnum" on;
@@ -61,7 +67,7 @@
   height: auto;
   display: block;
 }
-.add-file__close{
+.add-file__close {
   width: 30px;
   height: 30px;
   top: -16px;
@@ -74,4 +80,23 @@
   color: var(--color-main);
   @include flex(flex, center, center, none, none);
   padding: 5px;
+}
+.add-file__text {
+  @include font(15px, 18px, 700, $ff: "Manrope");
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.add-file__button {
+  width: 100%;
+  @include flex(flex, center, center, none, none);
+  height: 50px;
+}
+.add-file__button:not(:last-child) {
+  margin-bottom: 10px;
+}
+.add-file__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+  margin-right: 10px;
 }

@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1655583977918">
+    <link rel="stylesheet" href="css/main.css?t=1655768313803">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
 
@@ -339,7 +339,7 @@
         
 
     </svg>
-<picture><source srcset="img/desktop1.avif" type="image/avif"><source srcset="img/desktop1.webp" type="image/webp"><img class="pp"  hidden  src="img/desktop1.jpg" alt=""></picture>
+<picture><source srcset="img/desktop1.avif" type="image/avif"><source srcset="img/desktop1.webp" type="image/webp"><img class="pp" hidden   src="img/desktop1.jpg" alt=""></picture>
     <style>
       .pp {
         position: absolute;
@@ -437,7 +437,7 @@
           </ul>
           <ul class="nav__list">
               <li class="nav__item">
-                  <a href="#" class="nav__link">
+                  <a href="settings-basic.html" class="nav__link">
                     <label class="switch">
                       <input type="checkbox" checked>
                       <span class="psevdo round"></span>
@@ -594,7 +594,7 @@
               Заказ
             </h1>
             <div class="header__subtitle">№384172</div>
-            <button class="header__button button button--ms button--2 button--flex-end button--width ">
+            <button class="header__button button button--sg button--2">
               <div class="button__text">В ремонте</div>
             </button>
           </div>
@@ -739,10 +739,12 @@
                       <use xlink:href="#down"></use>
                     </svg>
                   </button> -->
-                  <select class="editing__button button button--flex-end">
-                    <option>Выберите мастера</option>
-                    <option>Выберите мастера</option>
-                  </select>
+                  <div class="editing__label">
+                    <input type="text" name="text" required="" placeholder="Выберите мастера" class="editing__selection" tabindex="0">
+                    <svg aria-hidden="true" class="editing__img2">
+                      <use xlink:href="#arrow"></use>
+                    </svg>
+                  </div>
                 </div>
                 <div class="editing__wrap">
                   <legend class="editing__legend">Работа</legend>
@@ -1168,27 +1170,33 @@
               <fieldset class="edit-order__column">
               <label class="edit-order__label">
                 <span class="edit-order__name"> Устройство</span>
-                <select class="edit-order__select">
-                  <option>Телефон</option>
-                  <option>Телефон</option>
-                </select>
+                <div class="edit-order__flex-input">
+                  <input type="text" name="text" class="edit-order__input1" placeholder="Телефон">
+                  <svg aria-hidden="true" class="edit-order__input-icon2">
+                    <use xlink:href="#down"></use>
+                  </svg>
+                </div>
               </label>
               <label class="edit-order__label">
                 <span class="edit-order__name"> Модель</span>
-                <select class="edit-order__select">
-                  <option>iPhone 12 mini</option>
-                  <option>iPhone 12 mini</option>
-                </select>
+                <div class="edit-order__flex-input">
+                  <input type="text" name="text" class="edit-order__input1" placeholder="iPhone 12 mini">
+                  <svg aria-hidden="true" class="edit-order__input-icon2">
+                    <use xlink:href="#down"></use>
+                  </svg>
+                </div>
               </label>
               </fieldset>
               <fieldset class="edit-order__column">
-              <label class="edit-order__label">
-                <span class="edit-order__name"> Бренд</span>
-                <select class="edit-order__select">
-                  <option>Apple</option>
-                  <option>Apple</option>
-                </select>
-              </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Бренд</span>
+                  <div class="edit-order__flex-input">
+                    <input type="text" name="text" class="edit-order__input1" placeholder="Apple">
+                    <svg aria-hidden="true" class="edit-order__input-icon2">
+                      <use xlink:href="#down"></use>
+                    </svg>
+                  </div>
+                </label>
               </fieldset>
             </div>
             <span class="edit-order__name"> Мастер</span>
@@ -1213,7 +1221,7 @@
               </label>
               <button class="edit-order__buttom">
                 <svg aria-hidden="true" class="edit-order__buttom-icon">
-                  <use xlink:href="#close"></use>
+                  <use xlink:href="#add"></use>
                 </svg>
               </button>
             </div>
@@ -1245,10 +1253,12 @@
                       </svg>
                     </button>
                   </div>
-                  <select class="edit-order__button button button--flex-end">
-                    <option>Выберите дефекты</option>
-                    <option>Выберите дефекты</option>
-                  </select>
+                  <div class="edit-order__flex-input">
+                    <input type="text" name="text" class="edit-order__input1" placeholder="Выберите дефекты">
+                    <svg aria-hidden="true" class="edit-order__input-icon2">
+                      <use xlink:href="#down"></use>
+                    </svg>
+                  </div>
                 </label>
                 <label class="edit-order__label">
                   <span class="edit-order__name"> Пароль устройства</span>
@@ -1268,10 +1278,12 @@
                       <use xlink:href="#close"></use>
                     </svg>
                   </button>
-                  <select class="edit-order__button button button--flex-end">
-                    <option>Выберите комплектацию</option>
-                    <option>Выберите комплектацию</option>
-                  </select>
+                  <div class="edit-order__flex-input">
+                    <input type="text" name="text" class="edit-order__input1" placeholder="Выберите комплектацию">
+                    <svg aria-hidden="true" class="edit-order__input-icon2">
+                      <use xlink:href="#down"></use>
+                    </svg>
+                  </div>
                 </label>
                 <label class="edit-order__label">
                   <span class="edit-order__name"> Серийный номер устройства</span>
@@ -1945,7 +1957,7 @@
     </div>
     <!-- подключаем js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1655583977918"></script>
+    <script src="js/main.js?t=1655768313803"></script>
       
   </body>
 

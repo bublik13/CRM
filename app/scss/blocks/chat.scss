@@ -22,6 +22,7 @@
 .chat__button {
   height: 50px;
   width: 50px;
+  flex-shrink: 0;
 }
 .chat__button:first-child {
   margin-right: 10px;
@@ -125,7 +126,7 @@
 }
 .chat__label {
   cursor: pointer;
-  padding: 13px;
+  padding: 11px 13px 10px;
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
   border: 0.5px solid var(--bg-line);
   width: 100%;

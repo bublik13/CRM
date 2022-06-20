@@ -12,7 +12,7 @@
 .online-chats__title {
   @include font(18px, 21px, 700, var(--second-family));
   color: var(--color-main);
-  margin-bottom: 21px;
+  margin-bottom: 25px;
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .online-chats__top-form {

@@ -37,16 +37,68 @@
   color: var(--color-main);
   margin-bottom: 10px;
 }
+.editing__label{
+  position: relative;
+}
 .editing__img {
   height: 18px;
   width: 18px;
   color: var(--color-main);
   margin-left: 9px;
 }
-.editing__button {
-  padding: 16px 21px 16px 20px;
+.editing__img2 {
+  height: 24px;
+  width: 24px;
+  color: var(--color-main);
+position: absolute;
+top:12px;
+right: 22px;
+transform: rotate(270deg);
+}
+.editing__selection {
+  position: relative;
+  appearance: none;
+  display: inline-block;
+  padding: 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
   @include wrap(var(--bg-color17), 0 0 0 0, 15px);
-  width: 100%;
+  border: none;
+  margin-bottom: 25px;
+  width: 300px;
+}
+.editing__selection:after {
+  
+  // position: absolute;
+  // content: ' ';
+  // background: url(../img/tablet/arrow.svg) no-repeat;
+  // left: 0;
+  // right: 0;
+  // bottom: 0;
+  // top: 0;
+  // width: 24px;
+  // height: 24px;
+  //   z-index: 10;
+
+content: "▼";
+padding: 0 8px;
+font-size: 12px;
+position: absolute;
+right: 8px;
+top: 4px;
+z-index: 1;
+text-align: center;
+width: 10%;
+height: 100%;
+pointer-events: none;
+box-sizing: border-box;
+}
+select {
+padding-right: 25px;
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
 }
 .editing__down {
   height: 24px;
@@ -67,23 +119,21 @@
   @include font(15px, 18px, 400);
   color: var(--color-main);
   @include wrap(var(--bg-color17), 0 0 0 0, 0);
-}
-.editing__input-lf {
-  border: none;
-  @include font(15px, 18px, 400);
-  color: var(--color-main);
-
-  @include wrap(var(--bg-color17), 0 0 0 0, 0);
-}
-.editing__input-rg {
+  padding-right: 5px;
   width: 159px;
   margin-right: 10px;
   border-right: 0.5px solid var(--bg-line2);
 }
 .editing__input-lf {
+  border: none;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include wrap(var(--bg-color17), 0 0 0 0, 0);
   width: 80px;
   margin-left: 10px;
 }
+
 .editing__btn {
   width: 50px;
   height: 50px;

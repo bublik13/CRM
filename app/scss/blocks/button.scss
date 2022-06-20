@@ -20,24 +20,29 @@
   background: var(--btn-bg-color);
   box-shadow: var(--btn-box-shadow);
   font-feature-settings: "pnum" on, "lnum" on;
-  &:hover {
-    background: var(--btn-hover-bg-color);
-  }
+  // &:hover {
+  //   background: var(--btn-hover-bg-color);
+  // }
 }
 .button__icon {
   width: 24px;
   height: 24px;
   color: #000000;
 }
+.button--kg {
+  padding: 5px 10px 5px 5px;
+  border-radius: 20px !important;
+}
+.button--sg {
+  padding: 9px 15px 8px;
+  border-radius: 12px !important;
+}
 .button--sm {
   padding: 5px 15px;
   border-radius: 12px;
 }
 .button--ms {
-  padding-bottom: 10px;
-  padding-top: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 5px 5px 5px 10px;
   border-radius: 12px;
 }
 .button--mx {
@@ -67,7 +72,7 @@
   border-radius: 15px;
 }
 .button--md {
-  padding: 14px 20px;
+  padding: 13px 15px;
   border-radius: 15px;
 }
 .button--gm {
@@ -75,7 +80,7 @@
   border-radius: 15px;
 }
 .button--ls {
-  padding: 20px 37px 14px 53px;
+  padding: 15px 37px 16px 53px;
   border-radius: 15px;
 }
 .button--width-ssx {
@@ -91,16 +96,19 @@
   width: 224px;
 }
 .button--width-ms {
-  width: 194px;
+  width: 175px;
 }
 .button--width-s {
-  width: 137px;
+  width: 126px;
 }
 .button--width-sl {
   width: 171px;
 }
+.button--width-l {
+  width: 195px;
+}
 .button--width {
-  width: 108px;
+  width: 98px;
 }
 .button---width-md {
   width: 280px;
@@ -130,17 +138,18 @@
   background: var(--bg-color22);
   border-radius: 8px;
   transform: rotate(180deg);
+  margin-left: 5px;
 }
 .button--bg1 {
   --svgColor: url("#gradient1");
 }
-.button__img--width {
-  height: 21px;
-  width: 20px;
-  margin-right: 0;
-  margin: 0 auto;
-  text-align: center;
-}
+// .button__img--width {
+//   height: 21px;
+//   width: 20px;
+//   margin-right: 0;
+//   margin: 0 auto;
+//   text-align: center;
+// }
 .button--flex {
   @include flex(flex, none, center, none, none);
 }
@@ -165,14 +174,8 @@
   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
   @include wrap(var(--bg-main), var(--box-shadow), 15px);
 }
-.button--brand3 {
-  width: 64px;
-  height: 50px;
-  color: var(--color-main);
-  --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
-  @include wrap(var(--bg-main), var(--box-shadow), 15px);
-}
-.button--brand3 > .button__img {
+
+.button--brand2 > .button__img {
   margin-right: 0px;
 }
 // .light .button--brand {
@@ -182,8 +185,6 @@
 //   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
 // }
 .button--primary {
-  // background: var(--bg-color5);
-  // box-shadow: var(--box-shadow3);
   border: 0.5px solid var(--bg-line);
   color: var(--color-main);
   --btn-hover-bg-color: linear-gradient(93.52deg, #0075fe 0%, #00d1ff 100%);
@@ -247,10 +248,20 @@
   color: var(--color-main);
   @include wrap(var(--bg-color17), var(--box-shadow3), 15px);
 }
+.button--13 {
+  color: var(--color-main);
+  @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+}
 .button__text {
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
 }
-
+.button__text2 {
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include font(13px, 15px, 400);
+}
 .button--ml {
   margin-left: 20px;
   color: #000000;

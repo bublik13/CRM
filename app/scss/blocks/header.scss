@@ -15,6 +15,9 @@
 .header__wrap {
   @include flex(flex, center, center, none, none);
 }
+// .header__wrap > .header__date{
+//   margin-left: 10px;
+// }
 .header__subtitle {
   @include font(15px, 18px, 500);
   font-feature-settings: "pnum" on, "lnum" on;

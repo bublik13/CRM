@@ -1,6 +1,6 @@
 .statistic {
   position: relative;
-  margin-bottom: 23px;
+  margin-bottom: 41px;
   flex-grow: 1;
   @include flex(flex, none, none, none, none);
 }
@@ -14,7 +14,7 @@
 .statistic__wrap {
   flex-grow: 1;
   @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
-  padding: 25px !important;
+  padding: 17px 25px 25px 25px !important;
 }
 .statistic__wrap1 {
   @include flex(flex, space-between, center, none, none);
@@ -57,7 +57,7 @@
   @include flex(flex, center, center, none, none);
   @include wrap(var(--bg-color4), var(--box-shadow21), 10px);
   padding: 7px 10px;
-  margin-left: 25px;
+  margin-left: 10px;
 }
 .statistic__calendar-btn {
   width: 24px;
@@ -69,8 +69,8 @@
   @include flex(flex, center, center, none, none);
   cursor: pointer;
 }
-.statistic__calendar-btn:first-child {
-  margin-right: 10%;
+.statistic__calendar-btn:not(:last-child){
+  margin-right: 21px;
 }
 .statistic__icon {
   width: 24px;
