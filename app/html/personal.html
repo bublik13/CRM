@@ -578,11 +578,15 @@
       <symbol id="web2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M11.99 2C6.47 2 2 6.48 2 12C2 17.52 6.47 22 11.99 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 11.99 2ZM18.92 8H15.97C15.65 6.75 15.19 5.55 14.59 4.44C16.43 5.07 17.96 6.35 18.92 8ZM12 4.04C12.83 5.24 13.48 6.57 13.91 8H10.09C10.52 6.57 11.17 5.24 12 4.04ZM4.26 14C4.1 13.36 4 12.69 4 12C4 11.31 4.1 10.64 4.26 10H7.64C7.56 10.66 7.5 11.32 7.5 12C7.5 12.68 7.56 13.34 7.64 14H4.26ZM5.08 16H8.03C8.35 17.25 8.81 18.45 9.41 19.56C7.57 18.93 6.04 17.66 5.08 16ZM8.03 8H5.08C6.04 6.34 7.57 5.07 9.41 4.44C8.81 5.55 8.35 6.75 8.03 8ZM12 19.96C11.17 18.76 10.52 17.43 10.09 16H13.91C13.48 17.43 12.83 18.76 12 19.96ZM14.34 14H9.66C9.57 13.34 9.5 12.68 9.5 12C9.5 11.32 9.57 10.65 9.66 10H14.34C14.43 10.65 14.5 11.32 14.5 12C14.5 12.68 14.43 13.34 14.34 14ZM14.59 19.56C15.19 18.45 15.65 17.25 15.97 16H18.92C17.96 17.65 16.43 18.93 14.59 19.56ZM16.36 14C16.44 13.34 16.5 12.68 16.5 12C16.5 11.32 16.44 10.66 16.36 10H19.74C19.9 10.64 20 11.31 20 12C20 12.69 19.9 13.36 19.74 14H16.36Z" fill="var(--svgColor)"/>
       </symbol>
-        
-        
+      <symbol id="remove" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M18 13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="create" viewBox="0 0 24 24">
+        <path d="M3 17.4599V20.4999C3 20.7799 3.22 20.9999 3.5 20.9999H6.54C6.67 20.9999 6.8 20.9499 6.89 20.8499L17.81 9.93994L14.06 6.18994L3.15 17.0999C3.05 17.1999 3 17.3199 3 17.4599ZM20.71 7.03994C21.1 6.64994 21.1 6.01994 20.71 5.62994L18.37 3.28994C17.98 2.89994 17.35 2.89994 16.96 3.28994L15.13 5.11994L18.88 8.86994L20.71 7.03994Z" fill="currentColor"/>
+      </symbol>
         
     </svg>
-    <img class="pp"  hidden  src="img/desktop20.jpg" alt="">
+    <img class="pp" hidden  src="img/desktop21.jpg" alt="">
     <style>
       .pp {
         position: absolute;
@@ -707,7 +711,7 @@
                 </a>
             </li>
             <li class="nav__item">
-              <a href="personal.html" class="nav__link">
+              <a href="#" class="nav__link  nav__link--active">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#people-alt"></use>
                   </svg>
@@ -715,7 +719,7 @@
               </a>
           </li>
             <li class="nav__item">
-                <a href="discipline.html" class="nav__link">
+                <a href="discipline.html" class="nav__link ">
                     <svg aria-hidden="true" class="nav__link-img">
                         <use xlink:href="#thumbs-up-down"></use>
                     </svg>
@@ -763,7 +767,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="finance.html" class="nav__link nav__link--active">
+              <a href="finance.html" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#money"></use>
                   </svg>
@@ -999,352 +1003,177 @@
             </div>
             </div>
           </div>
-          <button type="submit" name="submit" class="header__button button button--7" value="">
-            <svg aria-hidden="true" class="button__img">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
         </header>
-        <div class="grid13">
-          <section class="edit-order">
-            <div class="edit-order__wrapper">
-              <div class="edit-order__title">Общие расходы</div>
-              <fieldset class="edit-order__column2">
+        <section class="edit-order">
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Персонал</div>
+            <fieldset class="edit-order__column2">
+              <span class="edit-order__name">Сотрудники</span>
+              <div class="edit-order__flex-input">
+                <input type="text" name="text" class="edit-order__input5" placeholder="Выберите сотрудника">
+                <svg aria-hidden="true" class="edit-order__input-icon2">
+                  <use xlink:href="#down"></use>
+                </svg>
+              </div>
+              <div class="edit-order__form3 form">
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Александр Македонов</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Даниил Алексеев</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Аркадий Петров</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Анатолий Васильев</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Владимир Дмитриев</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height"> Аркадий Маркелов </span>
+                </label>
+              </div>
+              <div class="edit-order__btns2">
+                <button class="edit-order__btn-next">
+                  <svg aria-hidden="true" class="edit-order__icon4">
+                    <use xlink:href="#add"></use>
+                  </svg>
+                  Добавить сотрудника
+                </button>
+                <button class="edit-order__btn2">
+                  <svg aria-hidden="true" class="edit-order__icon">
+                    <use xlink:href="#create"></use>
+                  </svg>
+                  Редактировать сотрудников
+                </button>
+              </div>
+
+            </fieldset>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Должности</div>
+            <fieldset class="edit-order__column2">
+              <label class="edit-order__label">
+                <span class="edit-order__name">Должность</span>
+                <input placeholder="Введите должность" type="text" class="edit-order__input5">
+              </label>
+              <label class="edit-order__label">
+                <div class="edit-order__flex2">
+                  <button class="edit-order__btn-sub10">Администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub6">Курьер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub11">Мастер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub12">Главный администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub9">Владелец сервиса
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </label>
+            </fieldset>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Информация о клиенте 
+              <svg aria-hidden="true" class="edit-order__icon">
+                <use xlink:href="#down"></use>
+              </svg>
+            </div>
+            <div class="edit-order__wrap">
+              <fieldset class="edit-order__column">
                 <label class="edit-order__label">
-                  <span class="edit-order__name">Категории расходов</span>
-                  <input placeholder="Введите расход" type="text" class="edit-order__input5">
+                  <span class="edit-order__name"> Номер телефона</span>
+                  <input placeholder="+7 (998) 483-01-45" type="text" class="edit-order__input">
                 </label>
                 <label class="edit-order__label">
-                  <div class="edit-order__flex2">
-                    <button class="edit-order__btn-sub">Канцелярия
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub2">Возвраты
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub3">Запчасти
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub4">Хознужны
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">На Авито
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Агрегаторы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Реклама Yandex
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Реклама Google
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Аренда
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Оплата за отзывы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Уборщица
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Содержание сайтов
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub6">Расходные материалы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Телефония
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">SMS.RU
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Патент
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                  </div>
+                  <span class="edit-order__name"> Имя клиента</span>
+                  <input placeholder="Иванов" type="text" class="edit-order__input">
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Адрес</span>
+                  <input placeholder="Петр Васильев" type="text" class="edit-order__input">
                 </label>
               </fieldset>
-            </div>
-            <div class="edit-order__wrapper">
-              <div class="edit-order__title">Общие расходы</div>
               <fieldset class="edit-order__column">
-                <span class="edit-order__name">Категории расходов</span>
+                <label class="edit-order__label2">
+                  <legend class="edit-order__name">Выберите дату</legend>
+                  <svg aria-hidden="true" class="edit-order__icon3">
+                    <use xlink:href="#date"></use>
+                  </svg>
+                  <select class="edit-order__button button button--ms  button--flex-end button---width-lg">
+                    <option>ДД. ММ. ГГГГ</option>
+                    <option>ДД. ММ. ГГГГ</option>
+                  </select>
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Имя клиента</span>
+                  <input placeholder="Иванов" type="text" class="edit-order__input">
+                </label>
+                <span class="edit-order__name">Сотрудники</span>
                 <div class="edit-order__flex-input">
-                  <input type="text" name="text" class="edit-order__input5" placeholder="Выберите расход">
+                  <input type="text" name="text" class="edit-order__input5" placeholder="Выберите сотрудника">
                   <svg aria-hidden="true" class="edit-order__input-icon2">
                     <use xlink:href="#down"></use>
                   </svg>
                 </div>
-                <label class="edit-order__label">
-                  <div class="edit-order__flex2">
-                    <button class="edit-order__btn-sub">Канцелярия
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub2">Возвраты
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub3">Запчасти
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub4">Хознужны
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub6">Расходные материалы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </label>
+                </div>
               </fieldset>
-              <div class="edit-order__text3">Данные виды расходов будет доступен <a href="#">только для персонала</a></div>
-            </div>
-            <div class="edit-order__wrapper">
-              <div class="edit-order__title">Общие расходы</div>
-              <fieldset class="edit-order__column2">
-                <span class="edit-order__name">Категории расходов</span>
-                <label class="edit-order__label5">
-                  <input placeholder="Скупка телевизоров" type="text" class="edit-order__input5">
-                  <button class="edit-order__button2 button button--brand2 button--flex-center  button--sx">
-                    <svg aria-hidden="true" class="button__img">
-                      <use xlink:href="#save"></use>
+              <fieldset class="edit-order__dashed">
+                <label class="edit-order__profile profile">
+                  <i class="profile__wrap-img profile__wrap-img--pd">
+                    <input class="profile__file" type="file" атрибуты="">
+                    <svg aria-hidden="true" class="edit-order__icon2">
+                      <use xlink:href="#search-img"></use>
+                    </svg>                  
+                  </i> 
+                  <i class="profile__wrap">
+                    <i class="profile__title title title--width">Добавьте фото сотрудника</i>
+                    <i class="profile__title title title--width-xs profile__title--bt">Перетащите необходимое фото
+                      в эту область</i>
+                  </i>
+                </label>
+                <div class="profile__flex">
+                  <button class="profile__button button button--sg button--9">
+                    <svg aria-hidden="true" class="profile__icon3">
+                      <use xlink:href="#photo"></use>
                     </svg>
+                    <span class="profile__text2">Сделать фото</span>
                   </button>
-                </label>
-                <label class="edit-order__label">
-                  <div class="edit-order__flex2">
-                    <button class="edit-order__btn-sub">Канцелярия
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub2">Возвраты
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub3">Запчасти
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub4">Хознужны
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">На Авито
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Агрегаторы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Реклама Yandex
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Реклама Google
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Аренда
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Оплата за отзывы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Уборщица
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Содержание сайтов
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub6">Расходные материалы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Телефония
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">SMS.RU
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Патент
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </label>
+                  <button class="profile__button button button--sg button--brand">
+                    <svg aria-hidden="true" class="profile__icon3">
+                      <use xlink:href="#search-img"></use>
+                    </svg>
+                    <span class="profile__text2">Выбрать фото</span>
+                  </button>
+                </div>
               </fieldset>
             </div>
-            <div class="edit-order__wrapper">
-              <div class="edit-order__title">Общие расходы</div>
-              <fieldset class="edit-order__column2">
-                <label class="edit-order__label">
-                  <span class="edit-order__name">Категории расходов</span>
-                  <input placeholder="Введите расход" type="text" class="edit-order__input5">
-                </label>
-                <label class="edit-order__label">
-                  <div class="edit-order__flex2">
-                    <button class="edit-order__btn-sub">Канцелярия
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub2">Возвраты
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub3">Запчасти
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub4">Хознужны
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">На Авито
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Агрегаторы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Реклама Yandex
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Реклама Google
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Аренда
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Оплата за отзывы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Уборщица
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Содержание сайтов
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub6">Расходные материалы
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Телефония
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">SMS.RU
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Патент
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                    <button class="edit-order__btn-sub5">Скупка телевизоров
-                      <svg aria-hidden="true" class="edit-order__sub">
-                        <use xlink:href="#close2"></use>
-                      </svg>
-                    </button>
-                  </div>
-                </label>
-              </fieldset>
-            </div>
-          </section>
-          <section class="form form--bg">
-            <div class="form__title">
-              Пример визаулизации
-            </div>
-          </section>
-        </div>
+            
+          </div>
+        </section>
       </main>
     </div>
     <!-- подключаем js -->
