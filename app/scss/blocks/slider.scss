@@ -34,6 +34,9 @@
   height: 1px;
   margin: -1px;
 }
+.slider__pseudo14,
+.slider__pseudo13,
+.slider__pseudo12,
 .slider__pseudo11,
 .slider__pseudo9,
 .slider__pseudo8,
@@ -266,6 +269,26 @@
   position: relative;
   z-index: 10;
 }
+.slider__circl13 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color2), var(--box-shadow19), 100px);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+.slider__circl14 {
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  @include wrap(var(--bg-color31), var(--box-shadow14), 100px);
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
 .slider__bg {
   background: var(--bg-color17);
   box-shadow: var(--box-shadow21);
@@ -420,7 +443,32 @@
   position: relative;
   z-index: 10;
 }
-
+.slider__check:checked ~ .slider__pseudo13 {
+  @include wrap(var(--bg-color2), 0 0 0 0, 15px);
+}
+.slider__check:checked ~ .slider__pseudo13 > .slider__circl13 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
+.slider__check:checked ~ .slider__pseudo14 {
+  @include wrap(var(--bg-color31), 0 0 0 0, 15px);
+}
+.slider__check:checked ~ .slider__pseudo14 > .slider__circl14 {
+  @include wrap(var(--color-main), var(--box-shadow3), 0);
+  width: 10px;
+  height: 10px;
+  border-radius: 100px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 10;
+}
 .slider__inputs {
   @include wrap(var(--bg-color4), var(--box-shadow3), 20px);
   margin-bottom: 30px;

@@ -15,6 +15,9 @@
   padding: 25px;
   margin-bottom: 30px;
 }
+.edit-order__slider2 {
+  margin-bottom: 25px;
+}
 .edit-order__title {
   @include font(18px, 21px, 700);
   color: var(--color-main);
@@ -90,6 +93,12 @@
   padding: 25px;
   position: relative;
 }
+.edit-order__wrap4 {
+  margin-top: 25px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 25px;
+  position: relative;
+}
 .edit-order__column {
   @include flex(flex, none, none, column, none);
   border: none;
@@ -147,6 +156,10 @@
 }
 .edit-order__label5 {
   @include flex(flex, none, none, none, none);
+}
+.edit-order__label6 {
+  @include flex(flex, center, none, column, none);
+  margin-bottom: 15px;
 }
 
 .edit-order__label-counter {
@@ -287,6 +300,29 @@
   font-feature-settings: "pnum" on, "lnum" on;
   border: 0.5px solid #3c3c3c;
   @include wrap(var(--bg-color4), var(--box-shadow21), 15px);
+  border: none;
+  width: 143px;
+  position: relative;
+}
+.edit-order__input11 {
+  padding: 16px 45px 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: 0.5px solid #3c3c3c;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  border: none;
+  width: 300px;
+  position: relative;
+  margin-bottom: 10px;
+}
+.edit-order__input12 {
+  padding: 16px 45px 16px 20px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
+  border: 0.5px solid #3c3c3c;
+  @include wrap(var(--bg-color17), var(--box-shadow18), 15px);
   border: none;
   width: 143px;
   position: relative;
@@ -471,6 +507,35 @@
   @include flex(flex, center, center, none, none);
   padding: 3px;
 }
+.edit-order__btn7 {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color2), var(--box-shadow39), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  padding: 16px 20px;
+  width: 112px;
+}
+.edit-order__btn8 {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color2), var(--box-shadow39), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  padding: 16px 20px;
+  width: 238px;
+  @include flex(flex, center, center, none, none);
+}
+.edit-order__btn9 {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color2), var(--box-shadow39), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  padding: 13px 20px;
+  width: 225px;
+  @include flex(flex, center, center, none, none);
+}
 .edit-order__btn5:not(:last-child) {
   margin-right: 10px;
 }
@@ -564,7 +629,7 @@
 }
 .edit-order__form {
   @include flex(flex, none, none, none, wrap);
-  margin-top: 10px;
+  margin-top: 15px;
 }
 .edit-order__form > .check__name {
   margin-left: 15px;
@@ -584,6 +649,14 @@
 .edit-order__form3 {
   @include flex(flex, none, none, none, wrap);
   width: 96%;
+}
+.edit-order__form4 {
+  @include flex(flex, none, none, none, wrap);
+  margin-bottom: 15px;
+}
+.edit-order__form5 {
+  @include flex(flex, none, none, none, wrap);
+  margin-bottom: 25px;
 }
 // .edit-order__form1:not(:last-child) {
 // margin-bottom: 25px;
@@ -811,7 +884,7 @@
   border-radius: 15px;
   width: 100%;
   @include font(15px, 18px, 400);
-
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 .edit-order__button:not(:last-child) {
   margin-bottom: 25px;
@@ -822,6 +895,17 @@
 .edit-order__button3 {
   padding: 13px 20px;
   @include wrap(var(--bg-color4), 0 0 0 0, 15px);
+  color: var(--color-main);
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  @include font(15px, 18px, 600);
+  border: none;
+  @include flex(flex, none, center, none, none);
+}
+.edit-order__button4 {
+  padding: 13px 20px;
+  @include wrap(var(--bg-color17), 0 0 0 0, 15px);
   color: var(--color-main);
   display: inline-block;
   vertical-align: top;
@@ -874,11 +958,11 @@
   height: 24px;
   position: absolute;
   top: 15px;
-  right: 10px;
+  right: 20px;
   color: var(--color-main);
   @include font(15px, 18px, 600);
   font-feature-settings: "pnum" on, "lnum" on;
-  padding-left: 10px;
+  padding-left: 13px;
   border-left: 1px solid #292929;
 }
 .edit-order__input-icon2 {
@@ -897,6 +981,18 @@
   right: 20px;
   color: var(--color-main);
   transform: rotate(180deg);
+}
+.edit-order__input-icon4 {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: var(--color-main);
+  @include font(15px, 18px, 600);
+  font-feature-settings: "pnum" on, "lnum" on;
+  padding-left: 13px;
+  border-left: 1px solid #3c3c3c;
 }
 .edit-order__form-wrap {
   margin-bottom: 25px;
@@ -1132,6 +1228,16 @@
   );
   margin-top: 25px;
   margin-bottom: 25px !important;
+}
+.edit-order__calculate-salary2 {
+  @include wrap(
+    transparent !important,
+    0 0 0 0 !important,
+    0!important
+  );
+  margin-top: 25px;
+  margin-bottom: 25px !important;
+  padding: 0 !important;
 }
 /* Современные браузеры
    ----------------------------  */
@@ -1855,7 +1961,7 @@
   color: var(--color-main);
   opacity: 1;
 }
-.edit-order__input9::placeholder {
+.edit-order__input10::placeholder {
   color: var(--color-main);
   opacity: 1;
 }
@@ -1891,6 +1997,166 @@
 /* IE 10-11
                       ----------------------------  */
 .edit-order__input10:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input11::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                          ----------------------------  */
+.edit-order__input11::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                          ----------------------------  */
+.edit-order__input11::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                          ----------------------------  */
+.edit-order__input11:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                          ----------------------------  */
+.edit-order__input11::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                          ----------------------------  */
+.edit-order__input11:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input11::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                          ----------------------------  */
+.edit-order__input11::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                          ----------------------------  */
+.edit-order__input11::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                          ----------------------------  */
+.edit-order__input11:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                          ----------------------------  */
+.edit-order__input11::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                          ----------------------------  */
+.edit-order__input11:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input12::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                              ----------------------------  */
+.edit-order__input12::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                              ----------------------------  */
+.edit-order__input12::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                              ----------------------------  */
+.edit-order__input12:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                              ----------------------------  */
+.edit-order__input12::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                              ----------------------------  */
+.edit-order__input12:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input12::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                              ----------------------------  */
+.edit-order__input12::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                              ----------------------------  */
+.edit-order__input12::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                              ----------------------------  */
+.edit-order__input12:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                              ----------------------------  */
+.edit-order__input12::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                              ----------------------------  */
+.edit-order__input12:-ms-input-placeholder {
   color: var(--color-main);
   opacity: 1;
 }

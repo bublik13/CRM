@@ -304,6 +304,9 @@
 .form__pseudo-height > .form__icon {
   margin-right: 10px;
 }
+.form__pseudo-height > .form__icon3 {
+  margin-left: 10px;
+}
 .form__icon {
   width: 24px;
   height: 24px;
@@ -311,6 +314,11 @@
 .form__icon2 {
   width: 30px;
   height: 30px;
+}
+.form__icon3 {
+  width: 24px;
+  height: 24px;
+  filter: drop-shadow(0px 10px 25px #FF0000);
 }
 .form__text {
   @include font(15px, 18px, 600);
