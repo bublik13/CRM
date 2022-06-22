@@ -5,7 +5,7 @@
   padding-bottom: 22px;
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   @include flex(flex, space-between, center, none, none);
   flex-grow: 1;
   grid-area: header;

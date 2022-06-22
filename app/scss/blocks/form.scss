@@ -112,7 +112,7 @@
   padding-bottom: 22px;
   padding-left: 14px;
   padding-right: 14px;
-  border-right: 15px;
+  border-right: 12px;
   color: var(--color-second);
   height: 34px;
   flex-shrink: 0;
@@ -123,12 +123,10 @@
   position: absolute;
   content: "";
   top: 4px;
-  right: 0;
   bottom: 0;
-  left: 0;
-  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  @include wrap(var(--bg-main), var(--box-shadow1), 12px);
   color: var(--color-main);
-  width: 100%;
+  width: 90%;
   height: 34px;
   display: none;
   z-index: -1;
@@ -337,7 +335,7 @@
   padding: 25px;
   max-width: 330px;
 }
-.form--bg > .form__title {
+.form--bg > .form__title:not(:last-child) {
   margin-bottom: 25px;
 }
 .form__wrapper2 > .form__wrap3:not(:last-child) {

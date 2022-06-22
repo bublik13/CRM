@@ -37,8 +37,9 @@
   color: var(--color-main);
   margin-bottom: 10px;
 }
-.editing__label{
+.editing__label {
   position: relative;
+  max-width: 300px;
 }
 .editing__img {
   height: 18px;
@@ -50,10 +51,10 @@
   height: 24px;
   width: 24px;
   color: var(--color-main);
-position: absolute;
-top:12px;
-right: 22px;
-transform: rotate(270deg);
+  position: absolute;
+  top: 12px;
+  right: 22px;
+  transform: rotate(270deg);
 }
 .editing__selection {
   position: relative;
@@ -67,9 +68,9 @@ transform: rotate(270deg);
   border: none;
   margin-bottom: 25px;
   width: 300px;
+  border: 0.5px solid var(--bg-line2);
 }
 .editing__selection:after {
-  
   // position: absolute;
   // content: ' ';
   // background: url(../img/tablet/arrow.svg) no-repeat;
@@ -81,24 +82,24 @@ transform: rotate(270deg);
   // height: 24px;
   //   z-index: 10;
 
-content: "▼";
-padding: 0 8px;
-font-size: 12px;
-position: absolute;
-right: 8px;
-top: 4px;
-z-index: 1;
-text-align: center;
-width: 10%;
-height: 100%;
-pointer-events: none;
-box-sizing: border-box;
+  content: "▼";
+  padding: 0 8px;
+  font-size: 12px;
+  position: absolute;
+  right: 8px;
+  top: 4px;
+  z-index: 1;
+  text-align: center;
+  width: 10%;
+  height: 100%;
+  pointer-events: none;
+  box-sizing: border-box;
 }
 select {
-padding-right: 25px;
--webkit-appearance: none;
--moz-appearance: none;
-appearance: none;
+  padding-right: 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .editing__down {
   height: 24px;

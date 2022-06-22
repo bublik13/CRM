@@ -1,7 +1,8 @@
 .profile {
   display: flex;
 }
-.profile__wrap {
+.profile--none {
+  display: none;
 }
 .profile__flex {
   @include flex(flex, none, center, none, none);

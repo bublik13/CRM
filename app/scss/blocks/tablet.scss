@@ -13,10 +13,13 @@ table {
   //   white-space: unset !important;
   // }
 }
-// .tablet__tr2{
-//   padding-top: 20px;
-//   padding-bottom: 20px;
-// }
+.tablet__title{
+  // padding: 0 10px;
+  // white-space: nowrap;
+  // text-overflow: ellipsis;
+  // overflow: hidden;
+  // width: 170px;
+}
 .tablet__flex {
   @include flex(flex, space-between, center, none, none);
 }
@@ -28,7 +31,6 @@ table {
 .tablet__flex1 {
   @include flex(flex, flex-end, center, none, none);
   position: relative;
-
 }
 .tablet__flex2 {
   @include flex(flex, none, center, none, none);
@@ -72,11 +74,13 @@ td:last-child {
   border-radius: 0 20px 20px 0;
   padding-right: 20px;
 }
+th:first-child {
+  padding-left: 20px;
+}
 th {
-  padding: 15px;
+  padding: 15px 5px;
   text-align: left;
 }
-
 td {
   text-align: left;
   padding: 20px 0;
@@ -84,8 +88,8 @@ td {
 td:last-child {
   white-space: nowrap;
   @include media($lg) {
-  padding-left: 20px !important;
-}
+    padding-left: 20px !important;
+  }
 }
 .tablet__flex > .button:not(:last-child) {
   margin-right: 10px;
@@ -200,6 +204,9 @@ td:last-child {
 .tablet__td4 {
   width: 186px !important;
   padding-left: 30px !important;
+  @include media($lg) {
+    width: 128px !important;
+  }
 }
 .tablet__td5 {
   width: 23% !important;
@@ -261,9 +268,29 @@ td:last-child {
   // overflow: hidden;
   // width: 170px;
 }
-.tablet__td19{
+.tablet__td19 {
   padding-left: 56px;
   width: 360px;
+}
+.tablet__td20 {
+  max-width: 130px;
+  @include media($lg) {
+    max-width: 187px;
+  }
+}
+.tablet__td21 {
+  width: 100px;
+}
+.tablet__td22 {
+  width: 74px;
+}
+.tablet__td23 {
+  padding-right: 17px;
+}
+.tablet__td24 {
+  padding-right: 10px;
+  padding-left: 10px;
+
 }
 td:last-child > .profile__title {
   margin-bottom: 0;
@@ -356,6 +383,15 @@ td:last-child > .profile__title {
 .tablet__filter {
   position: relative;
   width: 143px;
+}
+.tablet__title2{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 170px;
+  @include media($lg) {
+    width: 112px;
+  }
 }
 .tablet__input {
   @include wrap(var(--bg-color17), var(--box-shadow21), 15px);

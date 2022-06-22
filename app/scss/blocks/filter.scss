@@ -161,3 +161,49 @@
 .filter__input:checked {
   outline: none;
 }
+/* Современные браузеры
+   ----------------------------  */
+   .filter__input2::placeholder {
+    color: var(--color-main);
+    opacity: 1;
+  }
+  
+  /* WebKit, Edge
+          ----------------------------  */
+  .filter__input2::-webkit-input-placeholder {
+    color: var(--color-main);
+    opacity: 1;
+  }
+  
+  /* Edge
+          ----------------------------  */
+  .filter__input2::-ms-input-placeholder {
+    color: var(--color-main);
+    opacity: 1;
+  }
+  
+  /* Firefox 4-18
+          ----------------------------  */
+  .filter__input2:-moz-placeholder {
+    color: var(--color-main);
+    opacity: 1;
+  }
+  
+  /* Firefox 19+
+          ----------------------------  */
+  .filter__input2::-moz-placeholder {
+    color: var(--color-main);
+    opacity: 1;
+  }
+  
+  /* IE 10-11
+          ----------------------------  */
+  .filter__input2:-ms-input-placeholder {
+    color: var(--color-main);
+    opacity: 1;
+  }
+  
+  .filter__input2:checked {
+    outline: none;
+  }
+  

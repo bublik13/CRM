@@ -84,6 +84,12 @@
 .edit-order__wrap2:not(:last-child) {
   margin-bottom: 25px;
 }
+.edit-order__wrap3 {
+  margin-top: 15px;
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px);
+  padding: 25px;
+  position: relative;
+}
 .edit-order__column {
   @include flex(flex, none, none, column, none);
   border: none;
@@ -131,6 +137,10 @@
 .edit-order__label4 > .edit-order__name {
   margin-right: 15px;
   margin-left: 15px;
+  margin-bottom: 0;
+}
+.edit-order__label5 {
+  @include flex(flex, none, none, none, none);
 }
 .edit-order__label-counter {
   margin-top: 16px;
@@ -324,6 +334,11 @@
   @include flex(flex, none, none, none, none);
   position: relative;
 }
+.edit-order__flex2 {
+  @include flex(flex, none, none, none, wrap);
+  position: relative;
+  width: 90%;
+}
 .edit-order__flex > .edit-order__wrap-img {
   margin-right: 15px;
   margin-top: 0;
@@ -464,7 +479,7 @@
   color: var(--color-second);
   margin-bottom: 10px;
 }
-.edit-order__text {
+.edit-order__text2 {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -472,6 +487,24 @@
   @include font(15px, 18px, 400);
   font-feature-settings: "pnum" on, "lnum" on;
   // padding-left: 10px;
+}
+.edit-order__text3 {
+  color: var(--color-main);
+  @include font(15px, 18px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-top: 15px;
+}
+.edit-order__text3 a {
+  text-decoration: none;
+}
+.edit-order__text4 {
+  color: var(--color-main);
+  @include font(15px, 18px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-top: 25px;
+}
+.edit-order__text4 a {
+  text-decoration: none;
 }
 .edit-order__text-up {
   @include font(15px, 18px, 600);
@@ -487,13 +520,12 @@
   @include flex(flex, none, none, none, wrap);
   margin-top: 10px;
 }
-.edit-order__form > .check__name{
-margin-left: 15px;
-}
-.edit-order__form > .edit-order__icon
-{
+.edit-order__form > .check__name {
   margin-left: 15px;
-  }
+}
+.edit-order__form > .edit-order__icon {
+  margin-left: 15px;
+}
 .edit-order__form1 {
   @include flex(flex, none, none, none, wrap);
 }
@@ -587,24 +619,100 @@ margin-left: 15px;
   margin-bottom: 25px;
 }
 .edit-order__btn-sub {
-  display: flex;
-  justify-content: none;
-  align-items: center;
-  flex-direction: none;
-  flex-wrap: none;
-  background: var(--bg-color23);
-  border: var(--bg-color23);
-  border-radius: 10px;
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color36), var(--box-color21), 10px);
   padding: 5px 5px 5px 10px;
   @include font(15px, 18px, 400);
   color: var(--color-main);
   margin-bottom: 10px;
   margin-right: 10px;
-  max-width: 198px;
+  white-space: nowrap;
+  max-width: 200px;
+}
+.edit-order__btn-sub2 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color37), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub3 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color38), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub4 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color39), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub5 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color40), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub6 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color41), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub7 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color42), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub8 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color43), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+.edit-order__btn-sub9 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color44), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
 }
 .edit-order__sub {
-  width: 24px;
-  height: 24px;
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
 }
 .edit-order__button {
   padding: 16px 21px 16px 20px;
@@ -615,6 +723,20 @@ margin-left: 15px;
 }
 .edit-order__button:not(:last-child) {
   margin-bottom: 25px;
+}
+.edit-order__button2 {
+  margin-left: 10px;
+}
+.edit-order__button3 {
+  padding: 13px 20px;
+  @include wrap(var(--bg-color4), 0 0 0 0, 15px);
+  color: var(--color-main);
+  display: inline-block;
+  vertical-align: top;
+  cursor: pointer;
+  @include font(15px, 18px, 600);
+  border: none;
+  @include flex(flex, none, center, none, none);
 }
 .edit-order__flex-input {
   @include flex(flex, none, none, none, none);
@@ -851,6 +973,57 @@ margin-left: 15px;
   border-radius: 0 15px 15px 0;
   background: var(--bg-color4);
 }
+
+.edit-order__counter2 {
+  width: 100px;
+  padding: 0 12px;
+  vertical-align: top;
+  text-align: center;
+  outline: none;
+  background: var(--bg-color17);
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  cursor: pointer;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+
+.edit-order__counter2,
+.edit-order__decrement2,
+.edit-order__increment2 {
+  height: 50px;
+  user-select: none;
+}
+
+.edit-order__decrement2,
+.edit-order__increment2 {
+  @include flex(flex, center, center, none, none);
+  width: 40px;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  cursor: pointer;
+  font-feature-settings: "pnum" on, "lnum" on;
+}
+.edit-order__decrement2 {
+  border-right: none;
+  border-radius: 15px 0 0 15px;
+  background: var(--bg-color17);
+}
+
+.edit-order__increment2 {
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  background: var(--bg-color17);
+}
+.edit-order__calculate-salary {
+  @include wrap(
+    var(--bg-color4) !important,
+    var(--box-shadow21) !important,
+    20px!important
+  );
+  margin-top: 25px;
+  margin-bottom: 25px !important;
+}
 /* Современные браузеры
    ----------------------------  */
 .edit-order__input1::placeholder {
@@ -894,28 +1067,28 @@ margin-left: 15px;
 }
 /* Современные браузеры
      ----------------------------  */
-.edit-order__input::placeholder {
+.edit-order__input2::placeholder {
   color: var(--color-main);
   opacity: 1;
 }
 
 /* WebKit, Edge
           ----------------------------  */
-.edit-order__input::-webkit-input-placeholder {
+.edit-order__input2::-webkit-input-placeholder {
   color: var(--color-main);
   opacity: 1;
 }
 
 /* Edge
           ----------------------------  */
-.edit-order__input::-ms-input-placeholder {
+.edit-order__input2::-ms-input-placeholder {
   color: var(--color-main);
   opacity: 1;
 }
 
 /* Firefox 4-18
           ----------------------------  */
-.edit-order__input:-moz-placeholder {
+.edit-order__input2:-moz-placeholder {
   color: var(--color-main);
   opacity: 1;
 }
@@ -929,7 +1102,446 @@ margin-left: 15px;
 
 /* IE 10-11
           ----------------------------  */
-.edit-order__input:-ms-input-placeholder {
+.edit-order__input2:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input2::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+          ----------------------------  */
+.edit-order__input2::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+          ----------------------------  */
+.edit-order__input2::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+          ----------------------------  */
+.edit-order__input2:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+          ----------------------------  */
+.edit-order__input2::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+          ----------------------------  */
+.edit-order__input2:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input3::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+              ----------------------------  */
+.edit-order__input3::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+              ----------------------------  */
+.edit-order__input3::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+              ----------------------------  */
+.edit-order__input3:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+              ----------------------------  */
+.edit-order__input3::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+              ----------------------------  */
+.edit-order__input3:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input3::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+              ----------------------------  */
+.edit-order__input3::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+              ----------------------------  */
+.edit-order__input3::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+              ----------------------------  */
+.edit-order__input3:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+              ----------------------------  */
+.edit-order__input3::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+              ----------------------------  */
+.edit-order__input3:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input4::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                  ----------------------------  */
+.edit-order__input4::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                  ----------------------------  */
+.edit-order__input4::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                  ----------------------------  */
+.edit-order__input4:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                  ----------------------------  */
+.edit-order__input4::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                  ----------------------------  */
+.edit-order__input4:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input4::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                  ----------------------------  */
+.edit-order__input4::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                  ----------------------------  */
+.edit-order__input4::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                  ----------------------------  */
+.edit-order__input4:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                  ----------------------------  */
+.edit-order__input4::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                  ----------------------------  */
+.edit-order__input4:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input5::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+              ----------------------------  */
+.edit-order__input5::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+              ----------------------------  */
+.edit-order__input5::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+              ----------------------------  */
+.edit-order__input5:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+              ----------------------------  */
+.edit-order__input5::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+              ----------------------------  */
+.edit-order__input5:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input5::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+              ----------------------------  */
+.edit-order__input5::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+              ----------------------------  */
+.edit-order__input5::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+              ----------------------------  */
+.edit-order__input5:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+              ----------------------------  */
+.edit-order__input5::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+              ----------------------------  */
+.edit-order__input5:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input6::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                  ----------------------------  */
+.edit-order__input6::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                  ----------------------------  */
+.edit-order__input6::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                  ----------------------------  */
+.edit-order__input6:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                  ----------------------------  */
+.edit-order__input6::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                  ----------------------------  */
+.edit-order__input6:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input6::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                  ----------------------------  */
+.edit-order__input6::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                  ----------------------------  */
+.edit-order__input6::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                  ----------------------------  */
+.edit-order__input6:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                  ----------------------------  */
+.edit-order__input6::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                  ----------------------------  */
+.edit-order__input6:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+     ----------------------------  */
+.edit-order__input7::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                  ----------------------------  */
+.edit-order__input7::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                  ----------------------------  */
+.edit-order__input7::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                  ----------------------------  */
+.edit-order__input7:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                  ----------------------------  */
+.edit-order__input7::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                  ----------------------------  */
+.edit-order__input7:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.edit-order__input7::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                  ----------------------------  */
+.edit-order__input7::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                  ----------------------------  */
+.edit-order__input7::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                  ----------------------------  */
+.edit-order__input7:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                  ----------------------------  */
+.edit-order__input7::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                  ----------------------------  */
+.edit-order__input7:-ms-input-placeholder {
   color: var(--color-main);
   opacity: 1;
 }

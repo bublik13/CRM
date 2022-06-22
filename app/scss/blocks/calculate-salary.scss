@@ -28,6 +28,12 @@
   @include font(56px, 69px, 800);
   font-feature-settings: "pnum" on, "lnum" on;
 }
+.calculate-salary__number2 {
+  color: var(--color-main);
+  @include font(24px, 29px, 800, $ff:'Gilroy');
+  font-feature-settings: "pnum" on, "lnum" on;
+  margin-bottom: 25px;
+}
 .calculate-salary__flex-input {
   @include flex(flex, none, baseline, none, none);
 }
@@ -40,6 +46,14 @@
   outline: none;
   opacity: 1;
   max-width: 243px;
+}
+.calculate-salary__range{
+  width: 100%;
+}
+.calculate-salary__number2 span{
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  font-feature-settings: "pnum" on, "lnum" on;
 }
 /* Современные браузеры
    ----------------------------  */

@@ -29,8 +29,8 @@
   border: 0.5px solid var(--bg-line);
   color: var(--color-main);
   --btn-hover-bg-color: var(--bg-main);
-  background: var(--bg-color5);
-  box-shadow: var(--box-shadow3);
+  background: var(--bg-color4);
+  box-shadow: var(--box-shadow21);
   border-radius: 15px;
   cursor: pointer;
   @include font(15px, 17px, 400);
@@ -340,6 +340,7 @@
   --svgColor: url("#gradient7");
   @include wrap(var(--bg-color17), var(--box-shadow21), 7px);
   margin-right: 10px;
+  flex-shrink: 0;
 }
 .history__audio {
   @include flex(flex, none, center, none, none);

@@ -35,7 +35,7 @@
   grid-gap: 20px 25px;
 }
 .payment__grid > .form__wrap {
-margin-right: 0 !important;
+  margin-right: 0 !important;
 }
 .payment__grid2 {
   display: grid;
@@ -84,4 +84,45 @@ margin-right: 0 !important;
 }
 .payment__btn-color > .payment__icon {
   margin-right: 10px;
+}
+/* Современные браузеры
+   ----------------------------  */
+.payment__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+          ----------------------------  */
+.payment__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+          ----------------------------  */
+.payment__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+          ----------------------------  */
+.payment__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+          ----------------------------  */
+.payment__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+          ----------------------------  */
+.payment__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
 }
