@@ -1,6 +1,22 @@
 .form {
   position: relative;
 }
+.form__tabs {
+  display: inline-flex;
+  padding: 4px 5px;
+  background: var(--bg-color5);
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+.form__tabs2 {
+  display: inline-flex;
+  padding: 4px 5px;
+  background: var(--bg-color4);
+  border-radius: 15px;
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
 .form__wrapper {
   @include flex(flex, flex-start, center, none, none);
   margin-top: 25px;
@@ -20,8 +36,8 @@
 }
 .form__wrap {
   position: relative;
-  background: var(--bg-color5);
-  box-shadow: var(--box-shadow3);
+  // background: var(--bg-color5);
+  // box-shadow: var(--box-shadow3);
 }
 .form__wrap2 {
   position: relative;
@@ -40,18 +56,11 @@
   @include wrap(var(--bg-color4), var(--box-shadow21), 0 15px 15px 0);
 }
 .form__wrap3 {
-  background: var(--bg-color5);
-  box-shadow: var(--box-shadow3);
   // border: 5px solid transparent;
   position: relative;
   @include wrap(var(--bg-color5), var(--box-shadow3), 0);
 }
-.form__wrap3:first-child {
-  @include wrap(var(--bg-color5), var(--box-shadow3), 15px 0 0 15px);
-}
-.form__wrap3:last-child {
-  @include wrap(var(--bg-color5), var(--box-shadow3), 0 15px 15px 0);
-}
+
 .form__wrap4 {
   position: relative;
   @include wrap(var(--bg-color17), var(--box-shadow21), 0);
@@ -108,11 +117,11 @@
   cursor: pointer;
   transition: 0.2s ease;
   border: none;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   padding-left: 20px;
   padding-right: 20px;
-  border-right: 12px;
+  // border-right: 12px;
   color: var(--color-second);
   height: 34px;
   flex-shrink: 0;
@@ -122,11 +131,11 @@
 .form__pseudo:after {
   position: absolute;
   content: "";
-  top: 4px;
+  top: 0;
   bottom: 0;
   @include wrap(var(--bg-main), var(--box-shadow1), 12px);
   color: var(--color-main);
-  width: 90%;
+  width: 100%;
   height: 34px;
   display: none;
   z-index: -1;
@@ -193,12 +202,12 @@
   @include flex(flex, none, center, column, none);
   cursor: pointer;
 }
-.form__wrap:first-child {
-  border-radius: 15px 0 0 15px;
-}
-.form__wrap:last-child {
-  border-radius: 0 15px 15px 0;
-}
+// .form__wrap:first-child {
+//   border-radius: 15px 0 0 15px;
+// }
+// .form__wrap:last-child {
+//   border-radius: 0 15px 15px 0;
+// }
 .form__img {
   height: 24px;
   width: 24px;
@@ -318,7 +327,7 @@
 .form__icon3 {
   width: 24px;
   height: 24px;
-  filter: drop-shadow(0px 10px 25px #FF0000);
+  filter: drop-shadow(0px 10px 25px #ff0000);
 }
 .form__text {
   @include font(15px, 18px, 600);

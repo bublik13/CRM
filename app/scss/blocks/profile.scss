@@ -107,7 +107,7 @@
   color: var(--color-main);
   position: absolute;
   top: 13px;
-  left: 15px;
+  left: 13px;
   z-index: 0;
 }
 .profile__icon2 {
@@ -124,6 +124,15 @@
   width: 68px;
   height: 45px;
   flex-shrink: 0;
+}
+.profile__icon5 {
+  height: 24px;
+  width: 24px;
+  color: var(--color-main);
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  z-index: 0;
 }
 .profile__text {
   color: #000;

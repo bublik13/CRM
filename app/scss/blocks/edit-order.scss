@@ -35,7 +35,7 @@
   width: 70px;
   height: 70px;
   display: block;
-  margin-left: 10px;
+  margin-right: 10px;
   --svgColor: url("#gradient2");
   // box-shadow: inset 0px 0px 7.32115px rgba(255, 0, 0, 0.5);
   filter: drop-shadow(0px 0px 18.9113px rgba(255, 0, 0, 0.7))
@@ -100,17 +100,17 @@
   position: relative;
 }
 .edit-order__column {
-  @include flex(flex, none, none, column, none);
+  @include flex(flex, none, flex-start, column, none);
   border: none;
   width: 100%;
 }
 .edit-order__column2 {
-  @include flex(flex, none, none, column, none);
+  @include flex(flex, none, flex-start, column, none);
   border: none;
   width: 88%;
 }
 .edit-order__column3 {
-  @include flex(flex, none, none, column, none);
+  @include flex(flex, none, flex-start, column, none);
   border: none;
   width: 82%;
 }
@@ -479,8 +479,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   @include flex(flex, none, center, none, none);
-  padding: 13px 17px;
-  width: 170px;
+  padding: 13px 20px;
   text-decoration: none;
 }
 .edit-order__btn5 {
@@ -490,8 +489,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   @include flex(flex, none, center, none, none);
-  padding: 13px 17px;
-  width: 233px;
+  padding: 13px 20px;
   text-decoration: none;
   margin-bottom: 25px;
 }
@@ -606,6 +604,11 @@
 }
 .edit-order__text3 a {
   text-decoration: none;
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
 }
 .edit-order__text4 {
   color: var(--color-main);
@@ -616,6 +619,12 @@
 }
 .edit-order__text4 a {
   text-decoration: none;
+  background: var(--bg-main);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+
 }
 .edit-order__text-up {
   @include font(15px, 18px, 600);
@@ -882,7 +891,7 @@
   background: var(--bg-color4);
   box-shadow: 0 0;
   border-radius: 15px;
-  width: 100%;
+  // width: 100%;
   @include font(15px, 18px, 400);
   font-feature-settings: "pnum" on, "lnum" on;
 }
@@ -928,7 +937,7 @@
   top: 12px;
   right: 0;
   width: 1px;
-  height: 30px;
+  height: 24px;
   background: #3c3c3c;
 }
 
@@ -958,11 +967,11 @@
   height: 24px;
   position: absolute;
   top: 15px;
-  right: 20px;
+  right: 25px;
   color: var(--color-main);
   @include font(15px, 18px, 600);
   font-feature-settings: "pnum" on, "lnum" on;
-  padding-left: 13px;
+  padding-left: 17px;
   border-left: 1px solid #292929;
 }
 .edit-order__input-icon2 {
@@ -1230,15 +1239,56 @@
   margin-bottom: 25px !important;
 }
 .edit-order__calculate-salary2 {
-  @include wrap(
-    transparent !important,
-    0 0 0 0 !important,
-    0!important
-  );
+  @include wrap(transparent !important, 0 0 0 0 !important, 0!important);
   margin-top: 25px;
   margin-bottom: 25px !important;
   padding: 0 !important;
 }
+.edit-order__form__tabs2{
+  display: flex;
+}
+/* Современные браузеры
+   ----------------------------  */
+.edit-order__input::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+          ----------------------------  */
+.edit-order__input::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+          ----------------------------  */
+.edit-order__input::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+          ----------------------------  */
+.edit-order__input:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+          ----------------------------  */
+.cedit-order__input::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+          ----------------------------  */
+.edit-order__input:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
 /* Современные браузеры
    ----------------------------  */
 .edit-order__input1::placeholder {

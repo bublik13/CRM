@@ -124,9 +124,9 @@ td:last-child {
   content: " ";
   top: 12px;
   right: 6px;
-  height: 20px;
+  height: 24px;
   background: var(--bg-line);
-  width: 2px;
+  width: 1px;
   @include media($lg) {
     display: none;
   }
@@ -136,9 +136,9 @@ td:last-child {
   content: " ";
   top: 12px;
   left: -4px;
-  height: 20px;
+  height: 24px;
   background: var(--bg-line);
-  width: 2px;
+  width: 1px;
   @include media($lg) {
     display: none;
   }

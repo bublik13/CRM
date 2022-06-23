@@ -46,4 +46,11 @@
   > .swiper-wrapper
   .slider__wrap {
   margin-bottom: 0 !important;
+  margin-right: 0 !important;
+}
+.financial-indicators__slider
+  > .slider__swiper
+  > .swiper-wrapper > .swiper-slide {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
 }

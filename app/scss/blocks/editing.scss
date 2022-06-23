@@ -150,3 +150,243 @@ select {
   color: var(--color-main);
   display: block;
 }
+/* Современные браузеры
+         ----------------------------  */
+.editing__input-rg::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                                  ----------------------------  */
+.editing__input-rg::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                                  ----------------------------  */
+.editing__input-rg::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                                  ----------------------------  */
+.editing__input-rg:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                                  ----------------------------  */
+.editing__input-rg::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                                  ----------------------------  */
+.editing__input-rg:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+.editing__input-rg::placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* WebKit, Edge
+                                  ----------------------------  */
+.editing__input-rg::-webkit-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Edge
+                                  ----------------------------  */
+.editing__input-rg::-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 4-18
+                                  ----------------------------  */
+.editing__input-rg:-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* Firefox 19+
+                                  ----------------------------  */
+.editing__input-rg::-moz-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+
+/* IE 10-11
+                                  ----------------------------  */
+.editing__input-rg:-ms-input-placeholder {
+  color: var(--color-main);
+  opacity: 1;
+}
+/* Современные браузеры
+         ----------------------------  */
+         .editing__selection::placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* WebKit, Edge
+                                          ----------------------------  */
+        .editing__selection::-webkit-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Edge
+                                          ----------------------------  */
+        .editing__selection::-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 4-18
+                                          ----------------------------  */
+        .editing__selection:-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 19+
+                                          ----------------------------  */
+        .editing__selection::-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* IE 10-11
+                                          ----------------------------  */
+        .editing__selection:-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        .editing__selection::placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* WebKit, Edge
+                                          ----------------------------  */
+        .editing__selection::-webkit-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Edge
+                                          ----------------------------  */
+        .editing__selection::-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 4-18
+                                          ----------------------------  */
+        .editing__selection:-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 19+
+                                          ----------------------------  */
+        .editing__selection::-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* IE 10-11
+                                          ----------------------------  */
+        .editing__selection:-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        /* Современные браузеры
+         ----------------------------  */
+         .editing__input-lf::placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* WebKit, Edge
+                                          ----------------------------  */
+        .editing__input-lf::-webkit-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Edge
+                                          ----------------------------  */
+        .editing__input-lf::-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 4-18
+                                          ----------------------------  */
+        .editing__input-lf:-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 19+
+                                          ----------------------------  */
+        .editing__input-lf::-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* IE 10-11
+                                          ----------------------------  */
+        .editing__input-lf:-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        .editing__input-lf::placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* WebKit, Edge
+                                          ----------------------------  */
+        .editing__input-lf::-webkit-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Edge
+                                          ----------------------------  */
+        .editing__input-lf::-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 4-18
+                                          ----------------------------  */
+        .editing__input-lf:-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* Firefox 19+
+                                          ----------------------------  */
+        .editing__input-lf::-moz-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }
+        
+        /* IE 10-11
+                                          ----------------------------  */
+        .editing__input-lf:-ms-input-placeholder {
+          color: var(--color-main);
+          opacity: 1;
+        }

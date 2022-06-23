@@ -684,24 +684,24 @@
           </button>
         </header>
         <section class="form">
-          <div class="form__wrapper">
-            <label class="form__wrap3">
+          <div class="form__tabs">
+            <label class="form__wrap">
               <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
               <span class="form__pseudo">О запчасти</span>
             </label>
-            <label class="form__wrap3">
+            <label class="form__wrap">
               <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
               <span class="form__pseudo">Редактировать</span>
             </label>
-            <label class="form__wrap3">
+            <label class="form__wrap">
               <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
               <span class="form__pseudo">История реализаций</span>
             </label>
-            <label class="form__wrap3">
+            <label class="form__wrap">
               <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
               <span class="form__pseudo">Лог взаимодействий</span>
             </label>
-            <label class="form__wrap3">
+            <label class="form__wrap">
               <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
               <span class="form__pseudo"> 
                 <div class="form__text">Новая поставка</div>
@@ -1138,10 +1138,12 @@
                 </label>
                 <label class="edit-order__label">
                   <span class="edit-order__name"> Категория товара</span>
-                  <select class="edit-order__select edit-order__select-mb">
-                    <option>Наушники</option>
-                    <option>Наушники</option>
-                  </select>
+                  <div class="edit-order__flex-input">
+                    <input type="text" name="text" class="edit-order__input1" placeholder="Наушники">
+                    <svg aria-hidden="true" class="edit-order__input-icon3">
+                      <use xlink:href="#down"></use>
+                    </svg>
+                  </div>
                 </label>
                 <label class="edit-order__label-counter">
                   <span class="edit-order__name">Наличие товара</span>
@@ -1174,15 +1176,19 @@
                       </div>
                     </div>
                   </label>
-                  <span class="edit-order__name">Поставщик</span>
-                  <select class="edit-order__select edit-order__select-mb">
-                    <option>Выберите поставщика</option>
-                    <option>Выберите поставщика</option>
-                  </select>
+                  <label class="edit-order__label">
+                    <span class="edit-order__name"> Поставщик</span>
+                    <div class="edit-order__flex-input">
+                      <input type="text" name="text" class="edit-order__input1" placeholder="Выберите поставщика">
+                      <svg aria-hidden="true" class="edit-order__input-icon3">
+                        <use xlink:href="#down"></use>
+                      </svg>
+                    </div>
+                  </label>
                   <label class="edit-order__label edit-order__label--position">
                     <span class="edit-order__name">Розничная цена</span>
                     <div class="edit-order__flex-input">
-                      <input type="text" name="text" class="edit-order__input1" placeholder="Введите сумму">
+                      <input type="text" name="text" class="edit-order__input5" placeholder="Введите сумму">
                       <div class="edit-order__input-icon">
                         ₽
                       </div>
@@ -1235,13 +1241,13 @@
                 </i>
               </label>
               <div class="profile__flex3">
-                <button class="profile__button button button--ms button--9">
+                <button class="profile__button button button--sp button--9">
                   <svg aria-hidden="true" class="profile__icon3">
                     <use xlink:href="#photo"></use>
                   </svg>
                   <span class="profile__text2">Добавить фото</span>
                 </button>
-                <button class="profile__button button button--ms button--brand">
+                <button class="profile__button button button--sp button--brand">
                   <svg aria-hidden="true" class="profile__icon3">
                     <use xlink:href="#search-img"></use>
                   </svg>
@@ -1267,13 +1273,13 @@
                 </i>
               </label>
               <div class="profile__flex3">
-                <button class="profile__button button button--ms button--9">
+                <button class="profile__button button button--sp button--9">
                   <svg aria-hidden="true" class="profile__icon3">
                     <use xlink:href="#photo"></use>
                   </svg>
                   <span class="profile__text2">Добавить фото</span>
                 </button>
-                <button class="profile__button button button--ms button--brand">
+                <button class="profile__button button button--sp button--brand">
                   <svg aria-hidden="true" class="profile__icon3">
                     <use xlink:href="#search-img"></use>
                   </svg>
@@ -1315,7 +1321,7 @@
               <div class="swiper-slide slider__slide">
                 <label class="slider__wrap">
                   <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
-                  <span class="slider__pseudo"> 
+                  <span class="slider__pseudo-icon4"> 
                     <svg aria-hidden="true" class="slider__img7">
                       <use xlink:href="#credit_card"></use>
                     </svg>
@@ -1668,20 +1674,20 @@
             <div class="edit-order__title">Формат ценника</div>
             <fieldset class="edit-order__column3">
               <span class="edit-order__name">Формат ценника</span>
-              <div class="edit-order__form-wrap form">
-                <label class="form__wrap2">
+              <div class="edit-order__form__tabs2 form__tabs2">
+                <label class="form__wrap">
                   <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
                   <span class="form__pseudo">30 x 40</span>
                 </label>
-                <label class="form__wrap2">
+                <label class="form__wrap">
                   <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
                   <span class="form__pseudo">35 x 15</span>
                 </label>
-                <label class="form__wrap2">
+                <label class="form__wrap">
                   <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
                   <span class="form__pseudo">60 x 35</span>
                 </label>
-                <label class="form__wrap2">
+                <label class="form__wrap">
                   <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
                   <span class="form__pseudo">60 x 65</span>
                 </label>
@@ -1703,6 +1709,214 @@
                 </div>
               </label>
             </fieldset>
+          </div>
+        </section>
+        <section class="history history--width">
+          <div class="history__title">Лог взаимодействий</div>
+          <form class="history__search search__wrap">
+            <svg aria-hidden="true" class="search__icon">
+              <use xlink:href="#search"></use>
+            </svg>
+            <input type="text" name="text" class="search__input" placeholder="Поиск по логу">
+            <a href="search-result.html" type="submit" name="submit" class="button--xm button button--brand button--width-ssx" value="">
+              Найти
+            </a>
+          </form>
+          <div class="history__orders">
+            <div class="history__wrap2">
+              <div class="history__date">25 июн, 2021</div>
+              <div class="history__item9">
+                <div class="history__time">
+                  12:11
+                </div>
+                <button class="history__btn3">Закуплено</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Александр Македонов</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Закупил</div>
+                    <div class="history__important">30 штук</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">27 июн, 2021</div>
+              <div class="history__item10">
+                <div class="history__time">
+                  11:48
+                </div>
+                <button class="history__btn4">Изменено</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Владимир Дмитриев</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Изменил закупочную стоимость</div>
+                    <div class="history__important">₽ 1 300 - ₽ 1 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="history__item11">
+                <div class="history__time">
+                  13:16
+                </div>
+                <button class="history__btn5">Реализовано</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Аркадий Петров</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Реализовал</div>
+                    <div class="history__important">1 штук</div>
+                  </div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">К заказу</div>
+                    <div class="history__important">384172</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">29 июн, 2021</div>
+              <div class="history__item11">
+                <div class="history__time">
+                  13:16
+                </div>
+                <button class="history__btn5">Реализовано</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Аркадий Петров</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Реализовал</div>
+                    <div class="history__important">1 штук</div>
+                  </div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">К заказу</div>
+                    <div class="history__important">532341</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">29 июн, 2021</div>
+              <div class="history__item11">
+                <div class="history__time">
+                  13:16
+                </div>
+                <button class="history__btn5">Реализовано</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Аркадий Петров</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Реализовал</div>
+                    <div class="history__important">1 штук</div>
+                  </div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">К заказу</div>
+                    <div class="history__important">435332</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">05 июл, 2021</div>
+              <div class="history__item9">
+                <div class="history__time">
+                  12:11
+                </div>
+                <button class="history__btn3">Закуплено</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Александр Македонов</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Закупил</div>
+                    <div class="history__important">10 штук</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">27 июн, 2021</div>
+              <div class="history__item10">
+                <div class="history__time">
+                  11:48
+                </div>
+                <button class="history__btn4">Изменено</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Владимир Дмитриев</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Изменил закупочную стоимость</div>
+                    <div class="history__important">₽ 1 300 - ₽ 1 500</div>
+                  </div>
+                </div>
+              </div>
+              <div class="history__item11">
+                <div class="history__time">
+                  13:16
+                </div>
+                <button class="history__btn5">Реализовано</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Аркадий Петров</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Реализовал</div>
+                    <div class="history__important">1 штук</div>
+                  </div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">К заказу</div>
+                    <div class="history__important">384172</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">29 июн, 2021</div>
+              <div class="history__item11">
+                <div class="history__time">
+                  13:16
+                </div>
+                <button class="history__btn5">Реализовано</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Аркадий Петров</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Реализовал</div>
+                    <div class="history__important">1 штук</div>
+                  </div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">К заказу</div>
+                    <div class="history__important">532341</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">29 июн, 2021</div>
+              <div class="history__item11">
+                <div class="history__time">
+                  13:16
+                </div>
+                <button class="history__btn5">Реализовано</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Аркадий Петров</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Реализовал</div>
+                    <div class="history__important">1 штук</div>
+                  </div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">К заказу</div>
+                    <div class="history__important">435332</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="history__wrap2">
+              <div class="history__date">05 июл, 2021</div>
+              <div class="history__item9">
+                <div class="history__time">
+                  12:11
+                </div>
+                <button class="history__btn3">Закуплено</button>
+                <div class="history__wrap3">
+                  <div class="history__important">Александр Македонов</div>
+                  <div class="history__wrap4">
+                    <div class="history__comment">Закупил</div>
+                    <div class="history__important">10 штук</div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>

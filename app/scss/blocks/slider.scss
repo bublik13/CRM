@@ -76,7 +76,24 @@
   background-color: var(--bg-color4);
   padding: 13px;
 }
-
+.slider__pseudo-icon5,
+.slider__pseudo-icon4,
+.slider__pseudo-icon3,
+.slider__pseudo-icon2{
+  flex-shrink: 0;
+  @include font(15px, 17px, 600);
+  color: var(--color-main);
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+  border: none;
+  border-radius: 15px;
+  background-color: var(--bg-color4);
+  padding: 13px;
+}
 .slider__pseudo--bg {
   background-color: var(--bg-color5);
 }
@@ -85,7 +102,7 @@
   width: 24px;
   display: block;
   --svgColor: url("#gradient7");
-  filter: drop-shadow(0px 10px 25px #0085ff);
+  // filter: drop-shadow(0px 10px 25px #0085ff);
 }
 .slider__img2 {
   height: 24px;
@@ -146,14 +163,12 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
 }
 .slider__circl1 {
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color9), var(--box-shadow7), 100px);
   flex-shrink: 0;
   position: relative;
@@ -163,7 +178,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color10), var(--box-shadow8), 100px);
   flex-shrink: 0;
   position: relative;
@@ -173,7 +187,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color11), var(--box-shadow9), 100px);
   flex-shrink: 0;
   position: relative;
@@ -183,7 +196,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color12), var(--box-shadow10), 100px);
   flex-shrink: 0;
   position: relative;
@@ -193,7 +205,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color13), var(--box-shadow11), 100px);
   flex-shrink: 0;
   position: relative;
@@ -203,7 +214,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color14), var(--box-shadow12), 100px);
   flex-shrink: 0;
   position: relative;
@@ -213,7 +223,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color15), var(--box-shadow13), 100px);
   flex-shrink: 0;
   position: relative;
@@ -223,7 +232,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color16), var(--box-shadow14), 100px);
   flex-shrink: 0;
   position: relative;
@@ -233,7 +241,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color21), var(--box-shadow8), 100px);
   flex-shrink: 0;
   position: relative;
@@ -243,7 +250,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color20), var(--box-shadow14), 100px);
   flex-shrink: 0;
   position: relative;
@@ -253,7 +259,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color29), var(--box-shadow35), 100px);
   flex-shrink: 0;
   position: relative;
@@ -263,7 +268,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color25), var(--box-shadow38), 100px);
   flex-shrink: 0;
   position: relative;
@@ -273,7 +277,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color2), var(--box-shadow19), 100px);
   flex-shrink: 0;
   position: relative;
@@ -283,7 +286,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   @include wrap(var(--bg-color31), var(--box-shadow14), 100px);
   flex-shrink: 0;
   position: relative;
@@ -303,12 +305,44 @@
 .slider__check:checked ~ .slider__pseudo > .slider__img2 {
   --svgColor: var(--bg-color33);
 }
+.slider__check:checked ~ .slider__pseudo-icon2 {
+  background: var(--bg-color2);
+}
+.slider__check:checked ~ .slider__pseudo-icon2 > .slider__img6 {
+  --svgColor: var(--bg-color33);
+}
+.slider__check:checked ~ .slider__pseudo-icon2 > .slider__img2 {
+  --svgColor: var(--bg-color33);
+}
+.slider__check:checked ~ .slider__pseudo-icon3 {
+  background: var(--bg-color12);
+}
+.slider__check:checked ~ .slider__pseudo-icon3 > .slider__img3 {
+  --svgColor: var(--bg-color33);
+}
+.slider__check:checked ~ .slider__pseudo-icon4 > .slider__img7 {
+  --svgColor: var(--bg-color);
+}
+.slider__check:checked ~ .slider__pseudo-icon4 {
+  background: var(--bg-color34);
+}
+.slider__check:checked ~ .slider__pseudo-icon4 > .slider__text {
+  color: var(--bg-color);
+}
+.slider__check:checked ~ .slider__pseudo-icon5 > .slider__img8 {
+  --svgColor: var(--bg-color);
+}
+.slider__check:checked ~ .slider__pseudo-icon5 > .slider__text {
+  color: var(--bg-color);
+}
+.slider__check:checked ~ .slider__pseudo-icon5 {
+  background: var(--bg-color21);
+}
 .slider__check:checked ~ .slider__pseudo > .slider__circl {
   @include wrap(var(--color-main), var(--box-shadow3), 0);
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   position: relative;
   z-index: 10;
 }
@@ -320,7 +354,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -333,10 +366,12 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
+}
+.slider__check:checked ~ .slider__pseudo2 > .slider__text {
+color:#000;
 }
 .slider__check:checked ~ .slider__pseudo3 {
   @include wrap(var(--bg-color11), 0 0 0 0, 15px);
@@ -346,7 +381,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -359,7 +393,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -372,7 +405,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -385,7 +417,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -398,10 +429,12 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
+}
+.slider__check:checked ~ .slider__pseudo7 > .slider__text {
+  color: #000;
 }
 .slider__check:checked ~ .slider__pseudo8 {
   @include wrap(var(--bg-color16), 0 0 0 0, 15px);
@@ -411,7 +444,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -424,7 +456,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -438,7 +469,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -451,7 +481,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -464,7 +493,6 @@
   width: 10px;
   height: 10px;
   border-radius: 100px;
-  margin-right: 10px;
   flex-shrink: 0;
   position: relative;
   z-index: 10;
@@ -499,11 +527,13 @@
 }
 .slider__wrap > .slider__text {
   margin-right: 10px;
+  margin-left: 0;
 }
 .slider__text {
   @include font(15px, 17px, 600);
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
+  margin-left: 10px;
 }
 .slider__text2 {
   @include font(15px, 18px, 500);
@@ -513,9 +543,12 @@
   margin-bottom: 10px;
   margin-left: 10px;
 }
-.slider__pseudo > .slider__text {
-  margin-left: 10px;
-}
+// .slider__pseudo > .slider__text {
+//   margin-left: 10px;
+// }
+// .slider__pseudo-icon2 > .slider__text {
+//   margin-left: 10px;
+// }
 .slider__number {
   @include font(44px, 54px, 800, $ff: "Gilroy");
   color: var(--color-main);
@@ -587,6 +620,10 @@
 }
 .slider--top {
   margin-top: 23px;
+}
+.slider--top2 {
+  margin-top: 23px;
+  margin-bottom: 4px;
 }
 .slider__search {
   margin-bottom: 25px;

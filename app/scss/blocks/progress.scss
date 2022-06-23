@@ -11,7 +11,7 @@
   height: 20px;
   margin-left: 2px;
   margin-right: 2px;
-  @include wrap(var(--bg-color2), var(--box-shadow6), 5px);
+  @include wrap(var(--bg-color2), var(--box-shadow7), 5px);
 }
 .progress__active2 {
   width: 13%;
