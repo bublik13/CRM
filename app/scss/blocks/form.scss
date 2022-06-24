@@ -150,6 +150,23 @@
   @include flex(flex, none, center, none, none);
   font-feature-settings: "pnum" on, "lnum" on;
   white-space: nowrap;
+  @include font(15px, 17px, 600);
+  cursor: pointer;
+
+}
+.form__pseudo-color {
+  padding: 16px 20px;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  margin-right: 10px;
+  margin-bottom: 10px;
+  color: var(--color-main);
+  height: 50px;
+  @include flex(flex, none, center, none, none);
+  font-feature-settings: "pnum" on, "lnum" on;
+  white-space: nowrap;
+  @include font(15px, 17px, 600);
+  cursor: pointer;
+
 }
 .form__pseudo1 {
   padding: 29px 25px;
@@ -202,12 +219,6 @@
   @include flex(flex, none, center, column, none);
   cursor: pointer;
 }
-// .form__wrap:first-child {
-//   border-radius: 15px 0 0 15px;
-// }
-// .form__wrap:last-child {
-//   border-radius: 0 15px 15px 0;
-// }
 .form__img {
   height: 24px;
   width: 24px;
@@ -297,9 +308,13 @@
 .form__check:checked ~ .form__pseudo-height > .form__img4 {
   --svgColor: var(--color-main);
 }
-
+.form__check:checked ~ .form__pseudo-color {
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  color: var(--color-main);
+  padding: 16px 20px;
+  height: 50px;
+}
 .form__slider {
-  // margin-right: 30px !important;
   @include wrap(var(--bg-color5), var(--box-shadow3), 15px);
   padding: 25px;
   margin-bottom: 80px;
@@ -358,14 +373,6 @@
 .form__wrapper2 > .form__wrap3:not(:last-child) {
   margin-bottom: 10px;
 }
-// select {
-//   -webkit-appearance: none;
-//   -moz-appearance: none;
-// }
-
-// select::-ms-expand {
-//   display: none;
-// }
 .form__wrap-icon {
   width: 50px;
   height: 50px;
@@ -383,4 +390,7 @@
   height: 24px;
   background: #292929;
   left: 0;
+}
+.form__button {
+  cursor: text;
 }

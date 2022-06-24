@@ -458,7 +458,7 @@
   color: var(--color-main);
   @include flex(flex, none, center, none, none);
   padding: 13px 20px;
-  width: 284px;
+  // width: 284px;
   margin-top: 17px;
 }
 .edit-order__btn3 {
@@ -533,6 +533,16 @@
   padding: 13px 20px;
   width: 225px;
   @include flex(flex, center, center, none, none);
+  text-decoration: none;
+}
+.edit-order__btn10 {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color17), var(--box-shadow21), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  @include flex(flex, none, center, none, none);
+  padding: 13px 20px;
 }
 .edit-order__btn5:not(:last-child) {
   margin-right: 10px;
@@ -549,6 +559,10 @@
   margin-left: 0;
 }
 .edit-order__btn2 > .edit-order__icon {
+  margin-right: 10px;
+  margin-left: 0;
+}
+.edit-order__btn10 > .edit-order__icon {
   margin-right: 10px;
   margin-left: 0;
 }
@@ -598,7 +612,7 @@
 }
 .edit-order__text3 {
   color: var(--color-main);
-  @include font(15px, 18px, 400);
+  @include font(15px, 21px, 400);
   font-feature-settings: "pnum" on, "lnum" on;
   margin-top: 15px;
 }
@@ -612,7 +626,7 @@
 }
 .edit-order__text4 {
   color: var(--color-main);
-  @include font(15px, 18px, 400);
+  @include font(15px, 21px, 400);
   font-feature-settings: "pnum" on, "lnum" on;
   max-width: 670px;
   margin-top: 25px;
@@ -624,7 +638,6 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-
 }
 .edit-order__text-up {
   @include font(15px, 18px, 600);
@@ -637,7 +650,7 @@
   font-feature-settings: "pnum" on, "lnum" on;
 }
 .edit-order__form {
-  @include flex(flex, none, none, none, wrap);
+  @include flex(flex, none, center, none, wrap);
   margin-top: 15px;
 }
 .edit-order__form > .check__name {
@@ -667,9 +680,20 @@
   @include flex(flex, none, none, none, wrap);
   margin-bottom: 25px;
 }
-// .edit-order__form1:not(:last-child) {
-// margin-bottom: 25px;
-// }
+.edit-order__form6 {
+  @include flex(flex, none, center, none, wrap);
+  padding: 12px 20px;
+  @include wrap(var(--bg-color4), 0 0 0 0, 5px 5px 20px 20px);
+  margin-top: 1px;
+}
+.edit-order__form7 {
+  @include flex(flex, none, none, none, wrap);
+  width: 70%;
+}
+.edit-order__form8 {
+  @include flex(flex, none, none, none, wrap);
+  width: 58%;
+}
 .edit-order__form > .form__wrap {
   background: transparent !important;
   box-shadow: none;
@@ -881,6 +905,16 @@
   margin-right: 10px;
   white-space: nowrap;
 }
+.edit-order__btn-sub14 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color49), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
 .edit-order__sub {
   width: 18px;
   height: 18px;
@@ -940,14 +974,13 @@
   height: 24px;
   background: #3c3c3c;
 }
-
 .edit-order__flex-input2:nth-child(4)::after {
   position: absolute;
   content: " ";
   top: 12px;
   right: 0;
   width: 1px;
-  height: 30px;
+  height: 24px;
   background: #3c3c3c;
 }
 .edit-order__flex-input3 {
@@ -1054,7 +1087,7 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   margin-bottom: 30px;
-  max-width: 248px;
+  // max-width: 248px;
   text-decoration: none;
 }
 .edit-order__btn-next2 {
@@ -1067,6 +1100,17 @@
   color: var(--color-main);
   margin-bottom: 30px;
   max-width: 348px;
+  text-decoration: none;
+}
+.edit-order__btn-next3 {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  margin-top: 25px;
   text-decoration: none;
 }
 .edit-order__btns > .edit-order__btn-next2 > .edit-order__icon {
@@ -1244,7 +1288,7 @@
   margin-bottom: 25px !important;
   padding: 0 !important;
 }
-.edit-order__form__tabs2{
+.edit-order__form__tabs2 {
   display: flex;
 }
 /* Современные браузеры

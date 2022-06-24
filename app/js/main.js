@@ -54,7 +54,17 @@ testFunction();
     },
   });
 
-
+  const swiperPersonalChart = new Swiper('.personal-chart__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+    slidesPerView: "1",
+    // spaceBetween: 25,
+    navigation: {
+      nextEl: '.personal-chart__btn-prev',
+      prevEl: '.personal-chart__btn-next',
+    },
+  });
   var config = {
 	type: 'line',
 	data: {

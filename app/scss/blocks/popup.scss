@@ -1,0 +1,73 @@
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  @include wrap(var(--box-shadow18), var(--box-shadow40), 0px);
+  backdrop-filter: blur(20px);
+  overflow-y: auto;
+  z-index: 1000;
+}
+.popup__box {
+  max-width: 485px;
+  min-height: 246px;
+  padding: 25px;
+  position: relative;
+  @include wrap(var(--bg-color33), var(--box-shadow21), 20px);
+  flex-grow: 1;
+}
+.popup__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-three);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-align: center;
+}
+.popup__subtitle {
+  @include font(15px, 21px, 400);
+  color: var(--color-three);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-align: center;
+}
+.popup__name {
+  @include font(24px, 29px, 800, $ff: "Gilroy");
+  color: var(--color-three);
+  margin-bottom: 25px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  text-align: center;
+}
+.popup__flex {
+  @include flex(flex, center, center, none, none);
+}
+
+.popup__btn {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  text-decoration: none;
+  margin-right: 10px;
+}
+.popup__icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+.popup__btn2 {
+  cursor: pointer;
+  border: none;
+  @include wrap(var(--bg-color2), var(--box-shadow39), 15px);
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  padding: 16px 20px;
+  @include flex(flex, center, center, none, none);
+  text-decoration: none;
+}

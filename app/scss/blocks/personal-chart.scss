@@ -1,0 +1,104 @@
+.personal-chart {
+  @include wrap(var(--bg-color5), var(--box-shadow3), 20px);
+  padding: 25px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.personal-chart__title {
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  margin-bottom: 26px;
+  font-feature-settings: "pnum" on, "lnum" on;
+  @include flex(flex, none, center, none, none);
+}
+.personal-chart__wrap {
+  @include wrap(var(--bg-color4), var(--box-shadow21), 20px 20px 5px 5px);
+  padding: 14px 20px;
+  @include flex(flex, space-between, none, none, none);
+  margin-bottom: 1px;
+}
+.personal-chart__flex {
+  @include flex(flex, none, none, none, none);
+}
+.personal-chart__btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  padding: 0;
+  border: 0;
+  background-color: transparent;
+  @include flex(flex, center, center, none, none);
+  cursor: pointer;
+}
+.personal-chart__icon {
+  width: 24px;
+  height: 24px;
+  color: var(--color-main);
+}
+.personal-chart__icon--rotate {
+  transform: rotate(180deg);
+}
+.personal-chart__icon--rotate2 {
+  transform: rotate(0deg);
+}
+.personal-chart__weeks {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+  margin-bottom: 1px;
+}
+.personal-chart__week {
+  @include wrap(var(--bg-color4), 0 0 0 0, 5px);
+  font-feature-settings: "pnum" on, "lnum" on;
+  aspect-ratio: 1/0;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
+  padding: 10px 8px;
+  text-align: end;
+}
+.personal-chart__days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 1px;
+}
+.personal-chart__day {
+  @include wrap(var(--bg-main), 0 0 0 0, 5px);
+  text-align: end;
+  font-feature-settings: "pnum" on, "lnum" on !important;
+  aspect-ratio: 2/1.3;
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  padding: 8px;
+  cursor: pointer;
+}
+.personal-chart__day2 {
+  @include wrap(var(--bg-color4), 0 0 0 0, 5px);
+  text-align: end;
+  font-feature-settings: "pnum" on, "lnum" on !important;
+  aspect-ratio: 2/1.3;
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  padding: 8px;
+  cursor: pointer;
+}
+.personal-chart__day3 {
+  @include wrap(var(--bg-color17), 0 0 0 0, 5px);
+  text-align: end;
+  font-feature-settings: "pnum" on, "lnum" on !important;
+  aspect-ratio: 2/1.3;
+  @include font(18px, 21px, 700);
+  color: var(--color-main);
+  padding: 8px;
+  cursor: pointer;
+}
+.personal-chart__btn-prev {
+  top: 24px !important;
+  right: 19px !important;
+  left: unset !important;
+  color: transparent !important;
+}
+.personal-chart__btn-next {
+  top: 24px !important;
+  right: 43px !important;
+  color: transparent !important;
+}

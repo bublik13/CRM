@@ -85,14 +85,13 @@
   width: 22px;
   height: 22px;
   display: block;
-  background-color: #1d1d1f;
+  @include wrap(var(--bg-color4),0 0 0 0, 100px);
   border: 1px solid #767676;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
   transition: 0.2s ease;
-  border-radius: 100px;
 }
 .check-pseudo-circl:before {
   content: " ";
@@ -124,4 +123,35 @@
   color: var(--color-main);
   font-feature-settings: "pnum" on, "lnum" on;
   margin-left: 15px;
+}
+
+.check-pseudo-square {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: block;
+  @include wrap(var(--bg-color4),0 0 0 0, 5px);
+  border: 1px solid #767676;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+.check-pseudo-square:before {
+  content: " ";
+  width: 26px;
+  height: 26px;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.2s, transform 0.2s ease;
+  @include wrap(var(--bg-main), var(--box-shadow1), 5px);
+  position: absolute;
+  box-shadow: inset 0px 0px 7.32115px rgba(0, 133, 255, 0.5);
+  filter: drop-shadow(0px 0px 18.9113px rgba(0, 133, 255, 0.7))
+    drop-shadow(0px 0px 73.2115px rgba(0, 133, 255, 0.5));
+}
+.check:checked ~ .check-pseudo-square:before {
+  opacity: 1;
+  transform: scale(1);
 }

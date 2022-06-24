@@ -140,6 +140,14 @@ margin-bottom: 15px;
   --svgColor: url("#gradient16");
   filter: drop-shadow(0px 10px 25px #7bfe44);
 }
+.box__img--color8 {
+  --svgColor: url("#gradient9");
+  filter: drop-shadow(0px 10px 25px #4bbd6d);
+}
+.box__img--color9 {
+  --svgColor: url("#gradient15");
+  filter: drop-shadow(0px 10px 25px #4bbd6d);
+}
 .box__img--width {
   width: 34px;
   height: 23px;

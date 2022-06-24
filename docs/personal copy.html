@@ -11,9 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1656057936611">
+    <link rel="stylesheet" href="css/main.css?t=1656032523085">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"/>
   </head>
 
   <body class="body">
@@ -582,10 +581,16 @@
       <symbol id="remove" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M18 13H6C5.45 13 5 12.55 5 12C5 11.45 5.45 11 6 11H18C18.55 11 19 11.45 19 12C19 12.55 18.55 13 18 13Z" fill="currentColor"/>
       </symbol>
-        
+      <symbol id="create" viewBox="0 0 24 24">
+        <path d="M3 17.4599V20.4999C3 20.7799 3.22 20.9999 3.5 20.9999H6.54C6.67 20.9999 6.8 20.9499 6.89 20.8499L17.81 9.93994L14.06 6.18994L3.15 17.0999C3.05 17.1999 3 17.3199 3 17.4599ZM20.71 7.03994C21.1 6.64994 21.1 6.01994 20.71 5.62994L18.37 3.28994C17.98 2.89994 17.35 2.89994 16.96 3.28994L15.13 5.11994L18.88 8.86994L20.71 7.03994Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="person-remove" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 8C14 5.79 12.21 4 10 4C7.79 4 6 5.79 6 8C6 10.21 7.79 12 10 12C12.21 12 14 10.21 14 8ZM2 18V19C2 19.55 2.45 20 3 20H17C17.55 20 18 19.55 18 19V18C18 15.34 12.67 14 10 14C7.33 14 2 15.34 2 18ZM18 10H22C22.55 10 23 10.45 23 11C23 11.55 22.55 12 22 12H18C17.45 12 17 11.55 17 11C17 10.45 17.45 10 18 10Z" fill="var(--svgColor)"/>
+      </symbol>
+
         
     </svg>
-<picture><source srcset="img/desktop20.avif" type="image/avif"><source srcset="img/desktop20.webp" type="image/webp"><img class="pp"  hidden  src="img/desktop20.jpg" alt=""></picture>
+<picture><source srcset="img/desktop21.avif" type="image/avif"><source srcset="img/desktop21.webp" type="image/webp"><img class="pp" hidden  src="img/desktop21.jpg" alt=""></picture>
     <style>
       .pp {
         position: absolute;
@@ -710,7 +715,7 @@
                 </a>
             </li>
             <li class="nav__item">
-              <a href="personal.html" class="nav__link">
+              <a href="#" class="nav__link  nav__link--active">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#people-alt"></use>
                   </svg>
@@ -718,7 +723,7 @@
               </a>
           </li>
             <li class="nav__item">
-                <a href="discipline.html" class="nav__link">
+                <a href="discipline.html" class="nav__link ">
                     <svg aria-hidden="true" class="nav__link-img">
                         <use xlink:href="#thumbs-up-down"></use>
                     </svg>
@@ -766,7 +771,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="finance.html" class="nav__link ">
+              <a href="finance.html" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#money"></use>
                   </svg>
@@ -774,7 +779,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="setting-clients.html" class="nav__link nav__link--active">
+              <a href="setting-clients.html" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#person"></use>
                   </svg>
@@ -782,7 +787,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="templates.html" class="nav__link">
+              <a href="#" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#description"></use>
                   </svg>
@@ -798,7 +803,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="alerts.html" class="nav__link">
+              <a href="#" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#notifications"></use>
                   </svg>
@@ -1002,33 +1007,91 @@
             </div>
             </div>
           </div>
-          <button type="submit" name="submit" class="header__button button button--7" value="">
-            <svg aria-hidden="true" class="button__img">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
         </header>
         <section class="edit-order">
           <div class="edit-order__wrapper">
-            <div class="edit-order__title">Типы клиентов</div>
+            <div class="edit-order__title">Персонал</div>
+            <fieldset class="edit-order__column2">
+              <span class="edit-order__name">Сотрудники</span>
+              <div class="edit-order__flex-input">
+                <input type="text" name="text" class="edit-order__input5" placeholder="Выберите сотрудника">
+                <svg aria-hidden="true" class="edit-order__input-icon2">
+                  <use xlink:href="#down"></use>
+                </svg>
+              </div>
+              <div class="edit-order__form3 form">
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Александр Македонов</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Даниил Алексеев</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Аркадий Петров</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Анатолий Васильев</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">Владимир Дмитриев</span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height"> Аркадий Маркелов </span>
+                </label>
+              </div>
+              <div class="edit-order__btns2">
+                <button class="edit-order__btn-next">
+                  <svg aria-hidden="true" class="edit-order__icon4">
+                    <use xlink:href="#add"></use>
+                  </svg>
+                  Добавить сотрудника
+                </button>
+                <button class="edit-order__btn2">
+                  <svg aria-hidden="true" class="edit-order__icon">
+                    <use xlink:href="#create"></use>
+                  </svg>
+                  Редактировать сотрудников
+                </button>
+              </div>
+
+            </fieldset>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Должности</div>
             <fieldset class="edit-order__column2">
               <label class="edit-order__label">
-                <span class="edit-order__name">Добавьте тип клиента</span>
-                <input placeholder="Введите тип клиента" type="text" class="edit-order__input5">
+                <span class="edit-order__name">Должность</span>
+                <input placeholder="Введите должность" type="text" class="edit-order__input5">
               </label>
               <label class="edit-order__label">
                 <div class="edit-order__flex2">
-                  <button class="edit-order__btn-sub7">Новый клиент
+                  <button class="edit-order__btn-sub10">Администратор
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
                   </button>
-                  <button class="edit-order__btn-sub8">Постоянный клиент
+                  <button class="edit-order__btn-sub6">Курьер
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
                   </button>
-                  <button class="edit-order__btn-sub9">Возможный клиент
+                  <button class="edit-order__btn-sub11">Мастер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub12">Главный администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub9">Владелец сервиса
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
@@ -1036,70 +1099,506 @@
                 </div>
               </label>
             </fieldset>
-            <div class="edit-order__wrap3">
-              <div class="edit-order__title">Постоянный клиент</div>
-              <label class="edit-order__switch switch">
-                <input type="checkbox" checked="">
-                <span class="psevdo round"></span>
-                <span class="switch__name">Переводить из “Нового” в “Постоянного”</span>
-              </label>
-              <label class="edit-order__label-counter">
-                <span class="edit-order__name">Количество заказов</span>
-                <div class="edit-order__wrapper-counter">
-                  <span class="edit-order__decrement2">                      
-                    <svg aria-hidden="true" class="edit-order__buttom-icon">
-                      <use xlink:href="#remove"></use>
-                    </svg>
-                  </span>
-                  <input class="edit-order__counter2" type="text" value="3" min="1" max="10">
-                  <span class="edit-order__increment2">                      
-                    <svg aria-hidden="true" class="edit-order__buttom-icon">
-                      <use xlink:href="#add"></use>
-                    </svg>
-                  </span>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Информация о клиенте 
+              <svg aria-hidden="true" class="edit-order__icon">
+                <use xlink:href="#down"></use>
+              </svg>
+            </div>
+            <div class="edit-order__wrap">
+              <fieldset class="edit-order__column">
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Номер телефона</span>
+                  <input placeholder="+7 (998) 483-01-45" type="text" class="edit-order__input">
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Имя клиента</span>
+                  <input placeholder="Иванов" type="text" class="edit-order__input">
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Адрес</span>
+                  <input placeholder="Петр Васильев" type="text" class="edit-order__input">
+                </label>
+              </fieldset>
+              <fieldset class="edit-order__column">
+                <label class="edit-order__label2">
+                  <legend class="edit-order__name">Выберите дату</legend>
+                  <svg aria-hidden="true" class="edit-order__icon3">
+                    <use xlink:href="#date"></use>
+                  </svg>
+                  <select class="edit-order__button button button--ms  button--flex-end button---width-lg">
+                    <option>ДД. ММ. ГГГГ</option>
+                    <option>ДД. ММ. ГГГГ</option>
+                  </select>
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Имя клиента</span>
+                  <input placeholder="Иванов" type="text" class="edit-order__input">
+                </label>
+                <span class="edit-order__name">Сотрудники</span>
+                <div class="edit-order__flex-input">
+                  <input type="text" name="text" class="edit-order__input5" placeholder="Выберите сотрудника">
+                  <svg aria-hidden="true" class="edit-order__input-icon2">
+                    <use xlink:href="#down"></use>
+                  </svg>
                 </div>
+              </fieldset>
+            </div>
+            <fieldset class="edit-order__dashed">
+              <label class="edit-order__profile profile">
+                <i class="profile__wrap-img profile__wrap-img--pd">
+                  <input class="profile__file" type="file" атрибуты="">
+                  <svg aria-hidden="true" class="edit-order__icon2">
+                    <use xlink:href="#search-img"></use>
+                  </svg>                  
+                </i> 
+                <i class="profile__wrap">
+                  <i class="profile__title title title--width">Добавьте фото сотрудника</i>
+                  <i class="profile__title title title--width-xs profile__title--bt">Перетащите необходимое фото
+                    в эту область</i>
+                </i>
               </label>
-              <div class="edit-order__text4">Укажите <a href="#">необходимое количество заказов</a> одного клиента для его перехода в статус “Постоянный клиент” </div>
+              <div class="profile__flex">
+                <button class="profile__button button button--sp button--9">
+                  <svg aria-hidden="true" class="profile__icon3">
+                    <use xlink:href="#photo"></use>
+                  </svg>
+                  <span class="profile__text2">Сделать фото</span>
+                </button>
+                <button class="profile__button button button--sp button--brand">
+                  <svg aria-hidden="true" class="profile__icon3">
+                    <use xlink:href="#search-img"></use>
+                  </svg>
+                  <span class="profile__text2">Выбрать фото</span>
+                </button>
+              </div>
+            </fieldset>
+            <div class="edit-order__btns2">
+              <button class="edit-order__btn-next">
+                <svg aria-hidden="true" class="edit-order__icon4">
+                  <use xlink:href="#save"></use>
+                </svg>
+                Сохранить сотрудника
+              </button>
+              <button class="edit-order__btn7">
+                Отменить
+              </button>
             </div>
           </div>
           <div class="edit-order__wrapper">
-            <div class="edit-order__title">Опрос «Откуда о нас узнали»</div>
-            <fieldset class="edit-order__column">
-              <label class="edit-order__switch switch">
-                <input type="checkbox" checked="">
-                <span class="psevdo round"></span>
-                <span class="switch__name">Опрашивать клиентов</span>
-              </label>
-              <span class="edit-order__name">Критерий опроса</span>
+            <div class="edit-order__title">Персонал</div>
+            <fieldset class="edit-order__column2">
+              <span class="edit-order__name">Сотрудники</span>
               <div class="edit-order__flex-input">
-                <input type="text" name="text" class="edit-order__input5" placeholder="Введите критерий опроса">
+                <input type="text" name="text" class="edit-order__input5" placeholder="Выберите сотрудника">
+                <svg aria-hidden="true" class="edit-order__input-icon2">
+                  <use xlink:href="#down"></use>
+                </svg>
+              </div>
+              <div class="edit-order__form3 form">
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">
+                    <span class="form__text">Александр Македонов</span>
+                    <svg aria-hidden="true" class="form__icon3">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">
+                    <span class="form__text">Даниил Алексеев</span>
+                    <svg aria-hidden="true" class="form__icon3">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">
+                    <span class="form__text">Аркадий Петров</span>
+                    <svg aria-hidden="true" class="form__icon3">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">
+                    <span class="form__text">Анатолий Васильев</span>
+                    <svg aria-hidden="true" class="form__icon3">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">
+                    <span class="form__text">Владимир Дмитриев</span>
+                    <svg aria-hidden="true" class="form__icon3">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </span>
+                </label>
+                <label class="form__wrap">
+                  <input name="radio" type="radio" checked="checked" value="1" class="form__check" tabindex="0">
+                  <span class="form__pseudo form__pseudo-height">
+                    <span class="form__text">Аркадий Маркелов</span>
+                    <svg aria-hidden="true" class="form__icon3">
+                      <use xlink:href="#close"></use>
+                    </svg>
+                  </span>
+                </label>
+              </div>
+              <div class="edit-order__btns2">
+                <button class="edit-order__btn-next">
+                  <svg aria-hidden="true" class="edit-order__icon4">
+                    <use xlink:href="#add"></use>
+                  </svg>
+                  Добавить сотрудника
+                </button>
+                <button class="edit-order__btn8">
+                  Отменить редактирование
+                </button>
+              </div>
+            </fieldset>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Должности</div>
+            <fieldset class="edit-order__column2">
+              <span class="edit-order__name">Новая дожность</span>
+              <label class="edit-order__label5">
+                <input placeholder="Скупщик телевизоров" type="text" class="edit-order__input5">
+                <button class="edit-order__button2 button button--brand2 button--flex-center  button--sx">
+                  <svg aria-hidden="true" class="button__img">
+                    <use xlink:href="#save"></use>
+                  </svg>
+                </button>
+              </label>
+              <label class="edit-order__label">
+                <div class="edit-order__flex2">
+                  <button class="edit-order__btn-sub10">Администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub6">Курьер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub11">Мастер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub12">Главный администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub9">Владелец сервиса
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                </div>
+              </label>
+            </fieldset>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Персонал</div>
+            <fieldset class="edit-order__column2">
+              <span class="edit-order__name">Сотрудники</span>
+              <div class="edit-order__flex-input">
+                <input type="text" name="text" class="edit-order__input5" placeholder="Александр Македонов">
+                <svg aria-hidden="true" class="edit-order__input-icon2">
+                  <use xlink:href="#down"></use>
+                </svg>
+              </div>
+              <div class="edit-order__btns2">
+                <button class="edit-order__btn-next">
+                  <svg aria-hidden="true" class="edit-order__icon4">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
+                  К списку сотруников
+                </button>
+                <a href="personal-popup.html"class="edit-order__btn9">
+                  <svg aria-hidden="true" class="edit-order__icon4">
+                    <use xlink:href="#person-remove"></use>
+                  </svg>
+                  Удалить сотрудника
+                </a>
+              </div>
+            </fieldset>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Личная информация</div>
+            <div class="edit-order__wrap">
+              <fieldset class="edit-order__column">
+                <label class="edit-order__label">
+                  <span class="edit-order__name">Фамилия</span>
+                  <input placeholder="Македонов" type="text" class="edit-order__input">
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name">Имя</span>
+                  <input placeholder="Александр" type="text" class="edit-order__input">
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name">Отчество</span>
+                  <input placeholder="Олегович" type="text" class="edit-order__input">
+                </label>
+              </fieldset>
+              <fieldset class="edit-order__column">
+                <label class="edit-order__label2">
+                  <legend class="edit-order__name">Выберите дату</legend>
+                  <svg aria-hidden="true" class="edit-order__icon3">
+                    <use xlink:href="#date"></use>
+                  </svg>
+                  <select class="edit-order__button button button--ms  button--flex-end button---width-lg">
+                    <option>18. 08. 1993</option>
+                    <option>18. 08. 1993</option>
+                  </select>
+                </label>
+                <label class="edit-order__label">
+                  <span class="edit-order__name"> Паспортные данные</span>
+                  <input placeholder="**** ****9812" type="text" class="edit-order__input">
+                </label>
+                <div class="edit-order__flex">
+                  <label class="edit-order__wrap-img">
+                    <img class="edit-order__img"src="img/profile/profile.svg" alt="image" width="100" height="100">
+                    <button class="edit-order__btn6"> 
+                      <svg aria-hidden="true" class="edit-order__close">
+                        <use xlink:href="#close"></use>
+                      </svg>
+                    </button>
+                  </label>
+                  <label for="file" class="edit-order__file-btn">
+                    <i class="edit-order__wrap-btn">
+                      <input class="edit-order__file" type="file" атрибуты="">
+                      <svg aria-hidden="true" class="edit-order__open">
+                        <use xlink:href="#search-img"></use>
+                      </svg>
+                      <i class="edit-order__text-up">Добавить</i>
+                    </i>
+                  </label>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Должность</div>
+            <div class="edit-order__slider2 slider">
+              <div class="slider__swiper swiper slider__swiper1">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper slider__wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo13"> 
+                        <span class="slider__circl13"></span>
+                        <span class="slider__text">Администратор</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo6"> 
+                        <span class="slider__circl6"></span>
+                        <span class="slider__text">Курьер</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo14"> 
+                        <span class="slider__circl14"></span>
+                        <span class="slider__text">Владелец сервиса</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo4"> 
+                        <span class="slider__circl4"></span>
+                        <span class="slider__text">Мастер</span>
+                      </span>
+                    </label>
+                  </div>
+                  <div class="swiper-slide slider__slide">
+                    <label class="slider__wrap">
+                      <input name="radio" type="radio" checked="checked" value="1" class="slider__check" tabindex="0">
+                      <span class="slider__pseudo13"> 
+                        <span class="slider__circl13"></span>
+                        <span class="slider__text">Главный администратор</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="edit-order__wrap3">
+              <div class="edit-order__title">Специализация</div>
+              <span class="edit-order__name">Специализация</span>
+              <div class="edit-order__flex-input">
+                <input type="text" name="text" class="edit-order__input11" placeholder="Выберите специализацию">
                 <svg aria-hidden="true" class="edit-order__input-icon2">
                   <use xlink:href="#down"></use>
                 </svg>
               </div>
               <label class="edit-order__label">
                 <div class="edit-order__flex2">
-                  <button class="edit-order__btn-sub5">Яндекс
+                  <button class="edit-order__btn-sub5">Ноутбук
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
                   </button>
-                  <button class="edit-order__btn-sub5">Google
+                  <button class="edit-order__btn-sub5">Телефон
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
                   </button>
-                  <button class="edit-order__btn-sub5">Карты
+                  <button class="edit-order__btn-sub5">Планшет
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
                   </button>
-                  <button class="edit-order__btn-sub5">Уличная реклама
+                  <button class="edit-order__btn-sub5">Фотоаппарат
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
                   </button>
-                  <button class="edit-order__btn-sub5">Совет знакомых
+                </div>
+              </label>
+              <div class="edit-order__text3">Настроить и добавить устройства для специализации можно в  <a href="#">разделе устройств</a></div>
+            </div>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Оплата и бонусы</div>
+            <label class="edit-order__form form">
+              <input type="checkbox" checked="checked" value="1" class="form__check check">
+              <span class="check-pseudo-circl"></span>
+              <span class="check__name">Рассчитывать с личного дохода работника</span>
+            </label>
+            <label class="edit-order__form form">
+              <input type="checkbox" checked="checked" value="1" class="form__check check">
+              <span class="check-pseudo-circl"></span>
+              <span class="check__name">Рассчитывать с общих доходов всех работников</span>
+            </label>
+            <label class="edit-order__form form">
+              <input type="checkbox" checked="checked" value="1" class="form__check check">
+              <span class="check-pseudo-circl"></span>
+              <span class="check__name">Рассчитывать с чистой прибыли</span>
+            </label>
+            <div class="edit-order__wrap4">
+              <div class="edit-order__title">Заработная плата</div>
+              <label class="edit-order__form4 form">
+                <input type="checkbox" checked="checked" value="1" class="form__check check">
+                <span class="check-pseudo-circl"></span>
+                <span class="check__name">Процентная ставка</span>
+              </label>
+              <label class="edit-order__label6">
+                <span class="edit-order__name">Значение в %</span>
+                <div class="edit-order__flex-input3">
+                  <input type="text" name="text" class="edit-order__input12" placeholder="20">
+                  <div class="edit-order__input-icon4">
+                    %
+                  </div>
+                </div>
+              </label>
+              <label class="edit-order__form5 form">
+                <input type="checkbox" checked="checked" value="1" class="form__check check">
+                <span class="check-pseudo-circl"></span>
+                <span class="check__name">Оклад + Процентая ставка</span>
+              </label>
+              <label class="edit-order__switch switch">
+                <input type="checkbox" checked="">
+                <span class="psevdo round"></span>
+                <span class="switch__name">Использовать прогрессивный процент</span>
+              </label>
+              <label class="edit-order__label">
+                <span class="edit-order__name">Макс. уровень З/П</span>
+                <div class="edit-order__flex-input3">
+                  <input type="text" name="text" class="edit-order__input12" placeholder="80 000">
+                  <div class="edit-order__input-icon4">
+                    ₽
+                  </div>
+                </div>
+              </label>
+            </div>
+            <div class="edit-order__wrap4">
+              <div class="edit-order__title">Бонусы</div>
+              <label class="edit-order__switch switch">
+                <input type="checkbox" checked="">
+                <span class="psevdo round"></span>
+                <span class="switch__name">Система бонусов</span>
+              </label>
+              <label class="edit-order__switch switch">
+                <input type="checkbox" checked="">
+                <span class="psevdo round"></span>
+                <span class="switch__name">Учитывать расходы</span>
+              </label>
+              <div class="edit-order__calculate-salary2 calculate-salary">
+                <div class="calculate-salary__wrap">
+                  <div class="calculate-salary__number2">100 <span>бонусов</span> </div>
+                  <div class="calculate-salary__subtitle">Перетащите ползунок, чтобы указать максимальный бонус для клинетов</div>
+                  <input  class="calculate-salary__range" name="my_range"  type="range" min="0" max="100" value="0" />
+                </div>
+              </div>
+              <button class="edit-order__button4">
+                <svg aria-hidden="true" class="edit-order__icon4">
+                  <use xlink:href="#setting"></use>
+                </svg>
+                Настроить
+              </button>
+            </div>
+          </div>
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">Должности</div>
+            <fieldset class="edit-order__column2">
+              <span class="edit-order__name">Новая дожность</span>
+              <label class="edit-order__label5">
+                <input placeholder="Скупщик телевизоров" type="text" class="edit-order__input5">
+                <button class="edit-order__button2 button button--brand2 button--flex-center  button--sx">
+                  <svg aria-hidden="true" class="button__img">
+                    <use xlink:href="#save"></use>
+                  </svg>
+                </button>
+              </label>
+              <label class="edit-order__label">
+                <div class="edit-order__flex2">
+                  <button class="edit-order__btn-sub10">Администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub6">Курьер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub11">Мастер
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub12">Главный администратор
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub9">Владелец сервиса
+                    <svg aria-hidden="true" class="edit-order__sub">
+                      <use xlink:href="#close2"></use>
+                    </svg>
+                  </button>
+                  <button class="edit-order__btn-sub14">Скупщик телевизоров
                     <svg aria-hidden="true" class="edit-order__sub">
                       <use xlink:href="#close2"></use>
                     </svg>
@@ -1108,41 +1607,392 @@
               </label>
             </fieldset>
           </div>
-          <div class="edit-order__wrapper">
-            <div class="edit-order__title">Бонусы</div>
-            <fieldset class="edit-order__column">
-              <label class="edit-order__switch switch">
-                <input type="checkbox" checked="">
-                <span class="psevdo round"></span>
-                <span class="switch__name">Бонусная система для клиентов</span>
-              </label>
-            </fieldset>
-            <div class="edit-order__calculate-salary calculate-salary">
-              <div class="calculate-salary__wrap">
-                <div class="calculate-salary__number2">100 <span>бонусов</span> </div>
-                <div class="calculate-salary__subtitle">Перетащите ползунок, чтобы указать максимальный бонус для клинетов</div>
-                <input  class="calculate-salary__range" name="my_range"  type="range" min="0" max="100" value="0" />
+        </section>
+        <section class="personal-chart">
+          <div class="personal-chart__title">График работы сотрудника</div>
+          <div class="personal-chart__swiper swiper">
+            <div class="personal-chart__wrap">
+              <div class="personal-chart__title">Сентябрь, 2021</div>
+              <div class="personal-chart__flex">
+                <button type="button" class="personal-chart__btn">
+                  <svg class="personal-chart__icon personal-chart__icon--rotate2">
+                    <use xlink:href="#arrow"/>
+                  </svg>
+                </button>
+                <button type="button" class="personal-chart__btn">
+                  <svg class="personal-chart__icon personal-chart__icon--rotate">
+                    <use xlink:href="#arrow"/>
+                  </svg>
+                </button>
               </div>
             </div>
-            <button class="edit-order__button3">
-              <svg aria-hidden="true" class="edit-order__icon4">
-                <use xlink:href="#setting"></use>
+            <div class="personal-chart__wrapper swiper-wrapper">
+              <div class="personal-chart__slide swiper-slide">
+                <div class="personal-chart__date">
+                  <div class="personal-chart__weeks">
+                    <div class="personal-chart__week">
+                      Понедельник
+                    </div>
+                    <div class="personal-chart__week">
+                      Вторник
+                    </div>
+                    <div class="personal-chart__week">
+                      Среда
+                    </div>
+                    <div class="personal-chart__week">
+                      Четверг
+                    </div>
+                    <div class="personal-chart__week">
+                      Пятница
+                    </div>
+                    <div class="personal-chart__week">
+                      Суббота
+                    </div>
+                    <div class="personal-chart__week">
+                      Воскресенье
+                    </div>
+                  </div>
+                  <div class="personal-chart__days">
+                    <div class="personal-chart__day">
+                      30
+                    </div>
+                    <div class="personal-chart__day">
+                      31
+                    </div>
+                    <div class="personal-chart__day3">
+                      1
+                    </div>
+                    <div class="personal-chart__day">
+                      2
+                    </div>
+                    <div class="personal-chart__day">
+                      3
+                    </div>
+                    <div class="personal-chart__day2">
+                      4
+                    </div>
+                    <div class="personal-chart__day2">
+                      5
+                    </div>
+                    <div class="personal-chart__day3">
+                      6
+                    </div>
+                    <div class="personal-chart__day">
+                      7
+                    </div>
+                    <div class="personal-chart__day3">
+                      8
+                    </div>
+                    <div class="personal-chart__day">
+                      9
+                    </div>
+                    <div class="personal-chart__day">
+                      10
+                    </div>
+                    <div class="personal-chart__day2">
+                      11
+                    </div>
+                    <div class="personal-chart__day">
+                      12
+                    </div>
+                    <div class="personal-chart__day3">
+                      13
+                    </div>
+                    <div class="personal-chart__day">
+                      14
+                    </div>
+                    <div class="personal-chart__day">
+                      15
+                    </div>
+                    <div class="personal-chart__day3">
+                      16
+                    </div>
+                    <div class="personal-chart__day">
+                      17
+                    </div>
+                    <div class="personal-chart__day2">
+                      18
+                    </div>
+                    <div class="personal-chart__day2">
+                      19
+                    </div>
+                    <div class="personal-chart__day">
+                      20
+                    </div>
+                    <div class="personal-chart__day3">
+                      21
+                    </div>
+                    <div class="personal-chart__day">
+                      22
+                    </div>
+                    <div class="personal-chart__day">
+                      23
+                    </div>
+                    <div class="personal-chart__day3">
+                      24
+                    </div>
+                    <div class="personal-chart__day">
+                      25
+                    </div>
+                    <div class="personal-chart__day">
+                      26
+                    </div>
+                    <div class="personal-chart__day3">
+                      27
+                    </div>
+                    <div class="personal-chart__day3">
+                      28
+                    </div>
+                    <div class="personal-chart__day">
+                      29
+                    </div>
+                    <div class="personal-chart__day">
+                      30
+                    </div>
+                    <div class="personal-chart__day">
+                      1
+                    </div>
+                    <div class="personal-chart__day2">
+                      2
+                    </div>
+                    <div class="personal-chart__day2">
+                      3
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="personal-chart__slide swiper-slide">
+                <div class="personal-chart__date">
+                  <div class="personal-chart__weeks">
+                    <div class="personal-chart__week">
+                      Понедельник
+                    </div>
+                    <div class="personal-chart__week">
+                      Вторник
+                    </div>
+                    <div class="personal-chart__week">
+                      Среда
+                    </div>
+                    <div class="personal-chart__week">
+                      Четверг
+                    </div>
+                    <div class="personal-chart__week">
+                      Пятница
+                    </div>
+                    <div class="personal-chart__week">
+                      Суббота
+                    </div>
+                    <div class="personal-chart__week">
+                      Воскресенье
+                    </div>
+                  </div>
+                  <div class="personal-chart__days">
+                    <div class="personal-chart__day">
+                      30
+                    </div>
+                    <div class="personal-chart__day">
+                      31
+                    </div>
+                    <div class="personal-chart__day3">
+                      1
+                    </div>
+                    <div class="personal-chart__day">
+                      2
+                    </div>
+                    <div class="personal-chart__day">
+                      3
+                    </div>
+                    <div class="personal-chart__day2">
+                      4
+                    </div>
+                    <div class="personal-chart__day2">
+                      5
+                    </div>
+                    <div class="personal-chart__day3">
+                      6
+                    </div>
+                    <div class="personal-chart__day">
+                      7
+                    </div>
+                    <div class="personal-chart__day3">
+                      8
+                    </div>
+                    <div class="personal-chart__day">
+                      9
+                    </div>
+                    <div class="personal-chart__day">
+                      10
+                    </div>
+                    <div class="personal-chart__day2">
+                      11
+                    </div>
+                    <div class="personal-chart__day">
+                      12
+                    </div>
+                    <div class="personal-chart__day3">
+                      13
+                    </div>
+                    <div class="personal-chart__day">
+                      14
+                    </div>
+                    <div class="personal-chart__day">
+                      15
+                    </div>
+                    <div class="personal-chart__day3">
+                      16
+                    </div>
+                    <div class="personal-chart__day">
+                      17
+                    </div>
+                    <div class="personal-chart__day2">
+                      18
+                    </div>
+                    <div class="personal-chart__day2">
+                      19
+                    </div>
+                    <div class="personal-chart__day">
+                      20
+                    </div>
+                    <div class="personal-chart__day3">
+                      21
+                    </div>
+                    <div class="personal-chart__day">
+                      22
+                    </div>
+                    <div class="personal-chart__day">
+                      23
+                    </div>
+                    <div class="personal-chart__day3">
+                      24
+                    </div>
+                    <div class="personal-chart__day">
+                      25
+                    </div>
+                    <div class="personal-chart__day">
+                      26
+                    </div>
+                    <div class="personal-chart__day3">
+                      27
+                    </div>
+                    <div class="personal-chart__day3">
+                      28
+                    </div>
+                    <div class="personal-chart__day">
+                      29
+                    </div>
+                    <div class="personal-chart__day">
+                      30
+                    </div>
+                    <div class="personal-chart__day">
+                      1
+                    </div>
+                    <div class="personal-chart__day2">
+                      2
+                    </div>
+                    <div class="personal-chart__day2">
+                      3
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="personal-chart__btn-prev swiper-button-prev"></div>
+            <div class="personal-chart__btn-next swiper-button-next"></div>
+          </div>
+          <label class="edit-order__form6 form">
+            <input type="checkbox" checked="checked" value="1" class="form__check check">
+            <span class="check-pseudo-square"></span>
+            <span class="check__name">Рабочие дни</span>
+          </label> 
+          <button class="edit-order__btn-next3">
+            <svg aria-hidden="true" class="edit-order__icon4">
+              <use xlink:href="#date"></use>
+            </svg>
+            Настроить график работы
+          </button>       
+        </section>
+        <section class="edit-order">
+          <div class="edit-order__wrapper">
+          <div class="edit-order__title">Договор работника и работадателя</div>
+          <div class="edit-order__doc">
+            Договор работника и работадателя
+            <br><br>
+            ИП Мелкумян В.Р. и ИП Тихомиров В.С. договорились о нижеследующем: ИП Мелкумян В.Р. передает ИП Тихомирову В.С
+            торговую площадь (3 кв.м.) в принадлежащем ИП Мелкумяну В.Р. помещении (на основание договора аренды от 01.02. 2021.)
+            в безвозмездное пользование, для продажи аксессуаров и установке защитных стекол.
+            <br><br>
+            По обоюдной договоренности, ИП Тихомиров В.С обязуется исполнять следующие обязанности:
+            <br><br>
+            Оказывать услуги администратора с 9.55 до 21.00 (6 дней в неделю), а также: 
+            <br><br>
+            Принимать звонки, чаты, почту
+            Прорабатывать базу, очищать от «застоя»
+            Следить за чистотой на приемке и в сервисном центре
+            Искать и заказывать запчасти для ремонта
+            Соблюдать кассовую дисциплину (прозрачно разделять прибыли магазина и сервисного центра)
+            Коммуници́ровать
+            <br><br>
+            Согласно договоренностям, ИП Тихомирову В.С устанавливается заработная плата, в виде дохода с чистой прибыли сервисного центра,
+            эквивалентной 10%.
+            <br><br>
+            Ответственность сторон
+            <br><br>
+            ИП Тихомиров В.С обязуется не нарушать условия договора и кассовой дисциплины, не «путать» свою прибыль с магазина, с прибылью
+            сервисного центра. В случае обнаружение факта «подлога», договоренность безвозмездного используемого помещения аннулируется, а
+            с ИП Тихомирова В.С удерживается штраф 50.000 руб.
+            Договор работника и работадателя
+            <br><br>
+            ИП Мелкумян В.Р. и ИП Тихомиров В.С. договорились о нижеследующем: ИП Мелкумян В.Р. передает ИП Тихомирову В.С
+            торговую площадь (3 кв.м.) в принадлежащем ИП Мелкумяну В.Р. помещении (на основание договора аренды от 01.02. 2021.)
+            в безвозмездное пользование, для продажи аксессуаров и установке защитных стекол.
+            <br><br>
+            По обоюдной договоренности, ИП Тихомиров В.С обязуется исполнять следующие обязанности:
+            <br><br>
+            Оказывать услуги администратора с 9.55 до 21.00 (6 дней в неделю), а также: 
+            <br><br>
+            Принимать звонки, чаты, почту
+            Прорабатывать базу, очищать от «застоя»
+            Следить за чистотой на приемке и в сервисном центре
+            Искать и заказывать запчасти для ремонта
+            Соблюдать кассовую дисциплину (прозрачно разделять прибыли магазина и сервисного центра)
+            Коммуници́ровать
+            <br><br>
+            Согласно договоренностям, ИП Тихомирову В.С устанавливается заработная плата, в виде дохода с чистой прибыли сервисного центра,
+            эквивалентной 10%.
+            <br><br>
+            Ответственность сторон
+            <br><br>
+            ИП Тихомиров В.С обязуется не нарушать условия договора и кассовой дисциплины, не «путать» свою прибыль с магазина, с прибылью
+            сервисного центра. В случае обнаружение факта «подлога», договоренность безвозмездного используемого помещения аннулируется, а
+            с ИП Тихомирова В.С удерживается штраф 50.000 руб.
+          </div>
+          <div class="edit-order__flex">
+            <a href="img/profile/profile.svg" download="" class="edit-order__btn4">
+              <svg aria-hidden="true" class="edit-order__icon">
+                <use xlink:href="#download"></use>
               </svg>
-              Настроить
-            </button>
+              Скачать docx
+            </a>
+            <a href="img/profile/profile.svg" download="" class="edit-order__btn4">
+              <svg aria-hidden="true" class="edit-order__icon">
+                <use xlink:href="#download"></use>
+              </svg>
+              Скачать pdf
+            </a>
+            <a href="img/profile/profile.svg" download="" class="edit-order__btn4">
+              <svg aria-hidden="true" class="edit-order__icon">
+                <use xlink:href="#print"></use>
+              </svg>
+              Напечатать
+            </a>
+          </div>
           </div>
         </section>
-
       </main>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.2/raphael-min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
     <!-- подключаем js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1656057936611"></script>
+    <script src="js/main.js?t=1656032523085"></script>
       
   </body>
 
