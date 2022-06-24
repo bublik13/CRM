@@ -65,6 +65,17 @@ testFunction();
       prevEl: '.personal-chart__btn-next',
     },
   });
+  const swiperIntegrations = new Swiper('.integrations__swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    // loop: true,
+    slidesPerView: "3",
+    spaceBetween: 25,
+    navigation: {
+      nextEl: '.integrations__btn-prev',
+      prevEl: '.integrations__btn-next',
+    },
+  });
   var config = {
 	type: 'line',
 	data: {

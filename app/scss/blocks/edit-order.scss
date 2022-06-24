@@ -161,7 +161,10 @@
   @include flex(flex, center, none, column, none);
   margin-bottom: 15px;
 }
-
+.edit-order__label7 {
+  @include flex(flex, none, center, none, none);
+  position: relative;
+}
 .edit-order__label-counter {
   margin-top: 16px;
 }
@@ -915,6 +918,16 @@
   margin-right: 10px;
   white-space: nowrap;
 }
+.edit-order__btn-sub15 {
+  @include flex(flex, center, center, none, none);
+  @include wrap(var(--bg-color50), var(--box-color21), 10px);
+  padding: 5px 5px 5px 10px;
+  @include font(15px, 18px, 400);
+  color: var(--color-main);
+  margin-bottom: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
 .edit-order__sub {
   width: 18px;
   height: 18px;
@@ -1036,6 +1049,7 @@
   padding-left: 13px;
   border-left: 1px solid #3c3c3c;
 }
+
 .edit-order__form-wrap {
   margin-bottom: 25px;
   width: 300px;
@@ -1090,6 +1104,7 @@
   // max-width: 248px;
   text-decoration: none;
 }
+
 .edit-order__btn-next2 {
   @include flex(flex, space-between, center, none, none);
   @include wrap(var(--bg-main), var(--box-shadow1), 15px);
@@ -1111,6 +1126,16 @@
   @include font(15px, 18px, 600);
   color: var(--color-main);
   margin-top: 25px;
+  text-decoration: none;
+}
+.edit-order__btn-next4 {
+  @include flex(flex, space-between, center, none, none);
+  @include wrap(var(--bg-main), var(--box-shadow1), 15px);
+  cursor: pointer;
+  padding: 13px 20px;
+  border: none;
+  @include font(15px, 18px, 600);
+  color: var(--color-main);
   text-decoration: none;
 }
 .edit-order__btns > .edit-order__btn-next2 > .edit-order__icon {
@@ -1291,11 +1316,36 @@
 .edit-order__form__tabs2 {
   display: flex;
 }
+.edit-order__commet {
+  @include wrap(var(--bg-color33), var(--box-shadow21), 15px);
+  padding: 10px;
+  color: var(--color-three);
+  @include font(13px, 15px, 400);
+  font-feature-settings: "pnum" on, "lnum" on;
+  position: absolute;
+  top: -70px;
+  right: -210px;
+  max-width: 212px;
+  display: none;
+}
+.edit-order__info {
+  width: 24px;
+  height: 24px;
+  --svgColor: url("#gradient1");
+  margin-left: 15px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 10px 25px #0085ff);
+  cursor: pointer;
+}
+.edit-order__info:hover ~ .edit-order__commet {
+  display: block;
+}
 /* Современные браузеры
    ----------------------------  */
 .edit-order__input::placeholder {
   color: var(--color-main);
   opacity: 1;
+  color: var(--color-main);
 }
 
 /* WebKit, Edge

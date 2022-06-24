@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="css/main.css?t=1656057933495">
+    <link rel="stylesheet" href="css/main.css?t=1656065371633">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
   </head>
 
@@ -600,8 +600,9 @@
         </linearGradient>
         </defs>
       </symbol>
-        
-        
+      <symbol id="arrow" viewBox="0 0 24 24">
+        <path d="M14.7104 15.88L10.8304 12L14.7104 8.11998C15.1004 7.72998 15.1004 7.09998 14.7104 6.70998C14.3204 6.31998 13.6904 6.31998 13.3004 6.70998L8.71043 11.3C8.32043 11.69 8.32043 12.32 8.71043 12.71L13.3004 17.3C13.6904 17.69 14.3204 17.69 14.7104 17.3C15.0904 16.91 15.1004 16.27 14.7104 15.88Z" fill="currentColor"/>
+      </symbol>
         
     </svg>
 <picture><source srcset="img/desktop20.avif" type="image/avif"><source srcset="img/desktop20.webp" type="image/webp"><img class="pp"  hidden  src="img/desktop20.jpg" alt=""></picture>
@@ -745,7 +746,7 @@
                 </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="devices.html" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#devices-other"></use>
                   </svg>
@@ -753,7 +754,7 @@
               </a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">
+              <a href="status.html" class="nav__link">
                   <svg aria-hidden="true" class="nav__link-img">
                       <use xlink:href="#circl"></use>
                   </svg>
@@ -1021,11 +1022,6 @@
             </div>
             </div>
           </div>
-          <button type="submit" name="submit" class="header__button button button--7" value="">
-            <svg aria-hidden="true" class="button__img">
-              <use xlink:href="#close"></use>
-            </svg>
-          </button>
         </header>
         <section class="integrations integrations--top">
           <div class="integrations__title">Оповещения</div>
@@ -1171,14 +1167,12 @@
           <div class="edit-order__wrapper">
             <div class="edit-order__title">Документация</div>
             <fieldset class="edit-order__column2">
-              <span class="edit-order__name">Тип документа</span>
-              <div class="edit-order__flex-input">
-                <input type="text" name="text" class="edit-order__input1" placeholder="Выберите тип документа">
-                <svg aria-hidden="true" class="edit-order__input-icon2">
-                  <use xlink:href="#down"></use>
-                </svg>
-              </div>
-              <button class="edit-order__btn-next">
+              <label class="edit-order__switch switch">
+                <input type="checkbox" checked="">
+                <span class="psevdo round"></span>
+                <span class="switch__name">Включить SMS Оповещения</span>
+              </label>
+              <button class="edit-order__btn-next4">
                 <svg aria-hidden="true" class="edit-order__icon4">
                   <use xlink:href="#arrow"></use>
                 </svg>
@@ -1187,11 +1181,339 @@
             </fieldset>
           </div>
         </section>
+        <section class="integrations integrations--top">
+          <div class="integrations__title">Смена статуса заказа</div>
+          <fieldset class="integrations__edit-order edit-order__column2">
+            <label class="edit-order__label">
+              <span class="edit-order__name">Тип оповещения</span>
+              <input placeholder="Ввдетие тип оповещения" type="text" class="edit-order__input5">
+            </label>
+            <label class="edit-order__label">
+              <div class="edit-order__flex">
+                <button class="edit-order__btn-sub15">Готов к выдаче
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+                <button class="edit-order__btn-sub10">Отказ
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+                <button class="edit-order__btn-sub6">Ожидает запчасть
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </fieldset>
+          <div class="integrations__grid">
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Готов к выдаче</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Отказ</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Ожидает запчасть</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="integrations integrations--top">
+          <div class="integrations__title">Промо и акции</div>
+          <fieldset class="integrations__edit-order edit-order__column2">
+            <label class="edit-order__label">
+              <span class="edit-order__name">Тип оповещения</span>
+              <input placeholder="Ввдетие тип оповещения" type="text" class="edit-order__input5">
+            </label>
+            <label class="edit-order__label">
+              <div class="edit-order__flex-btn">
+                <button class="edit-order__btn-sub5">iPhone
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+                <button class="edit-order__btn-sub5">Android
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+                <button class="edit-order__btn-sub5">Ноутбуки
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+                <button class="edit-order__btn-sub5">Стекло на iPhone
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </fieldset>
+          <div class="integrations__grid">
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">iPhone</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Android</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Ноутбуки</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Стекло на iPhone</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Здравствуйте, Сергей Иванович.
+                Ваш заказ ожиает запчасть!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+          </div>
+          <div class="integrations__swiper swiper">
+            <div class="integrations__label">
+              <div class="integrations__title">Последние акции</div>
+              <div class="integrations__flex">
+                <button type="button" class="integrations__btn">
+                  <svg class="integrations__icon4 integrations__icon--rotate2">
+                    <use xlink:href="#arrow"/>
+                  </svg>
+                </button>
+                <button type="button" class="integrations__btn">
+                  <svg class="integrations__icon4 integrations__icon--rotate">
+                    <use xlink:href="#arrow"/>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="integrations__wrapper swiper-wrapper">
+              <div class="integrations__slide swiper-slide">
+                <p class="integrations__desc">
+                  Здравствуйте, Сергей Иванович.
+                  С 10.09 до 17.09 наклеим защитное
+                  стекло на Ваш iPhone совершенно
+                  бесплатно!
+                  Ремонт техники - Ленинский 136.
+                  leninskiy136.ru
+                  Тел. 8(812)409-43-96
+                </p>
+              </div>
+              <div class="integrations__slide swiper-slide">
+                <p class="integrations__desc">
+                  Здравствуйте, Сергей Иванович.
+                  С 10.09 до 17.09 наклеим защитное
+                  стекло на Ваш iPhone совершенно
+                  бесплатно!
+                  Ремонт техники - Ленинский 136.
+                  leninskiy136.ru
+                  Тел. 8(812)409-43-96
+                </p>
+              </div>
+              <div class="integrations__slide swiper-slide">
+                <p class="integrations__desc">
+                  Здравствуйте, Сергей Иванович.
+                  С 10.09 до 17.09 наклеим защитное
+                  стекло на Ваш iPhone совершенно
+                  бесплатно!
+                  Ремонт техники - Ленинский 136.
+                  leninskiy136.ru
+                  Тел. 8(812)409-43-96
+                </p>
+              </div>
+              <div class="integrations__slide swiper-slide">
+                <p class="integrations__desc">
+                  Здравствуйте, Сергей Иванович.
+                  С 10.09 до 17.09 наклеим защитное
+                  стекло на Ваш iPhone совершенно
+                  бесплатно!
+                  Ремонт техники - Ленинский 136.
+                  leninskiy136.ru
+                  Тел. 8(812)409-43-96
+                </p>
+              </div>
+            </div>
+            <div class="integrations__btn-prev swiper-button-prev"></div>
+            <div class="integrations__btn-next swiper-button-next"></div>
+          </div>
+        </section>
+        <section class="integrations integrations--top">
+          <div class="integrations__title">Оповещения звонков</div>
+          <fieldset class="integrations__edit-order edit-order__column2">
+            <span class="edit-order__name">Тип звонка</span>
+            <div class="edit-order__flex-input">
+              <input type="text" name="text" class="edit-order__input5" placeholder="Выберите тип звонка">
+              <svg aria-hidden="true" class="edit-order__input-icon2">
+                <use xlink:href="#down"></use>
+              </svg>
+            </div>
+            <label class="edit-order__label">
+              <div class="edit-order__flex-btn">
+                <button class="edit-order__btn-sub5">Принятный
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+                <button class="edit-order__btn-sub5">Пропущенный
+                  <svg aria-hidden="true" class="edit-order__sub">
+                    <use xlink:href="#close2"></use>
+                  </svg>
+                </button>
+              </div>
+            </label>
+          </fieldset>
+          <div class="integrations__grid">
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Принятый</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Спасибо за обращение в наш
+                сервис  - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+            <div class="integrations__box">
+              <div class="integrations__flex">
+                <label class="integrations__switch switch">
+                  <input type="checkbox" checked="">
+                  <span class="psevdo round"></span>
+                  <span class="switch__name">Пропущенный</span>
+                </label>
+              </div>
+              <div class="integrations__top">Текст сообщения</div>
+              <p class="integrations__desc">
+                Мы не смогли ответить на ваш
+                звонок, но обязательно перезвоним!
+                Ремонт техники - Ленинский 136.
+                leninskiy136.ru
+                Тел. 8(812)409-43-96
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="edit-order">
+          <div class="edit-order__wrapper">
+            <div class="edit-order__title">SMS Визитка</div>
+            <fieldset class="edit-order__column2">
+              <label class="edit-order__switch switch">
+                <input type="checkbox" checked="">
+                <span class="psevdo round"></span>
+                <span class="switch__name">SMS оповещения при звонке</span>
+              </label>
+              <button class="edit-order__btn-next4">
+                <svg aria-hidden="true" class="edit-order__icon4">
+                  <use xlink:href="#arrow"></use>
+                </svg>
+                К списку оповещений
+              </button>
+            </fieldset>
+          </div>
+        </section>
       </main>
     </div>
     <!-- подключаем js -->
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="js/main.js?t=1656057933495"></script>
+    <script src="js/main.js?t=1656065371633"></script>
       
   </body>
 
